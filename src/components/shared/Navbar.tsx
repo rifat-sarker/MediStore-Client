@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/app/assets/logo.png";
-import { Button } from "../button";
+import { Button } from "../ui/button";
 import {
   Heart,
   LayoutDashboard,
@@ -13,7 +13,6 @@ import {
   ShoppingCart,
 } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
- 
 
 import { Drawer } from "vaul";
 
@@ -44,13 +43,13 @@ const Navbar = () => {
       </div>
 
       <nav className="flex gap-3">
-        <Link href="/">
-          <Button  className="rounded-full size-10">
+        <Link href="/wishlist">
+          <Button className="rounded-full size-10">
             <Heart />
           </Button>
         </Link>
-        <Link href="/">
-          <Button  className="rounded-full text-white size-10">
+        <Link href="/cart">
+          <Button className="rounded-full text-white size-10">
             <ShoppingCart />
           </Button>
         </Link>
@@ -87,14 +86,16 @@ const Navbar = () => {
                         height={100}
                         alt="profile photo"
                       ></Image>
-                      <Drawer.Description className="font-bold text-center">rifatswd@gmail.com</Drawer.Description>
+                      <Drawer.Description className="font-bold text-center">
+                        rifatswd@gmail.com
+                      </Drawer.Description>
                       <Button className="mx-auto w-full">
                         <LayoutDashboard />
                         Dashboard{" "}
                       </Button>
                       <Button className="mx-auto w-full">
                         <LogOut />
-                       Logout
+                        Logout
                       </Button>
                     </Drawer.Title>
                   </div>

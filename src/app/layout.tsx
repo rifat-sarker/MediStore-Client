@@ -1,4 +1,5 @@
 import Navbar from "@/components/shared/Navbar";
+import Providers from "@/providers/Providers";
 
 export default function RootLayout({
   children,
@@ -6,11 +7,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        {/* <Navbar /> */}
-        {children}
-      </body>
-    </html>
+    <Providers>
+      <html lang="en">
+        <body>
+          {/* <Navbar /> */}
+          {children}
+        </body>
+      </html>
+    </Providers>
   );
 }

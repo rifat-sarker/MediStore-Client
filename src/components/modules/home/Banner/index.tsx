@@ -5,8 +5,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import banner from "@/app/assets/banner.png";
 import banner2 from "@/app/assets/banner2.png";
@@ -16,10 +14,7 @@ const Banner = () => {
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
 
   return (
-    <Carousel
-      plugins={[plugin.current]}
-      className=""
-    >
+    <Carousel plugins={[plugin.current]} className="">
       <CarouselContent>
         <CarouselItem className="flex justify-center">
           <Image src={banner} alt="banner-photo" className="w-full h-[450px]" />

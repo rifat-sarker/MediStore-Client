@@ -22,31 +22,47 @@ const NavbarMenu = async () => {
   // console.log(types);
 
   return (
-    <ShadNavigationMenu className="mx-auto ">
-      <NavigationMenuList>
-        {categories.map((category: ICategory) => (
-          <NavigationMenuItem key={category._id}>
-            <NavigationMenuTrigger>{category.name}</NavigationMenuTrigger>
-            <NavigationMenuContent className=" text-black">
-              <ul className="grid w-[400px] gap-3 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                {types
-                  .filter((type: IType) => type.category === category._id)
-                  .map((type: IType) => (
-                    <li key={type._id} className="p-2 ">
-                      <Link
-                        href={`/medicines/${type._id}`}
-                        className="block p-2"
-                      >
-                        {type.name}
-                      </Link>
-                    </li>
-                  ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-        ))}
-      </NavigationMenuList>
-    </ShadNavigationMenu>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+      }}
+      className="bg-primary w-full my-4"
+    >
+      <ShadNavigationMenu className="">
+        <NavigationMenuList className="flex flex-wrap">
+          {categories.map((category: ICategory) => (
+            <NavigationMenuItem key={category._id}>
+              <NavigationMenuTrigger
+                style={{
+                  backgroundColor: "transparent",
+                  border: "none",
+                }}
+                className="text-white bg-primary"
+              >
+                {category.name}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="text-black">
+                <ul className="grid w-[400px] gap-3 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  {types
+                    .filter((type: IType) => type.category === category._id)
+                    .map((type: IType) => (
+                      <li key={type._id} className="p-2">
+                        <Link
+                          href={`/medicines/${type._id}`}
+                          className="block p-2 text-sm"
+                        >
+                          {type.name}
+                        </Link>
+                      </li>
+                    ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          ))}
+        </NavigationMenuList>
+      </ShadNavigationMenu>
+    </div>
   );
 };
 

@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <header className="container flex gap-4 justify-between items-center mx-auto">
       <h2>
-        <Link href="/">
+        <Link className="flex items-center" href="/">
           <Image
             className="rounded-full"
             src={logo}
@@ -29,6 +29,10 @@ const Navbar = () => {
             width={100}
             alt="logo"
           />
+          <h3 className="text-xl font-bold">
+            <span className="text-primary">Medi</span>
+            <span className="text-red-500">Store</span>
+          </h3>
         </Link>
       </h2>
       <div className="relative w-full max-w-md">

@@ -8,29 +8,31 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import { getAllCategories } from "@/services/Category";
+import { getAllTypes } from "@/services/Type";
+import { ICategory } from "@/types/category";
+import { IType } from "@/types/type";
 
-const NavbarMenu = () => {
+const NavbarMenu = async () => {
+  const { data: categories } = await getAllCategories();
+  const { data: types } = await getAllTypes();
+  // console.log(categories);
+console.log(types);
   return (
     <ShadNavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Medicine</NavigationMenuTrigger>
+          {categories.map((category: ICategory) => (
+            <NavigationMenuTrigger key={category._id}>
+              {category.name}
+            </NavigationMenuTrigger>
+          ))}
           <NavigationMenuContent>
-            <NavigationMenuLink>Meth 10</NavigationMenuLink>
-            <NavigationMenuLink>Meth 10</NavigationMenuLink>
-            <NavigationMenuLink>Meth 10</NavigationMenuLink>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Medicine</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink>Link</NavigationMenuLink>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Medicine</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink>Link</NavigationMenuLink>
+            {types.map((type: IType) => (
+              <NavigationMenuLink key={type._id}>
+                {type.name}
+              </NavigationMenuLink>
+            ))}
           </NavigationMenuContent>
         </NavigationMenuItem>
       </NavigationMenuList>

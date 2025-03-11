@@ -1,4 +1,4 @@
-"use server"
+"use server";
 //get all types
 export const getAllTypes = async (page?: string, limit?: string) => {
   try {

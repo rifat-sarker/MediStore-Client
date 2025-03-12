@@ -20,7 +20,7 @@ const FeaturedProducts = async () => {
         <h1 className="text-2xl font-semibold my-2">Featured Products</h1>
         <Link
           className="text-sm text-primary font-semibold border px-2 py-1"
-          href={"/"}
+          href={"/shop"}
         >
           See More...
         </Link>
@@ -36,6 +36,7 @@ const FeaturedProducts = async () => {
                   key={product._id}
                   className="lg:basis-1/6 md:basis-1/5 sm:basis-1/4 basis-1/3"
                 >
+                  <Link href={`/medicine/${product._id}`}>              
                   <div className="border p-4 rounded-md h-[280px] flex flex-col justify-between items-center text-center">
                     <img
                       src={product.image}
@@ -52,6 +53,7 @@ const FeaturedProducts = async () => {
                       <PlusIcon className="size-4" /> Add to Cart
                     </button>
                   </div>
+                  </Link>
                 </CarouselItem>
               ))}
             </CarouselContent>

@@ -54,7 +54,7 @@ const CustomerReviews = () => {
         <h1 className="text-2xl font-semibold my-2">Customer Reviews</h1>
         <Link
           className="text-sm text-primary font-semibold border px-2 py-1"
-          href={"/"}
+          href={"/shop"}
         >
           See More...
         </Link>

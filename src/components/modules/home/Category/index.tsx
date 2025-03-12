@@ -20,7 +20,7 @@ const Category = async () => {
         <h1 className="text-2xl font-semibold my-2">Category</h1>
         <Link
           className="text-sm text-primary font-semibold border px-2 py-1"
-          href={"/"}
+          href={"/shop"}
         >
           See More...
         </Link>
@@ -37,18 +37,20 @@ const Category = async () => {
                 key={category._id}
                 className="lg:basis-1/6 md:basis-1/5 sm:basis-1/4 basis-1/3"
               >
-                <Card className="w-full h-[180px] flex flex-col items-center justify-center p-4">
-                  <CardContent className="flex flex-col items-center space-y-2 w-full">
-                    <img
-                      src={category.icon}
-                      alt={category.name}
-                      className="w-20 h-20 object-cover"
-                    />
-                    <p className="text-sm text-black text-center font-medium">
-                      {category.name}
-                    </p>
-                  </CardContent>
-                </Card>
+                <Link href={`/shop?category=${category._id}`}>
+                  <Card className="w-full h-[180px] flex flex-col items-center justify-center p-4">
+                    <CardContent className="flex flex-col items-center space-y-2 w-full">
+                      <img
+                        src={category.icon}
+                        alt={category.name}
+                        className="w-20 h-20 object-cover"
+                      />
+                      <p className="text-sm text-black text-center font-medium">
+                        {category.name}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
               </CarouselItem>
             ))}
           </CarouselContent>

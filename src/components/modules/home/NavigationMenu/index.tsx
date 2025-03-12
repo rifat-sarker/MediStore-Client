@@ -27,7 +27,7 @@ const NavbarMenu = async () => {
         display: "flex",
         justifyContent: "center",
       }}
-      className="bg-primary w-full my-4"
+      className="bg-primary w-full "
     >
       <ShadNavigationMenu className="">
         <NavigationMenuList className="flex flex-wrap">

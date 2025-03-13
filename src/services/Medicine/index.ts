@@ -36,23 +36,3 @@ export const getSingleProduct = async (medicineId: string) => {
     return Error(error.message);
   }
 };
-
-
-// export const getSingleProduct = async (medicineId: string | undefined) => {
-//   if (!medicineId) {
-//     console.error("❌ Invalid Medicine ID:", medicineId);
-//     return null; // Prevents making an invalid request
-//   }
-
-//   try {
-//     const res = await fetch(
-//       `${process.env.NEXT_PUBLIC_BASE_API}/medicines/${medicineId}`
-//     );
-//     if (!res.ok) throw new Error("Failed to fetch medicine");
-
-//     return await res.json();
-//   } catch (error) {
-//     console.error("Error fetching medicine:", error);
-//     return null;
-//   }
-// };

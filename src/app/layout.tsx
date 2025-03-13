@@ -1,3 +1,4 @@
+import "./globals.css"
 import Navbar from "@/components/shared/Navbar";
 import Providers from "@/providers/Providers";
 

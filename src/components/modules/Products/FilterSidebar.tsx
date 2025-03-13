@@ -10,20 +10,6 @@ import { useState } from "react";
 const FilterSidebar = ({categories, products}: {categories: ICategory[], products: IProduct[]}) => {
   const [price, setPrice] = useState(50);
 
-  // const categories = [
-  //   "Laptop & Accessories",
-  //   "Computers Pc",
-  //   "Speakers & Headset",
-  //   "Keyboards & Mouse",
-  //   "Camera",
-  //   "Video Recording",
-  //   "Tablet",
-  //   "Table Lights",
-  // ];
-
-  const brands = ["HP", "Apple", "Dell", "Asus", "Canon"];
-  const ratings = [5, 4, 3, 2, 1];
-  const availability = ["In Stock", "Pre Order", "Upcoming"];
 
   return (
     <Card className="p-4 text-black rounded-md shadow-md w-72">

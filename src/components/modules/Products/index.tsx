@@ -1,8 +1,11 @@
+"use client";
+
 import { IProduct } from "@/types/product";
 import ProductCard from "./ProductCard";
 import FilterSidebar from "./FilterSidebar";
 import { ICategory } from "@/types/category";
-import CategoryCard from "../home/Category/CategoryCard";
+import { useSearchParams } from "next/navigation";
+import { useState, useEffect } from "react";
 
 const AllProducts = ({
   products,
@@ -11,25 +14,53 @@ const AllProducts = ({
   products: IProduct[];
   categories: ICategory[];
 }) => {
+  const searchParams = useSearchParams();
+  const [filteredProducts, setFilteredProducts] =
+    useState<IProduct[]>(products);
+
+ useEffect(() => {
+   const selectedCategory = searchParams.get("category");
+   const maxPrice = searchParams.get("maxPrice");
+
+   let updatedProducts = products;
+
+   if (selectedCategory) {
+     updatedProducts = updatedProducts.filter((product) => {
+       const categoryName =
+         typeof product.category === "string"
+           ? product.category
+           : (product.category as ICategory)?.name; // If category is an object, get its name
+
+       return categoryName?.toLowerCase() === selectedCategory.toLowerCase();
+     });
+   }
+
+   if (maxPrice) {
+     updatedProducts = updatedProducts.filter(
+       (product) => product.price <= Number(maxPrice)
+     );
+   }
+
+   setFilteredProducts(updatedProducts);
+ }, [searchParams, products]);
+
   return (
     <div className="flex gap-8 my-10">
-      <div>
-        <FilterSidebar products={products} categories={categories} />
-      </div>
-      <div className="">
-        <h2 className="text-xl font-bold mb-4">Featured Categories</h2>
-        <div className="grid grid-cols-6 gap-6">
-          {categories?.slice(0, 6).map((category: ICategory, idx: number) => (
-            <CategoryCard key={idx} category={category} />
-          ))}
-        </div>
+      <FilterSidebar categories={categories} />
 
+      <div>
         <h2 className="text-xl font-bold my-4">All Products</h2>
-        <div className="grid grid-cols-6 gap-8">
-          {products?.map((product: IProduct, idx: number) => (
-            <ProductCard key={idx} product={product} />
-          ))}
-        </div>
+        {filteredProducts.length > 0 ? (
+          <div className="grid grid-cols-6 gap-8">
+            {filteredProducts.map((product, idx) => (
+              <ProductCard key={idx} product={product} />
+            ))}
+          </div>
+        ) : (
+          <p className="text-red-500 font-semibold text-lg mt-4">
+            No products found matching your criteria.
+          </p>
+        )}
       </div>
     </div>
   );

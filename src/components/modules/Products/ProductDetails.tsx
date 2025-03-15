@@ -47,7 +47,7 @@ const ProductDetails = ({
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink href="/medicine" className="hover:text-primary">
+            <BreadcrumbLink href="/shop" className="hover:text-primary">
               Medicine
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -59,32 +59,22 @@ const ProductDetails = ({
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-
-      {/* Product Layout */}
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-        {/* Left Section - Image & Tabs */}
         <div className="w-full md:w-1/2 space-y-6 flex flex-col items-center">
-          {/* Product Image */}
           <img
             src={product?.image}
             alt={product.name}
             className="w-72 h-72 md:w-80 md:h-80 object-cover border p-4 rounded-md transition-all duration-300 hover:scale-105"
           />
-
-          {/* Tabs Section */}
           <Tabs defaultValue="product_details" className="w-full max-w-md">
             <TabsList className="grid grid-cols-3">
               <TabsTrigger value="product_details">Details</TabsTrigger>
               <TabsTrigger value="information">Information</TabsTrigger>
               <TabsTrigger value="review">Reviews</TabsTrigger>
             </TabsList>
-
-            {/* Product Description */}
             <TabsContent value="product_details">
               <p className="text-gray-600">{product?.description}</p>
             </TabsContent>
-
-            {/* Product Information Table */}
             <TabsContent value="information">
               <Table>
                 <TableBody>
@@ -109,23 +99,20 @@ const ProductDetails = ({
               </Table>
             </TabsContent>
 
-            {/* Review Section */}
             <TabsContent value="review">
               <p className="text-gray-500">No reviews yet.</p>
             </TabsContent>
           </Tabs>
         </div>
-
-        {/* Right Section - Product Info & Buy Button */}
         <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
           <h2 className="font-semibold text-2xl text-gray-800">
             {product.name}
           </h2>
           <p className="text-gray-600">Brand: {product.brand}</p>
+          <p className="text-gray-600">Availability: {product.availability == true ? "In Stock" : "Out of Stock"}</p>
           <p className="text-2xl font-semibold text-primary">
             ৳ {product.price}
           </p>
-
           <button className="mt-auto text-sm font-semibold border-primary text-primary border px-4 py-2 flex mx-auto md:mx-0 items-center justify-center gap-1 hover:text-white hover:bg-primary">
             <ShoppingCart className="size-4" /> Add to Cart
           </button>

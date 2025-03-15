@@ -7,6 +7,7 @@ export interface IProduct {
   brand: string;
   price: number;
   stock: number;
+  availability:boolean;
   manufacturer: string;
   expiryDate: string;
   _id: string;

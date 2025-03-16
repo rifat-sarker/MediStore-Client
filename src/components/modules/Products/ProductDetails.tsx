@@ -37,7 +37,6 @@ const ProductDetails = ({
 
   return (
     <div className="p-4 space-y-6">
-      {/* Breadcrumb Navigation */}
       <Breadcrumb>
         <BreadcrumbList className="text-gray-600 text-sm">
           <BreadcrumbItem>

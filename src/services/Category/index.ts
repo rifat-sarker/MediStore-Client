@@ -1,6 +1,6 @@
 "use server";
 
-//get all categories
+//get all categories from db
 export const getAllCategories = async (page?: string, limit?: string) => {
   try {
     const res = await fetch(

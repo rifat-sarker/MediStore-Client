@@ -20,6 +20,8 @@ import { SearchParams } from "@/types/common";
 //   }
 // };
 
+
+// get all product from db
 export const getAllProduct = async (searchParams: SearchParams = {}) => {
   const { minPrice, maxPrice, categories, page, limit } = searchParams;
 

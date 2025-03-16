@@ -1,5 +1,5 @@
 "user server"
-
+// add product to user wishlist 
 export const addToWishlist = async (productId: string) => {
   try {
     const res = await fetch(

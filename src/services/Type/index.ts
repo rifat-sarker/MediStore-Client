@@ -1,5 +1,5 @@
 "use server";
-//get all types
+//get all types from db
 export const getAllTypes = async (page?: string, limit?: string) => {
   try {
     const res = await fetch(

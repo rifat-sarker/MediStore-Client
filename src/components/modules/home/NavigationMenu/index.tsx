@@ -31,7 +31,7 @@ const NavbarMenu = async () => {
     >
       <ShadNavigationMenu className="">
         <NavigationMenuList className="flex flex-wrap">
-          {categories.map((category: ICategory) => (
+          {categories?.map((category: ICategory) => (
             <NavigationMenuItem key={category._id}>
               <NavigationMenuTrigger
                 style={{

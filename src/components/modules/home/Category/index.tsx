@@ -32,7 +32,7 @@ const Category = async () => {
           <CarouselNext className="absolute right-[-40px] top-1/2 -translate-y-1/2 transform z-10 p-2 rounded-full shadow-md" />
 
           <CarouselContent className="flex items-center">
-            {categories.map((category: ICategory) => (
+            {categories?.map((category: ICategory) => (
               <CarouselItem
                 key={category._id}
                 className="lg:basis-1/6 md:basis-1/5 sm:basis-1/4 basis-1/3"

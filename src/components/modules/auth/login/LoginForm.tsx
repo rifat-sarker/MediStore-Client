@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/form";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Link from "next/link";
+import { KeyIcon, LockIcon, LockKeyhole, LockKeyholeIcon, LogInIcon } from "lucide-react";
 
 const LoginForm = () => {
   const form = useForm({
@@ -29,7 +30,13 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="">
+    <div className="border-2 border-gray-300 rounded-xl flex-grow max-w-md w-full p-5 space-y-4">
+      <div className="text-center mx-auto">
+        <h1 className="text-2xl font-bold">Login <LockKeyholeIcon className="inline"/> </h1>
+        <p className="font-light text-sm text-gray-600">
+          Get the medicines you need, delivered to your doorstep!
+        </p>
+      </div>
       <Form {...form}>
         <form className="space-y-4" onSubmit={form.handleSubmit(onsubmit)}>
           <FormField
@@ -40,7 +47,7 @@ const LoginForm = () => {
                 <FormLabel>Email</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="shadcn"
+                    placeholder="email"
                     {...field}
                     value={field.value || ""}
                   />
@@ -58,7 +65,7 @@ const LoginForm = () => {
                 <FormLabel>Password</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="shadcn"
+                    placeholder="password"
                     {...field}
                     value={field.value || ""}
                   />
@@ -69,7 +76,8 @@ const LoginForm = () => {
             )}
           />
           <Button className="w-full" type="submit">
-            {isSubmitting ? "Login..." : "Login"}
+            {isSubmitting ? "Login..." : "Login"}{" "}
+            <LogInIcon className="inline" />
           </Button>
         </form>
       </Form>

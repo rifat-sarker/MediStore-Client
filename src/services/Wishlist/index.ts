@@ -1,4 +1,4 @@
-"user server"
+"use server"
 // add product to user wishlist 
 export const addToWishlist = async (productId: string) => {
   try {

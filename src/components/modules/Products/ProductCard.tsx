@@ -27,8 +27,8 @@ const ProductCard = ({ product }: { product: IProduct }) => {
   const handleAddToWishlit = async () => {
     try {
       const res = await addToWishlist({
-        // user: user._id,
-        // products: [product._id]
+        user: user._id,
+        products: [product._id]
       });
       if (res.success) {
         console.log(res);

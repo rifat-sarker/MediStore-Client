@@ -14,7 +14,14 @@ import {
 } from "@/components/ui/form";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Link from "next/link";
-import { KeyIcon, LockIcon, LockKeyhole, LockKeyholeIcon, LogInIcon } from "lucide-react";
+import {
+  KeyIcon,
+  LockIcon,
+  LockKeyhole,
+  LockKeyholeIcon,
+  LogInIcon,
+} from "lucide-react";
+import { loginUser } from "@/services/AuthService";
 
 const LoginForm = () => {
   const form = useForm({
@@ -26,13 +33,21 @@ const LoginForm = () => {
   } = form;
 
   const onsubmit: SubmitHandler<FieldValues> = async (data) => {
+    try {
+      const res = await loginUser(data);
+      console.log(res);
+    } catch (error) {
+      console.error("Error:", error);
+    }
     console.log(data);
   };
 
   return (
     <div className="border-2 border-gray-300 rounded-xl flex-grow max-w-md w-full p-5 space-y-4">
       <div className="text-center mx-auto">
-        <h1 className="text-2xl font-bold">Login <LockKeyholeIcon className="inline"/> </h1>
+        <h1 className="text-2xl font-bold">
+          Login <LockKeyholeIcon className="inline" />{" "}
+        </h1>
         <p className="font-light text-sm text-gray-600">
           Get the medicines you need, delivered to your doorstep!
         </p>

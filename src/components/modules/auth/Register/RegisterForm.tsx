@@ -17,8 +17,11 @@ import { LockKeyholeIcon, LogInIcon } from "lucide-react";
 import { registerUser } from "@/services/AuthService";
 import { toast } from "sonner";
 import { registrationSchema } from "./registerValidation";
+import { useRouter } from "next/navigation";
 
 const RegisterForm = () => {
+  const router = useRouter();
+
   const form = useForm({
     resolver: zodResolver(registrationSchema),
   });
@@ -38,6 +41,8 @@ const RegisterForm = () => {
       console.log("Response:", res);
       if (res?.success) {
         toast.success(res?.message);
+        form.reset()
+        router.push("/login")
       } else {
         toast.error(res?.message);
       }

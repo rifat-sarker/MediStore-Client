@@ -12,25 +12,38 @@ import {
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { registrationSchema } from "./registerValidaiton";
 import Link from "next/link";
 import { LockKeyholeIcon, LogInIcon } from "lucide-react";
+import { registerUser } from "@/services/AuthService";
+import { toast } from "sonner";
+import { registrationSchema } from "./registerValidation";
 
 const RegisterForm = () => {
   const form = useForm({
     resolver: zodResolver(registrationSchema),
   });
-
   const {
     formState: { isSubmitting },
   } = form;
+
   const password = form.watch("password");
   const passwordConfirm = form.watch("passwordConfirm");
 
-    console.log(password, passwordConfirm);
+  // console.log(password, passwordConfirm);
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
-    console.log(data);
+    // console.log("Form Data:", data);
+    try {
+      const res = await registerUser(data);
+      console.log("Response:", res);
+      if (res?.success) {
+        toast.success(res?.message);
+      } else {
+        toast.error(res?.message);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (
@@ -47,7 +60,20 @@ const RegisterForm = () => {
       </div>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
-         
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Name</FormLabel>
+                <FormControl>
+                  <Input type="text" {...field} value={field.value || ""} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
           <FormField
             control={form.control}
             name="email"
@@ -56,6 +82,32 @@ const RegisterForm = () => {
                 <FormLabel>Email</FormLabel>
                 <FormControl>
                   <Input type="email" {...field} value={field.value || ""} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Phone</FormLabel>
+                <FormControl>
+                  <Input type="text" {...field} value={field.value || ""} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="address"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Address</FormLabel>
+                <FormControl>
+                  <Input type="text" {...field} value={field.value || ""} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -84,17 +136,14 @@ const RegisterForm = () => {
                 <FormControl>
                   <Input type="password" {...field} value={field.value || ""} />
                 </FormControl>
-                {passwordConfirm && password !== passwordConfirm ? (
-                  <FormMessage> Passwords do not match</FormMessage>
-                ) : (
-                  <FormMessage />
-                )}
+                <FormMessage />
               </FormItem>
             )}
           />
           <Button
             // disabled={passwordConfirm && password !== passwordConfirm ? true : false}
-            disabled={!passwordConfirm && password !== passwordConfirm}
+            // disabled={!passwordConfirm && password !== passwordConfirm}
+            disabled={isSubmitting || password !== passwordConfirm}
             className="my-4 w-full mt-5 "
             type="submit"
           >

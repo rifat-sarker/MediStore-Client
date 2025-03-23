@@ -27,7 +27,7 @@ const RegisterForm = () => {
   const password = form.watch("password");
   const passwordConfirm = form.watch("passwordConfirm");
 
-  //   console.log(password, passwordConfirm);
+    console.log(password, passwordConfirm);
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     console.log(data);
@@ -47,6 +47,7 @@ const RegisterForm = () => {
       </div>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
+         
           <FormField
             control={form.control}
             name="email"
@@ -54,12 +55,7 @@ const RegisterForm = () => {
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder="email"
-                    type="email"
-                    {...field}
-                    value={field.value || ""}
-                  />
+                  <Input type="email" {...field} value={field.value || ""} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -72,12 +68,7 @@ const RegisterForm = () => {
               <FormItem>
                 <FormLabel>Password</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder="password"
-                    type="password"
-                    {...field}
-                    value={field.value || ""}
-                  />
+                  <Input type="password" {...field} value={field.value || ""} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -91,12 +82,7 @@ const RegisterForm = () => {
               <FormItem>
                 <FormLabel>Confirm Password</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder="password"
-                    type="password"
-                    {...field}
-                    value={field.value || ""}
-                  />
+                  <Input type="password" {...field} value={field.value || ""} />
                 </FormControl>
                 {passwordConfirm && password !== passwordConfirm ? (
                   <FormMessage> Passwords do not match</FormMessage>
@@ -112,7 +98,7 @@ const RegisterForm = () => {
             className="my-4 w-full mt-5 "
             type="submit"
           >
-            {isSubmitting ? "Registering..." : "Register"} <LogInIcon />
+            {isSubmitting ? "Registering..." : "Register"}
           </Button>
         </form>
       </Form>

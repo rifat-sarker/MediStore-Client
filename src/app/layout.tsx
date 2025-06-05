@@ -1,7 +1,12 @@
-import "./globals.css"
+import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Providers from "@/providers/Providers";
 import { Toaster } from "sonner";
+import { Open_Sans } from "next/font/google";
+
+const open_Sans = Open_Sans({
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -10,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <Providers>
-      <html lang="en">
+      <html lang="en" className={open_Sans.className}>
         <body>
           {/* <Navbar /> */}
           {children}

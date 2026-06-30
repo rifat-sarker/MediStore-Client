@@ -7,7 +7,7 @@ const CategoryCard = ({category}: {category: ICategory}) => {
       <div className="bg-opacity-50 border rounded-2xl text-center p-6 h-44">
         <div className="w-24 h-24 mx-auto">
           <Image
-            src={category?.icon}
+            src={category?.imageUrl || ""}
             width={96}
             height={96}
             alt="category icon"

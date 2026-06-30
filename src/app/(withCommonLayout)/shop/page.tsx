@@ -6,8 +6,8 @@ import { ICategory } from "@/types/category";
 import { SearchParams } from "@/types/common";
 
 
-const ShopPage = async ({ searchParams }: { searchParams: SearchParams }) => {
-  const { minPrice, maxPrice, categories } =  searchParams;
+const ShopPage = async ({ searchParams }: { searchParams: Promise<SearchParams> }) => {
+  const { minPrice, maxPrice, categories } = await searchParams;
 
   const { data: products } = await getAllProduct({
     minPrice,

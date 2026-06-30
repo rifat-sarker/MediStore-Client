@@ -14,14 +14,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Providers>
-      <html lang="en" className={open_Sans.className}>
-        <body>
+    <html lang="en" className={open_Sans.className}>
+      <body>
+        <Providers>
           {/* <Navbar /> */}
           {children}
           <Toaster richColors position={"top-center"} />
-        </body>
-      </html>
-    </Providers>
+        </Providers>
+      </body>
+    </html>
   );
 }
+

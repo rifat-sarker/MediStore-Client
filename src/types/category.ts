@@ -1,13 +1,6 @@
 export interface ICategory {
-  _id: string;
+  id: string;
   name: string;
-  description: string;
-  parent: any;
-  isActive: boolean;
-  createdBy: string;
-  icon: string;
-  slug: string;
-  createdAt: string;
-  updatedAt: string;
-  children: ICategory[];
+  imageUrl?: string;
+  medicines?: any[];
 }

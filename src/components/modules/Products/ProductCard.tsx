@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -8,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { addToWishlist } from "@/services/Wishlist";
 
 import { IProduct } from "@/types/product";
 
@@ -22,28 +19,26 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { toast } from "sonner";
+import { useAppDispatch } from "@/redux/hooks";
+import { addProduct } from "@/redux/features/cartSlice";
 
 const ProductCard = ({ product }: { product: IProduct }) => {
+  const dispatch = useAppDispatch();
+
   const handleAddToWishlit = async () => {
-    try {
-      const res = await addToWishlist({
-        user: user._id,
-        products: [product._id]
-      });
-      if (res.success) {
-        console.log(res);
-      }
-      toast.success("Product added to wishlist");
-      console.log(product._id);
-    } catch (error) {
-      toast.error("Failed to add product to wishlist");
-    }
+    toast.error("Wishlist feature is currently disabled");
   };
+
+  const handleAddToCart = () => {
+    dispatch(addProduct(product));
+    toast.success("Added to Cart!");
+  };
+
   return (
     <div className="relative border p-4 rounded-md h-[280px] flex flex-col justify-between items-center text-center">
-      <Link href={`/medicine/${product._id}`}>
+      <Link href={`/medicine/${product.id}`}>
         <img
-          src={product.image}
+          src={product.imageUrl || ""}
           alt={product.name}
           className="w-20 h-20 object-cover rounded-md"
         />
@@ -55,7 +50,10 @@ const ProductCard = ({ product }: { product: IProduct }) => {
         <h2 className="text-sm font-medium">{product.name}</h2>
         <p className="text-gray-600 text-sm mt-1">MRP. {product.price}</p>
       </div>
-      <button className="mt-auto text-sm font-semibold border-primary text-primary border px-4 py-2 w-full flex items-center justify-center gap-1 hover:text-white hover:bg-primary">
+      <button 
+        onClick={handleAddToCart}
+        className="mt-auto text-sm font-semibold border-primary text-primary border px-4 py-2 w-full flex items-center justify-center gap-1 hover:text-white hover:bg-primary"
+      >
         <PlusIcon className="size-4" /> Add to Cart
       </button>
     </div>

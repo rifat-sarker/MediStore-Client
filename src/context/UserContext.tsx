@@ -8,16 +8,16 @@ import {
 } from "react";
 
 interface IUserProviderValues {
-  user: IUser;
+  user: IUser | null;
   isLoading: boolean;
   setUser: (user: IUser | null) => void;
   setIsLoading: Dispatch<SetStateAction<boolean>>;
 }
 
-const UserContext = createContext(undefined);
+const UserContext = createContext<IUserProviderValues | undefined>(undefined);
 
 const UserProvider = ({ children }: { children: React.ReactNode }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<IUser | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   const handleUser = async () => {
@@ -31,7 +31,7 @@ const UserProvider = ({ children }: { children: React.ReactNode }) => {
   }, [isLoading]);
   return (
     <UserContext.Provider
-      value={{ user, setUser, isloading: isLoading, setIsLoading }}
+      value={{ user, setUser, isLoading, setIsLoading }}
     >
       {children}
     </UserContext.Provider>

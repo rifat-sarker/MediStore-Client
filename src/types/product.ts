@@ -1,17 +1,17 @@
+import { ICategory } from "./category";
+
 export interface IProduct {
+  id: string;
   name: string;
   description: string;
-  category: string;
-  image: string;
-  type: string;
-  brand: string;
   price: number;
   stock: number;
-  availability:boolean;
+  requiredPrescription: boolean;
   manufacturer: string;
   expiryDate: string;
-  _id: string;
+  imageUrl?: string;
+  categoryId: string;
+  category?: ICategory;
   createdAt: string;
   updatedAt: string;
-  __v: number;
 }

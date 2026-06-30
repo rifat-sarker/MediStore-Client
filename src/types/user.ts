@@ -2,9 +2,9 @@ export interface IUser {
   userId: string;
   name: string;
   email: string;
-  hasShop?: boolean;
-  isActive?: boolean;
-  role: "user" | "admin";
+  role: "ADMIN" | "CUSTOMER" | "RIDER";
+  phone?: string;
+  address?: string;
   iat?: number;
   exp?: number;
 }

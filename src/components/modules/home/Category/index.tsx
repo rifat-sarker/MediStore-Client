@@ -34,14 +34,14 @@ const Category = async () => {
           <CarouselContent className="flex items-center">
             {categories?.map((category: ICategory) => (
               <CarouselItem
-                key={category._id}
+                key={category.id}
                 className="lg:basis-1/6 md:basis-1/5 sm:basis-1/4 basis-1/3"
               >
-                <Link href={`/shop?category=${category._id}`}>
+                <Link href={`/shop?category=${category.id}`}>
                   <Card className="w-full h-[180px] flex flex-col items-center justify-center p-4">
                     <CardContent className="flex flex-col items-center space-y-2 w-full">
                       <img
-                        src={category.icon}
+                        src={category.imageUrl || ""}
                         alt={category.name}
                         className="w-20 h-20 object-cover"
                       />

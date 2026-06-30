@@ -33,13 +33,13 @@ const FeaturedProducts = async () => {
             <CarouselContent className="flex items-center mx-auto">
               {products?.slice(0, 10).map((product: IProduct) => (
                 <CarouselItem
-                  key={product._id}
+                  key={product.id}
                   className="lg:basis-1/6 md:basis-1/5 sm:basis-1/4 basis-1/3"
                 >
-                  <Link href={`/medicine/${product._id}`}>              
+                  <Link href={`/medicine/${product.id}`}>              
                   <div className="border p-4 rounded-md h-[280px] flex flex-col justify-between items-center text-center">
                     <img
-                      src={product.image}
+                      src={product.imageUrl || ""}
                       alt={product.name}
                       className="w-20 h-20 object-cover rounded-md"
                     />

@@ -5,7 +5,7 @@ import { FieldValues } from "react-hook-form";
 
 export const registerUser = async (userData: FieldValues) => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/user`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -13,9 +13,7 @@ export const registerUser = async (userData: FieldValues) => {
       body: JSON.stringify(userData),
     });
     const result = await res.json();
-    if (result.success) {
-      (await cookies()).set("accessToken", result.data.accessToken);
-    }
+    // Registration sends OTP, token comes after verify-otp step
     return result;
   } catch (error: any) {
     return Error(error);
@@ -41,3 +39,8 @@ export const loginUser = async (userData: FieldValues) => {
     return Error(error);
   }
 };
+
+export const logoutUser = async () => {
+  (await cookies()).delete("accessToken");
+};
+

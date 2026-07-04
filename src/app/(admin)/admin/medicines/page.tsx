@@ -6,11 +6,18 @@ import { toast } from "sonner";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_API!;
 
+import { getAccessToken } from "@/services/AuthService/userUtils";
+
 async function authFetch(url: string, options: RequestInit = {}) {
+  const token = await getAccessToken();
   const res = await fetch(url, {
     ...options,
     credentials: "include",
-    headers: { "Content-Type": "application/json", ...(options.headers || {}) },
+    headers: { 
+      "Content-Type": "application/json", 
+      ...(token ? { "Authorization": `Bearer ${token}` } : {}),
+      ...(options.headers || {}) 
+    },
   });
   return res.json();
 }
@@ -47,16 +54,20 @@ export default function MedicinesManager() {
   const [submitting, setSubmitting] = useState(false);
   const [deleting, setDeleting] = useState<string | null>(null);
 
+  const [page, setPage] = useState(1);
+  const [meta, setMeta] = useState({ totalPage: 1, total: 0 });
+
   const fetchData = useCallback(async () => {
     setLoading(true);
     const [medsData, catsData] = await Promise.all([
-      authFetch(`${BASE}/medicines?limit=100`),
+      authFetch(`${BASE}/medicines?limit=10&page=${page}`),
       authFetch(`${BASE}/categories?limit=100`),
     ]);
     setMedicines(medsData.data || []);
+    setMeta(medsData.meta || { totalPage: 1, total: 0 });
     setCategories(catsData.data || []);
     setLoading(false);
-  }, []);
+  }, [page]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
 
@@ -188,6 +199,17 @@ export default function MedicinesManager() {
           </tbody>
         </table>
       </div>
+
+      {/* Pagination */}
+      {!loading && meta.totalPage > 1 && (
+        <div className="flex justify-between items-center mt-6">
+          <p className="text-sm text-muted-foreground">Showing page {page} of {meta.totalPage}</p>
+          <div className="flex gap-2">
+            <button disabled={page === 1} onClick={() => setPage(p => p - 1)} className="px-4 py-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded-xl disabled:opacity-50 transition-colors text-sm font-medium">Previous</button>
+            <button disabled={page >= meta.totalPage} onClick={() => setPage(p => p + 1)} className="px-4 py-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded-xl disabled:opacity-50 transition-colors text-sm font-medium">Next</button>
+          </div>
+        </div>
+      )}
 
       {/* Modal */}
       {showModal && (

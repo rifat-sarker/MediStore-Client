@@ -1,7 +1,20 @@
-import { ArrowRight, ShieldCheck, Zap, Truck, HeartPulse } from "lucide-react";
+"use client";
+
+import { ArrowRight, ShieldCheck, Zap, Truck, HeartPulse, Search } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const router = useRouter();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchTerm.trim()) {
+      router.push(`/shop?searchTerm=${encodeURIComponent(searchTerm)}`);
+    }
+  };
   return (
     <section className="relative pt-24 pb-32 overflow-hidden bg-background">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background pointer-events-none" />
@@ -43,6 +56,23 @@ export default function Hero() {
                 Browse Categories
               </Link>
             </div>
+
+            <form onSubmit={handleSearch} className="relative pt-4 w-full max-w-lg mx-auto lg:mx-0">
+              <Search className="absolute left-4 top-[55%] -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Search for medicines, categories..."
+                className="w-full pl-12 pr-4 py-4 rounded-full border-2 border-primary/20 bg-card text-base focus:outline-none focus:ring-2 focus:ring-primary shadow-lg shadow-primary/5 transition-all"
+              />
+              <button 
+                type="submit"
+                className="absolute right-2 top-[55%] -translate-y-1/2 bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:bg-primary/90 transition-colors"
+              >
+                Search
+              </button>
+            </form>
 
             <div className="grid grid-cols-3 gap-4 pt-8 border-t border-border/50">
               {[

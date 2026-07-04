@@ -7,18 +7,21 @@ import { SearchParams } from "@/types/common";
 
 
 const ShopPage = async ({ searchParams }: { searchParams: Promise<SearchParams> }) => {
-  const { minPrice, maxPrice, categories } = await searchParams;
+  const { minPrice, maxPrice, categories, page, limit, searchTerm } = await searchParams;
 
-  const { data: products } = await getAllProduct({
+  const { data: products, meta } = await getAllProduct({
     minPrice,
     maxPrice,
     categories,
+    page: page || "1",
+    limit: limit || "10",
+    searchTerm
   });
   const { data: categoriesData } = await getAllCategories();
 
   return (
     <div className="p-4">
-      <AllProducts categories={categoriesData} products={products} />
+      <AllProducts categories={categoriesData} products={products || []} meta={meta} />
     </div>
   );
 };

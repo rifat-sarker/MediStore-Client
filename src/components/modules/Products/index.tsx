@@ -10,11 +10,15 @@ import { useState, useEffect } from "react";
 const AllProducts = ({
   products,
   categories,
+  meta,
 }: {
   products: IProduct[];
   categories: ICategory[];
+  meta?: { page: number; limit: number; total: number; totalPage: number };
 }) => {
   const searchParams = useSearchParams();
+  const router = import("next/navigation").then(m => m.useRouter).catch(() => null); // or just import
+
   const [filteredProducts, setFilteredProducts] =
     useState<IProduct[]>(products);
 
@@ -64,6 +68,37 @@ const AllProducts = ({
           <p className="text-red-500 font-semibold text-lg mt-4">
             No products found matching your criteria.
           </p>
+        )}
+        
+        {/* Pagination */}
+        {meta && meta.totalPage > 1 && (
+          <div className="flex justify-between items-center mt-10">
+            <p className="text-sm text-muted-foreground">Showing page {meta.page} of {meta.totalPage}</p>
+            <div className="flex gap-2">
+              <button 
+                disabled={meta.page === 1} 
+                onClick={() => {
+                  const params = new URLSearchParams(searchParams.toString());
+                  params.set("page", String(meta.page - 1));
+                  window.location.search = params.toString();
+                }} 
+                className="px-4 py-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded-xl disabled:opacity-50 transition-colors text-sm font-medium"
+              >
+                Previous
+              </button>
+              <button 
+                disabled={meta.page >= meta.totalPage} 
+                onClick={() => {
+                  const params = new URLSearchParams(searchParams.toString());
+                  params.set("page", String(meta.page + 1));
+                  window.location.search = params.toString();
+                }} 
+                className="px-4 py-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded-xl disabled:opacity-50 transition-colors text-sm font-medium"
+              >
+                Next
+              </button>
+            </div>
+          </div>
         )}
       </div>
     </div>

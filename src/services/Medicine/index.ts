@@ -33,6 +33,7 @@ export const getAllProduct = async (searchParams: SearchParams = {}) => {
     if (categories) query.append("categories", categories);
     if (page) query.append("page", page);
     if (limit) query.append("limit", limit);
+    if (searchParams.searchTerm) query.append("searchTerm", searchParams.searchTerm);
 
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_BASE_API}/medicines?${query.toString()}`,

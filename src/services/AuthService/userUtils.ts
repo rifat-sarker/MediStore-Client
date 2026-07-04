@@ -22,6 +22,11 @@ export const getCurrentUser = async () => {
   }
 };
 
+export const getAccessToken = async () => {
+  const cookieStore = await cookies();
+  return cookieStore.get("accessToken")?.value;
+};
+
 export const logout = async () => {
   const cookieStore = await cookies();
   cookieStore.delete("accessToken");

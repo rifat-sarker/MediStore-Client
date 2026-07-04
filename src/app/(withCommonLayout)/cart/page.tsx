@@ -28,31 +28,24 @@ const CartPage = () => {
     setIsCheckingOut(true);
 
     try {
-      // The API endpoint takes an array of { medicineId, quantity }
       const items = products.map((p) => ({
-        medicineId: p.id,
+        product: p.id,
         quantity: p.orderQuantity,
       }));
 
-      // Calculate total price based on backend schema
-      const totalPrice = total;
-
       const orderData = {
-        totalPrice,
-        items,
-        deliveryAddress: "Random User Address", // We can ask user to input this later, but for now fixed
+        products: items,
+        shippingAddress: "Random User Address",
+        paymentMethod: "CASH_ON_DELIVERY",
       };
 
       const result = await createOrder(orderData);
 
       if (result?.success) {
-        toast.success("Order initiated!");
+        toast.success("Order placed successfully! (Payment on hold)");
         dispatch(clearCart());
-        if (result.data?.paymentUrl) {
-          window.location.href = result.data.paymentUrl;
-        } else {
-          toast.error("Failed to get payment URL");
-        }
+        // Redirect to shop or orders
+        window.location.href = "/";
       } else {
         toast.error(result?.message || "Failed to create order");
       }

@@ -19,7 +19,7 @@ export default function MedicineCard({ medicine }: { medicine: Medicine }) {
         </div>
       )}
       
-      <Link href={`/medicines/${medicine.id}`} className="block relative aspect-[4/3] overflow-hidden bg-secondary/30">
+      <Link href={`/medicine/${medicine.id}`} className="block relative aspect-[4/3] overflow-hidden bg-secondary/30">
         {medicine.imageUrl ? (
           <img 
             src={medicine.imageUrl} 
@@ -35,7 +35,7 @@ export default function MedicineCard({ medicine }: { medicine: Medicine }) {
       
       <div className="p-5 flex flex-col flex-1">
         <div className="flex-1">
-          <Link href={`/medicines/${medicine.id}`}>
+          <Link href={`/medicine/${medicine.id}`}>
             <h3 className="font-semibold text-lg text-foreground hover:text-primary transition-colors line-clamp-1">
               {medicine.name}
             </h3>

@@ -108,8 +108,8 @@ const ProductDetails = ({
   product: IProduct;
   categories: ICategory[];
 }) => {
-  const productCategory = categories.find(
-    (category) => category.id === product.categoryId
+  const productCategory = (categories || []).find(
+    (category) => category.id === product?.categoryId
   );
 
   return (

@@ -3,8 +3,14 @@
 //get all categories from db
 export const getAllCategories = async (page?: string, limit?: string) => {
   try {
+    const query = new URLSearchParams();
+    if (page) query.append("page", page);
+    if (limit) query.append("limit", limit);
+
+    const queryString = query.toString() ? `?${query.toString()}` : "";
+
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_API}/categories?limit=${limit}&page=${page}`,
+      `${process.env.NEXT_PUBLIC_BASE_API}/categories${queryString}`,
       {
         next: {
           tags: ["CATEGORY"],

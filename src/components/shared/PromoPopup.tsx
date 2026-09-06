@@ -33,7 +33,7 @@ export default function PromoPopup() {
       />
       
       {/* Modal */}
-      <div className="relative bg-card w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-300">
+      <div className="relative bg-card w-full max-w-lg rounded-[2.5rem] shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-300">
         
         {/* Close Button */}
         <button 

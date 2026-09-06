@@ -52,18 +52,18 @@ export default function MedicineCard({ medicine }: { medicine: IProduct }) {
 
   return (
     <Link href={`/medicines/${medicine.id}`} className="block h-full group relative">
-      <div className="bg-card border border-border/50 rounded-[2.5rem] p-5 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/15 hover:border-primary/30 flex flex-col h-full relative overflow-hidden">
+      <div className="bg-card border border-border/50 rounded-none p-5 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/15 hover:border-primary/30 flex flex-col h-full relative overflow-hidden">
         
         {/* Favorite Icon */}
         <button 
           onClick={toggleFavorite}
-          className="absolute top-5 right-5 z-10 p-3 rounded-full bg-white/90 backdrop-blur shadow-sm hover:bg-red-50 border border-border/50 transition-all group-hover:opacity-100 opacity-80 hover:scale-110"
+          className="absolute top-5 right-5 z-10 p-3 rounded-none bg-white/90 backdrop-blur shadow-sm hover:bg-red-50 border border-border/50 transition-all group-hover:opacity-100 opacity-80 hover:scale-110"
         >
           <Heart className={`w-5 h-5 transition-colors ${isFavorite ? 'fill-red-500 text-red-500' : 'text-muted-foreground hover:text-red-500'}`} />
         </button>
 
         {/* Image Container */}
-        <div className="relative w-full aspect-[4/3] rounded-[1.5rem] overflow-hidden bg-white mb-5 flex items-center justify-center p-4 shadow-sm border border-border/20">
+        <div className="relative w-full aspect-[4/3] rounded-none overflow-hidden bg-white mb-5 flex items-center justify-center p-4 shadow-sm border border-border/20">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
           <div className="relative w-full h-full flex items-center justify-center">
             <Image

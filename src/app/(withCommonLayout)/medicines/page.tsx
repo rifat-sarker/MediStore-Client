@@ -88,7 +88,7 @@ export default async function MedicinesPage({
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar Filters */}
           <aside className="w-full lg:w-72 shrink-0">
-            <form method="GET" action="/medicines" className="bg-card border border-border rounded-[2.5rem] p-7 sticky top-24 shadow-xl shadow-primary/5">
+            <form method="GET" action="/medicines" className="bg-card border border-border rounded-none p-7 sticky top-24 shadow-xl shadow-primary/5">
               
               {/* Keep search query if it exists */}
               {params.search && <input type="hidden" name="search" value={params.search} />}

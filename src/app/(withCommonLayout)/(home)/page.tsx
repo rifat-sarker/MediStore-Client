@@ -141,17 +141,17 @@ export default async function HomePage() {
             <p className="text-white/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
               Subscribe to our newsletter for exclusive health tips, early access to sales, and premium discounts delivered straight to your inbox.
             </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" onSubmit={(e) => e.preventDefault()}>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
               <input 
                 type="email" 
                 placeholder="Enter your email address" 
                 className="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/30 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white/20 transition-all"
                 required
               />
-              <button type="submit" className="px-8 py-4 bg-white text-primary font-bold rounded-full hover:bg-white/90 hover:scale-105 transition-all shadow-lg">
+              <button type="button" className="px-8 py-4 bg-white text-primary font-bold rounded-full hover:bg-white/90 hover:scale-105 transition-all shadow-lg">
                 Subscribe Now
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </section>

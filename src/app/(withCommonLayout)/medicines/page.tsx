@@ -1,6 +1,6 @@
 import MedicineCard from "@/components/modules/home/MedicineCard";
 import { API_BASE_URL, fetchCategories } from "@/lib/api";
-import { Filter, SlidersHorizontal, CheckSquare, Search } from "lucide-react";
+import { Filter, Search } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -42,6 +42,22 @@ export default async function MedicinesPage({
     ];
   }
 
+  // Active Filtering Logic for Mock Data / Post-API Processing
+  if (params.search) {
+    medicines = medicines.filter(m => m.name.toLowerCase().includes(params.search!.toLowerCase()));
+  }
+  // Category might not be explicitly tied to mock items, but we'll try to simulate if we had it.
+  
+  if (params.minPrice) {
+    medicines = medicines.filter(m => m.price >= Number(params.minPrice));
+  }
+  if (params.maxPrice) {
+    medicines = medicines.filter(m => m.price <= Number(params.maxPrice));
+  }
+  if (params.rx === "on") {
+    medicines = medicines.filter(m => m.requiredPrescription === true);
+  }
+
   let categories = await fetchCategories();
   if (!categories || categories.length === 0) {
     categories = [
@@ -67,22 +83,16 @@ export default async function MedicinesPage({
               Browse <span className="font-semibold text-foreground">{medicines.length}</span> verified healthcare products.
             </p>
           </div>
-          
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-medium text-muted-foreground">Sort by:</span>
-            <select className="bg-card border border-border rounded-xl px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-primary/50 cursor-pointer">
-              <option>Recommended</option>
-              <option>Price: Low to High</option>
-              <option>Price: High to Low</option>
-              <option>Newest Arrivals</option>
-            </select>
-          </div>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar Filters */}
           <aside className="w-full lg:w-72 shrink-0">
-            <div className="bg-card border border-border rounded-3xl p-6 sticky top-24 shadow-sm">
+            <form method="GET" action="/medicines" className="bg-card border border-border rounded-3xl p-6 sticky top-24 shadow-sm">
+              
+              {/* Keep search query if it exists */}
+              {params.search && <input type="hidden" name="search" value={params.search} />}
+
               <div className="flex items-center gap-2 mb-6 border-b border-border/50 pb-4">
                 <Filter className="w-5 h-5 text-primary" />
                 <h2 className="font-bold text-lg">Filters</h2>
@@ -95,23 +105,15 @@ export default async function MedicinesPage({
               <div className="mb-8">
                 <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted-foreground">Categories</h3>
                 <div className="space-y-3">
-                  <Link href={`/medicines`} className="flex items-center justify-between group cursor-pointer">
-                    <div className="flex items-center gap-3">
-                      <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${!params.category ? 'bg-primary border-primary' : 'border-border group-hover:border-primary/50'}`}>
-                        {!params.category && <CheckSquare className="w-3.5 h-3.5 text-primary-foreground" />}
-                      </div>
-                      <span className={`text-sm ${!params.category ? 'font-semibold text-foreground' : 'text-muted-foreground group-hover:text-foreground'}`}>All Products</span>
-                    </div>
-                  </Link>
+                  <label className="flex items-center gap-3 cursor-pointer group">
+                    <input type="radio" name="category" value="" defaultChecked={!params.category} className="w-5 h-5 text-primary focus:ring-primary accent-primary" />
+                    <span className={`text-sm ${!params.category ? 'font-semibold text-foreground' : 'text-muted-foreground group-hover:text-foreground'}`}>All Products</span>
+                  </label>
                   {categories.map((cat: any) => (
-                    <Link href={`/medicines?category=${cat.name}`} key={cat.id} className="flex items-center justify-between group cursor-pointer">
-                      <div className="flex items-center gap-3">
-                        <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${params.category === cat.name ? 'bg-primary border-primary' : 'border-border group-hover:border-primary/50'}`}>
-                          {params.category === cat.name && <CheckSquare className="w-3.5 h-3.5 text-primary-foreground" />}
-                        </div>
-                        <span className={`text-sm ${params.category === cat.name ? 'font-semibold text-foreground' : 'text-muted-foreground group-hover:text-foreground'}`}>{cat.name}</span>
-                      </div>
-                    </Link>
+                    <label key={cat.id} className="flex items-center gap-3 cursor-pointer group">
+                      <input type="radio" name="category" value={cat.name} defaultChecked={params.category === cat.name} className="w-5 h-5 text-primary focus:ring-primary accent-primary" />
+                      <span className={`text-sm ${params.category === cat.name ? 'font-semibold text-foreground' : 'text-muted-foreground group-hover:text-foreground'}`}>{cat.name}</span>
+                    </label>
                   ))}
                 </div>
               </div>
@@ -122,25 +124,29 @@ export default async function MedicinesPage({
                 <div className="flex items-center gap-4">
                   <div className="relative">
                     <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">৳</span>
-                    <input type="number" placeholder="Min" className="w-full h-10 pl-7 pr-3 rounded-xl border border-border bg-secondary/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30" />
+                    <input type="number" name="minPrice" defaultValue={params.minPrice} placeholder="Min" className="w-full h-10 pl-7 pr-3 rounded-xl border border-border bg-secondary/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30" />
                   </div>
                   <span className="text-muted-foreground">-</span>
                   <div className="relative">
                     <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">৳</span>
-                    <input type="number" placeholder="Max" className="w-full h-10 pl-7 pr-3 rounded-xl border border-border bg-secondary/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30" />
+                    <input type="number" name="maxPrice" defaultValue={params.maxPrice} placeholder="Max" className="w-full h-10 pl-7 pr-3 rounded-xl border border-border bg-secondary/30 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30" />
                   </div>
                 </div>
               </div>
 
               {/* Prescription Requirements */}
-              <div className="border-t border-border/50 pt-6">
+              <div className="border-t border-border/50 pt-6 mb-8">
                 <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted-foreground">Prescription</h3>
                 <label className="flex items-center gap-3 cursor-pointer group">
-                  <input type="checkbox" className="w-5 h-5 rounded border-border text-primary focus:ring-primary accent-primary" />
+                  <input type="checkbox" name="rx" defaultChecked={params.rx === "on"} className="w-5 h-5 rounded border-border text-primary focus:ring-primary accent-primary" />
                   <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">Rx Required Only</span>
                 </label>
               </div>
-            </div>
+
+              <button type="submit" className="w-full py-3 bg-primary text-primary-foreground font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                Apply Filters
+              </button>
+            </form>
           </aside>
 
           {/* Product Grid */}
@@ -152,11 +158,18 @@ export default async function MedicinesPage({
               </div>
             )}
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-              {medicines.map((medicine: any) => (
-                <MedicineCard key={medicine.id} medicine={medicine} />
-              ))}
-            </div>
+            {medicines.length === 0 ? (
+               <div className="bg-card p-12 rounded-3xl text-center border border-border">
+                 <h2 className="text-2xl font-bold mb-2">No products found</h2>
+                 <p className="text-muted-foreground">Try adjusting your filters or search query.</p>
+               </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                {medicines.map((medicine: any) => (
+                  <MedicineCard key={medicine.id} medicine={medicine} />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>

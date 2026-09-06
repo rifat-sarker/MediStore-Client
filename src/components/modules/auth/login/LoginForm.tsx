@@ -16,18 +16,33 @@ import {
 } from "@/components/ui/form";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Link from "next/link";
-import { LogIn, HeartPulse } from "lucide-react";
+import { LogIn, HeartPulse, User, ShieldCheck, Bike } from "lucide-react";
 import { loginUser } from "@/services/AuthService";
 import { useUser } from "@/context/UserContext";
+import { useState } from "react";
+
+const DEMO_CREDENTIALS = {
+  CUSTOMER: { email: "customer1@example.com", password: "password123" },
+  ADMIN: { email: "admin@medistore.com", password: "Admin@12345" },
+  RIDER: { email: "rider1@medistore.com", password: "password123" },
+};
 
 const LoginForm = () => {
   const form = useForm({ resolver: zodResolver(loginSchema) });
   const router = useRouter();
   const { setUser, setIsLoading } = useUser();
+  const [activeTab, setActiveTab] = useState("CUSTOMER");
 
   const {
     formState: { isSubmitting },
   } = form;
+
+  const handleTabClick = (role: "CUSTOMER" | "ADMIN" | "RIDER") => {
+    setActiveTab(role);
+    form.setValue("email", DEMO_CREDENTIALS[role].email);
+    form.setValue("password", DEMO_CREDENTIALS[role].password);
+    toast(`Switched to ${role} login`);
+  };
 
   const onsubmit: SubmitHandler<FieldValues> = async (data) => {
     try {
@@ -45,6 +60,8 @@ const LoginForm = () => {
         setIsLoading(true);
         if (role === "ADMIN") {
           router.push("/admin");
+        } else if (role === "RIDER") {
+          router.push("/rider-dashboard");
         } else {
           router.push("/");
         }
@@ -77,6 +94,29 @@ const LoginForm = () => {
 
       {/* Card */}
       <div className="bg-card border border-border rounded-3xl p-8 shadow-xl shadow-black/5">
+        
+        {/* Quick Login Tabs */}
+        <div className="flex items-center gap-2 p-1.5 bg-secondary/50 rounded-2xl mb-8">
+          <button
+            onClick={() => handleTabClick("CUSTOMER")}
+            className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition-all ${activeTab === 'CUSTOMER' ? 'bg-background shadow-sm text-primary' : 'text-muted-foreground hover:bg-secondary'}`}
+          >
+            <User className="w-3.5 h-3.5" /> Customer
+          </button>
+          <button
+            onClick={() => handleTabClick("ADMIN")}
+            className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition-all ${activeTab === 'ADMIN' ? 'bg-background shadow-sm text-primary' : 'text-muted-foreground hover:bg-secondary'}`}
+          >
+            <ShieldCheck className="w-3.5 h-3.5" /> Admin
+          </button>
+          <button
+            onClick={() => handleTabClick("RIDER")}
+            className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold transition-all ${activeTab === 'RIDER' ? 'bg-background shadow-sm text-primary' : 'text-muted-foreground hover:bg-secondary'}`}
+          >
+            <Bike className="w-3.5 h-3.5" /> Rider
+          </button>
+        </div>
+
         <Form {...form}>
           <form className="space-y-5" onSubmit={form.handleSubmit(onsubmit)}>
             <FormField
@@ -89,7 +129,7 @@ const LoginForm = () => {
                     <Input
                       type="email"
                       placeholder="you@example.com"
-                      className="rounded-xl h-11"
+                      className="rounded-xl h-11 bg-secondary/30"
                       {...field}
                       value={field.value || ""}
                     />
@@ -108,7 +148,7 @@ const LoginForm = () => {
                     <Input
                       type="password"
                       placeholder="••••••••"
-                      className="rounded-xl h-11"
+                      className="rounded-xl h-11 bg-secondary/30"
                       {...field}
                       value={field.value || ""}
                     />
@@ -119,7 +159,7 @@ const LoginForm = () => {
             />
 
             <Button
-              className="w-full h-11 rounded-xl text-sm font-semibold gap-2 shadow-md shadow-primary/20"
+              className="w-full h-12 rounded-xl text-sm font-bold gap-2 shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform"
               type="submit"
               disabled={isSubmitting}
             >
@@ -127,23 +167,16 @@ const LoginForm = () => {
                 "Signing in..."
               ) : (
                 <>
-                  <LogIn className="w-4 h-4" /> Sign In
+                  <LogIn className="w-4 h-4" /> Secure Sign In
                 </>
               )}
             </Button>
           </form>
         </Form>
 
-        {/* Demo credentials */}
-        <div className="mt-5 p-3 rounded-xl bg-muted/50 border border-border text-xs text-muted-foreground">
-          <p className="font-semibold text-foreground mb-1">Demo Credentials</p>
-          <p><span className="font-medium">Admin:</span> admin@medistore.com / Admin@12345</p>
-          <p><span className="font-medium">Customer:</span> customer1@example.com / password123</p>
-        </div>
-
-        <p className="text-sm text-muted-foreground text-center mt-5">
+        <p className="text-sm text-muted-foreground text-center mt-6">
           Don&apos;t have an account?{" "}
-          <Link href="/register" className="text-primary font-semibold hover:underline">
+          <Link href="/register" className="text-primary font-bold hover:underline">
             Create one
           </Link>
         </p>

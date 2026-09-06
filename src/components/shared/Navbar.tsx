@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import {
   Search,
   ShoppingCart,
@@ -12,6 +12,10 @@ import {
   LayoutDashboard,
   ChevronDown,
   ShoppingBag,
+  Heart,
+  Pill,
+  BookOpen,
+  Phone
 } from "lucide-react";
 import { useUser } from "@/context/UserContext";
 import { logoutUser } from "@/services/AuthService";
@@ -20,6 +24,7 @@ export default function Navbar() {
   const { user, setUser, setIsLoading } = useUser();
   const router = useRouter();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleLogout = async () => {
     await logoutUser();
@@ -30,6 +35,13 @@ export default function Navbar() {
     router.refresh();
   };
 
+  const handleSearch = (e: FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/medicines?search=${encodeURIComponent(searchQuery)}`);
+    }
+  };
+
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-xl border-b border-border/60 shadow-sm">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between gap-4">
@@ -38,36 +50,53 @@ export default function Navbar() {
           <div className="bg-primary/10 p-2 rounded-xl group-hover:bg-primary/20 transition-colors">
             <HeartPulse className="w-5 h-5 text-primary" />
           </div>
-          <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-teal-600">
+          <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-teal-600 hidden sm:block">
             MediStore
           </span>
         </Link>
 
+        {/* Text Menus (Hidden on Mobile) */}
+        <div className="hidden lg:flex items-center gap-6 ml-4 shrink-0">
+          <Link href="/medicines" className="text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">
+            Catalog
+          </Link>
+          <Link href="#" className="flex items-center gap-1 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">
+            <Pill className="w-3.5 h-3.5" /> Prescriptions
+          </Link>
+          <Link href="#" className="flex items-center gap-1 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">
+            <BookOpen className="w-3.5 h-3.5" /> Health Blog
+          </Link>
+          <Link href="#" className="flex items-center gap-1 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">
+            <Phone className="w-3.5 h-3.5" /> Contact
+          </Link>
+        </div>
+
         {/* Search */}
-        <div className="hidden md:flex flex-1 max-w-md relative">
+        <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-sm relative ml-auto mr-4">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
           <input
             type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search medicines..."
-            className="w-full h-10 pl-10 pr-4 rounded-full bg-secondary/60 border border-border/40 focus:ring-2 focus:ring-primary/20 transition-all text-sm outline-none placeholder:text-muted-foreground/70"
+            className="w-full h-10 pl-10 pr-4 rounded-full bg-secondary/60 border border-border/40 focus:ring-2 focus:ring-primary/50 transition-all text-sm outline-none placeholder:text-muted-foreground/70"
           />
-        </div>
+        </form>
 
-        {/* Nav Links + Auth */}
-        <div className="flex items-center gap-3">
-          <Link
-            href="/medicines"
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors hidden md:block"
-          >
-            Medicines
+        {/* Icons + Auth */}
+        <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+          {/* Favorites */}
+          <Link href="/favorites" className="relative p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-red-500 transition-colors">
+            <Heart className="w-5 h-5" />
           </Link>
-          <div className="h-4 w-px bg-border hidden md:block" />
 
           {/* Cart */}
-          <button className="relative p-2 rounded-full hover:bg-secondary transition-colors">
-            <ShoppingCart className="w-5 h-5 text-foreground" />
+          <Link href="/cart" className="relative p-2 rounded-full hover:bg-secondary text-foreground transition-colors">
+            <ShoppingCart className="w-5 h-5" />
             <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full" />
-          </button>
+          </Link>
+
+          <div className="h-4 w-px bg-border hidden sm:block mx-1" />
 
           {/* Auth Area */}
           {user ? (
@@ -116,6 +145,17 @@ export default function Navbar() {
                         Admin Dashboard
                       </Link>
                     )}
+                    
+                    {user.role === "RIDER" && (
+                      <Link
+                        href="/rider-dashboard"
+                        onClick={() => setDropdownOpen(false)}
+                        className="flex items-center gap-3 w-full px-4 py-2.5 text-sm hover:bg-secondary transition-colors"
+                      >
+                        <LayoutDashboard className="w-4 h-4 text-primary" />
+                        Rider Dashboard
+                      </Link>
+                    )}
 
                     <Link
                       href="/orders"
@@ -143,7 +183,7 @@ export default function Navbar() {
               className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition-all shadow-md shadow-primary/20"
             >
               <User className="w-4 h-4" />
-              <span>Login</span>
+              <span className="hidden sm:inline">Login</span>
             </Link>
           )}
         </div>

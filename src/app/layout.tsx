@@ -1,11 +1,16 @@
 import "./globals.css";
 import Providers from "@/providers/Providers";
 import { Toaster } from "sonner";
-import { Open_Sans } from "next/font/google";
+import { Outfit } from "next/font/google";
 
-const open_Sans = Open_Sans({
+const outfit = Outfit({
   subsets: ["latin"],
 });
+
+export const metadata = {
+  title: "MediStore | Premium Pharmacy",
+  description: "Your trusted online pharmacy, delivering care everywhere.",
+};
 
 export default function RootLayout({
   children,
@@ -13,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={open_Sans.className}>
+    <html lang="en" className={outfit.className}>
       <body>
         <Providers>
           {children}

@@ -39,6 +39,7 @@ interface Order {
 export default function MyOrdersPage() {
   const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
+  const [cancellingId, setCancellingId] = useState<string | null>(null);
 
   const fetchMyOrders = useCallback(async () => {
     try {
@@ -58,6 +59,31 @@ export default function MyOrdersPage() {
   useEffect(() => {
     fetchMyOrders();
   }, [fetchMyOrders]);
+
+  const handleCancelOrder = async (orderId: string) => {
+    if (!confirm("Are you sure you want to cancel this order?")) return;
+    setCancellingId(orderId);
+    try {
+      const token = await getAccessToken();
+      const res = await fetch(`${BASE}/orders/${orderId}/cancel`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      const data = await res.json();
+      if (data.success) {
+        setOrders(prev => prev.map(o => o.id === orderId ? { ...o, status: "CANCELLED" } : o));
+      } else {
+        alert(data.message || "Failed to cancel order");
+      }
+    } catch {
+      alert("Error cancelling order");
+    } finally {
+      setCancellingId(null);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-secondary/20 pt-8 pb-20">
@@ -86,6 +112,8 @@ export default function MyOrdersPage() {
           <div className="space-y-6">
             {orders.map(order => {
               const Icon = STATUS_ICONS[order.status] || Package;
+              const canCancel = order.status === "PENDING" || order.status === "VERIFYING";
+
               return (
                 <div key={order.id} className="bg-card border border-border rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300">
                   <div className="flex flex-col md:flex-row gap-6 md:items-center justify-between border-b border-border/50 pb-6 mb-6">
@@ -108,9 +136,20 @@ export default function MyOrdersPage() {
                         </span>
                       </div>
                     </div>
-                    <div className="text-left md:text-right">
-                      <p className="text-sm text-muted-foreground mb-1">Total Amount</p>
-                      <p className="text-2xl font-extrabold text-primary">৳ {order.totalAmount.toFixed(2)}</p>
+                    <div className="flex items-center gap-4">
+                      <div className="text-left md:text-right">
+                        <p className="text-sm text-muted-foreground mb-1">Total Amount</p>
+                        <p className="text-2xl font-extrabold text-primary">৳ {order.totalAmount.toFixed(2)}</p>
+                      </div>
+                      {canCancel && (
+                        <button
+                          disabled={cancellingId === order.id}
+                          onClick={() => handleCancelOrder(order.id)}
+                          className="px-4 py-2 text-xs font-semibold rounded-xl border border-red-200 text-red-600 bg-red-50 hover:bg-red-100 transition-colors disabled:opacity-50"
+                        >
+                          {cancellingId === order.id ? "Cancelling..." : "Cancel Order"}
+                        </button>
+                      )}
                     </div>
                   </div>
 

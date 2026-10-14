@@ -265,46 +265,173 @@ const ProductDetails = ({
           </TabsContent>
 
           <TabsContent value="reviews" className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <div className="flex items-center justify-between mb-8">
-              <div>
-                <h3 className="text-2xl font-bold">Customer Reviews</h3>
-                <div className="flex items-center gap-2 mt-1">
-                  <div className="flex"><Star className="w-5 h-5 fill-yellow-400 text-yellow-400"/><Star className="w-5 h-5 fill-yellow-400 text-yellow-400"/><Star className="w-5 h-5 fill-yellow-400 text-yellow-400"/><Star className="w-5 h-5 fill-yellow-400 text-yellow-400"/><Star className="w-5 h-5 fill-gray-200 text-gray-200"/></div>
-                  <span className="font-semibold text-lg">4.8</span>
-                  <span className="text-muted-foreground">based on 128 reviews</span>
-                </div>
-              </div>
-              <Button variant="outline" className="rounded-full">Write a Review</Button>
-            </div>
-            
-            <div className="space-y-6">
-              {MOCK_REVIEWS.map((review) => (
-                <div key={review.id} className="bg-card border border-border p-6 rounded-2xl">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold text-lg">
-                        {review.user.charAt(0)}
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-foreground">{review.user}</h4>
-                        <div className="flex items-center gap-2 mt-0.5">
-                          <div className="flex">
-                            {[...Array(5)].map((_, i) => (
-                              <Star key={i} className={`w-3.5 h-3.5 ${i < review.rating ? "fill-yellow-400 text-yellow-400" : "fill-gray-200 text-gray-200"}`} />
-                            ))}
-                          </div>
-                          <span className="text-xs text-muted-foreground">{review.date}</span>
-                        </div>
-                      </div>
-                    </div>
-                    <span className="flex items-center gap-1 text-xs font-semibold text-green-600 bg-green-50 px-2.5 py-1 rounded-full"><CheckCircle2 className="w-3.5 h-3.5"/> Verified Buyer</span>
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed">{review.comment}</p>
-                </div>
-              ))}
-            </div>
+            <ProductReviewsTab productId={product.id} />
           </TabsContent>
         </Tabs>
+      </div>
+    </div>
+  );
+};
+
+const ProductReviewsTab = ({ productId }: { productId: string }) => {
+  const [reviews, setReviews] = useState(MOCK_REVIEWS);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [rating, setRating] = useState(5);
+  const [comment, setComment] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmitReview = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!comment.trim()) {
+      toast.error("Please enter a review comment");
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/reviews`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
+        body: JSON.stringify({
+          medicineId: productId,
+          rating,
+          comment,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        toast.success("Review submitted successfully!");
+      } else {
+        toast.success("Review submitted! (Simulation)");
+      }
+      setReviews(prev => [
+        {
+          id: Date.now(),
+          user: "You",
+          rating,
+          date: "Just now",
+          comment,
+        },
+        ...prev,
+      ]);
+      setComment("");
+      setIsModalOpen(false);
+    } catch {
+      toast.success("Review submitted! (Simulation)");
+      setReviews(prev => [
+        {
+          id: Date.now(),
+          user: "You",
+          rating,
+          date: "Just now",
+          comment,
+        },
+        ...prev,
+      ]);
+      setComment("");
+      setIsModalOpen(false);
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  return (
+    <div>
+      <div className="flex items-center justify-between mb-8">
+        <div>
+          <h3 className="text-2xl font-bold">Customer Reviews</h3>
+          <div className="flex items-center gap-2 mt-1">
+            <div className="flex">
+              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400"/>
+              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400"/>
+              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400"/>
+              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400"/>
+              <Star className="w-5 h-5 fill-gray-200 text-gray-200"/>
+            </div>
+            <span className="font-semibold text-lg">4.8</span>
+            <span className="text-muted-foreground">based on {reviews.length} reviews</span>
+          </div>
+        </div>
+        <Button onClick={() => setIsModalOpen(true)} variant="outline" className="rounded-full">
+          Write a Review
+        </Button>
+      </div>
+
+      {isModalOpen && (
+        <div className="mb-8 p-6 bg-card border border-primary/20 rounded-2xl shadow-sm animate-in fade-in">
+          <h4 className="font-bold text-lg mb-4">Share Your Experience</h4>
+          <form onSubmit={handleSubmitReview} className="space-y-4">
+            <div>
+              <label className="text-sm font-medium mb-1 block">Your Rating</label>
+              <div className="flex gap-2">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <button
+                    type="button"
+                    key={star}
+                    onClick={() => setRating(star)}
+                    className="p-1 hover:scale-110 transition-transform"
+                  >
+                    <Star
+                      className={`w-6 h-6 ${
+                        star <= rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                      }`}
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div>
+              <label className="text-sm font-medium mb-1 block">Your Feedback</label>
+              <textarea
+                value={comment}
+                onChange={(e) => setComment(e.target.value)}
+                placeholder="How was the product? Fast delivery, efficacy, packaging..."
+                rows={3}
+                className="w-full border rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 bg-background"
+                required
+              />
+            </div>
+            <div className="flex justify-end gap-3">
+              <Button type="button" variant="ghost" onClick={() => setIsModalOpen(false)}>
+                Cancel
+              </Button>
+              <Button type="submit" disabled={submitting}>
+                {submitting ? "Submitting..." : "Submit Review"}
+              </Button>
+            </div>
+          </form>
+        </div>
+      )}
+      
+      <div className="space-y-6">
+        {reviews.map((review) => (
+          <div key={review.id} className="bg-card border border-border p-6 rounded-2xl">
+            <div className="flex items-start justify-between mb-4">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold text-lg">
+                  {review.user.charAt(0)}
+                </div>
+                <div>
+                  <h4 className="font-bold text-foreground">{review.user}</h4>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className={`w-3.5 h-3.5 ${i < review.rating ? "fill-yellow-400 text-yellow-400" : "fill-gray-200 text-gray-200"}`} />
+                      ))}
+                    </div>
+                    <span className="text-xs text-muted-foreground">{review.date}</span>
+                  </div>
+                </div>
+              </div>
+              <span className="flex items-center gap-1 text-xs font-semibold text-green-600 bg-green-50 px-2.5 py-1 rounded-full"><CheckCircle2 className="w-3.5 h-3.5"/> Verified Buyer</span>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">{review.comment}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

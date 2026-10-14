@@ -25,6 +25,8 @@ interface Order {
   paymentStatus: string;
   shippingAddress: string;
   createdAt: string;
+  riderId?: string;
+  rider?: { id: string; user?: { name: string; phone?: string } };
   user?: { name: string; email: string };
   items?: { quantity: number; medicine?: { name: string } }[];
 }
@@ -47,6 +49,7 @@ async function authFetch(url: string, options: RequestInit = {}) {
 
 export default function OrdersManager() {
   const [orders, setOrders] = useState<Order[]>([]);
+  const [riders, setRiders] = useState<{ id: string; user?: { name: string } }[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [updatingId, setUpdatingId] = useState<string | null>(null);
@@ -56,9 +59,15 @@ export default function OrdersManager() {
 
   const fetchData = useCallback(async () => {
     setLoading(true);
-    const data = await authFetch(`${BASE}/orders/get-orders?limit=10&page=${page}`);
-    setOrders(data.data || []);
-    setMeta(data.meta || { totalPage: 1, total: 0 });
+    const [ordersData, ridersData] = await Promise.all([
+      authFetch(`${BASE}/orders/get-orders?limit=10&page=${page}`),
+      authFetch(`${BASE}/riders`),
+    ]);
+    setOrders(ordersData.data || []);
+    setMeta(ordersData.meta || { totalPage: 1, total: 0 });
+    if (ridersData?.data) {
+      setRiders(ridersData.data);
+    }
     setLoading(false);
   }, [page]);
 
@@ -75,6 +84,22 @@ export default function OrdersManager() {
       setOrders(prev => prev.map(o => o.id === orderId ? { ...o, status } : o));
     } else {
       toast.error(data.message || "Update failed");
+    }
+    setUpdatingId(null);
+  };
+
+  const handleAssignRider = async (orderId: string, riderId: string) => {
+    if (!riderId) return;
+    setUpdatingId(orderId);
+    const data = await authFetch(`${BASE}/orders/${orderId}/assign-rider`, {
+      method: "PATCH",
+      body: JSON.stringify({ riderId }),
+    });
+    if (data.success) {
+      toast.success("Rider assigned to order!");
+      fetchData();
+    } else {
+      toast.error(data.message || "Failed to assign rider");
     }
     setUpdatingId(null);
   };
@@ -103,7 +128,7 @@ export default function OrdersManager() {
 
       <div className="bg-card border border-border rounded-2xl overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-sm min-w-[700px]">
+          <table className="w-full text-sm min-w-[800px]">
             <thead className="bg-muted/40 border-b border-border">
               <tr>
                 <th className="text-left px-5 py-3 font-semibold text-muted-foreground">Order ID</th>
@@ -111,14 +136,15 @@ export default function OrdersManager() {
                 <th className="text-left px-5 py-3 font-semibold text-muted-foreground">Amount</th>
                 <th className="text-left px-5 py-3 font-semibold text-muted-foreground">Payment</th>
                 <th className="text-left px-5 py-3 font-semibold text-muted-foreground">Status</th>
+                <th className="text-left px-5 py-3 font-semibold text-muted-foreground">Rider Assigned</th>
                 <th className="text-left px-5 py-3 font-semibold text-muted-foreground">Date</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
               {loading ? (
-                <tr><td colSpan={6} className="text-center py-16 text-muted-foreground">Loading orders...</td></tr>
+                <tr><td colSpan={7} className="text-center py-16 text-muted-foreground">Loading orders...</td></tr>
               ) : filtered.length === 0 ? (
-                <tr><td colSpan={6} className="text-center py-16 text-muted-foreground">No orders found</td></tr>
+                <tr><td colSpan={7} className="text-center py-16 text-muted-foreground">No orders found</td></tr>
               ) : filtered.map(order => (
                 <tr key={order.id} className="hover:bg-muted/20 transition-colors">
                   <td className="px-5 py-3.5">
@@ -128,7 +154,7 @@ export default function OrdersManager() {
                     <p className="font-medium">{order.user?.name || "—"}</p>
                     <p className="text-xs text-muted-foreground">{order.user?.email}</p>
                   </td>
-                  <td className="px-5 py-3.5 font-semibold text-primary">${order.totalAmount.toFixed(2)}</td>
+                  <td className="px-5 py-3.5 font-semibold text-primary">৳{order.totalAmount.toFixed(2)}</td>
                   <td className="px-5 py-3.5">
                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${order.paymentStatus === "PAID" ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"}`}>
                       {order.paymentStatus}
@@ -142,6 +168,21 @@ export default function OrdersManager() {
                       className={`px-2 py-1 rounded-full text-xs font-medium border-none outline-none cursor-pointer ${STATUS_COLORS[order.status] || "bg-secondary"}`}
                     >
                       {STATUS_OPTIONS.map(s => <option key={s} value={s}>{s}</option>)}
+                    </select>
+                  </td>
+                  <td className="px-5 py-3.5">
+                    <select
+                      value={order.rider?.id || order.riderId || ""}
+                      disabled={updatingId === order.id}
+                      onChange={e => handleAssignRider(order.id, e.target.value)}
+                      className="px-2 py-1 rounded-lg text-xs bg-secondary border border-border text-foreground outline-none cursor-pointer"
+                    >
+                      <option value="">Unassigned</option>
+                      {riders.map(r => (
+                        <option key={r.id} value={r.id}>
+                          {r.user?.name || "Rider"}
+                        </option>
+                      ))}
                     </select>
                   </td>
                   <td className="px-5 py-3.5 text-muted-foreground text-xs">

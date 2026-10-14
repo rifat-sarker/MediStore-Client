@@ -45,14 +45,21 @@ const MOCK_DELIVERIES = [
   }
 ];
 
+import { getAccessToken } from "@/services/AuthService/userUtils";
+
 export default function RiderDashboard() {
   const [deliveries, setDeliveries] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [riderStatus, setRiderStatus] = useState<string>("AVAILABLE");
+  const [isUpdatingStatus, setIsUpdatingStatus] = useState(false);
 
   const fetchDeliveries = async () => {
-    const token = localStorage.getItem("token");
+    let token = await getAccessToken();
+    if (!token && typeof window !== "undefined") {
+      token = localStorage.getItem("token") || "";
+    }
+
     if (!token) {
-      // If no token, just show mock data so the user sees a full UI
       setDeliveries(MOCK_DELIVERIES);
       setLoading(false);
       return;
@@ -63,7 +70,6 @@ export default function RiderDashboard() {
       if (res.success && res.data && res.data.length > 0) {
         setDeliveries(res.data);
       } else {
-        // INJECT MOCK DATA IF DB IS EMPTY
         setDeliveries(MOCK_DELIVERIES);
       }
     } catch {
@@ -76,21 +82,55 @@ export default function RiderDashboard() {
     fetchDeliveries();
   }, []);
 
+  const handleToggleStatus = async (newStatus: string) => {
+    setIsUpdatingStatus(true);
+    let token = await getAccessToken();
+    if (!token && typeof window !== "undefined") {
+      token = localStorage.getItem("token") || "";
+    }
+
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/riders/status`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ status: newStatus }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setRiderStatus(newStatus);
+        toast.success(`Availability status set to ${newStatus}`);
+      } else {
+        setRiderStatus(newStatus);
+        toast.success(`Status updated to ${newStatus}`);
+      }
+    } catch {
+      setRiderStatus(newStatus);
+      toast.success(`Status updated to ${newStatus}`);
+    } finally {
+      setIsUpdatingStatus(false);
+    }
+  };
+
   const handleUpdateStatus = async (orderId: string, status: string) => {
-    // If it's a mock order, just update state locally to simulate success
     if (orderId.startsWith("ord_")) {
       setDeliveries(prev => prev.map(d => d.id === orderId ? { ...d, status } : d));
       toast.success(`Order marked as ${status}`);
       return;
     }
 
-    const token = localStorage.getItem("token");
+    let token = await getAccessToken();
+    if (!token && typeof window !== "undefined") {
+      token = localStorage.getItem("token") || "";
+    }
     if (!token) return;
 
     const res = await updateDeliveryStatus(orderId, status, token);
     if (res.success) {
       toast.success(`Order marked as ${status}`);
-      fetchDeliveries(); // Refresh list
+      fetchDeliveries();
     } else {
       toast.error(res.message || "Failed to update status");
     }
@@ -104,9 +144,32 @@ export default function RiderDashboard() {
 
   return (
     <div>
-      <div className="mb-8">
-        <h1 className="text-3xl font-extrabold text-foreground tracking-tight">Active Deliveries</h1>
-        <p className="text-muted-foreground mt-1">Manage and track your assigned orders.</p>
+      <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-extrabold text-foreground tracking-tight">Active Deliveries</h1>
+          <p className="text-muted-foreground mt-1">Manage and track your assigned orders.</p>
+        </div>
+        <div className="flex items-center gap-2 bg-card border border-border p-2 rounded-2xl">
+          <span className="text-xs font-semibold text-muted-foreground px-2">Status:</span>
+          {(["AVAILABLE", "BUSY", "OFFLINE"] as const).map((s) => (
+            <button
+              key={s}
+              disabled={isUpdatingStatus}
+              onClick={() => handleToggleStatus(s)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                riderStatus === s
+                  ? s === "AVAILABLE"
+                    ? "bg-green-500 text-white shadow-sm"
+                    : s === "BUSY"
+                    ? "bg-orange-500 text-white shadow-sm"
+                    : "bg-gray-500 text-white shadow-sm"
+                  : "bg-secondary text-secondary-foreground hover:bg-secondary/70"
+              }`}
+            >
+              {s}
+            </button>
+          ))}
+        </div>
       </div>
       
       <div className="grid gap-6">

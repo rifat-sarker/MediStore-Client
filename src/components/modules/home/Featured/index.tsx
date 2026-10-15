@@ -36,7 +36,7 @@ const FeaturedProducts = async () => {
                   key={product.id}
                   className="lg:basis-1/6 md:basis-1/5 sm:basis-1/4 basis-1/3"
                 >
-                  <Link href={`/medicine/${product.id}`}>              
+                  <Link href={`/medicines/${product.id}`}>              
                   <div className="border p-4 rounded-md h-[280px] flex flex-col justify-between items-center text-center">
                     <img
                       src={product.imageUrl || ""}

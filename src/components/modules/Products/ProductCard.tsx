@@ -36,7 +36,7 @@ const ProductCard = ({ product }: { product: IProduct }) => {
 
   return (
     <div className="relative border p-4 rounded-md h-[280px] flex flex-col justify-between items-center text-center">
-      <Link href={`/medicine/${product.id}`}>
+      <Link href={`/medicines/${product.id}`}>
         <img
           src={product.imageUrl || ""}
           alt={product.name}

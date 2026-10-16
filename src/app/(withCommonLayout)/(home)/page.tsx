@@ -12,10 +12,10 @@ export const metadata = {
 
 const MOCK_CATEGORIES = [
   { id: "c1", name: "Vitamins & Supplements", description: "Daily health essentials", imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=300&auto=format&fit=crop" },
-  { id: "c2", name: "Pain Relief", description: "Fast acting pain medication", imageUrl: "https://images.unsplash.com/photo-1550572017-edb9c46d3e8f?q=80&w=300&auto=format&fit=crop" },
-  { id: "c3", name: "First Aid", description: "Bandages, antiseptics & more", imageUrl: "https://images.unsplash.com/photo-1585698436531-97b76e1045a5?q=80&w=300&auto=format&fit=crop" },
+  { id: "c2", name: "Pain Relief", description: "Fast acting pain medication", imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=300&auto=format&fit=crop" },
+  { id: "c3", name: "First Aid", description: "Bandages, antiseptics & more", imageUrl: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=300&auto=format&fit=crop" },
   { id: "c4", name: "Personal Care", description: "Skincare, haircare & hygiene", imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=300&auto=format&fit=crop" },
-  { id: "c5", name: "Cold & Flu", description: "Cough syrups & cold medicine", imageUrl: "https://images.unsplash.com/photo-1583947581924-860bda6a5c83?q=80&w=300&auto=format&fit=crop" },
+  { id: "c5", name: "Cold & Flu", description: "Cough syrups & cold medicine", imageUrl: "https://images.unsplash.com/photo-1628771065518-0d82f1938462?q=80&w=300&auto=format&fit=crop" },
   { id: "c6", name: "Digestive Health", description: "Antacids & probiotics", imageUrl: "https://images.unsplash.com/photo-1576602976047-174e57a47881?q=80&w=300&auto=format&fit=crop" },
 ];
 

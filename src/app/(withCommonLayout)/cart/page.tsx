@@ -3,17 +3,24 @@
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { removeProduct, updateQuantity, clearCart } from "@/redux/features/cartSlice";
 import { Button } from "@/components/ui/button";
-import { Trash2, Plus, Minus } from "lucide-react";
-import Image from "next/image";
+import { Trash2, Plus, Minus, LogIn } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import { createOrder } from "@/services/Order";
+import { getClientToken } from "@/lib/clientAuthFetch";
+import { useRouter } from "next/navigation";
 
 const CartPage = () => {
+  const router = useRouter();
   const { products } = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
   const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    setIsLoggedIn(Boolean(getClientToken()));
+  }, []);
 
   const subtotal = products.reduce(
     (total, product) => total + product.price * product.orderQuantity,
@@ -180,57 +187,70 @@ const CartPage = () => {
             </div>
           </div>
 
-          <Button 
-            className="w-full h-12 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all hover:scale-[1.02]"
-            onClick={async () => {
-              const address = (document.getElementById('shippingAddress') as HTMLTextAreaElement)?.value;
-              const method = (document.getElementById('paymentMethod') as HTMLSelectElement)?.value || "SSLCOMMERZ";
-              
-              if (!address) {
-                toast.error("Please enter a shipping address");
-                return;
-              }
-
-              if (products.length === 0) return;
-              setIsCheckingOut(true);
-          
-              try {
-                const items = products.map((p) => ({
-                  product: p.id,
-                  quantity: p.orderQuantity,
-                }));
-          
-                const orderData = {
-                  products: items,
-                  shippingAddress: address,
-                  paymentMethod: method,
-                };
-          
-                const result = await createOrder(orderData);
-          
-                if (result?.success) {
-                  dispatch(clearCart());
-                  // If SSLCommerz payment URL returned, redirect directly to SSLCommerz Sandbox Gateway
-                  if (result?.data?.paymentUrl) {
-                    toast.success("Redirecting to SSLCommerz Secure Gateway...");
-                    window.location.href = result.data.paymentUrl;
-                    return;
-                  }
-                  toast.success("Order placed successfully!");
-                  window.location.href = "/orders";
-                } else {
-                  toast.error(result?.message || "Failed to place order. Please make sure you are logged in.");
+          {!isLoggedIn ? (
+            <div className="space-y-3">
+              <div className="bg-amber-50 border border-amber-200 text-amber-900 text-xs p-3.5 rounded-xl font-medium">
+                Please <span className="font-bold">Sign In</span> to place an order with SSLCommerz payment or Cash on Delivery.
+              </div>
+              <Link href="/login" className="block w-full">
+                <Button className="w-full h-12 text-base font-bold bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 flex items-center justify-center gap-2">
+                  <LogIn className="w-4 h-4" /> Sign In to Checkout
+                </Button>
+              </Link>
+            </div>
+          ) : (
+            <Button 
+              className="w-full h-12 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all hover:scale-[1.02]"
+              onClick={async () => {
+                const address = (document.getElementById('shippingAddress') as HTMLTextAreaElement)?.value;
+                const method = (document.getElementById('paymentMethod') as HTMLSelectElement)?.value || "SSLCOMMERZ";
+                
+                if (!address) {
+                  toast.error("Please enter a shipping address");
+                  return;
                 }
-              } catch (error: any) {
-                toast.error(error?.message || "An error occurred during checkout.");
-              } finally {
-                setIsCheckingOut(false);
-              }
-            }}
-            disabled={isCheckingOut}
-          >
-            {isCheckingOut ? "Connecting to Gateway..." : "Proceed to Secure Payment"}
-          </Button>
+
+                if (products.length === 0) return;
+                setIsCheckingOut(true);
+            
+                try {
+                  const items = products.map((p) => ({
+                    product: p.id,
+                    quantity: p.orderQuantity,
+                  }));
+            
+                  const orderData = {
+                    products: items,
+                    shippingAddress: address,
+                    paymentMethod: method,
+                  };
+            
+                  const result = await createOrder(orderData);
+            
+                  if (result?.success) {
+                    dispatch(clearCart());
+                    // If SSLCommerz payment URL returned, redirect directly to SSLCommerz Sandbox Gateway
+                    if (result?.data?.paymentUrl) {
+                      toast.success("Redirecting to SSLCommerz Secure Gateway...");
+                      window.location.href = result.data.paymentUrl;
+                      return;
+                    }
+                    toast.success("Order placed successfully!");
+                    window.location.href = "/orders";
+                  } else {
+                    toast.error(result?.message || "Failed to place order. Please make sure you are logged in.");
+                  }
+                } catch (error: any) {
+                  toast.error(error?.message || "An error occurred during checkout.");
+                } finally {
+                  setIsCheckingOut(false);
+                }
+              }}
+              disabled={isCheckingOut}
+            >
+              {isCheckingOut ? "Connecting to Gateway..." : "Proceed to Secure Payment"}
+            </Button>
+          )}
         </div>
       </div>
     </div>

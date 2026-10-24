@@ -66,16 +66,13 @@ export default function MedicineCard({ medicine }: { medicine: IProduct }) {
         {/* Image Container */}
         <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-white mb-4 flex items-center justify-center p-3 shadow-inner border border-secondary/60">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-          <div className="relative w-full h-full flex items-center justify-center">
-            <Image
-              src={imgSrc}
-              alt={medicine.name}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 ease-out p-1"
-              onError={() => setImgSrc(DEFAULT_IMAGE)}
-            />
-          </div>
+          <img
+            src={imgSrc}
+            alt={medicine.name}
+            className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 ease-out p-1"
+            onError={() => setImgSrc(DEFAULT_IMAGE)}
+            loading="lazy"
+          />
           {medicine.requiredPrescription && (
             <div className="absolute bottom-2 left-2 bg-orange-100 text-orange-800 text-[10px] font-extrabold px-2 py-0.5 rounded-md border border-orange-200 tracking-wider shadow-sm z-10 flex items-center gap-1">
               Rx Required

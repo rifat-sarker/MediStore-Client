@@ -58,12 +58,25 @@ export default async function MedicinesPage({
 
   if (params.search) {
     const sQuery = params.search.toLowerCase().trim();
-    medicines = medicines.filter(m => 
-      (m.name || "").toLowerCase().includes(sQuery) ||
-      (m.genericName || "").toLowerCase().includes(sQuery) ||
-      (m.manufacturer || "").toLowerCase().includes(sQuery) ||
-      (m.description || "").toLowerCase().includes(sQuery)
-    );
+    const queryTokens = sQuery.split(/[\s,&+]+/).filter((t: string) => t.length > 2);
+    
+    let matched = medicines.filter(m => {
+      const fullText = `${m.name} ${m.genericName || ""} ${m.manufacturer || ""} ${m.description || ""} ${m.category?.name || ""}`.toLowerCase();
+      // Match full query or any token
+      return fullText.includes(sQuery) || (queryTokens.length > 0 && queryTokens.some((t: string) => fullText.includes(t)));
+    });
+
+    // If API returned 0 matches, search in full MEDEX catalog
+    if (matched.length === 0) {
+      matched = MEDEX_BANGLADESH_PRODUCTS.filter(m => {
+        const fullText = `${m.name} ${m.genericName || ""} ${m.manufacturer || ""} ${m.description || ""} ${m.category?.name || ""}`.toLowerCase();
+        return fullText.includes(sQuery) || (queryTokens.length > 0 && queryTokens.some((t: string) => fullText.includes(t)));
+      });
+    }
+
+    if (matched.length > 0) {
+      medicines = matched;
+    }
   }
   
   if (params.minPrice) {

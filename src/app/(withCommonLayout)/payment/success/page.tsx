@@ -23,9 +23,12 @@ const PaymentSuccessPage = async ({ searchParams }: { searchParams: Promise<Sear
           </div>
         )}
 
-        <div className="pt-4">
-          <Link href="/">
-            <Button className="w-full h-12 text-lg">Continue Shopping</Button>
+        <div className="pt-4 flex flex-col sm:flex-row gap-3">
+          <Link href="/orders" className="flex-1">
+            <Button className="w-full h-12 text-base font-bold bg-primary hover:bg-primary/90">View My Orders</Button>
+          </Link>
+          <Link href="/medicines" className="flex-1">
+            <Button variant="outline" className="w-full h-12 text-base font-semibold">Continue Shopping</Button>
           </Link>
         </div>
       </div>

@@ -184,7 +184,7 @@ const CartPage = () => {
             className="w-full h-12 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all hover:scale-[1.02]"
             onClick={async () => {
               const address = (document.getElementById('shippingAddress') as HTMLTextAreaElement)?.value;
-              const method = (document.getElementById('paymentMethod') as HTMLSelectElement)?.value;
+              const method = (document.getElementById('paymentMethod') as HTMLSelectElement)?.value || "SSLCOMMERZ";
               
               if (!address) {
                 toast.error("Please enter a shipping address");
@@ -209,27 +209,27 @@ const CartPage = () => {
                 const result = await createOrder(orderData);
           
                 if (result?.success) {
-                  toast.success("Order placed successfully!");
                   dispatch(clearCart());
+                  // If SSLCommerz payment URL returned, redirect directly to SSLCommerz Sandbox Gateway
+                  if (result?.data?.paymentUrl) {
+                    toast.success("Redirecting to SSLCommerz Secure Gateway...");
+                    window.location.href = result.data.paymentUrl;
+                    return;
+                  }
+                  toast.success("Order placed successfully!");
                   window.location.href = "/orders";
                 } else {
-                  // MOCK SUCCESS FALLBACK IF API FAILS
-                  toast.success("Order placed successfully! (Mock Simulation)");
-                  dispatch(clearCart());
-                  window.location.href = "/orders";
+                  toast.error(result?.message || "Failed to place order. Please make sure you are logged in.");
                 }
-              } catch (error) {
-                // MOCK SUCCESS FALLBACK IF API FAILS
-                toast.success("Order placed successfully! (Mock Simulation)");
-                dispatch(clearCart());
-                window.location.href = "/orders";
+              } catch (error: any) {
+                toast.error(error?.message || "An error occurred during checkout.");
               } finally {
                 setIsCheckingOut(false);
               }
             }}
             disabled={isCheckingOut}
           >
-            {isCheckingOut ? "Processing Securely..." : "Confirm Secure Order"}
+            {isCheckingOut ? "Connecting to Gateway..." : "Proceed to Secure Payment"}
           </Button>
         </div>
       </div>

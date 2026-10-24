@@ -7,12 +7,16 @@ const getApiBaseUrl = () => {
   return process.env.NEXT_PUBLIC_BASE_API || "http://localhost:5001/api/v1";
 };
 
+import { getAccessToken } from "../AuthService/userUtils";
+
 export const createOrder = async (orderData: any) => {
   try {
+    const token = await getAccessToken();
     const res = await fetch(`${getApiBaseUrl()}/orders`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
       },
       body: JSON.stringify(orderData),
     });

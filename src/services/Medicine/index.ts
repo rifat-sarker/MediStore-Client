@@ -2,23 +2,12 @@
 
 import { SearchParams } from "@/types/common";
 
-// get all products
-// export const getAllProduct = async (page?: number, limit?: string) => {
-//   try {
-//     const res = await fetch(
-//       `${process.env.NEXT_PUBLIC_BASE_API}/medicines?limit=${limit}&page=${page}`,
-//       {
-//         next: {
-//           tags: ["Medicine"],
-//         },
-//       }
-//     );
-//     const data = await res.json();
-//     return data;
-//   } catch (error: any) {
-//     return Error(error.message);
-//   }
-// };
+const getApiBaseUrl = () => {
+  if (typeof window === "undefined") {
+    return process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_BASE_API || "http://server:5001/api/v1";
+  }
+  return process.env.NEXT_PUBLIC_BASE_API || "http://localhost:5001/api/v1";
+};
 
 
 // get all product from db
@@ -36,7 +25,7 @@ export const getAllProduct = async (searchParams: SearchParams = {}) => {
     if (searchParams.searchTerm) query.append("searchTerm", searchParams.searchTerm);
 
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_API}/medicines?${query.toString()}`,
+      `${getApiBaseUrl()}/medicines?${query.toString()}`,
       {
         next: { tags: ["Medicine"] },
       }
@@ -56,7 +45,7 @@ export const getAllProduct = async (searchParams: SearchParams = {}) => {
 export const getSingleProduct = async (medicineId: string) => {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_API}/medicines/${medicineId}`,
+      `${getApiBaseUrl()}/medicines/${medicineId}`,
       {
         next: {
           tags: ["Medicine"],

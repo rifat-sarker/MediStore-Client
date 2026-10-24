@@ -1,5 +1,12 @@
 "use server";
 
+const getApiBaseUrl = () => {
+  if (typeof window === "undefined") {
+    return process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_BASE_API || "http://server:5001/api/v1";
+  }
+  return process.env.NEXT_PUBLIC_BASE_API || "http://localhost:5001/api/v1";
+};
+
 //get all categories from db
 export const getAllCategories = async (page?: string, limit?: string) => {
   try {
@@ -10,7 +17,7 @@ export const getAllCategories = async (page?: string, limit?: string) => {
     const queryString = query.toString() ? `?${query.toString()}` : "";
 
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_API}/categories${queryString}`,
+      `${getApiBaseUrl()}/categories${queryString}`,
       {
         next: {
           tags: ["CATEGORY"],

@@ -216,6 +216,8 @@ const CartPage = () => {
                 try {
                   const items = products.map((p) => ({
                     product: p.id,
+                    name: p.name,
+                    price: p.price,
                     quantity: p.orderQuantity,
                   }));
             

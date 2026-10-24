@@ -1,4 +1,14 @@
-export const API_BASE_URL = process.env.NEXT_PUBLIC_BASE_API || 'http://localhost:5001/api/v1';
+export const getApiBaseUrl = () => {
+  if (typeof window === "undefined") {
+    return process.env.INTERNAL_API_URL || "http://server:5001/api/v1";
+  }
+  return process.env.NEXT_PUBLIC_BASE_API || "http://localhost:5001/api/v1";
+};
+
+export const API_BASE_URL = typeof window === "undefined"
+  ? (process.env.INTERNAL_API_URL || "http://server:5001/api/v1")
+  : (process.env.NEXT_PUBLIC_BASE_API || "http://localhost:5001/api/v1");
+
 
 export async function fetchCategories() {
   try {

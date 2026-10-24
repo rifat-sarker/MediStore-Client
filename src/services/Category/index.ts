@@ -1,10 +1,14 @@
 "use server";
 
 const getApiBaseUrl = () => {
-  if (typeof window === "undefined") {
-    return process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_BASE_API || "http://server:5001/api/v1";
+  const publicApi = process.env.NEXT_PUBLIC_BASE_API;
+  if (publicApi && !publicApi.includes("localhost") && !publicApi.includes("127.0.0.1")) {
+    return publicApi;
   }
-  return process.env.NEXT_PUBLIC_BASE_API || "http://localhost:5001/api/v1";
+  if (typeof window === "undefined" && process.env.INTERNAL_API_URL) {
+    return process.env.INTERNAL_API_URL;
+  }
+  return publicApi || "http://localhost:5001/api/v1";
 };
 
 //get all categories from db

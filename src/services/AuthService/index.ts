@@ -4,12 +4,20 @@ import { cookies } from "next/headers";
 import { FieldValues } from "react-hook-form";
 
 const getApiBaseUrl = () => {
-  // If running inside server/docker, connect to server service or localhost
-  if (typeof window === "undefined") {
-    return process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_BASE_API || "http://server:5001/api/v1";
+  // If NEXT_PUBLIC_BASE_API is a remote URL (e.g. Render, Railway, VPS), always use it
+  const publicApi = process.env.NEXT_PUBLIC_BASE_API;
+  if (publicApi && !publicApi.includes("localhost") && !publicApi.includes("127.0.0.1")) {
+    return publicApi;
   }
-  return process.env.NEXT_PUBLIC_BASE_API || "http://localhost:5001/api/v1";
+
+  // Inside Docker local network
+  if (typeof window === "undefined" && process.env.INTERNAL_API_URL) {
+    return process.env.INTERNAL_API_URL;
+  }
+
+  return publicApi || "http://localhost:5001/api/v1";
 };
+
 
 export const registerUser = async (userData: FieldValues) => {
   try {

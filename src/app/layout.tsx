@@ -2,6 +2,7 @@ import "./globals.css";
 import Providers from "@/providers/Providers";
 import { Toaster } from "sonner";
 import { Outfit } from "next/font/google";
+import Script from "next/script";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -28,6 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={outfit.className}>
       <body>
+        <Script
+          src="https://accounts.google.com/gsi/client"
+          strategy="beforeInteractive"
+        />
         <Providers>
           {children}
           <Toaster richColors position={"top-center"} />
@@ -36,4 +41,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 

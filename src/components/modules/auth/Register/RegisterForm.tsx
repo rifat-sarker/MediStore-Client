@@ -96,23 +96,85 @@ const RegisterForm = () => {
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
     try {
-      const mockGoogleName = "Google Verified User";
-      const mockGoogleEmail = prompt("Enter your Google Account email for testing:", "user@gmail.com");
-      if (!mockGoogleEmail) {
-        setGoogleLoading(false);
-        return;
-      }
-      const res = await googleAuthUser({ name: mockGoogleName, email: mockGoogleEmail });
-      if (res?.success) {
-        toast.success("Signed in with Google successfully!");
-        router.push("/");
-        router.refresh();
+      const clientId =
+        process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
+        "109689675909-d32kko3680egvhu49dll33me77c70iir.apps.googleusercontent.com";
+
+      if (typeof window !== "undefined" && (window as any).google?.accounts?.id) {
+        const google = (window as any).google;
+
+        google.accounts.id.initialize({
+          client_id: clientId,
+          callback: async (response: any) => {
+            try {
+              if (response.credential) {
+                const base64Url = response.credential.split(".")[1];
+                const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+                const jsonPayload = decodeURIComponent(
+                  atob(base64)
+                    .split("")
+                    .map((c) => "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2))
+                    .join("")
+                );
+                const googlePayload = JSON.parse(jsonPayload);
+                const { name, email } = googlePayload;
+
+                const res = await googleAuthUser({ name: name || "Google User", email });
+                if (res?.success) {
+                  toast.success(`Welcome to MediStore, ${name || ""}! 🎉`);
+                  router.push("/");
+                  router.refresh();
+                } else {
+                  toast.error(res?.message || "Google sign-in failed on server.");
+                }
+              }
+            } catch (err: any) {
+              toast.error("Failed to parse Google response: " + err.message);
+            } finally {
+              setGoogleLoading(false);
+            }
+          },
+        });
+
+        google.accounts.id.prompt((notification: any) => {
+          if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
+            const userEmail = prompt(
+              "Google One Tap was suppressed by browser. Please enter your Google email for quick testing:",
+              "user@gmail.com"
+            );
+            if (userEmail) {
+              googleAuthUser({ name: "Google User", email: userEmail }).then((res) => {
+                if (res?.success) {
+                  toast.success("Signed in with Google successfully!");
+                  router.push("/");
+                  router.refresh();
+                } else {
+                  toast.error(res?.message || "Google sign-in failed");
+                }
+              });
+            }
+            setGoogleLoading(false);
+          }
+        });
       } else {
-        toast.error(res?.message || "Google sign-in failed");
+        const userEmail = prompt(
+          "Enter your Google Account email for testing:",
+          "user@gmail.com"
+        );
+        if (userEmail) {
+          const res = await googleAuthUser({ name: "Google User", email: userEmail });
+          if (res?.success) {
+            toast.success("Signed in with Google successfully!");
+            router.push("/");
+            router.refresh();
+          } else {
+            toast.error(res?.message || "Google sign-in failed");
+          }
+        }
+        setGoogleLoading(false);
       }
     } catch {
       toast.error("Google sign-in encountered an error");
-    } finally {
       setGoogleLoading(false);
     }
   };

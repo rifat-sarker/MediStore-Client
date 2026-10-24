@@ -10,6 +10,14 @@ const outfit = Outfit({
 export const metadata = {
   title: "MediStore | Premium Pharmacy",
   description: "Your trusted online pharmacy, delivering care everywhere.",
+  icons: {
+    icon: [
+      { url: "/icon.png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

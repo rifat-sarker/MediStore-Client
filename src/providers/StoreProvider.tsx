@@ -1,6 +1,7 @@
 "use client";
 import { AppStore, makeStore } from "@/redux/store";
-import { useRef } from "react";
+import { rehydrateCart } from "@/redux/features/cartSlice";
+import { useEffect, useRef } from "react";
 import { Provider } from "react-redux";
 
 export default function StoreProvider({
@@ -12,6 +13,12 @@ export default function StoreProvider({
   if (!storeRef.current) {
     storeRef.current = makeStore();
   }
+
+  useEffect(() => {
+    if (storeRef.current) {
+      storeRef.current.dispatch(rehydrateCart());
+    }
+  }, []);
 
   return <Provider store={storeRef.current}>{children}</Provider>;
 }

@@ -31,13 +31,17 @@ export default function MedicineCard({ medicine }: { medicine: IProduct }) {
     
     const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
     if (isFavorite) {
-      const newFavs = favorites.filter((id: string) => id !== medicine.id);
+      const newFavs = favorites.filter((id: string) => id !== medicine.id && id !== medicine.name);
       localStorage.setItem("favorites", JSON.stringify(newFavs));
+      window.dispatchEvent(new Event("storage"));
       setIsFavorite(false);
       toast("Removed from favorites");
     } else {
-      favorites.push(medicine.id);
+      if (!favorites.includes(medicine.id)) {
+        favorites.push(medicine.id);
+      }
       localStorage.setItem("favorites", JSON.stringify(favorites));
+      window.dispatchEvent(new Event("storage"));
       setIsFavorite(true);
       toast.success("Added to favorites");
     }

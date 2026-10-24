@@ -21,915 +21,9724 @@ export interface IProduct {
 
 // 60+ Authentic MedEx Bangladesh & ePharma products (10+ unique items per category with verified 200 HTTP images)
 export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
-  // ================= 1. MEDICINES (10 items) =================
   {
-    id: "med-1",
-    name: "Napa Extra Tablet",
-    genericName: "Paracetamol + Caffeine (500mg + 65mg)",
-    dosageForm: "Tablet",
-    strength: "500 mg + 65 mg",
-    packSize: "10 x 10's Pack",
-    manufacturer: "Beximco Pharmaceuticals Ltd.",
-    price: 3.50,
-    stock: 500,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
-    description: "Rapid relief for severe headache, toothache, backache, migraine, dysmenorrhea and feverishness.",
-    category: { id: "c1", name: "Medicines" }
+    "id": "medex-13717-0",
+    "name": "3 Bion 100 mg+200 mg+200 mcg Tablet",
+    "genericName": "Vitamin B1, B6 & B12",
+    "dosageForm": "Tablet",
+    "strength": "100 mg+200 mg+200 mcg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Jenphar Bangladesh Ltd.",
+    "price": 2.5,
+    "stock": 150,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3 Bion (Vitamin B1, B6 & B12) manufactured by Jenphar Bangladesh Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
   },
   {
-    id: "med-2",
-    name: "Ace Plus Tablet",
-    genericName: "Paracetamol + Caffeine (500mg + 65mg)",
-    dosageForm: "Tablet",
-    strength: "500 mg + 65 mg",
-    packSize: "20 x 10's Pack",
-    manufacturer: "Square Pharmaceuticals PLC",
-    price: 3.50,
-    stock: 650,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
-    description: "Indicated for tension headache, post-vaccination fever, neuralgia and musculoskeletal pain.",
-    category: { id: "c1", name: "Medicines" }
+    "id": "medex-7695-1",
+    "name": "3-C 200 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "200 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Edruc Limited",
+    "price": 7.5,
+    "stock": 167,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3-C (Cefixime Trihydrate) manufactured by Edruc Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "med-3",
-    name: "Seclo 20 Capsule",
-    genericName: "Omeprazole",
-    dosageForm: "Capsule",
-    strength: "20 mg",
-    packSize: "10 x 10's Alu-Alu",
-    manufacturer: "Square Pharmaceuticals PLC",
-    price: 7.00,
-    stock: 450,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&auto=format&fit=crop&q=80",
-    description: "Treatment of gastroesophageal reflux disease (GERD), duodenal & gastric ulcers, and acid hypersecretion.",
-    category: { id: "c1", name: "Medicines" }
+    "id": "medex-7696-2",
+    "name": "3-C 100 mg/5 ml Powder for Suspension",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "100 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Edruc Limited",
+    "price": 62,
+    "stock": 184,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3-C (Cefixime Trihydrate) manufactured by Edruc Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "med-4",
-    name: "Pantonix 20 Tablet",
-    genericName: "Pantoprazole Sodium Sesquihydrate",
-    dosageForm: "Tablet",
-    strength: "20 mg",
-    packSize: "10 x 10's Alu-Alu",
-    manufacturer: "Incepta Pharmaceuticals Ltd.",
-    price: 8.00,
-    stock: 380,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
-    description: "Relieves heartburn, acid indigestion and heals erosive esophagitis with sustained acid suppression.",
-    category: { id: "c1", name: "Medicines" }
+    "id": "medex-18731-3",
+    "name": "3-C 400 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "400 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Edruc Limited",
+    "price": 10.5,
+    "stock": 201,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3-C (Cefixime Trihydrate) manufactured by Edruc Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "med-5",
-    name: "Sergel 20 Capsule",
-    genericName: "Esomeprazole Magnesium Trihydrate",
-    dosageForm: "Capsule",
-    strength: "20 mg",
-    packSize: "10 x 10's Pack",
-    manufacturer: "Healthcare Pharmaceuticals Ltd.",
-    price: 8.00,
-    stock: 290,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
-    description: "Proton pump inhibitor formulated for rapid recovery from acid-related dyspepsia and gastric lesions.",
-    category: { id: "c1", name: "Medicines" }
+    "id": "medex-9538-4",
+    "name": "3-F 500 mg Tablet",
+    "genericName": "Levofloxacin Hemihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Edruc Limited",
+    "price": 22,
+    "stock": 218,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3-F (Levofloxacin Hemihydrate) manufactured by Edruc Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "med-6",
-    name: "Ciprocin 500 Tablet",
-    genericName: "Ciprofloxacin Hydrochloride USP",
-    dosageForm: "Film Coated Tablet",
-    strength: "500 mg",
-    packSize: "3 x 10's Blister",
-    manufacturer: "Square Pharmaceuticals PLC",
-    price: 18.00,
-    stock: 200,
-    requiredPrescription: true,
-    imageUrl: "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&auto=format&fit=crop&q=80",
-    description: "Broad-spectrum antibacterial medicine for urinary tract infections, typhoid fever and respiratory infections.",
-    category: { id: "c1", name: "Medicines" }
+    "id": "medex-7697-5",
+    "name": "3-Geocef 200 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "200 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Hallmark Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 235,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3-Geocef (Cefixime Trihydrate) manufactured by Hallmark Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "med-7",
-    name: "Monas 10 Tablet",
-    genericName: "Montelukast Sodium",
-    dosageForm: "Chewable Tablet",
-    strength: "10 mg",
-    packSize: "3 x 10's Alu-Alu",
-    manufacturer: "Acme Laboratories Ltd.",
-    price: 17.50,
-    stock: 250,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
-    description: "Preventative control of asthma and day/night symptom relief for allergic rhinitis.",
-    category: { id: "c1", name: "Medicines" }
+    "id": "medex-7698-6",
+    "name": "3-Geocef 100 mg/5 ml Powder for Suspension",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "100 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Hallmark Pharmaceuticals Ltd.",
+    "price": 96,
+    "stock": 252,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3-Geocef (Cefixime Trihydrate) manufactured by Hallmark Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "med-8",
-    name: "Tofen 1mg Tablet",
-    genericName: "Ketotifen Fumarate",
-    dosageForm: "Tablet",
-    strength: "1 mg",
-    packSize: "10 x 10's Blister",
-    manufacturer: "Beximco Pharmaceuticals Ltd.",
-    price: 3.00,
-    stock: 310,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?w=600&auto=format&fit=crop&q=80",
-    description: "Anti-asthmatic prophylactic agent and anti-allergic antihistamine for respiratory comfort.",
-    category: { id: "c1", name: "Medicines" }
+    "id": "medex-31993-7",
+    "name": "3D 20000 IU Capsule",
+    "genericName": "Cholecalciferol [Vitamin D3]",
+    "dosageForm": "Capsule",
+    "strength": "20000 IU",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Jenphar Bangladesh Ltd.",
+    "price": 17,
+    "stock": 269,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3D (Cholecalciferol [Vitamin D3]) manufactured by Jenphar Bangladesh Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
   },
   {
-    id: "med-9",
-    name: "Alatrol 10mg Tablet",
-    genericName: "Cetirizine Hydrochloride",
-    dosageForm: "Film Coated Tablet",
-    strength: "10 mg",
-    packSize: "10 x 10's Blister",
-    manufacturer: "Square Pharmaceuticals PLC",
-    price: 3.50,
-    stock: 420,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=600&auto=format&fit=crop&q=80",
-    description: "Provides non-drowsy 24 hour relief from sneezing, itching eyes, urticaria, and perennial allergic rhinitis.",
-    category: { id: "c1", name: "Medicines" }
+    "id": "medex-31994-8",
+    "name": "3D 40000 IU Capsule",
+    "genericName": "Cholecalciferol [Vitamin D3]",
+    "dosageForm": "Capsule",
+    "strength": "40000 IU",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Jenphar Bangladesh Ltd.",
+    "price": 19.5,
+    "stock": 286,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3D (Cholecalciferol [Vitamin D3]) manufactured by Jenphar Bangladesh Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
   },
   {
-    id: "med-10",
-    name: "Fexo 120mg Tablet",
-    genericName: "Fexofenadine Hydrochloride",
-    dosageForm: "Tablet",
-    strength: "120 mg",
-    packSize: "5 x 10's Alu-Alu",
-    manufacturer: "Square Pharmaceuticals PLC",
-    price: 9.00,
-    stock: 280,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=600&auto=format&fit=crop&q=80",
-    description: "Second generation non-sedating antihistamine for allergic rhinitis and chronic idiopathic urticaria.",
-    category: { id: "c1", name: "Medicines" }
-  },
-
-  // ================= 2. BABY & MOM (10 items) =================
-  {
-    id: "bm-1",
-    name: "Pampers Baby Dry Diapers (Large 64 pcs)",
-    genericName: "Magic Gel Absorbent Core Diapers",
-    dosageForm: "Diaper Pants",
-    strength: "Size 4 (Large 9-14 kg)",
-    packSize: "64 Pieces Pack",
-    manufacturer: "Procter & Gamble",
-    price: 1680.00,
-    stock: 65,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
-    description: "Locks wetness away for up to 12 hours of peaceful sleep with ultra-soft breathable waistbands.",
-    category: { id: "c2", name: "Baby & Mom" }
+    "id": "medex-33499-9",
+    "name": "3D 2000 IU Tablet",
+    "genericName": "Cholecalciferol [Vitamin D3]",
+    "dosageForm": "Tablet",
+    "strength": "2000 IU",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Jenphar Bangladesh Ltd.",
+    "price": 22,
+    "stock": 303,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3D (Cholecalciferol [Vitamin D3]) manufactured by Jenphar Bangladesh Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
   },
   {
-    id: "bm-2",
-    name: "Baby Cerelac Wheat & Apple (400g)",
-    genericName: "Fortified Infant Cereal with Iron & Bifidus BL",
-    dosageForm: "Infant Food",
-    strength: "Stage 1 (6+ Months)",
-    packSize: "400g Tin",
-    manufacturer: "Nestlé Bangladesh",
-    price: 495.00,
-    stock: 110,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
-    description: "Nutritious and easily digestible weaning food enriched with immunonutrients for growing babies.",
-    category: { id: "c2", name: "Baby & Mom" }
+    "id": "medex-7699-10",
+    "name": "3RD Cef 200 mg Tablet",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Medimet Pharmaceuticals Ltd.",
+    "price": 9,
+    "stock": 320,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3RD Cef (Cefixime Trihydrate) manufactured by Medimet Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "bm-3",
-    name: "Sudocrem Antiseptic Healing Cream (125g)",
-    genericName: "Zinc Oxide, Lanolin, Benzyl Benzoate",
-    dosageForm: "Healing Cream",
-    strength: "Clinical Barrier",
-    packSize: "125g Tub",
-    manufacturer: "Teva Pharmaceuticals",
-    price: 750.00,
-    stock: 80,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&auto=format&fit=crop&q=80",
-    description: "Soothing water-repellent base barrier cream for diaper rash, eczema, cuts, and surface wounds.",
-    category: { id: "c2", name: "Baby & Mom" }
+    "id": "medex-7700-11",
+    "name": "3RD Cef 400 mg Tablet",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Tablet",
+    "strength": "400 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Medimet Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 337,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3RD Cef (Cefixime Trihydrate) manufactured by Medimet Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "bm-4",
-    name: "Johnson's Baby Shampoo Tear-Free (200ml)",
-    genericName: "No More Tears Mild Surfactant",
-    dosageForm: "Baby Shampoo",
-    strength: "Hypoallergenic",
-    packSize: "200 ml Bottle",
-    manufacturer: "Johnson & Johnson",
-    price: 360.00,
-    stock: 90,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format&fit=crop&q=80",
-    description: "Gentle baby hair wash that is as gentle to the eyes as pure water. Pediatrician and dermatologist tested.",
-    category: { id: "c2", name: "Baby & Mom" }
+    "id": "medex-7701-12",
+    "name": "3RD Cef 100 mg/5 ml Powder for Suspension",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "100 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Medimet Pharmaceuticals Ltd.",
+    "price": 62,
+    "stock": 354,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 3RD Cef (Cefixime Trihydrate) manufactured by Medimet Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "bm-5",
-    name: "Aveeno Baby Daily Moisture Lotion (227ml)",
-    genericName: "Natural Colloidal Oatmeal + Dimethicone",
-    dosageForm: "Baby Lotion",
-    strength: "Fragrance Free",
-    packSize: "227 ml Tube",
-    manufacturer: "Johnson & Johnson Consumer",
-    price: 1150.00,
-    stock: 50,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&auto=format&fit=crop&q=80",
-    description: "Nourishing non-greasy baby moisturizer that protects and hydrates delicate baby skin for 24 hours.",
-    category: { id: "c2", name: "Baby & Mom" }
+    "id": "medex-17301-13",
+    "name": "5 FU PhaRes 25 mg/ml IV Injection or Infusion",
+    "genericName": "Fluorouracil",
+    "dosageForm": "IV Injection or Infusion",
+    "strength": "25 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ZAS Corporation",
+    "price": 315,
+    "stock": 371,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 5 FU PhaRes (Fluorouracil) manufactured by ZAS Corporation. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   },
   {
-    id: "bm-6",
-    name: "MamyPoko Pants Extra Clean (M 48 pcs)",
-    genericName: "Speed Air Wave Diaper Pants",
-    dosageForm: "Diaper Pants",
-    strength: "Size M (6-11 kg)",
-    packSize: "48 Pieces Pack",
-    manufacturer: "Unicharm Japan",
-    price: 1350.00,
-    stock: 70,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&auto=format&fit=crop&q=80",
-    description: "All-round breathable fit pants with soft elastic gathers that prevent leaks and rashes.",
-    category: { id: "c2", name: "Baby & Mom" }
+    "id": "medex-105-14",
+    "name": "5-Fluril 25 mg/ml IV Injection or Infusion",
+    "genericName": "Fluorouracil",
+    "dosageForm": "IV Injection or Infusion",
+    "strength": "25 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Techno Drugs Ltd.",
+    "price": 330,
+    "stock": 388,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 5-Fluril (Fluorouracil) manufactured by Techno Drugs Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   },
   {
-    id: "bm-7",
-    name: "Mamaearth Stretch Marks Cream (100ml)",
-    genericName: "Shea Butter, Cocoa Butter & Peptides",
-    dosageForm: "Maternity Cream",
-    strength: "Toxin Free",
-    packSize: "100 ml Pump",
-    manufacturer: "Honasa Consumer",
-    price: 680.00,
-    stock: 45,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&auto=format&fit=crop&q=80",
-    description: "Helps reduce appearance of stretch marks and itchy dry skin during and after pregnancy.",
-    category: { id: "c2", name: "Baby & Mom" }
+    "id": "medex-38307-15",
+    "name": "5-IN-1 Cleanser Cream Cream",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Cream",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "DBL Healthcare Ltd.",
+    "price": 149,
+    "stock": 405,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 5-IN-1 Cleanser Cream (Miscellaneous Topical Agents) manufactured by DBL Healthcare Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
   },
   {
-    id: "bm-8",
-    name: "Woodward's Gripe Water (130ml)",
-    genericName: "Dill Seed Oil + Sodium Bicarbonate",
-    dosageForm: "Oral Liquid",
-    strength: "Alcohol Free",
-    packSize: "130 ml Bottle",
-    manufacturer: "TTK Healthcare",
-    price: 140.00,
-    stock: 120,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
-    description: "Rapid relief from griping pain, colic and flatulence in babies during the teething period.",
-    category: { id: "c2", name: "Baby & Mom" }
+    "id": "medex-25154-16",
+    "name": "5X 30 mg Tablet",
+    "genericName": "Ulipristal Acetate [For emergency contraception]",
+    "dosageForm": "Tablet",
+    "strength": "30 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Renata PLC",
+    "price": 7.5,
+    "stock": 422,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 5X (Ulipristal Acetate [For emergency contraception]) manufactured by Renata PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "bm-9",
-    name: "Philips Avent Natural Feeding Bottle (260ml)",
-    genericName: "Anti-Colic Valve BPA-Free Feeding Bottle",
-    dosageForm: "Feeding Device",
-    strength: "Natural Latch On",
-    packSize: "1 Piece Box",
-    manufacturer: "Philips Avent UK",
-    price: 1280.00,
-    stock: 35,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
-    description: "Ultra soft nipple designed to mimic the breast for easy combining of breast and bottle feeding.",
-    category: { id: "c2", name: "Baby & Mom" }
+    "id": "medex-37637-17",
+    "name": "A to Z Silver Tablet",
+    "genericName": "Multivitamin & Multimineral [A-Z silver preparation]",
+    "dosageForm": "Tablet",
+    "strength": "",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Pharmik Laboratories Ltd.",
+    "price": 8.75,
+    "stock": 439,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A to Z Silver (Multivitamin & Multimineral [A-Z silver preparation]) manufactured by Pharmik Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   },
   {
-    id: "bm-10",
-    name: "Sebamed Baby Wash Extra Soft (200ml)",
-    genericName: "pH 5.5 Sugar Tenside Complex",
-    dosageForm: "Body Wash",
-    strength: "pH 5.5 Balanced",
-    packSize: "200 ml Bottle",
-    manufacturer: "Sebapharma Germany",
-    price: 890.00,
-    stock: 40,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format&fit=crop&q=80",
-    description: "Supports development of the acid mantle of baby skin, preventing dryness and irritation.",
-    category: { id: "c2", name: "Baby & Mom" }
-  },
-
-  // ================= 3. DIABETIC CARE (10 items) =================
-  {
-    id: "dia-1",
-    name: "Accu-Chek Instant Glucometer Kit",
-    genericName: "Blood Glucose Monitoring System",
-    dosageForm: "Medical Device",
-    strength: "Instant Target Range Indicator",
-    packSize: "Meter + 10 Strips + Lancing Device",
-    manufacturer: "Roche Diabetes Care",
-    price: 1850.00,
-    stock: 45,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop&q=80",
-    description: "Effortlessly accurate diabetic blood testing within 4 seconds with painless Softclix lancets.",
-    category: { id: "c3", name: "Diabetic Care" }
+    "id": "medex-13582-18",
+    "name": "A-B1 100 mg Tablet",
+    "genericName": "Thiamine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 2.5,
+    "stock": 456,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-B1 (Thiamine Hydrochloride) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "dia-2",
-    name: "Accu-Chek Instant Test Strips (50 pcs)",
-    genericName: "Glucose Biosensor Test Strips",
-    dosageForm: "Diagnostic Strips",
-    strength: "50 Test Strips",
-    packSize: "50's Vial",
-    manufacturer: "Roche Diagnostics Germany",
-    price: 1150.00,
-    stock: 120,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
-    description: "Wide dosing area requiring only a small pinprick droplet of blood for lab-quality testing at home.",
-    category: { id: "c3", name: "Diabetic Care" }
+    "id": "medex-14264-19",
+    "name": "A-Cal 500 mg Tablet",
+    "genericName": "Calcium Carbonate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 22,
+    "stock": 473,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Cal (Calcium Carbonate) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
   },
   {
-    id: "dia-3",
-    name: "Glucerna SR Vanilla Powder (400g)",
-    genericName: "Slow Release Carbohydrate Diabetic Nutrition",
-    dosageForm: "Powdered Drink",
-    strength: "Low GI Triple Care Formula",
-    packSize: "400g Tin",
-    manufacturer: "Abbott Laboratories",
-    price: 1250.00,
-    stock: 50,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1576602976047-174e57a47881?w=600&auto=format&fit=crop&q=80",
-    description: "Scientifically formulated meal replacement that minimizes blood sugar spikes and sustains fullness.",
-    category: { id: "c3", name: "Diabetic Care" }
+    "id": "medex-14399-20",
+    "name": "A-Cal D 500 mg+200 IU Tablet",
+    "genericName": "Conventional Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+200 IU",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 12,
+    "stock": 490,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Cal D (Conventional Calcium + Vitamin D3) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
   },
   {
-    id: "dia-4",
-    name: "Sugar Free Gold Natura Sweetener (500 Pellets)",
-    genericName: "Sucralose Zero Calorie Sweetener",
-    dosageForm: "Pellets",
-    strength: "Zero Calorie",
-    packSize: "500 Pellets Dispenser",
-    manufacturer: "Zydus Wellness",
-    price: 360.00,
-    stock: 140,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
-    description: "Heat-stable sugar substitute ideal for diabetic weight and glucose management in hot & cold drinks.",
-    category: { id: "c3", name: "Diabetic Care" }
+    "id": "medex-14480-21",
+    "name": "A-Cal DX 500 mg+400 IU Tablet",
+    "genericName": "Conventional Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+400 IU",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 14.5,
+    "stock": 157,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Cal DX (Conventional Calcium + Vitamin D3) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
   },
   {
-    id: "dia-5",
-    name: "BD Ultra-Fine Insulin Pen Needles 4mm (100 pcs)",
-    genericName: "32G Micro-Fine Pen Needles",
-    dosageForm: "Surgical Consumable",
-    strength: "4mm x 32G",
-    packSize: "100 Needles Box",
-    manufacturer: "Becton Dickinson USA",
-    price: 1850.00,
-    stock: 60,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=600&auto=format&fit=crop&q=80",
-    description: "EasyFlow technology for faster injections with less thumb force and painless skin insertion.",
-    category: { id: "c3", name: "Diabetic Care" }
+    "id": "medex-15483-22",
+    "name": "A-Calm 50 mg Tablet",
+    "genericName": "Tolperisone Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 7.5,
+    "stock": 174,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Calm (Tolperisone Hydrochloride) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "dia-6",
-    name: "Contour Plus Blood Glucose Meter",
-    genericName: "Second-Chance Sampling Blood Sugar Monitor",
-    dosageForm: "Medical Device",
-    strength: "No Coding Required",
-    packSize: "Complete Meter Kit",
-    manufacturer: "Ascensia Diabetes Care",
-    price: 1650.00,
-    stock: 40,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop&q=80",
-    description: "Allows re-application of blood to same strip if first sample is insufficient, saving strip waste.",
-    category: { id: "c3", name: "Diabetic Care" }
+    "id": "medex-3039-23",
+    "name": "A-Card 20 mg Tablet",
+    "genericName": "Isosorbide Mononitrate",
+    "dosageForm": "Tablet",
+    "strength": "20 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 8.75,
+    "stock": 191,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Card (Isosorbide Mononitrate) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "dia-7",
-    name: "On-Call Plus Test Strips (50 pcs)",
-    genericName: "Electrochemical Glucose Strips",
-    dosageForm: "Test Strips",
-    strength: "Fast 10s Measurement",
-    packSize: "50 Strips Box",
-    manufacturer: "ACON Laboratories USA",
-    price: 780.00,
-    stock: 130,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
-    description: "Affordable and highly reliable daily glucose test strips used across clinics and homes.",
-    category: { id: "c3", name: "Diabetic Care" }
+    "id": "medex-14006-24",
+    "name": "A-Care 6 mg+200 mg+50 mg Tablet",
+    "genericName": "Beta carotene + Vitamin C + Vitamin E",
+    "dosageForm": "Tablet",
+    "strength": "6 mg+200 mg+50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Asiatic Laboratories Ltd.",
+    "price": 2.5,
+    "stock": 208,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Care (Beta carotene + Vitamin C + Vitamin E) manufactured by Asiatic Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
   },
   {
-    id: "dia-8",
-    name: "Diabetic Seamless Cotton Socks (Pair)",
-    genericName: "Non-Binding Compression Free Socks",
-    dosageForm: "Diabetic Accessory",
-    strength: "Anti-Microbial Weave",
-    packSize: "1 Pair",
-    manufacturer: "MediCare Ortho",
-    price: 320.00,
-    stock: 85,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=600&auto=format&fit=crop&q=80",
-    description: "Designed to improve peripheral blood flow, prevent blisters and protect diabetic sensitive feet.",
-    category: { id: "c3", name: "Diabetic Care" }
+    "id": "medex-6171-25",
+    "name": "A-Clox 500 mg Capsule",
+    "genericName": "Cloxacillin Sodium",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 12,
+    "stock": 225,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Clox (Cloxacillin Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "dia-9",
-    name: "Lantus Solostar Insulin Pen (100 IU/ml)",
-    genericName: "Insulin Glargine r-DNA",
-    dosageForm: "Prefilled Pen",
-    strength: "100 Units/ml (3ml)",
-    packSize: "1 Pen (Cold Chain)",
-    manufacturer: "Sanofi Bangladesh",
-    price: 880.00,
-    stock: 55,
-    requiredPrescription: true,
-    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
-    description: "Once-daily long-acting basal analog for sustained 24-hour glycemic control without peaks.",
-    category: { id: "c3", name: "Diabetic Care" }
+    "id": "medex-4006-26",
+    "name": "A-Cof (10 mg+30 mg+1.25 mg)/5 ml Syrup",
+    "genericName": "Dextromethorphan + Pseudoephedrine + Triprolidine",
+    "dosageForm": "Syrup",
+    "strength": "(10 mg+30 mg+1.25 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 96,
+    "stock": 242,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Cof (Dextromethorphan + Pseudoephedrine + Triprolidine) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "dia-10",
-    name: "Accu-Chek Softclix Lancets (100 pcs)",
-    genericName: "Sterile Silicone-Coated Lancets",
-    dosageForm: "Lancets",
-    strength: "28G Gentle Clix",
-    packSize: "100 Lancets Box",
-    manufacturer: "Roche Diagnostics",
-    price: 490.00,
-    stock: 160,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
-    description: "Precise guided motion lancets minimizing skin tearing and vibration for virtually pain-free testing.",
-    category: { id: "c3", name: "Diabetic Care" }
-  },
-
-  // ================= 4. HEALTH & DEVICES (10 items) =================
-  {
-    id: "hd-1",
-    name: "Omron HEM-7120 Digital BP Monitor",
-    genericName: "Automatic Upper Arm Blood Pressure Monitor",
-    dosageForm: "Medical Equipment",
-    strength: "IntelliSense Precision",
-    packSize: "1 Unit with Medium Cuff (22-32 cm)",
-    manufacturer: "Omron Healthcare Japan",
-    price: 2650.00,
-    stock: 35,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop&q=80",
-    description: "One-touch operation with body movement detection and hypertension indicators recommended by cardiologists.",
-    category: { id: "c4", name: "Health & Devices" }
+    "id": "medex-4077-27",
+    "name": "A-Cold 4 mg/5 ml Syrup",
+    "genericName": "Bromhexine Hydrochloride",
+    "dosageForm": "Syrup",
+    "strength": "4 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 104.5,
+    "stock": 259,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Cold (Bromhexine Hydrochloride) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "hd-2",
-    name: "Littmann Classic III Stethoscope",
-    genericName: "Acoustic Diagnostic Stethoscope",
-    dosageForm: "Diagnostic Device",
-    strength: "Dual Tunable Diaphragm",
-    packSize: "1 Unit Box",
-    manufacturer: "3M Littmann USA",
-    price: 8900.00,
-    stock: 20,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&auto=format&fit=crop&q=80",
-    description: "High acoustic sensitivity for performing exceptional physical assessments on adult and pediatric patients.",
-    category: { id: "c4", name: "Health & Devices" }
+    "id": "medex-10930-28",
+    "name": "A-Fenac 50 mg Tablet",
+    "genericName": "Diclofenac Sodium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 7.5,
+    "stock": 276,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Fenac (Diclofenac Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "hd-3",
-    name: "Savlon Antiseptic Liquid (1000ml)",
-    genericName: "Chlorhexidine Gluconate + Cetrimide",
-    dosageForm: "Liquid Antiseptic",
-    strength: "Hospital Strength",
-    packSize: "1 Litre Bottle",
-    manufacturer: "ACI Limited",
-    price: 280.00,
-    stock: 300,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
-    description: "First aid disinfectant for cuts, grazes, bites, minor stings, bathing and personal hygiene care.",
-    category: { id: "c4", name: "Health & Devices" }
+    "id": "medex-10934-29",
+    "name": "A-Fenac 12.5 mg Suppository",
+    "genericName": "Diclofenac Sodium",
+    "dosageForm": "Suppository",
+    "strength": "12.5 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 8.75,
+    "stock": 293,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Fenac (Diclofenac Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "hd-4",
-    name: "Rossmax Compressor Nebulizer (NA100)",
-    genericName: "Aerosol Piston Nebulizer Therapy Unit",
-    dosageForm: "Nebulizer Machine",
-    strength: "Particle Size 2.5 µm",
-    packSize: "Machine + Adult & Child Masks",
-    manufacturer: "Rossmax Switzerland",
-    price: 3450.00,
-    stock: 30,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=600&auto=format&fit=crop&q=80",
-    description: "Consistent fine aerosol medication delivery for asthma, COPD, bronchitis and respiratory congestion.",
-    category: { id: "c4", name: "Health & Devices" }
+    "id": "medex-10935-30",
+    "name": "A-Fenac 50 mg Suppository",
+    "genericName": "Diclofenac Sodium",
+    "dosageForm": "Suppository",
+    "strength": "50 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 2.5,
+    "stock": 310,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Fenac (Diclofenac Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "hd-5",
-    name: "Beurer FT09 Digital Clinical Thermometer",
-    genericName: "Waterproof Fever Thermometer",
-    dosageForm: "Thermometer",
-    strength: "10s Fast Reading",
-    packSize: "1 Unit Box",
-    manufacturer: "Beurer Germany",
-    price: 380.00,
-    stock: 90,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=600&auto=format&fit=crop&q=80",
-    description: "Mercury-free, waterproof fever measurement with acoustic fever signal and memory recall function.",
-    category: { id: "c4", name: "Health & Devices" }
+    "id": "medex-11134-31",
+    "name": "A-Fenac K 50 mg Tablet",
+    "genericName": "Diclofenac Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 3.75,
+    "stock": 327,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Fenac K (Diclofenac Potassium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "hd-6",
-    name: "Fingertip Pulse Oximeter OLED (SpO2)",
-    genericName: "Digital Blood Oxygen Saturation Monitor",
-    dosageForm: "Diagnostic Device",
-    strength: "SpO2 & Pulse Rate",
-    packSize: "1 Unit with Lanyard",
-    manufacturer: "ChoiceMMed",
-    price: 1150.00,
-    stock: 75,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1559825481-12a05cc00344?w=600&auto=format&fit=crop&q=80",
-    description: "Instant, painless check of blood oxygen percentage and pulse heart rate in 5 seconds.",
-    category: { id: "c4", name: "Health & Devices" }
+    "id": "medex-10933-32",
+    "name": "A-Fenac Plus (75 mg+20 mg)/2 ml IM Injection",
+    "genericName": "Diclofenac Sodium + Lidocaine Hydrochloride",
+    "dosageForm": "IM Injection",
+    "strength": "(75 mg+20 mg)/2 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 150,
+    "stock": 344,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Fenac Plus (Diclofenac Sodium + Lidocaine Hydrochloride) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   },
   {
-    id: "hd-7",
-    name: "Flamingo Orthopedic Lumbar Sacro Belt",
-    genericName: "Back Support Lumbar Immobilizer",
-    dosageForm: "Orthopedic Belt",
-    strength: "Medium / Large Sizes",
-    packSize: "1 Belt Box",
-    manufacturer: "Ascent Meditech / Flamingo",
-    price: 1250.00,
-    stock: 45,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
-    description: "Provides therapeutic compression and anatomical support for lower back ache and spinal stabilization.",
-    category: { id: "c4", name: "Health & Devices" }
+    "id": "medex-10931-33",
+    "name": "A-Fenac SR 100 mg Tablet (Sustained Release)",
+    "genericName": "Diclofenac Sodium",
+    "dosageForm": "Tablet (Sustained Release)",
+    "strength": "100 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 6.25,
+    "stock": 361,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Fenac SR (Diclofenac Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "hd-8",
-    name: "Sterile Surgical Latex Gloves (100 pcs)",
-    genericName: "Powder-Free Examination Gloves",
-    dosageForm: "Protective Wear",
-    strength: "Micro-Textured Grip",
-    packSize: "100 Gloves Box",
-    manufacturer: "Top Glove",
-    price: 650.00,
-    stock: 140,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=600&auto=format&fit=crop&q=80",
-    description: "Medical-grade barrier protection against cross-contamination during patient care and diagnostics.",
-    category: { id: "c4", name: "Health & Devices" }
+    "id": "medex-6210-34",
+    "name": "A-Flox 250 mg Capsule",
+    "genericName": "Flucloxacillin Sodium",
+    "dosageForm": "Capsule",
+    "strength": "250 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 9,
+    "stock": 378,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Flox (Flucloxacillin Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "hd-9",
-    name: "Hansaplast Universal Adhesive Bandages (100 Strips)",
-    genericName: "Water Repellent First Aid Plaster",
-    dosageForm: "Wound Bandage",
-    strength: "Breathable Fabric",
-    packSize: "100 Strips Box",
-    manufacturer: "Beiersdorf",
-    price: 250.00,
-    stock: 220,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1576602976047-174e57a47881?w=600&auto=format&fit=crop&q=80",
-    description: "Protects everyday small cuts and scrapes from dirt and bacteria with non-stick wound pad.",
-    category: { id: "c4", name: "Health & Devices" }
+    "id": "medex-6211-35",
+    "name": "A-Flox 500 mg Capsule",
+    "genericName": "Flucloxacillin Sodium",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 12,
+    "stock": 395,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Flox (Flucloxacillin Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "hd-10",
-    name: "Hot & Cold Reusable Gel Compress Pack",
-    genericName: "Microwavable & Freezable Therapy Pack",
-    dosageForm: "Therapeutic Pack",
-    strength: "Flexible Cold/Heat",
-    packSize: "1 Pack with Sleeve",
-    manufacturer: "Nexcare / 3M",
-    price: 450.00,
-    stock: 80,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=600&auto=format&fit=crop&q=80",
-    description: "Drug-free pain relief for sports swelling, headaches, fever, arthritis and muscle spasms.",
-    category: { id: "c4", name: "Health & Devices" }
-  },
-
-  // ================= 5. PERSONAL CARE (10 items) =================
-  {
-    id: "pc-1",
-    name: "CeraVe Daily Moisturizing Lotion (236ml)",
-    genericName: "Essential Ceramides 1, 3, 6-II + Hyaluronic Acid",
-    dosageForm: "Lotion",
-    strength: "MVE Technology",
-    packSize: "236 ml Bottle",
-    manufacturer: "CeraVe / L'Oréal",
-    price: 1450.00,
-    stock: 80,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format&fit=crop&q=80",
-    description: "Lightweight, non-greasy 24-hour hydration formulated for normal to dry and sensitive skin.",
-    category: { id: "c5", name: "Personal Care" }
+    "id": "medex-6212-36",
+    "name": "A-Flox 125 mg/5 ml Powder for Suspension",
+    "genericName": "Flucloxacillin Sodium",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 96,
+    "stock": 412,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Flox (Flucloxacillin Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "pc-2",
-    name: "Cetaphil Gentle Skin Cleanser (250ml)",
-    genericName: "Niacinamide, Panthenol & Glycerin",
-    dosageForm: "Cleanser",
-    strength: "Hypoallergenic Formula",
-    packSize: "250 ml Pump",
-    manufacturer: "Galderma",
-    price: 1350.00,
-    stock: 65,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
-    description: "Dermatologist-recommended non-foaming hydrating facial cleanser for dry to sensitive skin.",
-    category: { id: "c5", name: "Personal Care" }
+    "id": "medex-6214-37",
+    "name": "A-Flox 500 mg/vial IM/IV Injection",
+    "genericName": "Flucloxacillin Sodium",
+    "dosageForm": "IM/IV Injection",
+    "strength": "500 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 225,
+    "stock": 429,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Flox (Flucloxacillin Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   },
   {
-    id: "pc-3",
-    name: "Bioderma Sensibio H2O Micellar Water (500ml)",
-    genericName: "Soothing Make-up Removing Micellar Solution",
-    dosageForm: "Micellar Solution",
-    strength: "Physiological pH 5.5",
-    packSize: "500 ml Bottle",
-    manufacturer: "NAOS Bioderma France",
-    price: 1950.00,
-    stock: 40,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format&fit=crop&q=80",
-    description: "Cleanses, purifies and calms sensitive and intolerant facial skin without requiring rinsing.",
-    category: { id: "c5", name: "Personal Care" }
+    "id": "medex-13491-38",
+    "name": "A-Forte 50000 IU Capsule",
+    "genericName": "Vitamin A",
+    "dosageForm": "Capsule",
+    "strength": "50000 IU",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Globe Pharmaceuticals Ltd.",
+    "price": 19.5,
+    "stock": 446,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Forte (Vitamin A) manufactured by Globe Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
   },
   {
-    id: "pc-4",
-    name: "Sensodyne Rapid Relief Toothpaste (100g)",
-    genericName: "Stannous Fluoride 0.454%",
-    dosageForm: "Toothpaste",
-    strength: "Fast 60s Sensitivity Relief",
-    packSize: "100g Tube",
-    manufacturer: "GSK Consumer Healthcare",
-    price: 290.00,
-    stock: 140,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&auto=format&fit=crop&q=80",
-    description: "Clinically proven to beat tooth sensitivity pain fast by building an occluding layer over dentin.",
-    category: { id: "c5", name: "Personal Care" }
+    "id": "medex-28227-39",
+    "name": "A-Kit 200 mg+200 mcg Tablet",
+    "genericName": "Mifepristone + Misoprostol",
+    "dosageForm": "Tablet",
+    "strength": "200 mg+200 mcg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 10.5,
+    "stock": 463,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Kit (Mifepristone + Misoprostol) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "pc-5",
-    name: "Neutrogena Hydro Boost Water Gel (50g)",
-    genericName: "Purified Hyaluronic Acid + Trehalose",
-    dosageForm: "Face Gel Moisturizer",
-    strength: "Oil-Free & Non-Comedogenic",
-    packSize: "50g Jar",
-    manufacturer: "Johnson & Johnson",
-    price: 1190.00,
-    stock: 55,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&auto=format&fit=crop&q=80",
-    description: "Instantly quenches dry skin and keeps it looking smooth, supple and hydrated day after day.",
-    category: { id: "c5", name: "Personal Care" }
+    "id": "medex-16609-40",
+    "name": "A-Meb 135 mg Tablet",
+    "genericName": "Mebeverine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "135 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 6,
+    "stock": 480,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Meb (Mebeverine Hydrochloride) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "pc-6",
-    name: "Selsun Blue Anti-Dandruff Shampoo (120ml)",
-    genericName: "Selenium Sulfide 1%",
-    dosageForm: "Medicated Shampoo",
-    strength: "With Aloe Vera",
-    packSize: "120 ml Bottle",
-    manufacturer: "Sanofi Consumer",
-    price: 650.00,
-    stock: 70,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&auto=format&fit=crop&q=80",
-    description: "Controls tough dandruff flakes, scalp flaking and relieves itching associated with seborrhea.",
-    category: { id: "c5", name: "Personal Care" }
+    "id": "medex-28704-41",
+    "name": "A-Mectin 6 mg Tablet",
+    "genericName": "Ivermectin (Tablet)",
+    "dosageForm": "Tablet",
+    "strength": "6 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 8.75,
+    "stock": 497,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Mectin (Ivermectin (Tablet)) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   },
   {
-    id: "pc-7",
-    name: "Dettol Original Anti-Bacterial Hand Wash (250ml)",
-    genericName: "Pine & Chloroxylenol Hygiene Formula",
-    dosageForm: "Liquid Hand Soap",
-    strength: "10x Better Germ Protection",
-    packSize: "250 ml Pump",
-    manufacturer: "Reckitt Benckiser",
-    price: 155.00,
-    stock: 200,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=600&auto=format&fit=crop&q=80",
-    description: "Kills 99.9% of illness-causing germs and keeps hands hygienically clean and refreshed.",
-    category: { id: "c5", name: "Personal Care" }
+    "id": "medex-28705-42",
+    "name": "A-Mectin 12 mg Tablet",
+    "genericName": "Ivermectin (Tablet)",
+    "dosageForm": "Tablet",
+    "strength": "12 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 2.5,
+    "stock": 164,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Mectin (Ivermectin (Tablet)) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   },
   {
-    id: "pc-8",
-    name: "Listerine Cool Mint Mouthwash (250ml)",
-    genericName: "Eucalyptol, Menthol, Methyl Salicylate",
-    dosageForm: "Antiseptic Mouthwash",
-    strength: "24h Plaque Protection",
-    packSize: "250 ml Bottle",
-    manufacturer: "Johnson & Johnson",
-    price: 280.00,
-    stock: 110,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
-    description: "Removes up to 99% of oral bacteria that brushing leaves behind, leaving breath minty clean.",
-    category: { id: "c5", name: "Personal Care" }
+    "id": "medex-10007-43",
+    "name": "A-Migel 2% w/w Oral Gel",
+    "genericName": "Miconazole Nitrate",
+    "dosageForm": "Oral Gel",
+    "strength": "2% w/w",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 3.75,
+    "stock": 181,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Migel (Miconazole Nitrate) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
   },
   {
-    id: "pc-9",
-    name: "Whisper Ultra Clean Sanitary Pads (XL 30 pcs)",
-    genericName: "Super Absorbent Wings Napkin",
-    dosageForm: "Feminine Hygiene",
-    strength: "XL + Extra Protection",
-    packSize: "30 Pads Pack",
-    manufacturer: "Procter & Gamble",
-    price: 360.00,
-    stock: 130,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1576602976047-174e57a47881?w=600&auto=format&fit=crop&q=80",
-    description: "Nearly 40% longer with lock core technology for complete stain-free menstrual comfort and freshness.",
-    category: { id: "c5", name: "Personal Care" }
+    "id": "medex-529-44",
+    "name": "A-Mycin 3% W/V Lotion",
+    "genericName": "Erythromycin (Lotion)",
+    "dosageForm": "Lotion",
+    "strength": "3% W/V",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 5,
+    "stock": 198,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Mycin (Erythromycin (Lotion)) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
   },
   {
-    id: "pc-10",
-    name: "Nivea Men Deep Impact Roll-on Deodorant (50ml)",
-    genericName: "Black Carbon Antibacterial Protection",
-    dosageForm: "Roll-On",
-    strength: "48h Odor Protection",
-    packSize: "50 ml Bottle",
-    manufacturer: "Beiersdorf",
-    price: 320.00,
-    stock: 85,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&auto=format&fit=crop&q=80",
-    description: "Long-lasting woody fragrance with antibacterial black carbon formula to stop sweat and body odor.",
-    category: { id: "c5", name: "Personal Care" }
-  },
-
-  // ================= 6. VITAL WELLNESS (10 items) =================
-  {
-    id: "vw-1",
-    name: "Bextram Gold Multivitamin",
-    genericName: "32 Multivitamins & Multiminerals with Lutein",
-    dosageForm: "Film Coated Tablet",
-    strength: "Complete A-Z Formula",
-    packSize: "30's Bottle",
-    manufacturer: "Beximco Pharmaceuticals Ltd.",
-    price: 15.00,
-    stock: 220,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=600&auto=format&fit=crop&q=80",
-    description: "Comprehensive adult daily nutritional boost providing vital immunity, stamina, brain and bone health.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-8427-45",
+    "name": "A-Mycin 125 mg/5 ml Powder for Suspension",
+    "genericName": "Erythromycin (Oral)",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 87.5,
+    "stock": 215,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Mycin (Erythromycin (Oral)) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "vw-2",
-    name: "D-Rise 20,000 IU Capsule",
-    genericName: "Cholecalciferol (Vitamin D3)",
-    dosageForm: "Soft Gelatin Capsule",
-    strength: "20,000 IU",
-    packSize: "1 x 10's Blister",
-    manufacturer: "Square Pharmaceuticals PLC",
-    price: 45.00,
-    stock: 140,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&auto=format&fit=crop&q=80",
-    description: "High potency Vitamin D3 replenishment for osteomalacia, osteoporosis prevention and severe Vitamin D deficiency.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-8429-46",
+    "name": "A-Mycin 200 mg/5 ml Pediatric Drops",
+    "genericName": "Erythromycin (Oral)",
+    "dosageForm": "Pediatric Drops",
+    "strength": "200 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 9,
+    "stock": 232,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Mycin (Erythromycin (Oral)) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
   },
   {
-    id: "vw-3",
-    name: "Organic Green Tea & Detox Infusion",
-    genericName: "Antioxidant Rich Camellia Sinensis Herb",
-    dosageForm: "Herbal Tea Bags",
-    strength: "100% Organic Herbal Blend",
-    packSize: "25 Tea Bags Box",
-    manufacturer: "Kazi & Kazi Tea",
-    price: 320.00,
-    stock: 95,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format&fit=crop&q=80",
-    description: "Metabolism booster and cellular detoxifier packed with natural catechins and polyphenols for daily wellness.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-27175-47",
+    "name": "A-One 120 mg/5 ml Oral Suspension",
+    "genericName": "Paracetamol",
+    "dosageForm": "Oral Suspension",
+    "strength": "120 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Apex Pharma Ltd.",
+    "price": 104.5,
+    "stock": 249,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-One (Paracetamol) manufactured by Apex Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "vw-4",
-    name: "Optimum Nutrition Gold Standard 100% Whey (2 lbs)",
-    genericName: "Whey Protein Isolate & Peptides",
-    dosageForm: "Protein Powder",
-    strength: "24g Protein per scoop",
-    packSize: "907g Tub",
-    manufacturer: "Glanbia / Optimum Nutrition USA",
-    price: 4850.00,
-    stock: 35,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=600&auto=format&fit=crop&q=80",
-    description: "Post-workout recovery fuel providing 5.5g of naturally occurring BCAAs per serving to build lean muscle.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-27176-48",
+    "name": "A-One Plus 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+65 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Apex Pharma Ltd.",
+    "price": 19.5,
+    "stock": 266,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-One Plus (Paracetamol + Caffeine) manufactured by Apex Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "vw-5",
-    name: "Omega-3 Fish Oil 1000mg Softgels (60 pcs)",
-    genericName: "EPA 180mg + DHA 120mg Fish Oil",
-    dosageForm: "Softgel",
-    strength: "Molecularly Distilled",
-    packSize: "60 Softgels Bottle",
-    manufacturer: "Nature's Bounty USA",
-    price: 1850.00,
-    stock: 75,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
-    description: "Purified fish oil to eliminate mercury, promoting heart artery health, brain focus and joint mobility.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-23388-49",
+    "name": "A-One XR 665 mg Tablet (Extended Release)",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet (Extended Release)",
+    "strength": "665 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Apex Pharma Ltd.",
+    "price": 22,
+    "stock": 283,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-One XR (Paracetamol) manufactured by Apex Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "vw-6",
-    name: "Ceevit 250mg Chewable Tablet (Vitamin C)",
-    genericName: "Ascorbic Acid + Sodium Ascorbate",
-    dosageForm: "Chewable Tablet",
-    strength: "250 mg Orange Flavor",
-    packSize: "10 x 10's Pack",
-    manufacturer: "Square Pharmaceuticals PLC",
-    price: 2.50,
-    stock: 600,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
-    description: "Delicious orange chewable ascorbic acid for strengthening blood vessels, healing skin and cold immunity.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-38193-50",
+    "name": "A-Pak 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Benham Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 300,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Pak (Aceclofenac) manufactured by Benham Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "vw-7",
-    name: "CoralCal-D Tablet (Coral Calcium + D3)",
-    genericName: "Coral Calcium 500mg + Vitamin D3 200 IU",
-    dosageForm: "Tablet",
-    strength: "Bioactive Marine Calcium",
-    packSize: "30 Tablets Bottle",
-    manufacturer: "Radiant Pharmaceuticals",
-    price: 14.00,
-    stock: 180,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&auto=format&fit=crop&q=80",
-    description: "73 trace minerals from fossilized coral reefs ensuring higher absorption to combat bone brittleness.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-35356-51",
+    "name": "A-Pak SR 200 mg Tablet (Sustained Release)",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet (Sustained Release)",
+    "strength": "200 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Benham Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 317,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Pak SR (Aceclofenac) manufactured by Benham Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
   },
   {
-    id: "vw-8",
-    name: "Zinc-B Tablet (Zinc + Vitamin B-Complex)",
-    genericName: "Zinc Sulfate + B-Vitamins",
-    dosageForm: "Tablet",
-    strength: "Therapeutic Zinc & B",
-    packSize: "10 x 10's Blister",
-    manufacturer: "Incepta Pharmaceuticals Ltd.",
-    price: 3.50,
-    stock: 350,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
-    description: "Essential trace element combination to speed up tissue regeneration, wound healing and stimulate appetite.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-8883-52",
+    "name": "A-Phenicol 0.5% Ophthalmic Solution",
+    "genericName": "Chloramphenicol (Ophthalmic)",
+    "dosageForm": "Ophthalmic Solution",
+    "strength": "0.5%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 7.5,
+    "stock": 334,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Phenicol (Chloramphenicol (Ophthalmic)) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   },
   {
-    id: "vw-9",
-    name: "Himalaya Ashwagandha Capsules (60 pcs)",
-    genericName: "Withania Somnifera Pure Herb Extract",
-    dosageForm: "Vegetarian Capsule",
-    strength: "250 mg Pure Extract",
-    packSize: "60 Capsules Bottle",
-    manufacturer: "The Himalaya Drug Company",
-    price: 850.00,
-    stock: 90,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
-    description: "Ancient adaptogen that regulates cortisol levels, combats daily stress, restores energy and stamina.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-15795-53",
+    "name": "A-Phenicol D 0.1%+0.5% Ophthalmic Solution",
+    "genericName": "Dexamethasone + Chloramphenicol",
+    "dosageForm": "Ophthalmic Solution",
+    "strength": "0.1%+0.5%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 8.75,
+    "stock": 351,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Phenicol D (Dexamethasone + Chloramphenicol) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   },
   {
-    id: "vw-10",
-    name: "Nature Made Melatonin 5mg Sleep Aid (90 Tablets)",
-    genericName: "Melatonin 5mg",
-    dosageForm: "Tablet",
-    strength: "5 mg Fast Dissolve",
-    packSize: "90 Tablets Bottle",
-    manufacturer: "Nature Made USA",
-    price: 1450.00,
-    stock: 65,
-    requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?w=600&auto=format&fit=crop&q=80",
-    description: "Drug-free, non-habit forming sleep aid that helps regulate natural circadian rest-and-wake sleep cycles.",
-    category: { id: "c6", name: "Vital Wellness" }
+    "id": "medex-8787-54",
+    "name": "A-Rox 150 mg Tablet",
+    "genericName": "Roxithromycin",
+    "dosageForm": "Tablet",
+    "strength": "150 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 9,
+    "stock": 368,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Rox (Roxithromycin) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-8788-55",
+    "name": "A-Rox 300 mg Tablet",
+    "genericName": "Roxithromycin",
+    "dosageForm": "Tablet",
+    "strength": "300 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 385,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Rox (Roxithromycin) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-8789-56",
+    "name": "A-Rox 50 mg/5 ml Powder for Suspension",
+    "genericName": "Roxithromycin",
+    "dosageForm": "Powder for Suspension",
+    "strength": "50 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 96,
+    "stock": 402,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Rox (Roxithromycin) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-23257-57",
+    "name": "A-Spasm 5 mg Tablet",
+    "genericName": "Oxyphenonium Bromide",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 6.25,
+    "stock": 419,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Spasm (Oxyphenonium Bromide) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-32492-58",
+    "name": "A-Statin 10 mg Tablet",
+    "genericName": "Atorvastatin Calcium",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Doctor TIMS Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 436,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Statin (Atorvastatin Calcium) manufactured by Doctor TIMS Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-8275-59",
+    "name": "A-Tetra 500 mg Capsule",
+    "genericName": "Tetracycline Hydrochloride",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 22,
+    "stock": 453,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Tetra (Tetracycline Hydrochloride) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2432-60",
+    "name": "A-Zyme 325 mg Tablet",
+    "genericName": "Pancreatin",
+    "dosageForm": "Tablet",
+    "strength": "325 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 6,
+    "stock": 470,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic A-Zyme (Pancreatin) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-26635-61",
+    "name": "AB Kit 200 mg+200 mcg Tablet",
+    "genericName": "Mifepristone + Misoprostol",
+    "dosageForm": "Tablet",
+    "strength": "200 mg+200 mcg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Renata PLC",
+    "price": 7.5,
+    "stock": 487,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AB Kit (Mifepristone + Misoprostol) manufactured by Renata PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-25481-62",
+    "name": "AB-DS 400 mg Chewable Tablet",
+    "genericName": "Albendazole",
+    "dosageForm": "Chewable Tablet",
+    "strength": "400 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Prime Pharmaceuticals Ltd.",
+    "price": 9,
+    "stock": 154,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AB-DS (Albendazole) manufactured by Prime Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6776-63",
+    "name": "Abac 500 mg Capsule",
+    "genericName": "Cephradine",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Chemist Laboratories  Ltd.",
+    "price": 19.5,
+    "stock": 171,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abac (Cephradine) manufactured by Chemist Laboratories  Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6777-64",
+    "name": "Abac 125 mg/5 ml Powder for Suspension",
+    "genericName": "Cephradine",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Chemist Laboratories  Ltd.",
+    "price": 79,
+    "stock": 188,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abac (Cephradine) manufactured by Chemist Laboratories  Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6778-65",
+    "name": "Abac 125 mg/1.25 ml Pediatric Drops",
+    "genericName": "Cephradine",
+    "dosageForm": "Pediatric Drops",
+    "strength": "125 mg/1.25 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Chemist Laboratories  Ltd.",
+    "price": 7.5,
+    "stock": 205,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abac (Cephradine) manufactured by Chemist Laboratories  Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-7097-66",
+    "name": "Abaclor 500 mg Capsule",
+    "genericName": "Cefaclor Monohydrate",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 14.5,
+    "stock": 222,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abaclor (Cefaclor Monohydrate) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7098-67",
+    "name": "Abaclor 125 mg/5 ml Powder for Suspension",
+    "genericName": "Cefaclor Monohydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 104.5,
+    "stock": 239,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abaclor (Cefaclor Monohydrate) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7099-68",
+    "name": "Abaclor 125 mg/1.25 ml Pediatric Drops",
+    "genericName": "Cefaclor Monohydrate",
+    "dosageForm": "Pediatric Drops",
+    "strength": "125 mg/1.25 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 6,
+    "stock": 256,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abaclor (Cefaclor Monohydrate) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-30731-69",
+    "name": "Abaclor 250 mg Capsule",
+    "genericName": "Cefaclor Monohydrate",
+    "dosageForm": "Capsule",
+    "strength": "250 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 7.5,
+    "stock": 273,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abaclor (Cefaclor Monohydrate) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-32905-70",
+    "name": "Abacten 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Arges Life Science Limited",
+    "price": 12,
+    "stock": 290,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abacten (Azithromycin Dihydrate) manufactured by Arges Life Science Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-32906-71",
+    "name": "Abacten 200 mg/5 ml Powder for Suspension",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "200 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Arges Life Science Limited",
+    "price": 53.5,
+    "stock": 307,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abacten (Azithromycin Dihydrate) manufactured by Arges Life Science Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-26940-72",
+    "name": "Abasaglar 100 IU/ml SC Injection",
+    "genericName": "Insulin Glargine",
+    "dosageForm": "SC Injection",
+    "strength": "100 IU/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 300,
+    "stock": 324,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abasaglar (Insulin Glargine) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-34958-73",
+    "name": "ABC 6 mg+200 mg+50 mg Tablet",
+    "genericName": "Beta carotene + Vitamin C + Vitamin E",
+    "dosageForm": "Tablet",
+    "strength": "6 mg+200 mg+50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Union Pharmaceuticals Ltd",
+    "price": 3.75,
+    "stock": 341,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ABC (Beta carotene + Vitamin C + Vitamin E) manufactured by Union Pharmaceuticals Ltd. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-36219-74",
+    "name": "Abc Derm Hydratant Lotion",
+    "genericName": "Baby&#039;s Skin Care [ABCDerm]",
+    "dosageForm": "Lotion",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 5,
+    "stock": 358,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abc Derm Hydratant (Baby&#039;s Skin Care [ABCDerm]) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-36220-75",
+    "name": "Abc Derm Moussant Liquid Cleanser",
+    "genericName": "Baby&#039;s Skin Care [ABCDerm]",
+    "dosageForm": "Liquid Cleanser",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 6.25,
+    "stock": 375,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abc Derm Moussant (Baby&#039;s Skin Care [ABCDerm]) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-31999-76",
+    "name": "Abdolax 10 mg Tablet",
+    "genericName": "Sodium Picosulfate",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 392,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abdolax (Sodium Picosulfate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-32000-77",
+    "name": "Abdolax 5 mg/5 ml Oral Solution",
+    "genericName": "Sodium Picosulfate",
+    "dosageForm": "Oral Solution",
+    "strength": "5 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 409,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abdolax (Sodium Picosulfate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-37626-78",
+    "name": "Abdolax Max 7.5 mg/ml Oral Solution",
+    "genericName": "Sodium Picosulfate",
+    "dosageForm": "Oral Solution",
+    "strength": "7.5 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 426,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abdolax Max (Sodium Picosulfate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-1315-79",
+    "name": "Abdorin 10 mg Tablet",
+    "genericName": "Dicycloverine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 3.75,
+    "stock": 443,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abdorin (Dicycloverine Hydrochloride) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-1316-80",
+    "name": "Abdorin 10 mg/5 ml Syrup",
+    "genericName": "Dicycloverine Hydrochloride",
+    "dosageForm": "Syrup",
+    "strength": "10 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 45,
+    "stock": 460,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abdorin (Dicycloverine Hydrochloride) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3075-81",
+    "name": "Abecab 5 mg+20 mg Tablet",
+    "genericName": "Amlodipine Besilate + Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "5 mg+20 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 6.25,
+    "stock": 477,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abecab (Amlodipine Besilate + Olmesartan Medoxomil) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3076-82",
+    "name": "Abecab 5 mg+40 mg Tablet",
+    "genericName": "Amlodipine Besilate + Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "5 mg+40 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 7.5,
+    "stock": 494,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abecab (Amlodipine Besilate + Olmesartan Medoxomil) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37113-83",
+    "name": "Abecab 10 mg+20 mg Tablet",
+    "genericName": "Amlodipine Besilate + Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "10 mg+20 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 8.75,
+    "stock": 161,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abecab (Amlodipine Besilate + Olmesartan Medoxomil) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37114-84",
+    "name": "Abecab 10 mg+40 mg Tablet",
+    "genericName": "Amlodipine Besilate + Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "10 mg+40 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 2.5,
+    "stock": 178,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abecab (Amlodipine Besilate + Olmesartan Medoxomil) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-32452-85",
+    "name": "Abeclib 200 mg Tablet",
+    "genericName": "Abemaciclib",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 195,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abeclib (Abemaciclib) manufactured by Eskayef Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-33719-86",
+    "name": "Abeclib 150 mg Tablet",
+    "genericName": "Abemaciclib",
+    "dosageForm": "Tablet",
+    "strength": "150 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 9,
+    "stock": 212,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abeclib (Abemaciclib) manufactured by Eskayef Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-25489-87",
+    "name": "Aben-DS 400 mg Chewable Tablet",
+    "genericName": "Albendazole",
+    "dosageForm": "Chewable Tablet",
+    "strength": "400 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Team Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 229,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aben-DS (Albendazole) manufactured by Team Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2776-88",
+    "name": "Abetis 10 mg Tablet",
+    "genericName": "Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 7.5,
+    "stock": 246,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abetis (Olmesartan Medoxomil) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2777-89",
+    "name": "Abetis 20 mg Tablet",
+    "genericName": "Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "20 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 8.75,
+    "stock": 263,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abetis (Olmesartan Medoxomil) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2778-90",
+    "name": "Abetis 40 mg Tablet",
+    "genericName": "Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "40 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 2.5,
+    "stock": 280,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abetis (Olmesartan Medoxomil) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2981-91",
+    "name": "Abetis Plus 20 mg+12.5 mg Tablet",
+    "genericName": "Olmesartan Medoxomil + Hydrochlorothiazide",
+    "dosageForm": "Tablet",
+    "strength": "20 mg+12.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 3.75,
+    "stock": 297,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abetis Plus (Olmesartan Medoxomil + Hydrochlorothiazide) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-22974-92",
+    "name": "Abetis Plus 40 mg+12.5 mg Tablet",
+    "genericName": "Olmesartan Medoxomil + Hydrochlorothiazide",
+    "dosageForm": "Tablet",
+    "strength": "40 mg+12.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 5,
+    "stock": 314,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abetis Plus (Olmesartan Medoxomil + Hydrochlorothiazide) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-38944-93",
+    "name": "Abevmy 100 mg/4 ml IV Infusion",
+    "genericName": "Bevacizumab",
+    "dosageForm": "IV Infusion",
+    "strength": "100 mg/4 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 165,
+    "stock": 331,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abevmy (Bevacizumab) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-38945-94",
+    "name": "Abevmy 400 mg/16 ml IV Infusion",
+    "genericName": "Bevacizumab",
+    "dosageForm": "IV Infusion",
+    "strength": "400 mg/16 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 180,
+    "stock": 348,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abevmy (Bevacizumab) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-4132-95",
+    "name": "Abex (30 mg+100 mg+1.25 mg)/5 ml Syrup",
+    "genericName": "Pseudoephedrine + Guaiphenasine + Triprolidine",
+    "dosageForm": "Syrup",
+    "strength": "(30 mg+100 mg+1.25 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 87.5,
+    "stock": 365,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abex (Pseudoephedrine + Guaiphenasine + Triprolidine) manufactured by The IBN SINA Pharmaceutical PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35306-96",
+    "name": "Abex Plus (100 mg+1.1 mg+14 mg)/5 ml Syrup",
+    "genericName": "Guaifenesin + Levomenthol + Diphenhydramine",
+    "dosageForm": "Syrup",
+    "strength": "(100 mg+1.1 mg+14 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 96,
+    "stock": 382,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abex Plus (Guaifenesin + Levomenthol + Diphenhydramine) manufactured by The IBN SINA Pharmaceutical PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35307-97",
+    "name": "Abexol (200 mg+15 mg+15 mg)/5 ml Syrup",
+    "genericName": "Guaifenesin + Dextromethorphan + Menthol",
+    "dosageForm": "Syrup",
+    "strength": "(200 mg+15 mg+15 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 104.5,
+    "stock": 399,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abexol (Guaifenesin + Dextromethorphan + Menthol) manufactured by The IBN SINA Pharmaceutical PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-38906-98",
+    "name": "Abeza 150 mg Tablet",
+    "genericName": "Abemaciclib",
+    "dosageForm": "Tablet",
+    "strength": "150 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 9,
+    "stock": 416,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abeza (Abemaciclib) manufactured by Beacon Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-38907-99",
+    "name": "Abeza 200 mg Tablet",
+    "genericName": "Abemaciclib",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 10.5,
+    "stock": 433,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abeza (Abemaciclib) manufactured by Beacon Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37280-100",
+    "name": "Abezino 150 mg Tablet",
+    "genericName": "Abemaciclib",
+    "dosageForm": "Tablet",
+    "strength": "150 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 6,
+    "stock": 450,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abezino (Abemaciclib) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37281-101",
+    "name": "Abezino 200 mg Tablet",
+    "genericName": "Abemaciclib",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 467,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abezino (Abemaciclib) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-32587-102",
+    "name": "Abicon (500 mg+100 mg)/5 ml Oral Suspension",
+    "genericName": "Sodium Alginate + Potassium Bicarbonate",
+    "dosageForm": "Oral Suspension",
+    "strength": "(500 mg+100 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 62,
+    "stock": 484,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abicon (Sodium Alginate + Potassium Bicarbonate) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-33570-103",
+    "name": "Abicon 500 mg+100 mg Chewable Tablet",
+    "genericName": "Sodium Alginate + Potassium Bicarbonate",
+    "dosageForm": "Chewable Tablet",
+    "strength": "500 mg+100 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 19.5,
+    "stock": 151,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abicon (Sodium Alginate + Potassium Bicarbonate) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-36608-104",
+    "name": "Abicon Max (500 mg+213 mg+325 mg)/10 ml Oral Suspension",
+    "genericName": "Sodium Alginate + Sodium Bicarbonate + Calcium Carbonate",
+    "dosageForm": "Oral Suspension",
+    "strength": "(500 mg+213 mg+325 mg)/10 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 79,
+    "stock": 168,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abicon Max (Sodium Alginate + Sodium Bicarbonate + Calcium Carbonate) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-35489-105",
+    "name": "Abicon Plus (500 mg+267 mg+160 mg)/10 ml Oral Suspension",
+    "genericName": "Sodium Alginate + Sodium Bicarbonate + Calcium Carbonate",
+    "dosageForm": "Oral Suspension",
+    "strength": "(500 mg+267 mg+160 mg)/10 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 87.5,
+    "stock": 185,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abicon Plus (Sodium Alginate + Sodium Bicarbonate + Calcium Carbonate) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-38107-106",
+    "name": "Abiraxen 250 mg Tablet",
+    "genericName": "Abiraterone Acetate",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Everest Pharmaceuticals Ltd.",
+    "price": 9,
+    "stock": 202,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abiraxen (Abiraterone Acetate) manufactured by Everest Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-30393-107",
+    "name": "Abiret 250 mg Tablet",
+    "genericName": "Abiraterone Acetate",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Drug International Ltd.",
+    "price": 10.5,
+    "stock": 219,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abiret (Abiraterone Acetate) manufactured by Drug International Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35187-108",
+    "name": "Abiron 250 mg Tablet",
+    "genericName": "Abiraterone Acetate",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ziska Pharmaceuticals Ltd.",
+    "price": 6,
+    "stock": 236,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abiron (Abiraterone Acetate) manufactured by Ziska Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-32192-109",
+    "name": "Abixa 10 mg Tablet",
+    "genericName": "Memantine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 3.75,
+    "stock": 253,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Abixa (Memantine Hydrochloride) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28147-110",
+    "name": "ABO Kit 200 mg+200 mcg Tablet",
+    "genericName": "Mifepristone + Misoprostol",
+    "dosageForm": "Tablet",
+    "strength": "200 mg+200 mcg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Globe Pharmaceuticals Ltd.",
+    "price": 9,
+    "stock": 270,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ABO Kit (Mifepristone + Misoprostol) manufactured by Globe Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35355-111",
+    "name": "Aboprost 200 mcg Tablet",
+    "genericName": "Misoprostol",
+    "dosageForm": "Tablet",
+    "strength": "200 mcg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Benham Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 287,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aboprost (Misoprostol) manufactured by Benham Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-18307-112",
+    "name": "ABpres 0.2%+0.5% Ophthalmic Solution",
+    "genericName": "Brimonidine Tartrate + Timolol Maleate",
+    "dosageForm": "Ophthalmic Solution",
+    "strength": "0.2%+0.5%",
+    "packSize": "1 Unit",
+    "manufacturer": "Navana Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 304,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ABpres (Brimonidine Tartrate + Timolol Maleate) manufactured by Navana Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-34002-113",
+    "name": "ABZ 400 mg Chewable Tablet",
+    "genericName": "Albendazole",
+    "dosageForm": "Chewable Tablet",
+    "strength": "400 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Al-Madina Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 321,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ABZ (Albendazole) manufactured by Al-Madina Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-8-114",
+    "name": "AC PR 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Pacific Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 338,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AC PR (Aceclofenac) manufactured by Pacific Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35308-115",
+    "name": "AC PR SR 200 mg Tablet (Sustained Release)",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet (Sustained Release)",
+    "strength": "200 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Pacific Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 355,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AC PR SR (Aceclofenac) manufactured by Pacific Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-38108-116",
+    "name": "Acaluxen 100 mg Capsule",
+    "genericName": "Acalabrutinib",
+    "dosageForm": "Capsule",
+    "strength": "100 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Everest Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 372,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acaluxen (Acalabrutinib) manufactured by Everest Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-222-117",
+    "name": "Acaril 50 mg Tablet",
+    "genericName": "Acarbose",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "The White Horse Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 389,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acaril (Acarbose) manufactured by The White Horse Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-34974-118",
+    "name": "ACCU-CHEK Active Test strip",
+    "genericName": "Blood glucose monitoring device",
+    "dosageForm": "Test strip",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Radiant Export Import Enterprise",
+    "price": 7.5,
+    "stock": 406,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACCU-CHEK Active (Blood glucose monitoring device) manufactured by Radiant Export Import Enterprise. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-36119-119",
+    "name": "ACCU-CHEK Active Glucometer",
+    "genericName": "Blood glucose monitoring device",
+    "dosageForm": "Glucometer",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Radiant Export Import Enterprise",
+    "price": 8.75,
+    "stock": 423,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACCU-CHEK Active (Blood glucose monitoring device) manufactured by Radiant Export Import Enterprise. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-36117-120",
+    "name": "ACCU-CHEK Instant Glucometer",
+    "genericName": "Blood glucose monitoring device",
+    "dosageForm": "Glucometer",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Radiant Export Import Enterprise",
+    "price": 2.5,
+    "stock": 440,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACCU-CHEK Instant (Blood glucose monitoring device) manufactured by Radiant Export Import Enterprise. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-36118-121",
+    "name": "ACCU-CHEK Instant Test strip",
+    "genericName": "Blood glucose monitoring device",
+    "dosageForm": "Test strip",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Radiant Export Import Enterprise",
+    "price": 3.75,
+    "stock": 457,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACCU-CHEK Instant (Blood glucose monitoring device) manufactured by Radiant Export Import Enterprise. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-34973-122",
+    "name": "ACCU-CHEK Instant S Glucometer",
+    "genericName": "Blood glucose monitoring device",
+    "dosageForm": "Glucometer",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Radiant Export Import Enterprise",
+    "price": 5,
+    "stock": 474,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACCU-CHEK Instant S (Blood glucose monitoring device) manufactured by Radiant Export Import Enterprise. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-39265-123",
+    "name": "ACCU-CHEK Softclix 28G Lancet Needle",
+    "genericName": "Blood glucose monitoring device",
+    "dosageForm": "Lancet Needle",
+    "strength": "28G",
+    "packSize": "1 Unit",
+    "manufacturer": "Radiant Export Import Enterprise",
+    "price": 6.25,
+    "stock": 491,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACCU-CHEK Softclix (Blood glucose monitoring device) manufactured by Radiant Export Import Enterprise. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-32289-124",
+    "name": "Accuzith 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "DBL Pharmaceuticals Ltd.",
+    "price": 22,
+    "stock": 158,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Accuzith (Azithromycin Dihydrate) manufactured by DBL Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-33078-125",
+    "name": "Accuzith 200 mg/5 ml Powder for Suspension",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "200 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "DBL Pharmaceuticals Ltd.",
+    "price": 87.5,
+    "stock": 175,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Accuzith (Azithromycin Dihydrate) manufactured by DBL Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10377-126",
+    "name": "Ace 500 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 14.5,
+    "stock": 192,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10380-127",
+    "name": "Ace 120 mg/5 ml Oral Suspension",
+    "genericName": "Paracetamol",
+    "dosageForm": "Oral Suspension",
+    "strength": "120 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 104.5,
+    "stock": 209,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10381-128",
+    "name": "Ace 80 mg/ml Pediatric Drops",
+    "genericName": "Paracetamol",
+    "dosageForm": "Pediatric Drops",
+    "strength": "80 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 5,
+    "stock": 226,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-10383-129",
+    "name": "Ace 125 mg Suppository",
+    "genericName": "Paracetamol",
+    "dosageForm": "Suppository",
+    "strength": "125 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 7.5,
+    "stock": 243,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10384-130",
+    "name": "Ace 250 mg Suppository",
+    "genericName": "Paracetamol",
+    "dosageForm": "Suppository",
+    "strength": "250 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 9,
+    "stock": 260,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10385-131",
+    "name": "Ace 500 mg Suppository",
+    "genericName": "Paracetamol",
+    "dosageForm": "Suppository",
+    "strength": "500 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 14.5,
+    "stock": 277,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-29606-132",
+    "name": "Ace 120 mg/5 ml Syrup",
+    "genericName": "Paracetamol",
+    "dosageForm": "Syrup",
+    "strength": "120 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 62,
+    "stock": 294,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-33987-133",
+    "name": "Ace 10 mg/ml IV Infusion",
+    "genericName": "Paracetamol",
+    "dosageForm": "IV Infusion",
+    "strength": "10 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 315,
+    "stock": 311,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-38985-134",
+    "name": "Ace Duo 200 mg+500 mg Tablet",
+    "genericName": "Ibuprofen + Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "200 mg+500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 9,
+    "stock": 328,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace Duo (Ibuprofen + Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10557-135",
+    "name": "Ace Plus 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+65 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 12,
+    "stock": 345,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace Plus (Paracetamol + Caffeine) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28573-136",
+    "name": "Ace Power 1000 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "1000 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 14.5,
+    "stock": 362,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace Power (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10378-137",
+    "name": "Ace XR 665 mg Tablet (Extended Release)",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet (Extended Release)",
+    "strength": "665 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 17,
+    "stock": 379,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ace XR (Paracetamol) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-9-138",
+    "name": "Acebid 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 2.5,
+    "stock": 396,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acebid (Aceclofenac) manufactured by Beacon Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2627-139",
+    "name": "Acecard 1.25 mg Tablet",
+    "genericName": "Ramipril",
+    "dosageForm": "Tablet",
+    "strength": "1.25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 413,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acecard (Ramipril) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2628-140",
+    "name": "Acecard 2.5 mg Tablet",
+    "genericName": "Ramipril",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 430,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acecard (Ramipril) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2629-141",
+    "name": "Acecard 5 mg Tablet",
+    "genericName": "Ramipril",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 447,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acecard (Ramipril) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-17361-142",
+    "name": "Aceclof 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Premier Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 464,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceclof (Aceclofenac) manufactured by Premier Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11-143",
+    "name": "Aceclofen 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Astra Biopharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 481,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceclofen (Aceclofenac) manufactured by Astra Biopharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35665-144",
+    "name": "Aceclofenac 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Pristine Pharmaceuticals Ltd",
+    "price": 2.5,
+    "stock": 498,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceclofenac (Aceclofenac) manufactured by Pristine Pharmaceuticals Ltd. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37389-145",
+    "name": "Aceclofenac 200 mg Tablet (Sustained Release)",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet (Sustained Release)",
+    "strength": "200 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Pristine Pharmaceuticals Ltd",
+    "price": 7.5,
+    "stock": 165,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceclofenac (Aceclofenac) manufactured by Pristine Pharmaceuticals Ltd. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37627-146",
+    "name": "Aceclofenac 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Pharmik Laboratories Ltd.",
+    "price": 5,
+    "stock": 182,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceclofenac (Aceclofenac) manufactured by Pharmik Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37628-147",
+    "name": "Aceclofenac SR 200 mg Tablet (Sustained Release)",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet (Sustained Release)",
+    "strength": "200 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Pharmik Laboratories Ltd.",
+    "price": 10.5,
+    "stock": 199,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceclofenac SR (Aceclofenac) manufactured by Pharmik Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-13-148",
+    "name": "Aceclora 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Marksman Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 216,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceclora (Aceclofenac) manufactured by Marksman Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37789-149",
+    "name": "Aceclosic 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Physic pharmaceuticals ltd.",
+    "price": 8.75,
+    "stock": 233,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceclosic (Aceclofenac) manufactured by Physic pharmaceuticals ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-14-150",
+    "name": "Acecol 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ziska Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 250,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acecol (Aceclofenac) manufactured by Ziska Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-15-151",
+    "name": "Acedol 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 267,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acedol (Aceclofenac) manufactured by Concord Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-17364-152",
+    "name": "Acedol SR 200 mg Tablet (Sustained Release)",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet (Sustained Release)",
+    "strength": "200 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 6,
+    "stock": 284,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acedol SR (Aceclofenac) manufactured by Concord Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-17552-153",
+    "name": "Acedone-Z 250 mg+400 mg Chewable Tablet",
+    "genericName": "Aluminium Hydroxide + Magnesium Hydroxide",
+    "dosageForm": "Chewable Tablet",
+    "strength": "250 mg+400 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 301,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acedone-Z (Aluminium Hydroxide + Magnesium Hydroxide) manufactured by Zenith Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35574-154",
+    "name": "Acedone-Z (175 mg+225 mg)5 ml Oral Suspension",
+    "genericName": "Aluminium Hydroxide + Magnesium Hydroxide",
+    "dosageForm": "Oral Suspension",
+    "strength": "(175 mg+225 mg)5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 79,
+    "stock": 318,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acedone-Z (Aluminium Hydroxide + Magnesium Hydroxide) manufactured by Zenith Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-17562-155",
+    "name": "Acedone-Z Plus (400 mg+400 mg+30 mg)/5 ml Oral Suspension",
+    "genericName": "Aluminium Hydroxide + Magnesium Hydroxide + Simethicone",
+    "dosageForm": "Oral Suspension",
+    "strength": "(400 mg+400 mg+30 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 87.5,
+    "stock": 335,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acedone-Z Plus (Aluminium Hydroxide + Magnesium Hydroxide + Simethicone) manufactured by Zenith Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28216-156",
+    "name": "Acedone-Z Plus 400 mg+400 mg+30 mg Chewable Tablet",
+    "genericName": "Aluminium Hydroxide + Magnesium Hydroxide + Simethicone",
+    "dosageForm": "Chewable Tablet",
+    "strength": "400 mg+400 mg+30 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 6,
+    "stock": 352,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acedone-Z Plus (Aluminium Hydroxide + Magnesium Hydroxide + Simethicone) manufactured by Zenith Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-16-157",
+    "name": "Acefenac 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "General Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 369,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acefenac (Aceclofenac) manufactured by General Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-34889-158",
+    "name": "Aceflex 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Maks Drug Limited",
+    "price": 5,
+    "stock": 386,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceflex (Aceclofenac) manufactured by Maks Drug Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6779-159",
+    "name": "Acefra 500 mg Capsule",
+    "genericName": "Cephradine",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Apollo Pharmaceutical Ltd.",
+    "price": 22,
+    "stock": 403,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acefra (Cephradine) manufactured by Apollo Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6780-160",
+    "name": "Acefra 125 mg/5 ml Powder for Suspension",
+    "genericName": "Cephradine",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Apollo Pharmaceutical Ltd.",
+    "price": 45,
+    "stock": 420,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acefra (Cephradine) manufactured by Apollo Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-17-161",
+    "name": "Acegic 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Belsen Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 437,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acegic (Aceclofenac) manufactured by Belsen Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28235-162",
+    "name": "Acelex 250 mg Capsule",
+    "genericName": "Cephalexin",
+    "dosageForm": "Capsule",
+    "strength": "250 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 9,
+    "stock": 454,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acelex (Cephalexin) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28236-163",
+    "name": "Acelex 500 mg Capsule",
+    "genericName": "Cephalexin",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 19.5,
+    "stock": 471,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acelex (Cephalexin) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28237-164",
+    "name": "Acelex 125 mg/5 ml Powder for Suspension",
+    "genericName": "Cephalexin",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 79,
+    "stock": 488,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acelex (Cephalexin) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-18-165",
+    "name": "Acelock 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Bristol Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 155,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acelock (Aceclofenac) manufactured by Bristol Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-19-166",
+    "name": "Acelon 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Central Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 172,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acelon (Aceclofenac) manufactured by Central Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-226-167",
+    "name": "Acemox 250 mg Tablet",
+    "genericName": "Acetazolamide",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 10.5,
+    "stock": 189,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acemox (Acetazolamide) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-20-168",
+    "name": "Acenac 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Medicon Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 206,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acenac (Aceclofenac) manufactured by Medicon Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-17365-169",
+    "name": "Acenopan 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "RN Pharmaceuticals",
+    "price": 3.75,
+    "stock": 223,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acenopan (Aceclofenac) manufactured by RN Pharmaceuticals. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10386-170",
+    "name": "Acep 500 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 12,
+    "stock": 240,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acep (Paracetamol) manufactured by Zenith Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10387-171",
+    "name": "Acep 120 mg/5 ml Oral Suspension",
+    "genericName": "Paracetamol",
+    "dosageForm": "Oral Suspension",
+    "strength": "120 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 53.5,
+    "stock": 257,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acep (Paracetamol) manufactured by Zenith Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10388-172",
+    "name": "Acep 80 mg/ml Pediatric Drops",
+    "genericName": "Paracetamol",
+    "dosageForm": "Pediatric Drops",
+    "strength": "80 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 274,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acep (Paracetamol) manufactured by Zenith Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-10558-173",
+    "name": "Acep Extra 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+65 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 19.5,
+    "stock": 291,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acep Extra (Paracetamol + Caffeine) manufactured by Zenith Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2607-174",
+    "name": "Acepril 5 mg Tablet",
+    "genericName": "Lisinopril",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Drug International Ltd.",
+    "price": 2.5,
+    "stock": 308,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acepril (Lisinopril) manufactured by Drug International Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2608-175",
+    "name": "Acepril 10 mg Tablet",
+    "genericName": "Lisinopril",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Drug International Ltd.",
+    "price": 3.75,
+    "stock": 325,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acepril (Lisinopril) manufactured by Drug International Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-21-176",
+    "name": "Acepro 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "The White Horse Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 342,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acepro (Aceclofenac) manufactured by The White Horse Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-24072-177",
+    "name": "Aceril 2.5 mg Tablet",
+    "genericName": "Ramipril",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 6.25,
+    "stock": 359,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceril (Ramipril) manufactured by The IBN SINA Pharmaceutical PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-24073-178",
+    "name": "Aceril 5 mg Tablet",
+    "genericName": "Ramipril",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 7.5,
+    "stock": 376,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceril (Ramipril) manufactured by The IBN SINA Pharmaceutical PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-38718-179",
+    "name": "Aceron 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Nipa Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 393,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceron (Aceclofenac) manufactured by Nipa Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-127-180",
+    "name": "Acerux 250 mg/vial IV Infusion",
+    "genericName": "Acyclovir (Injection)",
+    "dosageForm": "IV Infusion",
+    "strength": "250 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 120,
+    "stock": 410,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acerux (Acyclovir (Injection)) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-128-181",
+    "name": "Acerux 500 mg/vial IV Infusion",
+    "genericName": "Acyclovir (Injection)",
+    "dosageForm": "IV Infusion",
+    "strength": "500 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 135,
+    "stock": 427,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acerux (Acyclovir (Injection)) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-141-182",
+    "name": "Acerux 200 mg Tablet",
+    "genericName": "Acyclovir (Oral)",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 9,
+    "stock": 444,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acerux (Acyclovir (Oral)) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-142-183",
+    "name": "Acerux 400 mg Tablet",
+    "genericName": "Acyclovir (Oral)",
+    "dosageForm": "Tablet",
+    "strength": "400 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 10.5,
+    "stock": 461,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acerux (Acyclovir (Oral)) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-143-184",
+    "name": "Acerux 200 mg/5 ml Oral Suspension",
+    "genericName": "Acyclovir (Oral)",
+    "dosageForm": "Oral Suspension",
+    "strength": "200 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 79,
+    "stock": 478,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acerux (Acyclovir (Oral)) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-231-185",
+    "name": "Acerux 3% Ophthalmic Ointment",
+    "genericName": "Acyclovir (Ophthalmic)",
+    "dosageForm": "Ophthalmic Ointment",
+    "strength": "3%",
+    "packSize": "1 Unit",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 77,
+    "stock": 495,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acerux (Acyclovir (Ophthalmic)) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-31268-186",
+    "name": "Acerux-H 5%+1% Cream",
+    "genericName": "Acyclovir + Hydrocortisone",
+    "dosageForm": "Cream",
+    "strength": "5%+1%",
+    "packSize": "1 Unit",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 89,
+    "stock": 162,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acerux-H (Acyclovir + Hydrocortisone) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-31935-187",
+    "name": "Aces Plus Tablet",
+    "genericName": "Super antioxidant [vitamins & minerals]",
+    "dosageForm": "Tablet",
+    "strength": "",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 179,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aces Plus (Super antioxidant [vitamins & minerals]) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-10389-188",
+    "name": "Aceta 500 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Biopharma Limited",
+    "price": 19.5,
+    "stock": 196,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceta (Paracetamol) manufactured by Biopharma Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10390-189",
+    "name": "Aceta 120 mg/5 ml Oral Suspension",
+    "genericName": "Paracetamol",
+    "dosageForm": "Oral Suspension",
+    "strength": "120 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Biopharma Limited",
+    "price": 121.5,
+    "stock": 213,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceta (Paracetamol) manufactured by Biopharma Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-23437-190",
+    "name": "Aceta Extend 665 mg Tablet (Extended Release)",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet (Extended Release)",
+    "strength": "665 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Biopharma Limited",
+    "price": 12,
+    "stock": 230,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceta Extend (Paracetamol) manufactured by Biopharma Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-31963-191",
+    "name": "Aceta One 1000 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "1000 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Biopharma Limited",
+    "price": 14.5,
+    "stock": 247,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceta One (Paracetamol) manufactured by Biopharma Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10391-192",
+    "name": "Aceta-PD 80 mg/ml Pediatric Drops",
+    "genericName": "Paracetamol",
+    "dosageForm": "Pediatric Drops",
+    "strength": "80 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Biopharma Limited",
+    "price": 2.5,
+    "stock": 264,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceta-PD (Paracetamol) manufactured by Biopharma Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-10782-193",
+    "name": "Aceta-T 325 mg+37.5 mg Tablet",
+    "genericName": "Paracetamol + Tramadol Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "325 mg+37.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Biopharma Limited",
+    "price": 7.5,
+    "stock": 281,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceta-T (Paracetamol + Tramadol Hydrochloride) manufactured by Biopharma Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10559-194",
+    "name": "Aceta-X 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+65 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Biopharma Limited",
+    "price": 22,
+    "stock": 298,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceta-X (Paracetamol + Caffeine) manufactured by Biopharma Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-32856-195",
+    "name": "Aceten 600 mg Effervescent Tablet",
+    "genericName": "Acetylcysteine",
+    "dosageForm": "Effervescent Tablet",
+    "strength": "600 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 12,
+    "stock": 315,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceten (Acetylcysteine) manufactured by Eskayef Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-33042-196",
+    "name": "Aceten 100 mg/sachet Effervescent Granules",
+    "genericName": "Acetylcysteine",
+    "dosageForm": "Effervescent Granules",
+    "strength": "100 mg/sachet",
+    "packSize": "1 Unit",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 332,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceten (Acetylcysteine) manufactured by Eskayef Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10392-197",
+    "name": "Aceto 500 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Reliance Pharmaceuticals Ltd.",
+    "price": 17,
+    "stock": 349,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceto (Paracetamol) manufactured by Reliance Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2594-198",
+    "name": "Acetor 25 mg Tablet",
+    "genericName": "Captopril",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Drug International Ltd.",
+    "price": 2.5,
+    "stock": 366,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acetor (Captopril) manufactured by Drug International Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-5-199",
+    "name": "ACF 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Decent Pharma Laboratories Ltd.",
+    "price": 3.75,
+    "stock": 383,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACF (Aceclofenac) manufactured by Decent Pharma Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-22-200",
+    "name": "Acflam 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Apollo Pharmaceutical Ltd.",
+    "price": 5,
+    "stock": 400,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acflam (Aceclofenac) manufactured by Apollo Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-34762-201",
+    "name": "Achnil 200 mg Tablet",
+    "genericName": "Tolfenamic acid",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Desh Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 417,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Achnil (Tolfenamic acid) manufactured by Desh Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37692-202",
+    "name": "ACI Fruit Sal Tasty Saline Oral Powder",
+    "genericName": "Oral rehydration salt [tasty]",
+    "dosageForm": "Oral Powder",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 7.5,
+    "stock": 434,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACI Fruit Sal Tasty Saline (Oral rehydration salt [tasty]) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-23195-203",
+    "name": "ACI ORS 10.25 gm Oral Powder",
+    "genericName": "Oral rehydration salt [glucose based]",
+    "dosageForm": "Oral Powder",
+    "strength": "10.25 gm",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 8.75,
+    "stock": 451,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACI ORS (Oral rehydration salt [glucose based]) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-23204-204",
+    "name": "ACI ORS Fruity 10 gm/sachet Oral Powder",
+    "genericName": "Oral rehydration salt [flavore & glucose based]",
+    "dosageForm": "Oral Powder",
+    "strength": "10 gm/sachet",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 2.5,
+    "stock": 468,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACI ORS Fruity (Oral rehydration salt [flavore & glucose based]) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-27533-205",
+    "name": "Acicaft 0.25% Ophthalmic Solution",
+    "genericName": "Alcaftadine",
+    "dosageForm": "Ophthalmic Solution",
+    "strength": "0.25%",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 3.75,
+    "stock": 485,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acicaft (Alcaftadine) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-14265-206",
+    "name": "Acical 500 mg Tablet",
+    "genericName": "Calcium Carbonate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 14.5,
+    "stock": 152,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acical (Calcium Carbonate) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-14343-207",
+    "name": "Acical Jr. 250 mg Chewable Tablet",
+    "genericName": "Calcium Carbonate",
+    "dosageForm": "Chewable Tablet",
+    "strength": "250 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 10.5,
+    "stock": 169,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acical Jr. (Calcium Carbonate) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-14388-208",
+    "name": "Acical-C 1000 mg+327 mg (Conventional calcium)+500 mg Effervescent Tablet",
+    "genericName": "Calcium Lactate Gluconate + Calcium Carbonate + Vitamin C",
+    "dosageForm": "Effervescent Tablet",
+    "strength": "1000 mg+327 mg (Conventional calcium)+500 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 19.5,
+    "stock": 186,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acical-C (Calcium Lactate Gluconate + Calcium Carbonate + Vitamin C) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-14400-209",
+    "name": "Acical-D 500 mg+200 IU Tablet",
+    "genericName": "Conventional Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+200 IU",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 22,
+    "stock": 203,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acical-D (Conventional Calcium + Vitamin D3) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-26322-210",
+    "name": "Acical-DX 600 mg+400 IU Effervescent Tablet",
+    "genericName": "Conventional Calcium + Vitamin D3",
+    "dosageForm": "Effervescent Tablet",
+    "strength": "600 mg+400 IU",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 12,
+    "stock": 220,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acical-DX (Conventional Calcium + Vitamin D3) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-32195-211",
+    "name": "Acical-M Tablet",
+    "genericName": "Calcium + Vitamin D3 + Multimineral",
+    "dosageForm": "Tablet",
+    "strength": "",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 3.75,
+    "stock": 237,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acical-M (Calcium + Vitamin D3 + Multimineral) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-26323-212",
+    "name": "Acical-MX Effervescent Tablet",
+    "genericName": "Calcium + Vitamin D3 + Multimineral",
+    "dosageForm": "Effervescent Tablet",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 5,
+    "stock": 254,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acical-MX (Calcium + Vitamin D3 + Multimineral) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-232-213",
+    "name": "Aciclon 3% Ophthalmic Ointment",
+    "genericName": "Acyclovir (Ophthalmic)",
+    "dosageForm": "Ophthalmic Ointment",
+    "strength": "3%",
+    "packSize": "1 Unit",
+    "manufacturer": "Reman Drug Laboratories Ltd.",
+    "price": 125,
+    "stock": 271,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aciclon (Acyclovir (Ophthalmic)) manufactured by Reman Drug Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-15754-214",
+    "name": "Acicot 0.1% Ophthalmic Solution",
+    "genericName": "Dexamethasone (Ophthalmic)",
+    "dosageForm": "Ophthalmic Solution",
+    "strength": "0.1%",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 7.5,
+    "stock": 288,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acicot (Dexamethasone (Ophthalmic)) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-31532-215",
+    "name": "Acidron 4 mg/5 ml IV Infusion",
+    "genericName": "Zoledronic Acid [For hypercalcemia]",
+    "dosageForm": "IV Infusion",
+    "strength": "4 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 195,
+    "stock": 305,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acidron (Zoledronic Acid [For hypercalcemia]) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-16576-216",
+    "name": "Acidrox M 400 mg Chewable Tablet",
+    "genericName": "Magaldrate",
+    "dosageForm": "Chewable Tablet",
+    "strength": "400 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Syntho Laboratories Ltd.",
+    "price": 6,
+    "stock": 322,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acidrox M (Magaldrate) manufactured by Syntho Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2256-217",
+    "name": "Acifix 20 mg Capsule (Enteric Coated)",
+    "genericName": "Rabeprazole Sodium",
+    "dosageForm": "Capsule (Enteric Coated)",
+    "strength": "20 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 339,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acifix (Rabeprazole Sodium) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-30332-218",
+    "name": "Acifix 20 mg Tablet (Enteric Coated)",
+    "genericName": "Rabeprazole Sodium",
+    "dosageForm": "Tablet (Enteric Coated)",
+    "strength": "20 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 356,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acifix (Rabeprazole Sodium) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-9659-219",
+    "name": "Aciflox 200 mg Tablet",
+    "genericName": "Sparfloxacin",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 10.5,
+    "stock": 373,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aciflox (Sparfloxacin) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-39822-220",
+    "name": "Acigard 20 mg Capsule (Enteric Coated)",
+    "genericName": "Esomeprazole",
+    "dosageForm": "Capsule (Enteric Coated)",
+    "strength": "20 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Derma Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 390,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acigard (Esomeprazole) manufactured by Derma Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-39823-221",
+    "name": "Acigard 40 mg Capsule (Enteric Coated)",
+    "genericName": "Esomeprazole",
+    "dosageForm": "Capsule (Enteric Coated)",
+    "strength": "40 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Derma Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 407,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acigard (Esomeprazole) manufactured by Derma Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-16776-222",
+    "name": "Acilog 100 IU/ml SC Injection",
+    "genericName": "Insulin Aspart [Protamine Crystallised]",
+    "dosageForm": "SC Injection",
+    "strength": "100 IU/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 300,
+    "stock": 424,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acilog (Insulin Aspart [Protamine Crystallised]) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-27536-223",
+    "name": "Acilog Mix 30%+70% SC Injection",
+    "genericName": "Biphasic Insulin Aspart",
+    "dosageForm": "SC Injection",
+    "strength": "30%+70%",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 315,
+    "stock": 441,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acilog Mix (Biphasic Insulin Aspart) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-4482-224",
+    "name": "Acipam 5 mg Tablet",
+    "genericName": "Escitalopram Oxalate",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 5,
+    "stock": 458,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acipam (Escitalopram Oxalate) manufactured by The IBN SINA Pharmaceutical PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-4483-225",
+    "name": "Acipam 10 mg Tablet",
+    "genericName": "Escitalopram Oxalate",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 6.25,
+    "stock": 475,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acipam (Escitalopram Oxalate) manufactured by The IBN SINA Pharmaceutical PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7910-226",
+    "name": "Aciphin 250 mg/vial IM Injection",
+    "genericName": "Ceftriaxone Sodium",
+    "dosageForm": "IM Injection",
+    "strength": "250 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 135,
+    "stock": 492,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aciphin (Ceftriaxone Sodium) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-7911-227",
+    "name": "Aciphin 500 mg/vial IM Injection",
+    "genericName": "Ceftriaxone Sodium",
+    "dosageForm": "IM Injection",
+    "strength": "500 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 150,
+    "stock": 159,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aciphin (Ceftriaxone Sodium) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-7912-228",
+    "name": "Aciphin 1 gm/vial IM Injection",
+    "genericName": "Ceftriaxone Sodium",
+    "dosageForm": "IM Injection",
+    "strength": "1 gm/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 165,
+    "stock": 176,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aciphin (Ceftriaxone Sodium) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-7913-229",
+    "name": "Aciphin 250 mg/vial IV Injection",
+    "genericName": "Ceftriaxone Sodium",
+    "dosageForm": "IV Injection",
+    "strength": "250 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 180,
+    "stock": 193,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aciphin (Ceftriaxone Sodium) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-7914-230",
+    "name": "Aciphin 500 mg/vial IV Injection",
+    "genericName": "Ceftriaxone Sodium",
+    "dosageForm": "IV Injection",
+    "strength": "500 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 195,
+    "stock": 210,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aciphin (Ceftriaxone Sodium) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-7915-231",
+    "name": "Aciphin 1 gm/vial IV Injection",
+    "genericName": "Ceftriaxone Sodium",
+    "dosageForm": "IV Injection",
+    "strength": "1 gm/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 210,
+    "stock": 227,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aciphin (Ceftriaxone Sodium) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-7916-232",
+    "name": "Aciphin 2 gm/vial IV Injection",
+    "genericName": "Ceftriaxone Sodium",
+    "dosageForm": "IV Injection",
+    "strength": "2 gm/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 225,
+    "stock": 244,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aciphin (Ceftriaxone Sodium) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-33761-233",
+    "name": "Acipra 20 mg Capsule (Enteric Coated)",
+    "genericName": "Rabeprazole Sodium",
+    "dosageForm": "Capsule (Enteric Coated)",
+    "strength": "20 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Alco Pharma Ltd.",
+    "price": 8.75,
+    "stock": 261,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acipra (Rabeprazole Sodium) manufactured by Alco Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11908-234",
+    "name": "Acitrin 10 mg Tablet",
+    "genericName": "Cetirizine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 2.5,
+    "stock": 278,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acitrin (Cetirizine Hydrochloride) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11909-235",
+    "name": "Acitrin 5 mg/5 ml Syrup",
+    "genericName": "Cetirizine Hydrochloride",
+    "dosageForm": "Syrup",
+    "strength": "5 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 87.5,
+    "stock": 295,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acitrin (Cetirizine Hydrochloride) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11910-236",
+    "name": "Acitrin 2.5 mg/ml Pediatric Drops",
+    "genericName": "Cetirizine Hydrochloride",
+    "dosageForm": "Pediatric Drops",
+    "strength": "2.5 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 5,
+    "stock": 312,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acitrin (Cetirizine Hydrochloride) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-12153-237",
+    "name": "Acitrin-L 5 mg Tablet",
+    "genericName": "Levocetirizine Dihydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 6.25,
+    "stock": 329,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acitrin-L (Levocetirizine Dihydrochloride) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-12154-238",
+    "name": "Acitrin-L 2.5 mg/5 ml Oral Solution",
+    "genericName": "Levocetirizine Dihydrochloride",
+    "dosageForm": "Oral Solution",
+    "strength": "2.5 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 7.5,
+    "stock": 346,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acitrin-L (Levocetirizine Dihydrochloride) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-14946-239",
+    "name": "Aclasta 5 mg/100 ml IV Infusion",
+    "genericName": "Zoledronic Acid [For osteoporosis]",
+    "dosageForm": "IV Infusion",
+    "strength": "5 mg/100 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "SANDOZ (A Novartis Division)",
+    "price": 330,
+    "stock": 363,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclasta (Zoledronic Acid [For osteoporosis]) manufactured by SANDOZ (A Novartis Division). High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-168-240",
+    "name": "Aclene 0.1% Cream",
+    "genericName": "Adapalene",
+    "dosageForm": "Cream",
+    "strength": "0.1%",
+    "packSize": "1 Unit",
+    "manufacturer": "Drug International Ltd.",
+    "price": 65,
+    "stock": 380,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclene (Adapalene) manufactured by Drug International Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-17440-241",
+    "name": "Aclene Plus 0.1%+2.5% Gel",
+    "genericName": "Adapalene + Benzoyl peroxide",
+    "dosageForm": "Gel",
+    "strength": "0.1%+2.5%",
+    "packSize": "1 Unit",
+    "manufacturer": "Drug International Ltd.",
+    "price": 3.75,
+    "stock": 397,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclene Plus (Adapalene + Benzoyl peroxide) manufactured by Drug International Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-32969-242",
+    "name": "Aclitol 400 mcg+12 mcg Dry Powder Inhalation Capsule (DPI)",
+    "genericName": "Aclidinium Bromide + Formoterol Fumarate",
+    "dosageForm": "Dry Powder Inhalation Capsule (DPI)",
+    "strength": "400 mcg+12 mcg",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 9,
+    "stock": 414,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclitol (Aclidinium Bromide + Formoterol Fumarate) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-4606-243",
+    "name": "Acliz 50 mg Chewable Tablet",
+    "genericName": "Meclizine Hydrochloride",
+    "dosageForm": "Chewable Tablet",
+    "strength": "50 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 6.25,
+    "stock": 431,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acliz (Meclizine Hydrochloride) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-4624-244",
+    "name": "Acliz Plus 25 mg+50 mg Tablet",
+    "genericName": "Meclizine + Pyridoxine",
+    "dosageForm": "Tablet",
+    "strength": "25 mg+50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 7.5,
+    "stock": 448,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acliz Plus (Meclizine + Pyridoxine) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-23-245",
+    "name": "Aclo 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Alco Pharma Ltd.",
+    "price": 8.75,
+    "stock": 465,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclo (Aceclofenac) manufactured by Alco Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-12558-246",
+    "name": "Aclobet 0.05% Ointment",
+    "genericName": "Clobetasol Propionate",
+    "dosageForm": "Ointment",
+    "strength": "0.05%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 137,
+    "stock": 482,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclobet (Clobetasol Propionate) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-12612-247",
+    "name": "Aclobet-N 0.05%+0.5%+2% Cream",
+    "genericName": "Clobetasol Propionate + Neomycin Sulphate + Nystatin",
+    "dosageForm": "Cream",
+    "strength": "0.05%+0.5%+2%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 149,
+    "stock": 499,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclobet-N (Clobetasol Propionate + Neomycin Sulphate + Nystatin) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-12613-248",
+    "name": "Aclobet-N 0.05%+0.5%+2% Ointment",
+    "genericName": "Clobetasol Propionate + Neomycin Sulphate + Nystatin",
+    "dosageForm": "Ointment",
+    "strength": "0.05%+0.5%+2%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 65,
+    "stock": 166,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclobet-N (Clobetasol Propionate + Neomycin Sulphate + Nystatin) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-24-249",
+    "name": "Aclonac 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Pharmasia Limited",
+    "price": 6.25,
+    "stock": 183,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclonac (Aceclofenac) manufactured by Pharmasia Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-25-250",
+    "name": "Aclopain 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Jenphar Bangladesh Ltd.",
+    "price": 7.5,
+    "stock": 200,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclopain (Aceclofenac) manufactured by Jenphar Bangladesh Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-26-251",
+    "name": "Aclovix 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Aexim Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 217,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aclovix (Aceclofenac) manufactured by Aexim Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-36271-252",
+    "name": "ACM Depiwhite Advance Cream",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Cream",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 113,
+    "stock": 234,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Depiwhite Advance (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36272-253",
+    "name": "ACM Depiwhite Body Milk Lotion",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Lotion",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 3.75,
+    "stock": 251,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Depiwhite Body Milk (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36292-254",
+    "name": "ACM Depiwhite Brightening Foam Topical Solution",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Topical Solution",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 5,
+    "stock": 268,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Depiwhite Brightening Foam (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-36273-255",
+    "name": "ACM Depiwhite Day SPF 20 Cream",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Cream",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 149,
+    "stock": 285,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Depiwhite Day SPF 20 (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36274-256",
+    "name": "ACM Depiwhite Eye Contour Gel",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Gel",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 7.5,
+    "stock": 302,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Depiwhite Eye Contour (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36275-257",
+    "name": "ACM Depiwhite Mask Lotion",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Lotion",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 8.75,
+    "stock": 319,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Depiwhite Mask (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-36276-258",
+    "name": "ACM Depiwhite.M SPF 50+ Lotion",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Lotion",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 2.5,
+    "stock": 336,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Depiwhite.M SPF 50+ (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36295-259",
+    "name": "ACM Medisun Cream",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Cream",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 101,
+    "stock": 353,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Medisun (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36296-260",
+    "name": "ACM Medisun Topical Spray",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Topical Spray",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 5,
+    "stock": 370,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Medisun (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-36297-261",
+    "name": "ACM Medisun Mattifying Gel Gel",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Gel",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 6.25,
+    "stock": 387,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Medisun Mattifying Gel (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36280-262",
+    "name": "ACM Novophane Energizing Shampoo",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Shampoo",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 7.5,
+    "stock": 404,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Novophane Energizing (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36281-263",
+    "name": "ACM Novophane Lotion Lotion",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Lotion",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 8.75,
+    "stock": 421,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Novophane Lotion (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36294-264",
+    "name": "ACM Novophane Nail Cream Cream",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Cream",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 65,
+    "stock": 438,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Novophane Nail Cream (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36278-265",
+    "name": "ACM Novophane.DS Shampoo",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Shampoo",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 3.75,
+    "stock": 455,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Novophane.DS (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36279-266",
+    "name": "ACM Novophane.K Shampoo",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Shampoo",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 5,
+    "stock": 472,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Novophane.K (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36283-267",
+    "name": "ACM Sebionex Cleansing Gel",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Gel",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 6.25,
+    "stock": 489,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Sebionex Cleansing (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36286-268",
+    "name": "ACM Sebionex Dermatological Bar Medicated Bar",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Medicated Bar",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 7.5,
+    "stock": 156,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Sebionex Dermatological Bar (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36293-269",
+    "name": "ACM Sebionex Hydra Lotion",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Lotion",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 8.75,
+    "stock": 173,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Sebionex Hydra (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36284-270",
+    "name": "ACM Sebionex Mattifying Gel",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Gel",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 2.5,
+    "stock": 190,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Sebionex Mattifying (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36285-271",
+    "name": "ACM Sebionex Trio Cream",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Cream",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 149,
+    "stock": 207,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Sebionex Trio (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36282-272",
+    "name": "ACM Sebionex.K Cream",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Cream",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 65,
+    "stock": 224,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Sebionex.K (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36288-273",
+    "name": "ACM Sensitelial Cleansing Gel",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Gel",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 6.25,
+    "stock": 241,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Sensitelial Cleansing (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36289-274",
+    "name": "ACM Sensitelial Dermatological Bar Medicated Bar",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Medicated Bar",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 7.5,
+    "stock": 258,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Sensitelial Dermatological Bar (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36287-275",
+    "name": "ACM Sensitelial Emollient Care Lotion",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Lotion",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 8.75,
+    "stock": 275,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Sensitelial Emollient Care (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36290-276",
+    "name": "ACM Viticolor Gel",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Gel",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 2.5,
+    "stock": 292,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Viticolor (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-36291-277",
+    "name": "ACM Vitix Gel",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Gel",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "UniHealth Limited",
+    "price": 3.75,
+    "stock": 309,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACM Vitix (Miscellaneous Topical Agents) manufactured by UniHealth Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-39551-278",
+    "name": "Acme Tasty Saline Oral Powder",
+    "genericName": "Oral rehydration salt [tasty]",
+    "dosageForm": "Oral Powder",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 5,
+    "stock": 326,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acme Tasty Saline (Oral rehydration salt [tasty]) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-14861-279",
+    "name": "Acme&#039;s Dextrose 5% IV Infusion",
+    "genericName": "Dextrose",
+    "dosageForm": "IV Infusion",
+    "strength": "5%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 255,
+    "stock": 343,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acme&#039;s Dextrose (Dextrose) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-14856-280",
+    "name": "Acme&#039;s Dextrose DS 10% IV Infusion",
+    "genericName": "Dextrose",
+    "dosageForm": "IV Infusion",
+    "strength": "10%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 270,
+    "stock": 360,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acme&#039;s Dextrose DS (Dextrose) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-24580-281",
+    "name": "Acme&#039;s DNS 0.9%+5% IV Infusion",
+    "genericName": "Sodium Chloride + Dextrose",
+    "dosageForm": "IV Infusion",
+    "strength": "0.9%+5%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 285,
+    "stock": 377,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acme&#039;s DNS (Sodium Chloride + Dextrose) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-21972-282",
+    "name": "Acme&#039;s Mannitol 20% IV Infusion",
+    "genericName": "Mannitol",
+    "dosageForm": "IV Infusion",
+    "strength": "20%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 300,
+    "stock": 394,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acme&#039;s Mannitol (Mannitol) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-14874-283",
+    "name": "ACME&#039;s Normal Saline 0.9% IV Infusion",
+    "genericName": "Sodium Chloride",
+    "dosageForm": "IV Infusion",
+    "strength": "0.9%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 315,
+    "stock": 411,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACME&#039;s Normal Saline (Sodium Chloride) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-23196-284",
+    "name": "Acme&#039;s ORS 10.25 gm Oral Powder",
+    "genericName": "Oral rehydration salt [glucose based]",
+    "dosageForm": "Oral Powder",
+    "strength": "10.25 gm",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 5,
+    "stock": 428,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acme&#039;s ORS (Oral rehydration salt [glucose based]) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-939-285",
+    "name": "Acmecilin 125 mg/5 ml Oral Suspension",
+    "genericName": "Ampicillin Sodium",
+    "dosageForm": "Oral Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 87.5,
+    "stock": 445,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acmecilin (Ampicillin Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-940-286",
+    "name": "Acmecilin 250 mg Capsule",
+    "genericName": "Ampicillin Sodium",
+    "dosageForm": "Capsule",
+    "strength": "250 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 9,
+    "stock": 462,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acmecilin (Ampicillin Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-941-287",
+    "name": "Acmecilin 250 mg/vial Injection",
+    "genericName": "Ampicillin Sodium",
+    "dosageForm": "Injection",
+    "strength": "250 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 150,
+    "stock": 479,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acmecilin (Ampicillin Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-942-288",
+    "name": "Acmecilin 500 mg/vial Injection",
+    "genericName": "Ampicillin Sodium",
+    "dosageForm": "Injection",
+    "strength": "500 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 165,
+    "stock": 496,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acmecilin (Ampicillin Sodium) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-6042-289",
+    "name": "Acmegra 25 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 3.75,
+    "stock": 163,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acmegra (Sildenafil Citrate) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6043-290",
+    "name": "Acmegra 50 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 5,
+    "stock": 180,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acmegra (Sildenafil Citrate) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6044-291",
+    "name": "Acmegra 100 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 6.25,
+    "stock": 197,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acmegra (Sildenafil Citrate) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6-292",
+    "name": "ACN 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Modern Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 214,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ACN (Aceclofenac) manufactured by Modern Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-176-293",
+    "name": "Acnegel 0.1%+2.5% Gel",
+    "genericName": "Adapalene + Benzoyl peroxide",
+    "dosageForm": "Gel",
+    "strength": "0.1%+2.5%",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 8.75,
+    "stock": 231,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acnegel (Adapalene + Benzoyl peroxide) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-30844-294",
+    "name": "Acnesone 7.5% Gel",
+    "genericName": "Dapsone",
+    "dosageForm": "Gel",
+    "strength": "7.5%",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 248,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acnesone (Dapsone) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-38315-295",
+    "name": "Acnestop Face Cream Cream",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Cream",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "DBL Healthcare Ltd.",
+    "price": 149,
+    "stock": 265,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acnestop Face Cream (Miscellaneous Topical Agents) manufactured by DBL Healthcare Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-37616-296",
+    "name": "Acnev 1% w/w Cream",
+    "genericName": "Clascoterone",
+    "dosageForm": "Cream",
+    "strength": "1% w/w",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 65,
+    "stock": 282,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acnev (Clascoterone) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-16718-297",
+    "name": "Acora 90 mg Tablet",
+    "genericName": "Ticagrelor",
+    "dosageForm": "Tablet",
+    "strength": "90 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 6.25,
+    "stock": 299,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acora (Ticagrelor) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-532-298",
+    "name": "Acorex 15 mg/5 ml Syrup",
+    "genericName": "Ambroxol Hydrochloride",
+    "dosageForm": "Syrup",
+    "strength": "15 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Apex Pharma Ltd.",
+    "price": 113,
+    "stock": 316,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acorex (Ambroxol Hydrochloride) manufactured by Apex Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-8540-299",
+    "name": "Acos 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Radiant Pharmaceuticals Ltd.",
+    "price": 22,
+    "stock": 333,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acos (Azithromycin Dihydrate) manufactured by Radiant Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-8541-300",
+    "name": "Acos 200 mg/5 ml Powder for Suspension",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "200 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Radiant Pharmaceuticals Ltd.",
+    "price": 45,
+    "stock": 350,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acos (Azithromycin Dihydrate) manufactured by Radiant Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-33520-301",
+    "name": "Acos 250 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Radiant Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 367,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acos (Azithromycin Dihydrate) manufactured by Radiant Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-39457-302",
+    "name": "Acosolin 4 gm/100 ml IV Infusion",
+    "genericName": "Magnesium Sulfate",
+    "dosageForm": "IV Infusion",
+    "strength": "4 gm/100 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Popular Pharmaceuticals PLC",
+    "price": 150,
+    "stock": 384,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acosolin (Magnesium Sulfate) manufactured by Popular Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-39560-303",
+    "name": "AcRest Acne Cleanser Topical Spray",
+    "genericName": "Miscellaneous Topical Agents",
+    "dosageForm": "Topical Spray",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "ZAS Corporation",
+    "price": 6.25,
+    "stock": 401,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AcRest Acne Cleanser (Miscellaneous Topical Agents) manufactured by ZAS Corporation. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-8424-304",
+    "name": "Acryth 125 mg/5 ml Powder for Suspension",
+    "genericName": "Erythromycin (Oral)",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Monicopharma Ltd.",
+    "price": 79,
+    "stock": 418,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acryth (Erythromycin (Oral)) manufactured by Monicopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10393-305",
+    "name": "Act 500 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 12,
+    "stock": 435,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Act (Paracetamol) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28017-306",
+    "name": "Act 120 mg/5 ml Oral Suspension",
+    "genericName": "Paracetamol",
+    "dosageForm": "Oral Suspension",
+    "strength": "120 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 96,
+    "stock": 452,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Act (Paracetamol) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28018-307",
+    "name": "Act 80 mg/ml Pediatric Drops",
+    "genericName": "Paracetamol",
+    "dosageForm": "Pediatric Drops",
+    "strength": "80 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 469,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Act (Paracetamol) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-10394-308",
+    "name": "Act Plus 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+65 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 19.5,
+    "stock": 486,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Act Plus (Paracetamol + Caffeine) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11673-309",
+    "name": "Actemra 80 mg/4 ml IV Infusion",
+    "genericName": "Tocilizumab",
+    "dosageForm": "IV Infusion",
+    "strength": "80 mg/4 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Roche Bangladesh Ltd.",
+    "price": 255,
+    "stock": 153,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actemra (Tocilizumab) manufactured by Roche Bangladesh Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-11674-310",
+    "name": "Actemra 200 mg/10 ml IV Infusion",
+    "genericName": "Tocilizumab",
+    "dosageForm": "IV Infusion",
+    "strength": "200 mg/10 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Roche Bangladesh Ltd.",
+    "price": 270,
+    "stock": 170,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actemra (Tocilizumab) manufactured by Roche Bangladesh Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-26083-311",
+    "name": "Actemra 162 mg/0.9 ml SC Injection",
+    "genericName": "Tocilizumab",
+    "dosageForm": "SC Injection",
+    "strength": "162 mg/0.9 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Roche Bangladesh Ltd.",
+    "price": 285,
+    "stock": 187,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actemra (Tocilizumab) manufactured by Roche Bangladesh Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-27602-312",
+    "name": "Acteria 4 billion Capsule",
+    "genericName": "Probiotic Combination [4 Billion]",
+    "dosageForm": "Capsule",
+    "strength": "4 billion",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Radiant Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 204,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acteria (Probiotic Combination [4 Billion]) manufactured by Radiant Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-30871-313",
+    "name": "Acteria (For kids) 4 billion/sachet Oral Powder",
+    "genericName": "Probiotic Combination [4 Billion]",
+    "dosageForm": "Oral Powder",
+    "strength": "4 billion/sachet",
+    "packSize": "1 Unit",
+    "manufacturer": "Radiant Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 221,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acteria (For kids) (Probiotic Combination [4 Billion]) manufactured by Radiant Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37863-314",
+    "name": "Actical 1200 mg+0.25 mcg Tablet",
+    "genericName": "Calcium Citrate + Calcitriol",
+    "dosageForm": "Tablet",
+    "strength": "1200 mg+0.25 mcg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 22,
+    "stock": 238,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actical (Calcium Citrate + Calcitriol) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-31092-315",
+    "name": "Actidex 25 mg Tablet",
+    "genericName": "Dexketoprofen",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 255,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actidex (Dexketoprofen) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-21287-316",
+    "name": "Actifast 10 mg Tablet",
+    "genericName": "Ketorolac Tromethamine",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "SMC Enterprise Ltd",
+    "price": 7.5,
+    "stock": 272,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actifast (Ketorolac Tromethamine) manufactured by SMC Enterprise Ltd. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35832-317",
+    "name": "Actifol 5 mg Tablet",
+    "genericName": "Folinic Acid",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 8.75,
+    "stock": 289,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actifol (Folinic Acid) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35833-318",
+    "name": "Actifol 15 mg Tablet",
+    "genericName": "Folinic Acid",
+    "dosageForm": "Tablet",
+    "strength": "15 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 2.5,
+    "stock": 306,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actifol (Folinic Acid) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2374-319",
+    "name": "Actilac 3.35 gm/5 ml Oral Solution",
+    "genericName": "Lactulose",
+    "dosageForm": "Oral Solution",
+    "strength": "3.35 gm/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 323,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actilac (Lactulose) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-27604-320",
+    "name": "Actilyse 50 mg/50 ml IV Infusion",
+    "genericName": "Alteplase",
+    "dosageForm": "IV Infusion",
+    "strength": "50 mg/50 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Radiant Pharmaceuticals Ltd.",
+    "price": 195,
+    "stock": 340,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actilyse (Alteplase) manufactured by Radiant Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-32457-321",
+    "name": "ActiMom Tablet",
+    "genericName": "10 Vitamin & 6 Mineral [Pregnancy and Breast Feeding Formula]",
+    "dosageForm": "Tablet",
+    "strength": "",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Nuvista Pharma Ltd.",
+    "price": 6.25,
+    "stock": 357,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ActiMom (10 Vitamin & 6 Mineral [Pregnancy and Breast Feeding Formula]) manufactured by Nuvista Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-36370-322",
+    "name": "Action XR 665 mg Tablet (Extended Release)",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet (Extended Release)",
+    "strength": "665 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Albion Laboratories Limited",
+    "price": 17,
+    "stock": 374,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Action XR (Paracetamol) manufactured by Albion Laboratories Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3542-323",
+    "name": "Actisal 2 mg Tablet",
+    "genericName": "Levosalbutamol (Oral)",
+    "dosageForm": "Tablet",
+    "strength": "2 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Silva Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 391,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actisal (Levosalbutamol (Oral)) manufactured by Silva Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-3543-324",
+    "name": "Actisal 1 mg/5 ml Syrup",
+    "genericName": "Levosalbutamol (Oral)",
+    "dosageForm": "Syrup",
+    "strength": "1 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Silva Pharmaceuticals Ltd.",
+    "price": 79,
+    "stock": 408,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actisal (Levosalbutamol (Oral)) manufactured by Silva Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-28501-325",
+    "name": "Activa 50 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Pacific Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 425,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Activa (Sildenafil Citrate) manufactured by Pacific Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-28502-326",
+    "name": "Activa 100 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Pacific Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 442,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Activa (Sildenafil Citrate) manufactured by Pacific Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-14084-327",
+    "name": "Activit Gold Tablet",
+    "genericName": "Multivitamin & Multimineral [A-Z gold preparation]",
+    "dosageForm": "Tablet",
+    "strength": "",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Delta Pharma PLC.",
+    "price": 6.25,
+    "stock": 459,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Activit Gold (Multivitamin & Multimineral [A-Z gold preparation]) manufactured by Delta Pharma PLC.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-14137-328",
+    "name": "Activit Silver Tablet",
+    "genericName": "Multivitamin & Multimineral [A-Z silver preparation]",
+    "dosageForm": "Tablet",
+    "strength": "",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Delta Pharma PLC.",
+    "price": 7.5,
+    "stock": 476,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Activit Silver (Multivitamin & Multimineral [A-Z silver preparation]) manufactured by Delta Pharma PLC.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-14675-329",
+    "name": "Activit Z Syrup",
+    "genericName": "Vitamin B Complex + Zinc",
+    "dosageForm": "Syrup",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Delta Pharma PLC.",
+    "price": 121.5,
+    "stock": 493,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Activit Z (Vitamin B Complex + Zinc) manufactured by Delta Pharma PLC.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-13360-330",
+    "name": "Activit ZI Syrup",
+    "genericName": "Iron Polymaltose Complex + Vitamin B Complex + Zinc",
+    "dosageForm": "Syrup",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Delta Pharma PLC.",
+    "price": 45,
+    "stock": 160,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Activit ZI (Iron Polymaltose Complex + Vitamin B Complex + Zinc) manufactured by Delta Pharma PLC.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-37300-331",
+    "name": "Activon 10% Cream",
+    "genericName": "Diethylamine Salicylate",
+    "dosageForm": "Cream",
+    "strength": "10%",
+    "packSize": "1 Unit",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 101,
+    "stock": 177,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Activon (Diethylamine Salicylate) manufactured by Eskayef Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-11911-332",
+    "name": "Actizen 10 mg Tablet",
+    "genericName": "Cetirizine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 194,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actizen (Cetirizine Hydrochloride) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11912-333",
+    "name": "Actizen 5 mg/5 ml Syrup",
+    "genericName": "Cetirizine Hydrochloride",
+    "dosageForm": "Syrup",
+    "strength": "5 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 70.5,
+    "stock": 211,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actizen (Cetirizine Hydrochloride) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-10398-334",
+    "name": "Actol 120 mg/5 ml Oral Suspension",
+    "genericName": "Paracetamol",
+    "dosageForm": "Oral Suspension",
+    "strength": "120 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Somatec Pharmaceuticals Ltd.",
+    "price": 79,
+    "stock": 228,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actol (Paracetamol) manufactured by Somatec Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3425-335",
+    "name": "Actolin 2 mg/5 ml Syrup",
+    "genericName": "Salbutamol",
+    "dosageForm": "Syrup",
+    "strength": "2 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Globe Pharmaceuticals Ltd.",
+    "price": 87.5,
+    "stock": 245,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actolin (Salbutamol) manufactured by Globe Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-29168-336",
+    "name": "Actolin 4 mg Tablet",
+    "genericName": "Salbutamol",
+    "dosageForm": "Tablet",
+    "strength": "4 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Globe Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 262,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actolin (Salbutamol) manufactured by Globe Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-5635-337",
+    "name": "ActoMeg 15 mg+500 mg Tablet",
+    "genericName": "Pioglitazone + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "15 mg+500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 279,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ActoMeg (Pioglitazone + Metformin Hydrochloride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-5636-338",
+    "name": "ActoMeg 15 mg+850 mg Tablet",
+    "genericName": "Pioglitazone + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "15 mg+850 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 296,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ActoMeg (Pioglitazone + Metformin Hydrochloride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-5566-339",
+    "name": "Actose 15 mg Tablet",
+    "genericName": "Pioglitazone",
+    "dosageForm": "Tablet",
+    "strength": "15 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 313,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actose (Pioglitazone) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-5567-340",
+    "name": "Actose 30 mg Tablet",
+    "genericName": "Pioglitazone",
+    "dosageForm": "Tablet",
+    "strength": "30 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 330,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actose (Pioglitazone) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-16771-341",
+    "name": "Actrapid 100 IU/ml SC Injection",
+    "genericName": "Insulin Human [rDNA]",
+    "dosageForm": "SC Injection",
+    "strength": "100 IU/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Novo Nordisk Pharma (Pvt.) Ltd",
+    "price": 285,
+    "stock": 347,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actrapid (Insulin Human [rDNA]) manufactured by Novo Nordisk Pharma (Pvt.) Ltd. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-8984-342",
+    "name": "Actrim (200 mg+40 mg)/5 ml Oral Suspension",
+    "genericName": "Sulphamethoxazole + Trimethoprim",
+    "dosageForm": "Oral Suspension",
+    "strength": "(200 mg+40 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Globe Pharmaceuticals Ltd.",
+    "price": 62,
+    "stock": 364,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actrim (Sulphamethoxazole + Trimethoprim) manufactured by Globe Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-8983-343",
+    "name": "Actrim DS 800 mg+160 mg Tablet",
+    "genericName": "Sulphamethoxazole + Trimethoprim",
+    "dosageForm": "Tablet",
+    "strength": "800 mg+160 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Globe Pharmaceuticals Ltd.",
+    "price": 19.5,
+    "stock": 381,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actrim DS (Sulphamethoxazole + Trimethoprim) manufactured by Globe Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2375-344",
+    "name": "Actulose 3.35 gm/5 ml Oral Solution",
+    "genericName": "Lactulose",
+    "dosageForm": "Oral Solution",
+    "strength": "3.35 gm/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Silva Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 398,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Actulose (Lactulose) manufactured by Silva Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-25702-345",
+    "name": "Acubis 5 mg Tablet",
+    "genericName": "Bisoprolol Fumarate",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 415,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acubis (Bisoprolol Fumarate) manufactured by Concord Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-25703-346",
+    "name": "Acubis 2.5 mg Tablet",
+    "genericName": "Bisoprolol Fumarate",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 432,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acubis (Bisoprolol Fumarate) manufactured by Concord Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-17644-347",
+    "name": "Acudipin 5 mg Tablet",
+    "genericName": "Amlodipine Besilate",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 449,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acudipin (Amlodipine Besilate) manufactured by Concord Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-16533-348",
+    "name": "Acudipin Plus 5 mg+50 mg Tablet",
+    "genericName": "Amlodipine Besilate + Atenolol",
+    "dosageForm": "Tablet",
+    "strength": "5 mg+50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 466,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acudipin Plus (Amlodipine Besilate + Atenolol) manufactured by Concord Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-38229-349",
+    "name": "Acufer 30 mg Capsule",
+    "genericName": "Ferric Maltol",
+    "dosageForm": "Capsule",
+    "strength": "30 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 3.75,
+    "stock": 483,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acufer (Ferric Maltol) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-33910-350",
+    "name": "Aculizer Metered-Dose Inhaler (MDI)",
+    "genericName": "Inhaler device",
+    "dosageForm": "Metered-Dose Inhaler (MDI)",
+    "strength": "",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 5,
+    "stock": 150,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aculizer (Inhaler device) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-15928-351",
+    "name": "Acunac 0.09% Ophthalmic Solution",
+    "genericName": "Bromfenac Sodium",
+    "dosageForm": "Ophthalmic Solution",
+    "strength": "0.09%",
+    "packSize": "1 Unit",
+    "manufacturer": "General Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 167,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acunac (Bromfenac Sodium) manufactured by General Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-15299-352",
+    "name": "Acupain 10 mg Tablet",
+    "genericName": "Ketorolac Tromethamine",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 7.5,
+    "stock": 184,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acupain (Ketorolac Tromethamine) manufactured by Beacon Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-15300-353",
+    "name": "Acupain 30 mg/ml IM/IV Injection",
+    "genericName": "Ketorolac Tromethamine",
+    "dosageForm": "IM/IV Injection",
+    "strength": "30 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 240,
+    "stock": 201,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acupain (Ketorolac Tromethamine) manufactured by Beacon Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-2812-354",
+    "name": "Acuren 25 mg Tablet",
+    "genericName": "Hydrochlorothiazide",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 218,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acuren (Hydrochlorothiazide) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2813-355",
+    "name": "Acuren 50 mg Tablet",
+    "genericName": "Hydrochlorothiazide",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 235,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acuren (Hydrochlorothiazide) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2696-356",
+    "name": "Acusan 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 252,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acusan (Losartan Potassium) manufactured by Concord Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2933-357",
+    "name": "Acusan Plus 50 mg+12.5 mg Tablet",
+    "genericName": "Losartan Potassium + Hydrochlorothiazide",
+    "dosageForm": "Tablet",
+    "strength": "50 mg+12.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 269,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acusan Plus (Losartan Potassium + Hydrochlorothiazide) manufactured by Concord Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-39322-358",
+    "name": "Acxi 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Salton Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 286,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acxi (Aceclofenac) manufactured by Salton Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-130-359",
+    "name": "Acyvir 500 mg/vial IV Infusion",
+    "genericName": "Acyclovir (Injection)",
+    "dosageForm": "IV Infusion",
+    "strength": "500 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 330,
+    "stock": 303,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acyvir (Acyclovir (Injection)) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-233-360",
+    "name": "Acyvir 3% Ophthalmic Ointment",
+    "genericName": "Acyclovir (Ophthalmic)",
+    "dosageForm": "Ophthalmic Ointment",
+    "strength": "3%",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 65,
+    "stock": 320,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acyvir (Acyclovir (Ophthalmic)) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-39240-361",
+    "name": "Acyvir 5% w/w Cream",
+    "genericName": "Acyclovir (Topical)",
+    "dosageForm": "Cream",
+    "strength": "5% w/w",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 77,
+    "stock": 337,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acyvir (Acyclovir (Topical)) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-13257-362",
+    "name": "Ad-All Capsule",
+    "genericName": "Iron + Folic Acid + Vitamin B Complex + Vitamine C + Zinc Sulfate",
+    "dosageForm": "Capsule",
+    "strength": "",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Ad-din Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 354,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ad-All (Iron + Folic Acid + Vitamin B Complex + Vitamine C + Zinc Sulfate) manufactured by Ad-din Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-12792-363",
+    "name": "Adaben Duo 0.1%+2.5% Gel",
+    "genericName": "Adapalene + Benzoyl peroxide",
+    "dosageForm": "Gel",
+    "strength": "0.1%+2.5%",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 371,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adaben Duo (Adapalene + Benzoyl peroxide) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-6060-364",
+    "name": "Adafil 10 mg Tablet",
+    "genericName": "Tadalafil",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 388,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adafil (Tadalafil) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6061-365",
+    "name": "Adafil 20 mg Tablet",
+    "genericName": "Tadalafil",
+    "dosageForm": "Tablet",
+    "strength": "20 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 405,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adafil (Tadalafil) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-30074-366",
+    "name": "Adagel Plus 0.1%+2.5% Gel",
+    "genericName": "Adapalene + Benzoyl peroxide",
+    "dosageForm": "Gel",
+    "strength": "0.1%+2.5%",
+    "packSize": "1 Unit",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 422,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adagel Plus (Adapalene + Benzoyl peroxide) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-24308-367",
+    "name": "Adair 500 mcg Tablet",
+    "genericName": "Roflumilast (Tablet)",
+    "dosageForm": "Tablet",
+    "strength": "500 mcg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 17,
+    "stock": 439,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adair (Roflumilast (Tablet)) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37048-368",
+    "name": "Adali 40 mg/0.8 ml SC Injection",
+    "genericName": "Adalimumab",
+    "dosageForm": "SC Injection",
+    "strength": "40 mg/0.8 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 240,
+    "stock": 456,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adali (Adalimumab) manufactured by Beacon Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-29134-369",
+    "name": "Adalimab 40 mg/0.8 ml SC Injection",
+    "genericName": "Adalimumab",
+    "dosageForm": "SC Injection",
+    "strength": "40 mg/0.8 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 255,
+    "stock": 473,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adalimab (Adalimumab) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-5792-370",
+    "name": "Adam 33 5 mg Tablet",
+    "genericName": "Prednisolone",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Nuvista Pharma Ltd.",
+    "price": 7.5,
+    "stock": 490,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adam 33 (Prednisolone) manufactured by Nuvista Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-5793-371",
+    "name": "Adam 33 20 mg Tablet",
+    "genericName": "Prednisolone",
+    "dosageForm": "Tablet",
+    "strength": "20 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Nuvista Pharma Ltd.",
+    "price": 8.75,
+    "stock": 157,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adam 33 (Prednisolone) manufactured by Nuvista Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-169-372",
+    "name": "Adapel 0.1% Cream",
+    "genericName": "Adapalene",
+    "dosageForm": "Cream",
+    "strength": "0.1%",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 113,
+    "stock": 174,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adapel (Adapalene) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-16321-373",
+    "name": "Adarbi 40 mg Tablet",
+    "genericName": "Azilsartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "40 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "NIPRO JMI Pharma Ltd.",
+    "price": 3.75,
+    "stock": 191,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adarbi (Azilsartan Medoxomil) manufactured by NIPRO JMI Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-16324-374",
+    "name": "Adarbi 80 mg Tablet",
+    "genericName": "Azilsartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "80 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "NIPRO JMI Pharma Ltd.",
+    "price": 5,
+    "stock": 208,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adarbi (Azilsartan Medoxomil) manufactured by NIPRO JMI Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-14401-375",
+    "name": "Adcal D 500 mg+200 IU Tablet",
+    "genericName": "Conventional Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+200 IU",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Amulet Pharmaceuticals Ltd.",
+    "price": 12,
+    "stock": 225,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adcal D (Conventional Calcium + Vitamin D3) manufactured by Amulet Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-27317-376",
+    "name": "Adcovit (5 mg+2 mg+2 mg+20 mg)/5 ml Syrup",
+    "genericName": "Vitamin B complex",
+    "dosageForm": "Syrup",
+    "strength": "(5 mg+2 mg+2 mg+20 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Team Pharmaceuticals Ltd.",
+    "price": 96,
+    "stock": 242,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adcovit (Vitamin B complex) manufactured by Team Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-30540-377",
+    "name": "Adebrox 15 mg/5 ml Syrup",
+    "genericName": "Ambroxol Hydrochloride",
+    "dosageForm": "Syrup",
+    "strength": "15 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 104.5,
+    "stock": 259,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adebrox (Ambroxol Hydrochloride) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-240-378",
+    "name": "Adecard 6 mg/2 ml IV Injection",
+    "genericName": "Adenosine",
+    "dosageForm": "IV Injection",
+    "strength": "6 mg/2 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Popular Pharmaceuticals PLC",
+    "price": 165,
+    "stock": 276,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adecard (Adenosine) manufactured by Popular Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-6781-379",
+    "name": "Adecef 500 mg Capsule",
+    "genericName": "Cephradine",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 22,
+    "stock": 293,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adecef (Cephradine) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6782-380",
+    "name": "Adecef 125 mg/5 ml Powder for Suspension",
+    "genericName": "Cephradine",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 45,
+    "stock": 310,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adecef (Cephradine) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6783-381",
+    "name": "Adecef DS 250 mg/5 ml Powder for Suspension",
+    "genericName": "Cephradine",
+    "dosageForm": "Powder for Suspension",
+    "strength": "250 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 53.5,
+    "stock": 327,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adecef DS (Cephradine) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-9102-382",
+    "name": "Adecin 500 mg Tablet",
+    "genericName": "Ciprofloxacin",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 17,
+    "stock": 344,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adecin (Ciprofloxacin) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-5996-383",
+    "name": "Adegra 50 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 8.75,
+    "stock": 361,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adegra (Sildenafil Citrate) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-5997-384",
+    "name": "Adegra 100 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 2.5,
+    "stock": 378,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adegra (Sildenafil Citrate) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-32196-385",
+    "name": "Adegra 25 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 3.75,
+    "stock": 395,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adegra (Sildenafil Citrate) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-1500-386",
+    "name": "Adegut 10 mg Tablet",
+    "genericName": "Domperidone Maleate",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 5,
+    "stock": 412,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adegut (Domperidone Maleate) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-1501-387",
+    "name": "Adegut 5 mg/5 ml Oral Suspension",
+    "genericName": "Domperidone Maleate",
+    "dosageForm": "Oral Suspension",
+    "strength": "5 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 104.5,
+    "stock": 429,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adegut (Domperidone Maleate) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-4320-388",
+    "name": "Adelax 0.5 mg+10 mg Tablet",
+    "genericName": "Flupentixol + Melitracen",
+    "dosageForm": "Tablet",
+    "strength": "0.5 mg+10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 7.5,
+    "stock": 446,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adelax (Flupentixol + Melitracen) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-30075-389",
+    "name": "Adempa 10 mg Tablet",
+    "genericName": "Empagliflozin",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 463,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adempa (Empagliflozin) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-30076-390",
+    "name": "Adempa 25 mg Tablet",
+    "genericName": "Empagliflozin",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 480,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adempa (Empagliflozin) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-35825-391",
+    "name": "Adempa-M 5 mg+500 mg Tablet",
+    "genericName": "Empagliflozin + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "5 mg+500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 497,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adempa-M (Empagliflozin + Metformin Hydrochloride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-7158-392",
+    "name": "Adetil 250 mg Tablet",
+    "genericName": "Cefuroxime Axetil",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 6,
+    "stock": 164,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adetil (Cefuroxime Axetil) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7159-393",
+    "name": "Adetil 500 mg Tablet",
+    "genericName": "Cefuroxime Axetil",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 19.5,
+    "stock": 181,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adetil (Cefuroxime Axetil) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7461-394",
+    "name": "Adexim 200 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "200 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 9,
+    "stock": 198,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adexim (Cefixime Trihydrate) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7462-395",
+    "name": "Adexim 100 mg/5 ml Powder for Suspension",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "100 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Supreme Pharmaceutical Ltd.",
+    "price": 87.5,
+    "stock": 215,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adexim (Cefixime Trihydrate) manufactured by Supreme Pharmaceutical Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-19611-396",
+    "name": "Adflox 500 mg Capsule",
+    "genericName": "Flucloxacillin Sodium",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Team Pharmaceuticals Ltd.",
+    "price": 14.5,
+    "stock": 232,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adflox (Flucloxacillin Sodium) manufactured by Team Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-170-397",
+    "name": "Adgar 0.1% Gel",
+    "genericName": "Adapalene",
+    "dosageForm": "Gel",
+    "strength": "0.1%",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 3.75,
+    "stock": 249,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adgar (Adapalene) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-30525-398",
+    "name": "Adgar 0.3% Gel",
+    "genericName": "Adapalene",
+    "dosageForm": "Gel",
+    "strength": "0.3%",
+    "packSize": "1 Unit",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 5,
+    "stock": 266,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adgar (Adapalene) manufactured by Advanced Chemical Industries PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-5275-399",
+    "name": "Adglim 1 mg Tablet",
+    "genericName": "Glimepiride",
+    "dosageForm": "Tablet",
+    "strength": "1 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 283,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adglim (Glimepiride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-5276-400",
+    "name": "Adglim 2 mg Tablet",
+    "genericName": "Glimepiride",
+    "dosageForm": "Tablet",
+    "strength": "2 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 300,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adglim (Glimepiride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-20395-401",
+    "name": "Adifex 120 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "120 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "United Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 317,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adifex (Fexofenadine Hydrochloride) manufactured by United Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-39463-402",
+    "name": "Adimab 40 mg/0.8 ml SC Injection",
+    "genericName": "Adalimumab",
+    "dosageForm": "SC Injection",
+    "strength": "40 mg/0.8 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Drug International Ltd.",
+    "price": 300,
+    "stock": 334,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adimab (Adalimumab) manufactured by Drug International Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-35651-403",
+    "name": "Adimod 400 mg Tablet",
+    "genericName": "Pidotimod",
+    "dosageForm": "Tablet",
+    "strength": "400 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Everest Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 351,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adimod (Pidotimod) manufactured by Everest Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28233-404",
+    "name": "Adinir 300 mg Capsule",
+    "genericName": "Cefdinir",
+    "dosageForm": "Capsule",
+    "strength": "300 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 6,
+    "stock": 368,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adinir (Cefdinir) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28234-405",
+    "name": "Adinir 125 mg/5 ml Powder for Suspension",
+    "genericName": "Cefdinir",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 87.5,
+    "stock": 385,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adinir (Cefdinir) manufactured by ACME Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-30526-406",
+    "name": "Adipal Plus 0.1%+2.5% Gel",
+    "genericName": "Adapalene + Benzoyl peroxide",
+    "dosageForm": "Gel",
+    "strength": "0.1%+2.5%",
+    "packSize": "1 Unit",
+    "manufacturer": "Dermolive",
+    "price": 7.5,
+    "stock": 402,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adipal Plus (Adapalene + Benzoyl peroxide) manufactured by Dermolive. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-5162-407",
+    "name": "Adiponil 120 mg Capsule",
+    "genericName": "Orlistat",
+    "dosageForm": "Capsule",
+    "strength": "120 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 419,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adiponil (Orlistat) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35411-408",
+    "name": "Adiron 30 mg Capsule",
+    "genericName": "Ferric Maltol",
+    "dosageForm": "Capsule",
+    "strength": "30 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "General Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 436,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adiron (Ferric Maltol) manufactured by General Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-9724-409",
+    "name": "Adiva 600 mg Tablet",
+    "genericName": "Efavirenz",
+    "dosageForm": "Tablet",
+    "strength": "600 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 22,
+    "stock": 453,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adiva (Efavirenz) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-8542-410",
+    "name": "Adiz 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Euro Pharma Ltd.",
+    "price": 12,
+    "stock": 470,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adiz (Azithromycin Dihydrate) manufactured by Euro Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-8543-411",
+    "name": "Adiz 200 mg/5 ml Powder for Suspension",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "200 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Euro Pharma Ltd.",
+    "price": 53.5,
+    "stock": 487,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adiz (Azithromycin Dihydrate) manufactured by Euro Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-25615-412",
+    "name": "Adiz 250 mg Capsule",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Capsule",
+    "strength": "250 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Euro Pharma Ltd.",
+    "price": 6,
+    "stock": 154,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adiz (Azithromycin Dihydrate) manufactured by Euro Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-5481-413",
+    "name": "Adlina 5 mg Tablet",
+    "genericName": "Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 171,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adlina (Linagliptin) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-33948-414",
+    "name": "Adlina-EM 10 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "10 mg+5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 188,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adlina-EM (Empagliflozin + Linagliptin) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-33949-415",
+    "name": "Adlina-EM 25 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "25 mg+5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 205,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adlina-EM (Empagliflozin + Linagliptin) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-17213-416",
+    "name": "Adlinameg 2.5 mg+500 mg Tablet",
+    "genericName": "Linagliptin + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg+500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 222,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adlinameg (Linagliptin + Metformin Hydrochloride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-17214-417",
+    "name": "Adlinameg 2.5 mg+850 mg Tablet",
+    "genericName": "Linagliptin + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg+850 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 239,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adlinameg (Linagliptin + Metformin Hydrochloride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-2462-418",
+    "name": "Adlock 10 mg Tablet",
+    "genericName": "Propranolol Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Sonear Laboratories Ltd.",
+    "price": 7.5,
+    "stock": 256,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adlock (Propranolol Hydrochloride) manufactured by Sonear Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2463-419",
+    "name": "Adlock 40 mg Tablet",
+    "genericName": "Propranolol Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "40 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Sonear Laboratories Ltd.",
+    "price": 8.75,
+    "stock": 273,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adlock (Propranolol Hydrochloride) manufactured by Sonear Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-36779-420",
+    "name": "Admero 500 mg/vial IV Injection or Infusion",
+    "genericName": "Meropenem Trihydrate",
+    "dosageForm": "IV Injection or Infusion",
+    "strength": "500 mg/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Ad-din Pharmaceuticals Ltd.",
+    "price": 120,
+    "stock": 290,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Admero (Meropenem Trihydrate) manufactured by Ad-din Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-36780-421",
+    "name": "Admero 1 gm/vial IV Injection or Infusion",
+    "genericName": "Meropenem Trihydrate",
+    "dosageForm": "IV Injection or Infusion",
+    "strength": "1 gm/vial",
+    "packSize": "1 Unit",
+    "manufacturer": "Ad-din Pharmaceuticals Ltd.",
+    "price": 135,
+    "stock": 307,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Admero (Meropenem Trihydrate) manufactured by Ad-din Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-5214-422",
+    "name": "Admira 80 mg Tablet",
+    "genericName": "Gliclazide",
+    "dosageForm": "Tablet",
+    "strength": "80 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 324,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Admira (Gliclazide) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-5215-423",
+    "name": "Admira MR 30 mg Tablet (Modified Release)",
+    "genericName": "Gliclazide",
+    "dosageForm": "Tablet (Modified Release)",
+    "strength": "30 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 341,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Admira MR (Gliclazide) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-38776-424",
+    "name": "Admira MR 60 mg Tablet (Modified Release)",
+    "genericName": "Gliclazide",
+    "dosageForm": "Tablet (Modified Release)",
+    "strength": "60 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 358,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Admira MR (Gliclazide) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-19612-425",
+    "name": "Admox 125 mg/5 ml Powder for Suspension",
+    "genericName": "Amoxicillin Trihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Team Pharmaceuticals Ltd.",
+    "price": 87.5,
+    "stock": 375,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Admox (Amoxicillin Trihydrate) manufactured by Team Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-27318-426",
+    "name": "Admox DS 500 mg Capsule",
+    "genericName": "Amoxicillin Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Team Pharmaceuticals Ltd.",
+    "price": 14.5,
+    "stock": 392,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Admox DS (Amoxicillin Trihydrate) manufactured by Team Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2286-427",
+    "name": "Adnix 500 mg Tablet",
+    "genericName": "Nitazoxanide",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Alco Pharma Ltd.",
+    "price": 17,
+    "stock": 409,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adnix (Nitazoxanide) manufactured by Alco Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2287-428",
+    "name": "Adnix 100 mg/5 ml Powder for Suspension",
+    "genericName": "Nitazoxanide",
+    "dosageForm": "Powder for Suspension",
+    "strength": "100 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Alco Pharma Ltd.",
+    "price": 113,
+    "stock": 426,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adnix (Nitazoxanide) manufactured by Alco Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-27174-429",
+    "name": "Adnor 3 mg Tablet",
+    "genericName": "Doxepin (Oral)",
+    "dosageForm": "Tablet",
+    "strength": "3 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Apex Pharma Ltd.",
+    "price": 6.25,
+    "stock": 443,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adnor (Doxepin (Oral)) manufactured by Apex Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6739-430",
+    "name": "Adocil 500 mg Capsule",
+    "genericName": "Cefadroxil Monohydrate",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Kemiko Pharmaceuticals Ltd.",
+    "price": 12,
+    "stock": 460,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adocil (Cefadroxil Monohydrate) manufactured by Kemiko Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6740-431",
+    "name": "Adocil 125 mg/5 ml Powder for Suspension",
+    "genericName": "Cefadroxil Monohydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Kemiko Pharmaceuticals Ltd.",
+    "price": 53.5,
+    "stock": 477,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adocil (Cefadroxil Monohydrate) manufactured by Kemiko Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-34955-432",
+    "name": "Adol 500 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Union Pharmaceuticals Ltd",
+    "price": 17,
+    "stock": 494,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adol (Paracetamol) manufactured by Union Pharmaceuticals Ltd. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-34959-433",
+    "name": "Adol 120 mg/5 ml Oral Suspension",
+    "genericName": "Paracetamol",
+    "dosageForm": "Oral Suspension",
+    "strength": "120 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Union Pharmaceuticals Ltd",
+    "price": 70.5,
+    "stock": 161,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adol (Paracetamol) manufactured by Union Pharmaceuticals Ltd. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-34960-434",
+    "name": "Adol Plus 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+65 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Union Pharmaceuticals Ltd",
+    "price": 22,
+    "stock": 178,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adol Plus (Paracetamol + Caffeine) manufactured by Union Pharmaceuticals Ltd. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2325-435",
+    "name": "Adonid 500 mg Tablet",
+    "genericName": "Nitazoxanide",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Rephco Pharmaceuticals Ltd.",
+    "price": 12,
+    "stock": 195,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adonid (Nitazoxanide) manufactured by Rephco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-22883-436",
+    "name": "Adonid DS 100 mg/5 ml Powder for Suspension",
+    "genericName": "Nitazoxanide",
+    "dosageForm": "Powder for Suspension",
+    "strength": "100 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Rephco Pharmaceuticals Ltd.",
+    "price": 96,
+    "stock": 212,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adonid DS (Nitazoxanide) manufactured by Rephco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6741-437",
+    "name": "Adora 500 mg Capsule",
+    "genericName": "Cefadroxil Monohydrate",
+    "dosageForm": "Capsule",
+    "strength": "500 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 17,
+    "stock": 229,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adora (Cefadroxil Monohydrate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6742-438",
+    "name": "Adora 125 mg/5 ml Powder for Suspension",
+    "genericName": "Cefadroxil Monohydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "125 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 113,
+    "stock": 246,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adora (Cefadroxil Monohydrate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-6743-439",
+    "name": "Adora 125 mg/1.25 ml Pediatric Drops",
+    "genericName": "Cefadroxil Monohydrate",
+    "dosageForm": "Pediatric Drops",
+    "strength": "125 mg/1.25 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 263,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adora (Cefadroxil Monohydrate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-39515-440",
+    "name": "Adora 1000 mg Capsule",
+    "genericName": "Cefadroxil Monohydrate",
+    "dosageForm": "Capsule",
+    "strength": "1000 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 12,
+    "stock": 280,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adora (Cefadroxil Monohydrate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35320-441",
+    "name": "Adorbis 2.5 mg Tablet",
+    "genericName": "Bisoprolol Fumarate",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ziska Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 297,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adorbis (Bisoprolol Fumarate) manufactured by Ziska Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35321-442",
+    "name": "Adorbis 5 mg Tablet",
+    "genericName": "Bisoprolol Fumarate",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ziska Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 314,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adorbis (Bisoprolol Fumarate) manufactured by Ziska Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35322-443",
+    "name": "Adorbis 10 mg Tablet",
+    "genericName": "Bisoprolol Fumarate",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ziska Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 331,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adorbis (Bisoprolol Fumarate) manufactured by Ziska Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-1502-444",
+    "name": "Adorex 5 mg/5 ml Oral Suspension",
+    "genericName": "Domperidone Maleate",
+    "dosageForm": "Oral Suspension",
+    "strength": "5 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 79,
+    "stock": 348,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adorex (Domperidone Maleate) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-1503-445",
+    "name": "Adorex 10 mg Tablet",
+    "genericName": "Domperidone Maleate",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 365,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adorex (Domperidone Maleate) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28019-446",
+    "name": "Adorex 5 mg/ml Pediatric Drops",
+    "genericName": "Domperidone Maleate",
+    "dosageForm": "Pediatric Drops",
+    "strength": "5 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 382,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adorex (Domperidone Maleate) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-37707-447",
+    "name": "Adosun Bar 2% Medicated Bar",
+    "genericName": "Ketoconazole",
+    "dosageForm": "Medicated Bar",
+    "strength": "2%",
+    "packSize": "1 Unit",
+    "manufacturer": "Bain Trade International",
+    "price": 6.25,
+    "stock": 399,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adosun Bar (Ketoconazole) manufactured by Bain Trade International. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-29597-448",
+    "name": "Adrebloc 100 mg/10 ml IV Injection",
+    "genericName": "Esmolol Hydrochloride",
+    "dosageForm": "IV Injection",
+    "strength": "100 mg/10 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ZAS Corporation",
+    "price": 315,
+    "stock": 416,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adrebloc (Esmolol Hydrochloride) manufactured by ZAS Corporation. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-17449-449",
+    "name": "Adrenaline 1 mg/ml Injection",
+    "genericName": "Adrenaline",
+    "dosageForm": "Injection",
+    "strength": "1 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Techno Drugs Ltd.",
+    "price": 330,
+    "stock": 433,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adrenaline (Adrenaline) manufactured by Techno Drugs Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-39993-450",
+    "name": "Adrenaline Aguettant 1 mg/ml Injection",
+    "genericName": "Adrenaline",
+    "dosageForm": "Injection",
+    "strength": "1 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "ZAS Corporation",
+    "price": 120,
+    "stock": 450,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adrenaline Aguettant (Adrenaline) manufactured by ZAS Corporation. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-28654-451",
+    "name": "Adribin 2 mg/ml IV Infusion",
+    "genericName": "Doxorubicin Hydrochloride",
+    "dosageForm": "IV Infusion",
+    "strength": "2 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 135,
+    "stock": 467,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adribin (Doxorubicin Hydrochloride) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-243-452",
+    "name": "Adrin 1 mg/ml Injection",
+    "genericName": "Adrenaline",
+    "dosageForm": "Injection",
+    "strength": "1 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Gaco Pharmaceuticals Ltd.",
+    "price": 150,
+    "stock": 484,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adrin (Adrenaline) manufactured by Gaco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-244-453",
+    "name": "Adrinor 1 mg/ml Injection",
+    "genericName": "Adrenaline",
+    "dosageForm": "Injection",
+    "strength": "1 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 165,
+    "stock": 151,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adrinor (Adrenaline) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-36114-454",
+    "name": "Adronic 4 mg/5 ml IV Infusion",
+    "genericName": "Zoledronic Acid [For hypercalcemia]",
+    "dosageForm": "IV Infusion",
+    "strength": "4 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 180,
+    "stock": 168,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adronic (Zoledronic Acid [For hypercalcemia]) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-38461-455",
+    "name": "Adrox CV 250 mg+62.5 mg Tablet",
+    "genericName": "Cefuroxime Axetil + Clavulanic Acid",
+    "dosageForm": "Tablet",
+    "strength": "250 mg+62.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ad-din Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 185,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adrox CV (Cefuroxime Axetil + Clavulanic Acid) manufactured by Ad-din Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-38462-456",
+    "name": "Adrox CV 500 mg+125 mg Tablet",
+    "genericName": "Cefuroxime Axetil + Clavulanic Acid",
+    "dosageForm": "Tablet",
+    "strength": "500 mg+125 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ad-din Pharmaceuticals Ltd.",
+    "price": 14.5,
+    "stock": 202,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adrox CV (Cefuroxime Axetil + Clavulanic Acid) manufactured by Ad-din Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-38463-457",
+    "name": "Adrox CV (125 mg+31.25 mg)/5 ml Powder for Suspension",
+    "genericName": "Cefuroxime Axetil + Clavulanic Acid",
+    "dosageForm": "Powder for Suspension",
+    "strength": "(125 mg+31.25 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Ad-din Pharmaceuticals Ltd.",
+    "price": 104.5,
+    "stock": 219,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adrox CV (Cefuroxime Axetil + Clavulanic Acid) manufactured by Ad-din Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11870-458",
+    "name": "Adryl 10 mg/5 ml Syrup",
+    "genericName": "Diphenhydramine Hydrochloride",
+    "dosageForm": "Syrup",
+    "strength": "10 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 113,
+    "stock": 236,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adryl (Diphenhydramine Hydrochloride) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-376-459",
+    "name": "ADS-10 0.225%+10% IV Infusion",
+    "genericName": "Sodium Chloride + Dextrose",
+    "dosageForm": "IV Infusion",
+    "strength": "0.225%+10%",
+    "packSize": "1 Unit",
+    "manufacturer": "Libra Infusions Ltd.",
+    "price": 255,
+    "stock": 253,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ADS-10 (Sodium Chloride + Dextrose) manufactured by Libra Infusions Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-35906-460",
+    "name": "Adsalt 300 mg Tablet",
+    "genericName": "Sodium Chloride (Tablet)",
+    "dosageForm": "Tablet",
+    "strength": "300 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 6,
+    "stock": 270,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adsalt (Sodium Chloride (Tablet)) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-19175-461",
+    "name": "Adtrizin 10 mg Tablet",
+    "genericName": "Cetirizine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Team Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 287,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adtrizin (Cetirizine Hydrochloride) manufactured by Team Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-13735-462",
+    "name": "Aduvit 5 mg+2 mg+2 mg+20 mg Capsule",
+    "genericName": "Vitamin B complex",
+    "dosageForm": "Capsule",
+    "strength": "5 mg+2 mg+2 mg+20 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Pacific Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 304,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aduvit (Vitamin B complex) manufactured by Pacific Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-13736-463",
+    "name": "Aduvit (5 mg+2 mg+2 mg+20 mg)/5 ml Syrup",
+    "genericName": "Vitamin B complex",
+    "dosageForm": "Syrup",
+    "strength": "(5 mg+2 mg+2 mg+20 mg)/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Pacific Pharmaceuticals Ltd.",
+    "price": 70.5,
+    "stock": 321,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aduvit (Vitamin B complex) manufactured by Pacific Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-37636-464",
+    "name": "Advance A to Z Gold Tablet",
+    "genericName": "Multivitamin & Multimineral [A-Z gold preparation]",
+    "dosageForm": "Tablet",
+    "strength": "",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Pharmik Laboratories Ltd.",
+    "price": 5,
+    "stock": 338,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Advance A to Z Gold (Multivitamin & Multimineral [A-Z gold preparation]) manufactured by Pharmik Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-30595-465",
+    "name": "Advast 5 mg+10 mg Tablet",
+    "genericName": "Amlodipine Besilate + Atorvastatin",
+    "dosageForm": "Tablet",
+    "strength": "5 mg+10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Alco Pharma Ltd.",
+    "price": 6.25,
+    "stock": 355,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Advast (Amlodipine Besilate + Atorvastatin) manufactured by Alco Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11261-466",
+    "name": "Advel 200 mg Tablet",
+    "genericName": "Ibuprofen (Oral)",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 9,
+    "stock": 372,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Advel (Ibuprofen (Oral)) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11262-467",
+    "name": "Advel 400 mg Tablet",
+    "genericName": "Ibuprofen (Oral)",
+    "dosageForm": "Tablet",
+    "strength": "400 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 10.5,
+    "stock": 389,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Advel (Ibuprofen (Oral)) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-11263-468",
+    "name": "Advel 100 mg/5 ml Oral Suspension",
+    "genericName": "Ibuprofen (Oral)",
+    "dosageForm": "Oral Suspension",
+    "strength": "100 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Opsonin Pharma Ltd.",
+    "price": 113,
+    "stock": 406,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Advel (Ibuprofen (Oral)) manufactured by Opsonin Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-17307-469",
+    "name": "Advixa 40 mg/0.8 ml SC Injection",
+    "genericName": "Adalimumab",
+    "dosageForm": "SC Injection",
+    "strength": "40 mg/0.8 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 180,
+    "stock": 423,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Advixa (Adalimumab) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-248-470",
+    "name": "Adze 400 mg Chewable Tablet",
+    "genericName": "Albendazole",
+    "dosageForm": "Chewable Tablet",
+    "strength": "400 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Kemiko Pharmaceuticals Ltd.",
+    "price": 9,
+    "stock": 440,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Adze (Albendazole) manufactured by Kemiko Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37102-471",
+    "name": "Aegis 200 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "200 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "C2C Pharma Ltd.",
+    "price": 10.5,
+    "stock": 457,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aegis (Cefixime Trihydrate) manufactured by C2C Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37103-472",
+    "name": "Aegis 400 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "400 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "C2C Pharma Ltd.",
+    "price": 6,
+    "stock": 474,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aegis (Cefixime Trihydrate) manufactured by C2C Pharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-33301-473",
+    "name": "Aenixit 0.5 mg+10 mg Tablet",
+    "genericName": "Flupentixol + Melitracen",
+    "dosageForm": "Tablet",
+    "strength": "0.5 mg+10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Albion Laboratories Limited",
+    "price": 8.75,
+    "stock": 491,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aenixit (Flupentixol + Melitracen) manufactured by Albion Laboratories Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3605-474",
+    "name": "Aerodyl 10 mg Tablet",
+    "genericName": "Bambuterol Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Silva Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 158,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aerodyl (Bambuterol Hydrochloride) manufactured by Silva Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3606-475",
+    "name": "Aerodyl 20 mg Tablet",
+    "genericName": "Bambuterol Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "20 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Silva Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 175,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aerodyl (Bambuterol Hydrochloride) manufactured by Silva Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3607-476",
+    "name": "Aerodyl 5 mg/5 ml Oral Solution",
+    "genericName": "Bambuterol Hydrochloride",
+    "dosageForm": "Oral Solution",
+    "strength": "5 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Silva Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 192,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aerodyl (Bambuterol Hydrochloride) manufactured by Silva Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-3709-477",
+    "name": "Aerofen 1 mg Tablet",
+    "genericName": "Ketotifen Fumarate (Oral)",
+    "dosageForm": "Tablet",
+    "strength": "1 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Silva Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 209,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aerofen (Ketotifen Fumarate (Oral)) manufactured by Silva Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3710-478",
+    "name": "Aerofen 1 mg/5 ml Syrup",
+    "genericName": "Ketotifen Fumarate (Oral)",
+    "dosageForm": "Syrup",
+    "strength": "1 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Silva Pharmaceuticals Ltd.",
+    "price": 113,
+    "stock": 226,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aerofen (Ketotifen Fumarate (Oral)) manufactured by Silva Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3761-479",
+    "name": "Aeron 10 mg Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 243,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aeron (Montelukast Sodium) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-34617-480",
+    "name": "Aeron 4 mg/3.5 gm Oral Granules",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Oral Granules",
+    "strength": "4 mg/3.5 gm",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 260,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aeron (Montelukast Sodium) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3759-481",
+    "name": "Aeron FT 4 mg Dispersible Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Dispersible Tablet",
+    "strength": "4 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 277,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aeron FT (Montelukast Sodium) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3760-482",
+    "name": "Aeron FT 5 mg Dispersible Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Dispersible Tablet",
+    "strength": "5 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 294,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aeron FT (Montelukast Sodium) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-3875-483",
+    "name": "Aeronid 200 mcg/puff Metered-Dose Inhaler (MDI)",
+    "genericName": "Budesonide (Inhaler)",
+    "dosageForm": "Metered-Dose Inhaler (MDI)",
+    "strength": "200 mcg/puff",
+    "packSize": "1 Unit",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 311,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aeronid (Budesonide (Inhaler)) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-38547-484",
+    "name": "Aeronid 0.5 mg/2 ml Nebuliser Suspension",
+    "genericName": "Budesonide (Nebuliser Suspension)",
+    "dosageForm": "Nebuliser Suspension",
+    "strength": "0.5 mg/2 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 79,
+    "stock": 328,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aeronid (Budesonide (Nebuliser Suspension)) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-38548-485",
+    "name": "Aeronid 1 mg/2 ml Nebuliser Suspension",
+    "genericName": "Budesonide (Nebuliser Suspension)",
+    "dosageForm": "Nebuliser Suspension",
+    "strength": "1 mg/2 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 87.5,
+    "stock": 345,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aeronid (Budesonide (Nebuliser Suspension)) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-1297-486",
+    "name": "Aeropac 67 mg/ml Pediatric Drops",
+    "genericName": "Simethicone",
+    "dosageForm": "Pediatric Drops",
+    "strength": "67 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Amico Laboratories Ltd.",
+    "price": 2.5,
+    "stock": 362,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aeropac (Simethicone) manufactured by Amico Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-30123-487",
+    "name": "Aerophin 11.25 mg/0.5 ml Nebuliser Solution",
+    "genericName": "Racepinephrine",
+    "dosageForm": "Nebuliser Solution",
+    "strength": "11.25 mg/0.5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 379,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aerophin (Racepinephrine) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-28863-488",
+    "name": "Aerovil 15 mg/5 ml Syrup",
+    "genericName": "Pheniramine Maleate",
+    "dosageForm": "Syrup",
+    "strength": "15 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 113,
+    "stock": 396,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aerovil (Pheniramine Maleate) manufactured by Beximco Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-33302-489",
+    "name": "Aexidal 50 mg Tablet",
+    "genericName": "Mebhydrolin Napadisylate",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Albion Laboratories Limited",
+    "price": 6.25,
+    "stock": 413,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aexidal (Mebhydrolin Napadisylate) manufactured by Albion Laboratories Limited. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35449-490",
+    "name": "Afalino 12.5 mg Tablet",
+    "genericName": "Cenobamate",
+    "dosageForm": "Tablet",
+    "strength": "12.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 430,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afalino (Cenobamate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35450-491",
+    "name": "Afalino 25 mg Tablet",
+    "genericName": "Cenobamate",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 447,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afalino (Cenobamate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-35451-492",
+    "name": "Afalino 50 mg Tablet",
+    "genericName": "Cenobamate",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 464,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afalino (Cenobamate) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-31295-493",
+    "name": "Afatin 40 mg Tablet",
+    "genericName": "Afatinib Dimaleate",
+    "dosageForm": "Tablet",
+    "strength": "40 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 3.75,
+    "stock": 481,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afatin (Afatinib Dimaleate) manufactured by Beacon Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-38838-494",
+    "name": "Afaz 40 mg Tablet",
+    "genericName": "Afatinib Dimaleate",
+    "dosageForm": "Tablet",
+    "strength": "40 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 498,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afaz (Afatinib Dimaleate) manufactured by Healthcare Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-29422-495",
+    "name": "Afexa 120 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "120 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 10.5,
+    "stock": 165,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afexa (Fexofenadine Hydrochloride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-29423-496",
+    "name": "Afexa 180 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "180 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 6,
+    "stock": 182,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afexa (Fexofenadine Hydrochloride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-29424-497",
+    "name": "Afexa 30 mg/5 ml Oral Suspension",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Oral Suspension",
+    "strength": "30 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 104.5,
+    "stock": 199,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afexa (Fexofenadine Hydrochloride) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-26673-498",
+    "name": "Afinitor 5 mg Tablet",
+    "genericName": "Everolimus",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Nevian Lifescience PLC",
+    "price": 2.5,
+    "stock": 216,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afinitor (Everolimus) manufactured by Nevian Lifescience PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7463-499",
+    "name": "Afix 200 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "200 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10.5,
+    "stock": 233,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afix (Cefixime Trihydrate) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7464-500",
+    "name": "Afix 400 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "400 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 6,
+    "stock": 250,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afix (Cefixime Trihydrate) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7465-501",
+    "name": "Afix 100 mg/5 ml Powder for Suspension",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "100 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 53.5,
+    "stock": 267,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afix (Cefixime Trihydrate) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-26403-502",
+    "name": "Afix 200 mg Tablet",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 9,
+    "stock": 284,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afix (Cefixime Trihydrate) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-26404-503",
+    "name": "Afix 400 mg Tablet",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Tablet",
+    "strength": "400 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10.5,
+    "stock": 301,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afix (Cefixime Trihydrate) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7466-504",
+    "name": "Afix DS 200 mg/5 ml Powder for Suspension",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "200 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 79,
+    "stock": 318,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afix DS (Cefixime Trihydrate) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7467-505",
+    "name": "Afixime 200 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "200 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Asiatic Laboratories Ltd.",
+    "price": 7.5,
+    "stock": 335,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afixime (Cefixime Trihydrate) manufactured by Asiatic Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7468-506",
+    "name": "Afixime 400 mg Capsule",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Capsule",
+    "strength": "400 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Asiatic Laboratories Ltd.",
+    "price": 9,
+    "stock": 352,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afixime (Cefixime Trihydrate) manufactured by Asiatic Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-7469-507",
+    "name": "Afixime 100 mg/5 ml Powder for Suspension",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "100 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Asiatic Laboratories Ltd.",
+    "price": 104.5,
+    "stock": 369,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afixime (Cefixime Trihydrate) manufactured by Asiatic Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-29363-508",
+    "name": "Afixime 25 mg/ml Pediatric Drops",
+    "genericName": "Cefixime Trihydrate",
+    "dosageForm": "Pediatric Drops",
+    "strength": "25 mg/ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Asiatic Laboratories Ltd.",
+    "price": 7.5,
+    "stock": 386,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afixime (Cefixime Trihydrate) manufactured by Asiatic Laboratories Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-28035-509",
+    "name": "Afluzole 50 mg/5 ml Powder for Suspension",
+    "genericName": "Fluconazole",
+    "dosageForm": "Powder for Suspension",
+    "strength": "50 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 121.5,
+    "stock": 403,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afluzole (Fluconazole) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28038-510",
+    "name": "Afluzole 150 mg Capsule",
+    "genericName": "Fluconazole",
+    "dosageForm": "Capsule",
+    "strength": "150 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 9,
+    "stock": 420,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afluzole (Fluconazole) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-28039-511",
+    "name": "Afluzole 50 mg Capsule",
+    "genericName": "Fluconazole",
+    "dosageForm": "Capsule",
+    "strength": "50 mg",
+    "packSize": "5 x 10's Strip",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 437,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afluzole (Fluconazole) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-15872-512",
+    "name": "AFM 0.1% Ophthalmic Suspension",
+    "genericName": "Fluorometholone Acetate",
+    "dosageForm": "Ophthalmic Suspension",
+    "strength": "0.1%",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 62,
+    "stock": 454,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AFM (Fluorometholone Acetate) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-15886-513",
+    "name": "AFM-Plus 0.1%+0.3% Ophthalmic Ointment",
+    "genericName": "Fluorometholone + Gentamicin",
+    "dosageForm": "Ophthalmic Ointment",
+    "strength": "0.1%+0.3%",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 77,
+    "stock": 471,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AFM-Plus (Fluorometholone + Gentamicin) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-15889-514",
+    "name": "AFM-T 0.1%+0.025% Ophthalmic Solution",
+    "genericName": "Fluorometholone + Tetrahydrozoline",
+    "dosageForm": "Ophthalmic Solution",
+    "strength": "0.1%+0.025%",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 7.5,
+    "stock": 488,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AFM-T (Fluorometholone + Tetrahydrozoline) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-16266-515",
+    "name": "Afrin 0.025% Nasal Drop",
+    "genericName": "Oxymetazoline Hydrochloride (Nasal Preparation)",
+    "dosageForm": "Nasal Drop",
+    "strength": "0.025%",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 8.75,
+    "stock": 155,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afrin (Oxymetazoline Hydrochloride (Nasal Preparation)) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-16267-516",
+    "name": "Afrin 0.05% Nasal Drop",
+    "genericName": "Oxymetazoline Hydrochloride (Nasal Preparation)",
+    "dosageForm": "Nasal Drop",
+    "strength": "0.05%",
+    "packSize": "1 Unit",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 2.5,
+    "stock": 172,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afrin (Oxymetazoline Hydrochloride (Nasal Preparation)) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-12381-517",
+    "name": "Afun 1% Cream",
+    "genericName": "Clotrimazole (Topical)",
+    "dosageForm": "Cream",
+    "strength": "1%",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 125,
+    "stock": 189,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afun (Clotrimazole (Topical)) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-12408-518",
+    "name": "Afun VT 200 mg Vaginal Tablet",
+    "genericName": "Clotrimazole (Vaginal tablet)",
+    "dosageForm": "Vaginal Tablet",
+    "strength": "200 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 9,
+    "stock": 206,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afun VT (Clotrimazole (Vaginal tablet)) manufactured by Square Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-28011-519",
+    "name": "Afuvin 500 mg Tablet",
+    "genericName": "Griseofulvin [Ultra Microsize]",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 22,
+    "stock": 223,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Afuvin (Griseofulvin [Ultra Microsize]) manufactured by Ambee Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-39395-520",
+    "name": "Agafi 2 mg/0.05 ml Intravitreal Injection",
+    "genericName": "Aflibercept Intravitreal Injection",
+    "dosageForm": "Intravitreal Injection",
+    "strength": "2 mg/0.05 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 270,
+    "stock": 240,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Agafi (Aflibercept Intravitreal Injection) manufactured by Incepta Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-14009-521",
+    "name": "Age M 6 mg+200 mg+50 mg Tablet",
+    "genericName": "Beta carotene + Vitamin C + Vitamin E",
+    "dosageForm": "Tablet",
+    "strength": "6 mg+200 mg+50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Mystic Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 257,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Age M (Beta carotene + Vitamin C + Vitamin E) manufactured by Mystic Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-14721-522",
+    "name": "Age Plus Tablet",
+    "genericName": "Super antioxidant [vitamins & minerals]",
+    "dosageForm": "Tablet",
+    "strength": "",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Mystic Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 274,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Age Plus (Super antioxidant [vitamins & minerals]) manufactured by Mystic Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-14008-523",
+    "name": "Agedefy 6 mg+200 mg+50 mg Tablet",
+    "genericName": "Beta carotene + Vitamin C + Vitamin E",
+    "dosageForm": "Tablet",
+    "strength": "6 mg+200 mg+50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Medimet Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 291,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Agedefy (Beta carotene + Vitamin C + Vitamin E) manufactured by Medimet Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-5998-524",
+    "name": "Aggra 50 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 308,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aggra (Sildenafil Citrate) manufactured by Eskayef Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-5999-525",
+    "name": "Aggra 100 mg Tablet",
+    "genericName": "Sildenafil Citrate",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 325,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aggra (Sildenafil Citrate) manufactured by Eskayef Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-17938-526",
+    "name": "Aggreno 25 mg+200 mg Capsule (Extended Release)",
+    "genericName": "Aspirin + Dipyridamole",
+    "dosageForm": "Capsule (Extended Release)",
+    "strength": "25 mg+200 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Ziska Pharmaceuticals Ltd.",
+    "price": 7.5,
+    "stock": 342,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aggreno (Aspirin + Dipyridamole) manufactured by Ziska Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-30988-527",
+    "name": "Aglip 12.5 mg Tablet",
+    "genericName": "Alogliptin Benzoate",
+    "dosageForm": "Tablet",
+    "strength": "12.5 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 8.75,
+    "stock": 359,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aglip (Alogliptin Benzoate) manufactured by Eskayef Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-30989-528",
+    "name": "Aglip 25 mg Tablet",
+    "genericName": "Alogliptin Benzoate",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stock": 376,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aglip (Alogliptin Benzoate) manufactured by Eskayef Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-36751-529",
+    "name": "Agonil 10% Cream",
+    "genericName": "Diethylamine Salicylate",
+    "dosageForm": "Cream",
+    "strength": "10%",
+    "packSize": "1 Unit",
+    "manufacturer": "Navana Pharmaceuticals Ltd.",
+    "price": 77,
+    "stock": 393,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Agonil (Diethylamine Salicylate) manufactured by Navana Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-31997-530",
+    "name": "Agorest 25 mg Tablet",
+    "genericName": "Agomelatine",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Everest Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 410,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Agorest (Agomelatine) manufactured by Everest Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-413-531",
+    "name": "Agotin 25 mg Tablet",
+    "genericName": "Agomelatine",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 6.25,
+    "stock": 427,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Agotin (Agomelatine) manufactured by Beacon Pharmaceuticals PLC. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-2453-532",
+    "name": "Agoxin 0.25 mg Tablet",
+    "genericName": "Digoxin",
+    "dosageForm": "Tablet",
+    "strength": "0.25 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 7.5,
+    "stock": 444,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Agoxin (Digoxin) manufactured by Aristopharma Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-25460-533",
+    "name": "AH 400 mg Chewable Tablet",
+    "genericName": "Albendazole",
+    "dosageForm": "Chewable Tablet",
+    "strength": "400 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Drug International Ltd.",
+    "price": 7.5,
+    "stock": 461,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AH (Albendazole) manufactured by Drug International Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-25461-534",
+    "name": "AH 200 mg/5 ml Oral Suspension",
+    "genericName": "Albendazole",
+    "dosageForm": "Oral Suspension",
+    "strength": "200 mg/5 ml",
+    "packSize": "1 Unit",
+    "manufacturer": "Drug International Ltd.",
+    "price": 79,
+    "stock": 478,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AH (Albendazole) manufactured by Drug International Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-27401-535",
+    "name": "Aid 50 mg Tablet",
+    "genericName": "Diclofenac Sodium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Premier Pharmaceuticals Ltd.",
+    "price": 3.75,
+    "stock": 495,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aid (Diclofenac Sodium) manufactured by Premier Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-27433-536",
+    "name": "Aid SR 100 mg Tablet (Sustained Release)",
+    "genericName": "Diclofenac Sodium",
+    "dosageForm": "Tablet (Sustained Release)",
+    "strength": "100 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Premier Pharmaceuticals Ltd.",
+    "price": 5,
+    "stock": 162,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aid SR (Diclofenac Sodium) manufactured by Premier Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-27400-537",
+    "name": "Aid TR 100 mg Capsule (Timed Release)",
+    "genericName": "Diclofenac Sodium",
+    "dosageForm": "Capsule (Timed Release)",
+    "strength": "100 mg",
+    "packSize": "1 Unit",
+    "manufacturer": "Premier Pharmaceuticals Ltd.",
+    "price": 6.25,
+    "stock": 179,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aid TR (Diclofenac Sodium) manufactured by Premier Pharmaceuticals Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-37838-538",
+    "name": "Aircast 10 mg Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "National Drug Co. Ltd.",
+    "price": 7.5,
+    "stock": 196,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aircast (Montelukast Sodium) manufactured by National Drug Co. Ltd.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-27758-539",
+    "name": "Aire 1 mg Tablet",
+    "genericName": "Levosalbutamol (Oral)",
+    "dosageForm": "Tablet",
+    "strength": "1 mg",
+    "packSize": "10 x 10's Box",
+    "manufacturer": "Delta Pharma PLC.",
+    "price": 8.75,
+    "stock": 213,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aire (Levosalbutamol (Oral)) manufactured by Delta Pharma PLC.. High-quality certified pharmaceutical formulation.",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
   }
 ];

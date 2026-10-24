@@ -3,7 +3,9 @@
 import { useState, useEffect, useCallback } from "react";
 import { Search, ShieldCheck, User } from "lucide-react";
 
-const BASE = process.env.NEXT_PUBLIC_BASE_API!;
+import { clientAuthFetch, API_BASE_URL } from "@/lib/clientAuthFetch";
+
+const BASE = API_BASE_URL;
 
 interface UserRecord {
   id: string;
@@ -13,22 +15,6 @@ interface UserRecord {
   phone?: string;
   address?: string;
   createdAt: string;
-}
-
-import { getAccessToken } from "@/services/AuthService/userUtils";
-
-async function authFetch(url: string, options: RequestInit = {}) {
-  const token = await getAccessToken();
-  const res = await fetch(url, {
-    ...options,
-    credentials: "include",
-    headers: { 
-      "Content-Type": "application/json", 
-      ...(token ? { "Authorization": `Bearer ${token}` } : {}),
-      ...(options.headers || {}) 
-    },
-  });
-  return res.json();
 }
 
 export default function UsersManager() {
@@ -41,10 +27,15 @@ export default function UsersManager() {
 
   const fetchData = useCallback(async () => {
     setLoading(true);
-    const data = await authFetch(`${BASE}/users?limit=10&page=${page}`);
-    setUsers(data.data || []);
-    setMeta(data.meta || { totalPage: 1, total: 0 });
-    setLoading(false);
+    try {
+      const data = await clientAuthFetch(`${BASE}/users?limit=10&page=${page}`);
+      setUsers(data?.data || []);
+      setMeta(data?.meta || { totalPage: 1, total: 0 });
+    } catch (err) {
+      console.error("Failed to load users:", err);
+    } finally {
+      setLoading(false);
+    }
   }, [page]);
 
   useEffect(() => { fetchData(); }, [fetchData]);

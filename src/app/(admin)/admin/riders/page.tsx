@@ -4,7 +4,9 @@ import { useState, useEffect, useCallback } from "react";
 import { Search, CheckCircle, XCircle } from "lucide-react";
 import { toast } from "sonner";
 
-const BASE = process.env.NEXT_PUBLIC_BASE_API!;
+import { clientAuthFetch, API_BASE_URL } from "@/lib/clientAuthFetch";
+
+const BASE = API_BASE_URL;
 
 interface Rider {
   id: string;
@@ -21,22 +23,6 @@ const STATUS_COLORS: Record<string, string> = {
   OFFLINE: "bg-gray-100 text-gray-700",
 };
 
-import { getAccessToken } from "@/services/AuthService/userUtils";
-
-async function authFetch(url: string, options: RequestInit = {}) {
-  const token = await getAccessToken();
-  const res = await fetch(url, {
-    ...options,
-    credentials: "include",
-    headers: { 
-      "Content-Type": "application/json", 
-      ...(token ? { "Authorization": `Bearer ${token}` } : {}),
-      ...(options.headers || {}) 
-    },
-  });
-  return res.json();
-}
-
 export default function RidersManager() {
   const [riders, setRiders] = useState<Rider[]>([]);
   const [loading, setLoading] = useState(true);
@@ -47,16 +33,22 @@ export default function RidersManager() {
 
   const fetchData = useCallback(async () => {
     setLoading(true);
-    const data = await authFetch(`${BASE}/riders?limit=10&page=${page}`);
-    setRiders(data.data || []);
-    setMeta(data.meta || { totalPage: 1, total: 0 });
-    setLoading(false);
+    try {
+      const data = await clientAuthFetch(`${BASE}/riders?limit=10&page=${page}`);
+      setRiders(data?.data || []);
+      setMeta(data?.meta || { totalPage: 1, total: 0 });
+    } catch (err) {
+      console.error("Failed to load riders:", err);
+      toast.error("Failed to load riders");
+    } finally {
+      setLoading(false);
+    }
   }, [page]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
 
   const handleVerify = async (id: string) => {
-    const data = await authFetch(`${BASE}/riders/${id}/verify`, {
+    const data = await clientAuthFetch(`${BASE}/riders/${id}/verify`, {
       method: "PATCH",
     });
     if (data.success) {

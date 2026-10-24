@@ -4,23 +4,9 @@ import { useState, useEffect, useCallback } from "react";
 import { Plus, Pencil, Trash2, X, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
 
-const BASE = process.env.NEXT_PUBLIC_BASE_API!;
+import { clientAuthFetch, API_BASE_URL } from "@/lib/clientAuthFetch";
 
-import { getAccessToken } from "@/services/AuthService/userUtils";
-
-async function authFetch(url: string, options: RequestInit = {}) {
-  const token = await getAccessToken();
-  const res = await fetch(url, {
-    ...options,
-    credentials: "include",
-    headers: { 
-      "Content-Type": "application/json", 
-      ...(token ? { "Authorization": `Bearer ${token}` } : {}),
-      ...(options.headers || {}) 
-    },
-  });
-  return res.json();
-}
+const BASE = API_BASE_URL;
 
 interface Category { id: string; name: string; imageUrl?: string; }
 
@@ -37,10 +23,16 @@ export default function CategoriesManager() {
 
   const fetchData = useCallback(async () => {
     setLoading(true);
-    const data = await authFetch(`${BASE}/categories?limit=10&page=${page}`);
-    setCategories(data.data || []);
-    setMeta(data.meta || { totalPage: 1, total: 0 });
-    setLoading(false);
+    try {
+      const data = await clientAuthFetch(`${BASE}/categories?limit=10&page=${page}`);
+      setCategories(data?.data || []);
+      setMeta(data?.meta || { totalPage: 1, total: 0 });
+    } catch (err) {
+      console.error("Failed to load categories:", err);
+      toast.error("Failed to load categories");
+    } finally {
+      setLoading(false);
+    }
   }, [page]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
@@ -53,7 +45,7 @@ export default function CategoriesManager() {
     setSubmitting(true);
     const url = editing ? `${BASE}/categories/${editing.id}` : `${BASE}/categories`;
     const method = editing ? "PATCH" : "POST";
-    const res = await authFetch(url, { method, body: JSON.stringify(form) });
+    const res = await clientAuthFetch(url, { method, body: JSON.stringify(form) });
     if (res.success) {
       toast.success(editing ? "Category updated!" : "Category created!");
       setShowModal(false);
@@ -66,7 +58,7 @@ export default function CategoriesManager() {
 
   const handleDelete = async (id: string) => {
     if (!confirm("Delete this category? All associated medicines will be affected.")) return;
-    const res = await authFetch(`${BASE}/categories/${id}`, { method: "DELETE" });
+    const res = await clientAuthFetch(`${BASE}/categories/${id}`, { method: "DELETE" });
     if (res.success) { toast.success("Category deleted"); fetchData(); }
     else toast.error(res.message || "Delete failed");
   };

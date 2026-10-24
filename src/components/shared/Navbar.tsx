@@ -248,7 +248,9 @@ export default function Navbar() {
               </span>
             </div>
             <div className="flex items-center gap-5">
-              <Link href="/medicines" className="hover:text-primary transition-colors">Doctor Advice</Link>
+              <Link href="/about" className="hover:text-primary transition-colors font-medium">About Us</Link>
+              <Link href="/contact" className="hover:text-primary transition-colors font-medium">Contact</Link>
+              <span className="text-muted-foreground">|</span>
               <Link href="/orders" className="hover:text-primary transition-colors">Track Your Order</Link>
               <span className="text-muted-foreground">|</span>
               <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded font-bold">24/7 Hotline</span>
@@ -494,7 +496,8 @@ export default function Navbar() {
         >
           <div className="container mx-auto px-4 h-11 flex items-center justify-between text-xs font-semibold tracking-wide">
             
-            <div className="flex items-center gap-1 h-full">
+            {/* Centered Categories Bar */}
+            <div className="flex-1 flex items-center justify-center gap-1 xl:gap-2 h-full">
               {Object.keys(EPHARMA_CATEGORIES).map((catName) => {
                 const isActive = activeMegaMenu === catName;
                 return (
@@ -505,7 +508,7 @@ export default function Navbar() {
                   >
                     <Link
                       href={`/medicines?category=${encodeURIComponent(catName)}`}
-                      className={`flex items-center gap-1 px-3 py-2 rounded-md transition-all ${
+                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md transition-all ${
                         isActive ? "bg-white text-teal-900 shadow-sm font-bold" : "hover:bg-white/15 text-white"
                       }`}
                     >
@@ -517,16 +520,14 @@ export default function Navbar() {
               })}
             </div>
 
-            {/* Right side shortcuts */}
-            <div className="flex items-center gap-4">
+            {/* Right side Hot Deals & Offers */}
+            <div className="flex items-center shrink-0 pl-4">
               <Link 
                 href="/medicines" 
-                className="font-bold text-yellow-300 hover:text-yellow-100 flex items-center gap-1 bg-black/20 px-2.5 py-1 rounded-md"
+                className="font-bold text-teal-950 hover:bg-yellow-300 flex items-center gap-1.5 bg-yellow-400 px-3 py-1.5 rounded-full shadow-sm text-xs transition-colors"
               >
-                <Sparkles className="w-3.5 h-3.5" /> Hot Deals & Offers
+                <Sparkles className="w-3.5 h-3.5 text-teal-900" /> Hot Deals & Offers
               </Link>
-              <Link href="/about" className="hover:text-white/80 transition-colors">About Us</Link>
-              <Link href="/contact" className="hover:text-white/80 transition-colors">Contact</Link>
             </div>
           </div>
 

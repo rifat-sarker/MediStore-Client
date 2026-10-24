@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { Search, Package, CheckCircle, Clock, XCircle, ChevronRight } from "lucide-react";
-import { getAccessToken } from "@/services/AuthService/userUtils";
+import { clientAuthFetch, API_BASE_URL } from "@/lib/clientAuthFetch";
 
-const BASE = process.env.NEXT_PUBLIC_BASE_API!;
+const BASE = API_BASE_URL;
 
 const STATUS_ICONS: Record<string, any> = {
   PENDING: Clock,
@@ -43,12 +43,8 @@ export default function MyOrdersPage() {
 
   const fetchMyOrders = useCallback(async () => {
     try {
-      const token = await getAccessToken();
-      const res = await fetch(`${BASE}/orders/my-orders`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      const data = await res.json();
-      setOrders(data.data || []);
+      const data = await clientAuthFetch(`${BASE}/orders/my-orders`);
+      setOrders(data?.data || []);
     } catch (e) {
       console.error(e);
     } finally {
@@ -64,15 +60,9 @@ export default function MyOrdersPage() {
     if (!confirm("Are you sure you want to cancel this order?")) return;
     setCancellingId(orderId);
     try {
-      const token = await getAccessToken();
-      const res = await fetch(`${BASE}/orders/${orderId}/cancel`, {
+      const data = await clientAuthFetch(`${BASE}/orders/${orderId}/cancel`, {
         method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
       });
-      const data = await res.json();
       if (data.success) {
         setOrders(prev => prev.map(o => o.id === orderId ? { ...o, status: "CANCELLED" } : o));
       } else {

@@ -4,23 +4,9 @@ import { useState, useEffect, useCallback } from "react";
 import { Plus, Pencil, Trash2, Search, X, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
 
-const BASE = process.env.NEXT_PUBLIC_BASE_API!;
+import { clientAuthFetch, API_BASE_URL } from "@/lib/clientAuthFetch";
 
-import { getAccessToken } from "@/services/AuthService/userUtils";
-
-async function authFetch(url: string, options: RequestInit = {}) {
-  const token = await getAccessToken();
-  const res = await fetch(url, {
-    ...options,
-    credentials: "include",
-    headers: { 
-      "Content-Type": "application/json", 
-      ...(token ? { "Authorization": `Bearer ${token}` } : {}),
-      ...(options.headers || {}) 
-    },
-  });
-  return res.json();
-}
+const BASE = API_BASE_URL;
 
 interface Medicine {
   id: string;
@@ -59,14 +45,20 @@ export default function MedicinesManager() {
 
   const fetchData = useCallback(async () => {
     setLoading(true);
-    const [medsData, catsData] = await Promise.all([
-      authFetch(`${BASE}/medicines?limit=10&page=${page}`),
-      authFetch(`${BASE}/categories?limit=100`),
-    ]);
-    setMedicines(medsData.data || []);
-    setMeta(medsData.meta || { totalPage: 1, total: 0 });
-    setCategories(catsData.data || []);
-    setLoading(false);
+    try {
+      const [medsData, catsData] = await Promise.all([
+        clientAuthFetch(`${BASE}/medicines?limit=10&page=${page}`),
+        clientAuthFetch(`${BASE}/categories?limit=100`),
+      ]);
+      setMedicines(medsData?.data || []);
+      setMeta(medsData?.meta || { totalPage: 1, total: 0 });
+      setCategories(catsData?.data || []);
+    } catch (err) {
+      console.error("Failed to load medicines:", err);
+      toast.error("Failed to load medicines");
+    } finally {
+      setLoading(false);
+    }
   }, [page]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
@@ -94,7 +86,7 @@ export default function MedicinesManager() {
     };
     const url = editing ? `${BASE}/medicines/${editing.id}` : `${BASE}/medicines`;
     const method = editing ? "PATCH" : "POST";
-    const res = await authFetch(url, { method, body: JSON.stringify(payload) });
+    const res = await clientAuthFetch(url, { method, body: JSON.stringify(payload) });
     if (res.success) {
       toast.success(editing ? "Medicine updated!" : "Medicine created!");
       setShowModal(false);
@@ -108,7 +100,7 @@ export default function MedicinesManager() {
   const handleDelete = async (id: string) => {
     if (!confirm("Are you sure you want to delete this medicine?")) return;
     setDeleting(id);
-    const res = await authFetch(`${BASE}/medicines/${id}`, { method: "DELETE" });
+    const res = await clientAuthFetch(`${BASE}/medicines/${id}`, { method: "DELETE" });
     if (res.success) {
       toast.success("Medicine deleted");
       fetchData();

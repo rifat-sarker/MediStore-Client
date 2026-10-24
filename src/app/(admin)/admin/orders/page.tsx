@@ -4,7 +4,9 @@ import { useState, useEffect, useCallback } from "react";
 import { Search } from "lucide-react";
 import { toast } from "sonner";
 
-const BASE = process.env.NEXT_PUBLIC_BASE_API!;
+import { clientAuthFetch, API_BASE_URL } from "@/lib/clientAuthFetch";
+
+const BASE = API_BASE_URL;
 
 const STATUS_OPTIONS = ["PENDING", "VERIFYING", "PROCESSING", "SHIPPED", "OUT_FOR_DELIVERY", "DELIVERED", "CANCELLED"];
 
@@ -31,22 +33,6 @@ interface Order {
   items?: { quantity: number; medicine?: { name: string } }[];
 }
 
-import { getAccessToken } from "@/services/AuthService/userUtils";
-
-async function authFetch(url: string, options: RequestInit = {}) {
-  const token = await getAccessToken();
-  const res = await fetch(url, {
-    ...options,
-    credentials: "include",
-    headers: { 
-      "Content-Type": "application/json", 
-      ...(token ? { "Authorization": `Bearer ${token}` } : {}),
-      ...(options.headers || {}) 
-    },
-  });
-  return res.json();
-}
-
 export default function OrdersManager() {
   const [orders, setOrders] = useState<Order[]>([]);
   const [riders, setRiders] = useState<{ id: string; user?: { name: string } }[]>([]);
@@ -59,23 +45,29 @@ export default function OrdersManager() {
 
   const fetchData = useCallback(async () => {
     setLoading(true);
-    const [ordersData, ridersData] = await Promise.all([
-      authFetch(`${BASE}/orders/get-orders?limit=10&page=${page}`),
-      authFetch(`${BASE}/riders`),
-    ]);
-    setOrders(ordersData.data || []);
-    setMeta(ordersData.meta || { totalPage: 1, total: 0 });
-    if (ridersData?.data) {
-      setRiders(ridersData.data);
+    try {
+      const [ordersData, ridersData] = await Promise.all([
+        clientAuthFetch(`${BASE}/orders/get-orders?limit=10&page=${page}`),
+        clientAuthFetch(`${BASE}/riders`),
+      ]);
+      setOrders(ordersData?.data || []);
+      setMeta(ordersData?.meta || { totalPage: 1, total: 0 });
+      if (ridersData?.data) {
+        setRiders(ridersData.data);
+      }
+    } catch (err) {
+      console.error("Failed to load orders:", err);
+      toast.error("Failed to load orders");
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   }, [page]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
 
   const handleStatusChange = async (orderId: string, status: string) => {
     setUpdatingId(orderId);
-    const data = await authFetch(`${BASE}/orders/${orderId}/status`, {
+    const data = await clientAuthFetch(`${BASE}/orders/${orderId}/status`, {
       method: "PATCH",
       body: JSON.stringify({ status }),
     });
@@ -91,7 +83,7 @@ export default function OrdersManager() {
   const handleAssignRider = async (orderId: string, riderId: string) => {
     if (!riderId) return;
     setUpdatingId(orderId);
-    const data = await authFetch(`${BASE}/orders/${orderId}/assign-rider`, {
+    const data = await clientAuthFetch(`${BASE}/orders/${orderId}/assign-rider`, {
       method: "PATCH",
       body: JSON.stringify({ riderId }),
     });

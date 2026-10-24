@@ -1,5 +1,6 @@
 import MedicineCard from "@/components/modules/home/MedicineCard";
 import { API_BASE_URL, fetchCategories } from "@/lib/api";
+import { MEDEX_BANGLADESH_PRODUCTS } from "@/types/product";
 import { Filter, Search } from "lucide-react";
 import Link from "next/link";
 
@@ -30,16 +31,9 @@ export default async function MedicinesPage({
     medicines = [];
   }
   
-  // Inject mock data if DB empty
+  // Inject authentic MedEx data if DB empty
   if (medicines.length === 0) {
-    medicines = [
-      { id: "m1", name: "Omega-3 Fish Oil 1000mg", manufacturer: "Nature's Bounty", price: 25.99, stock: 50, requiredPrescription: false, imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=300&auto=format&fit=crop" },
-      { id: "m2", name: "Paracetamol 500mg (100 pack)", manufacturer: "Tylenol", price: 8.50, stock: 120, requiredPrescription: false, imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=300&auto=format&fit=crop" },
-      { id: "m3", name: "Amoxicillin 250mg", manufacturer: "Pfizer", price: 15.00, stock: 30, requiredPrescription: true, imageUrl: "https://images.unsplash.com/photo-1628771065518-0d82f1938462?q=80&w=300&auto=format&fit=crop" },
-      { id: "m4", name: "Vitamin C with Zinc", manufacturer: "Centrum", price: 18.99, stock: 200, requiredPrescription: false, imageUrl: "https://images.unsplash.com/photo-1550572017-edb9c46d3e8f?q=80&w=300&auto=format&fit=crop" },
-      { id: "m5", name: "Ibuprofen 400mg Liquid Gels", manufacturer: "Advil", price: 12.99, stock: 85, requiredPrescription: false, imageUrl: "https://images.unsplash.com/photo-1583947581924-860bda6a5c83?q=80&w=300&auto=format&fit=crop" },
-      { id: "m6", name: "Cetirizine Allergy Relief", manufacturer: "Zyrtec", price: 22.50, stock: 60, requiredPrescription: false, imageUrl: "https://images.unsplash.com/photo-1585698436531-97b76e1045a5?q=80&w=300&auto=format&fit=crop" },
-    ];
+    medicines = MEDEX_BANGLADESH_PRODUCTS;
   }
 
   // Active Filtering Logic for Mock Data / Post-API Processing

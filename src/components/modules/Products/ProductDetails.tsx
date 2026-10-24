@@ -195,32 +195,45 @@ const ProductDetails = ({
           
           <TabsContent value="description" className="animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div className="prose prose-gray max-w-none">
-              <h3 className="text-xl font-bold mb-4">Product Overview</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">{product.description || "This premium health product is designed to support your daily wellness journey. Manufactured under strict quality control standards, it ensures maximum purity and potency."}</p>
+              <h3 className="text-xl font-bold mb-4">Product Overview & Indications</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                {product.description || "Indicated for effective therapeutic management, symptom relief and restoring metabolic health."}
+              </p>
               
               <div className="grid sm:grid-cols-2 gap-8 mt-10">
                 <div>
-                  <h4 className="font-bold mb-3">Key Benefits</h4>
+                  <h4 className="font-bold mb-3">Key Highlights (MedEx Clinical Data)</h4>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Fast-acting formulation</li>
-                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Clinically tested ingredients</li>
-                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Suitable for daily use</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Fast therapeutic bioavailability</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Compliant with DGDA & BP/USP pharmacopoeia standards</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Sealed blister / tamper-proof manufacturer packaging</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Batch-controlled cold chain storage maintained</li>
                   </ul>
                 </div>
                 <div className="bg-secondary/30 p-6 rounded-2xl border border-border">
-                  <h4 className="font-bold mb-3">Product Specs</h4>
+                  <h4 className="font-bold mb-3">MedEx Product Specs</h4>
                   <div className="space-y-2 text-sm">
+                    <div className="flex justify-between border-b border-border/50 pb-2">
+                      <span className="text-muted-foreground">Generic / Strength</span>
+                      <span className="font-semibold">{product.genericName || product.strength || "Active Compound"}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-border/50 pb-2">
+                      <span className="text-muted-foreground">Dosage Form</span>
+                      <span className="font-semibold">{product.dosageForm || "Tablet / Capsule"}</span>
+                    </div>
                     <div className="flex justify-between border-b border-border/50 pb-2">
                       <span className="text-muted-foreground">Manufacturer</span>
                       <span className="font-semibold">{product.manufacturer}</span>
                     </div>
                     <div className="flex justify-between border-b border-border/50 pb-2">
-                      <span className="text-muted-foreground">Category</span>
-                      <span className="font-semibold">{productCategory?.name || "N/A"}</span>
+                      <span className="text-muted-foreground">Pack Size</span>
+                      <span className="font-semibold">{product.packSize || "Unit Blister / Strip"}</span>
                     </div>
                     <div className="flex justify-between pb-2">
-                      <span className="text-muted-foreground">Expiry Date</span>
-                      <span className="font-semibold">{product.expiryDate ? new Date(product.expiryDate).toLocaleDateString() : "Dec 2028"}</span>
+                      <span className="text-muted-foreground">Prescription Status</span>
+                      <span className={`font-bold ${product.requiredPrescription ? "text-orange-600" : "text-green-600"}`}>
+                        {product.requiredPrescription ? "Rx Required" : "OTC (Over The Counter)"}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -229,21 +242,30 @@ const ProductDetails = ({
           </TabsContent>
 
           <TabsContent value="ingredients" className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <h3 className="text-xl font-bold mb-4">Active Ingredients</h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">Each dose contains the highest quality raw materials sourced globally and processed in FDA-approved facilities.</p>
+            <h3 className="text-xl font-bold mb-4">Pharmacological Action & Composition</h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Sourced under stringent international Good Manufacturing Practices (GMP) and verified for bioequivalence.
+            </p>
             <div className="bg-card border border-border rounded-2xl overflow-hidden">
               <table className="w-full text-left text-sm">
                 <thead className="bg-secondary/50 border-b border-border">
                   <tr>
-                    <th className="px-6 py-4 font-semibold">Ingredient</th>
-                    <th className="px-6 py-4 font-semibold">Amount per serving</th>
-                    <th className="px-6 py-4 font-semibold">% Daily Value</th>
+                    <th className="px-6 py-4 font-semibold">Active Composition</th>
+                    <th className="px-6 py-4 font-semibold">Classification</th>
+                    <th className="px-6 py-4 font-semibold">Therapeutic Class</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
-                  <tr><td className="px-6 py-4 font-medium">Primary Active Compound</td><td className="px-6 py-4 text-muted-foreground">500mg</td><td className="px-6 py-4 text-muted-foreground">100%</td></tr>
-                  <tr><td className="px-6 py-4 font-medium">Vitamin Complex Base</td><td className="px-6 py-4 text-muted-foreground">50mg</td><td className="px-6 py-4 text-muted-foreground">50%</td></tr>
-                  <tr><td className="px-6 py-4 font-medium">Absorption Enhancer</td><td className="px-6 py-4 text-muted-foreground">10mg</td><td className="px-6 py-4 text-muted-foreground">*</td></tr>
+                  <tr>
+                    <td className="px-6 py-4 font-medium">{product.name}</td>
+                    <td className="px-6 py-4 text-muted-foreground">{product.genericName || "Pharmaceutical Grade Formulation"}</td>
+                    <td className="px-6 py-4 text-muted-foreground">{productCategory?.name || "Healthcare Essential"}</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 font-medium">Excipients & Stabilizers</td>
+                    <td className="px-6 py-4 text-muted-foreground">USP/BP Standard Base</td>
+                    <td className="px-6 py-4 text-muted-foreground">Bioavailability Enhancer</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -251,15 +273,18 @@ const ProductDetails = ({
 
           <TabsContent value="dosage" className="animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8">
-              <h3 className="text-xl font-bold mb-4 text-primary">Recommended Usage</h3>
-              <p className="text-foreground leading-relaxed mb-6 font-medium">Take one (1) unit daily with a full glass of water, preferably with a meal, or as directed by a healthcare professional.</p>
+              <h3 className="text-xl font-bold mb-4 text-primary">Dosage & Administration Guidelines</h3>
+              <p className="text-foreground leading-relaxed mb-6 font-medium">
+                Adults and adolescents: Take as prescribed by your registered physician or as detailed on the patient information leaflet. Swallow whole with water; do not crush or chew prolonged-release forms.
+              </p>
               
-              <h4 className="font-bold mb-2">Important Warnings:</h4>
-              <ul className="list-disc list-inside space-y-1 text-muted-foreground text-sm">
-                <li>Do not exceed the recommended dose.</li>
-                <li>Pregnant or nursing mothers should consult a physician before use.</li>
+              <h4 className="font-bold mb-2">Clinical Contraindications & Precautions:</h4>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm">
+                <li>Hypersensitivity to any of the active or inactive components.</li>
+                <li>In severe renal or hepatic impairment, dose adjustment or medical supervision is necessary.</li>
+                <li>Pregnancy & Lactation: Consult your gynecologist or pediatrician before consumption.</li>
+                <li>Keep stored below 30°C in a dry environment, shielded from direct sunlight and moisture.</li>
                 <li>Keep out of reach of children.</li>
-                <li>Store in a cool, dry place away from direct sunlight.</li>
               </ul>
             </div>
           </TabsContent>

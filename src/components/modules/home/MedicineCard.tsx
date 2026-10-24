@@ -52,18 +52,19 @@ export default function MedicineCard({ medicine }: { medicine: IProduct }) {
 
   return (
     <Link href={`/medicines/${medicine.id}`} className="block h-full group relative">
-      <div className="bg-card border border-border/50 rounded-none p-5 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/15 hover:border-primary/30 flex flex-col h-full relative overflow-hidden">
+      <div className="bg-card border border-border/80 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:border-primary/40 flex flex-col h-full relative overflow-hidden group-hover:-translate-y-1">
         
         {/* Favorite Icon */}
         <button 
           onClick={toggleFavorite}
-          className="absolute top-5 right-5 z-10 p-3 rounded-none bg-white/90 backdrop-blur shadow-sm hover:bg-red-50 border border-border/50 transition-all group-hover:opacity-100 opacity-80 hover:scale-110"
+          className="absolute top-3.5 right-3.5 z-10 p-2.5 rounded-full bg-white/95 backdrop-blur shadow-sm hover:bg-red-50 border border-border/60 transition-all hover:scale-110"
+          title="Save to favorites"
         >
-          <Heart className={`w-5 h-5 transition-colors ${isFavorite ? 'fill-red-500 text-red-500' : 'text-muted-foreground hover:text-red-500'}`} />
+          <Heart className={`w-4 h-4 transition-colors ${isFavorite ? 'fill-red-500 text-red-500' : 'text-muted-foreground hover:text-red-500'}`} />
         </button>
 
         {/* Image Container */}
-        <div className="relative w-full aspect-[4/3] rounded-none overflow-hidden bg-white mb-5 flex items-center justify-center p-4 shadow-sm border border-border/20">
+        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-white mb-4 flex items-center justify-center p-3 shadow-inner border border-secondary/60">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
           <div className="relative w-full h-full flex items-center justify-center">
             <Image
@@ -71,12 +72,12 @@ export default function MedicineCard({ medicine }: { medicine: IProduct }) {
               alt={medicine.name}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 ease-out p-2"
+              className="object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 ease-out p-1"
               onError={() => setImgSrc(DEFAULT_IMAGE)}
             />
           </div>
           {medicine.requiredPrescription && (
-            <div className="absolute bottom-2 left-2 bg-orange-100 text-orange-700 text-[10px] font-bold px-2 py-1 rounded border border-orange-200 uppercase tracking-wider shadow-sm z-10">
+            <div className="absolute bottom-2 left-2 bg-orange-100 text-orange-800 text-[10px] font-extrabold px-2 py-0.5 rounded-md border border-orange-200 tracking-wider shadow-sm z-10 flex items-center gap-1">
               Rx Required
             </div>
           )}
@@ -84,29 +85,30 @@ export default function MedicineCard({ medicine }: { medicine: IProduct }) {
 
         {/* Content */}
         <div className="flex flex-col flex-grow">
-          <span className="text-xs font-bold text-primary/80 mb-1 line-clamp-1 uppercase tracking-wider">
+          <span className="text-[11px] font-bold text-primary/80 mb-1 line-clamp-1 uppercase tracking-wider">
             {medicine.manufacturer}
           </span>
-          <h3 className="font-bold text-base text-foreground line-clamp-2 leading-tight mb-2 group-hover:text-primary transition-colors">
+          <h3 className="font-bold text-sm text-foreground line-clamp-2 leading-snug mb-2 group-hover:text-primary transition-colors">
             {medicine.name}
           </h3>
           
-          <div className="mt-auto pt-3 flex items-end justify-between border-t border-border/30">
+          <div className="mt-auto pt-3 flex items-end justify-between border-t border-border/40">
             <div>
-              <p className="text-xs text-muted-foreground line-through mb-0.5">
-                ৳ {(medicine.price * 1.2).toFixed(2)}
+              <p className="text-[11px] text-muted-foreground line-through mb-0.5">
+                ৳ {(medicine.price * 1.15).toFixed(2)}
               </p>
-              <p className="font-black text-xl text-foreground tracking-tight">
+              <p className="font-black text-lg text-foreground tracking-tight">
                 ৳ {medicine.price.toFixed(2)}
               </p>
             </div>
             
             <Button
               onClick={handleAddToCart}
-              size="icon"
-              className="rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground shadow-none transition-all group-hover:shadow-md"
+              size="sm"
+              className="rounded-xl px-3 py-1.5 h-9 bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground font-bold text-xs shadow-none transition-all flex items-center gap-1.5"
             >
-              <ShoppingCart className="w-4 h-4" />
+              <ShoppingCart className="w-3.5 h-3.5" />
+              <span>Add</span>
             </Button>
           </div>
         </div>

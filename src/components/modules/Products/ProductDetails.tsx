@@ -33,13 +33,39 @@ const ProductDetailsClient = ({
 }) => {
   const dispatch = useAppDispatch();
   const [quantity, setQuantity] = useState(1);
+  const [selectedTier, setSelectedTier] = useState<"unit" | "strip" | "box">("strip");
+
+  const stripPrice = product.stripPrice || Number((product.price * 10).toFixed(2));
+  const packagePrice = product.packagePrice || Number((product.price * 100).toFixed(2));
+
+  const getCurrentTierPrice = () => {
+    if (selectedTier === "unit") return product.price;
+    if (selectedTier === "box") return packagePrice;
+    return stripPrice;
+  };
+
+  const getCurrentTierLabel = () => {
+    if (selectedTier === "unit") return `1 ${product.dosageForm || "Unit"}`;
+    if (selectedTier === "box") return `Full Box (${product.packInfo || product.packSize || "Pack"})`;
+    return "1 Strip (10 pcs)";
+  };
 
   const handleAddToCart = () => {
-    // Add product multiple times based on quantity selected
-    for(let i=0; i<quantity; i++) {
-      dispatch(addProduct(product));
+    const tierPrice = getCurrentTierPrice();
+    const tierNameSuffix = selectedTier === "unit" ? ` (${product.dosageForm || "Piece"})` : selectedTier === "strip" ? " (Strip)" : " (Full Box)";
+    
+    // Add product with configured pricing tier
+    const itemToCart: IProduct = {
+      ...product,
+      id: `${product.id}-${selectedTier}`,
+      name: `${product.name}${tierNameSuffix}`,
+      price: tierPrice,
+    };
+
+    for (let i = 0; i < quantity; i++) {
+      dispatch(addProduct(itemToCart));
     }
-    toast.success(`${quantity} x ${product.name} Added to Cart!`);
+    toast.success(`${quantity} x ${itemToCart.name} (৳ ${tierPrice.toFixed(2)}) Added to Cart!`);
   };
 
   return (
@@ -108,30 +134,61 @@ const ProductDetailsClient = ({
           <span className="text-xs font-semibold text-muted-foreground hover:text-primary cursor-pointer transition-colors">(128 Verified Ratings)</span>
         </div>
         
-        {/* Dynamic Multi-Tier Pricing Breakdown: Unit, Strip, and Full Box */}
-        <div className="grid grid-cols-3 gap-3 mb-6 bg-secondary/30 p-3 rounded-2xl border border-border/80">
-          <div className="bg-white p-3 rounded-xl border border-border shadow-xs text-center">
+        {/* Dynamic Multi-Tier Pricing Breakdown: Selectable Unit, Strip, and Full Box */}
+        <div className="mb-2 flex items-center justify-between text-xs font-bold text-foreground">
+          <span>Select Package Size:</span>
+          <span className="text-primary font-extrabold">{getCurrentTierLabel()}</span>
+        </div>
+        <div className="grid grid-cols-3 gap-3 mb-6 bg-secondary/30 p-2.5 rounded-2xl border border-border/80">
+          {/* Single Unit Option */}
+          <button
+            type="button"
+            onClick={() => setSelectedTier("unit")}
+            className={`p-3 rounded-xl border text-center transition-all cursor-pointer relative ${
+              selectedTier === "unit"
+                ? "bg-white border-primary ring-2 ring-primary/30 shadow-md scale-[1.02]"
+                : "bg-white/80 border-border hover:border-primary/40 shadow-xs"
+            }`}
+          >
             <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider block">Single Unit</span>
             <span className="text-lg md:text-xl font-black text-foreground">৳ {product.price.toFixed(2)}</span>
             <span className="text-[10px] text-muted-foreground block mt-0.5">per {product.dosageForm || 'piece'}</span>
-          </div>
+          </button>
 
-          <div className="bg-primary/5 p-3 rounded-xl border border-primary/20 shadow-xs text-center relative overflow-hidden">
+          {/* Strip Option (Default / Popular) */}
+          <button
+            type="button"
+            onClick={() => setSelectedTier("strip")}
+            className={`p-3 rounded-xl border text-center transition-all cursor-pointer relative overflow-hidden ${
+              selectedTier === "strip"
+                ? "bg-primary/10 border-primary ring-2 ring-primary/40 shadow-md scale-[1.02]"
+                : "bg-white/80 border-border hover:border-primary/40 shadow-xs"
+            }`}
+          >
             <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-[8px] font-bold px-1.5 py-0.5 rounded-bl">Popular</div>
             <span className="text-[11px] font-bold text-primary uppercase tracking-wider block">Strip Price</span>
             <span className="text-lg md:text-xl font-black text-primary">
-              ৳ {(product.stripPrice || product.price * 10).toFixed(2)}
+              ৳ {stripPrice.toFixed(2)}
             </span>
             <span className="text-[10px] text-muted-foreground block mt-0.5">1 Strip (10 pcs)</span>
-          </div>
+          </button>
 
-          <div className="bg-white p-3 rounded-xl border border-border shadow-xs text-center">
+          {/* Full Box Option */}
+          <button
+            type="button"
+            onClick={() => setSelectedTier("box")}
+            className={`p-3 rounded-xl border text-center transition-all cursor-pointer relative ${
+              selectedTier === "box"
+                ? "bg-white border-primary ring-2 ring-primary/30 shadow-md scale-[1.02]"
+                : "bg-white/80 border-border hover:border-primary/40 shadow-xs"
+            }`}
+          >
             <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider block">Full Box</span>
             <span className="text-lg md:text-xl font-black text-foreground">
-              ৳ {(product.packagePrice || product.price * 100).toFixed(2)}
+              ৳ {packagePrice.toFixed(2)}
             </span>
             <span className="text-[10px] text-muted-foreground block mt-0.5 truncate">{product.packInfo || product.packSize || "Box Pack"}</span>
-          </div>
+          </button>
         </div>
         
         <p className="text-sm md:text-base text-muted-foreground mb-8 leading-relaxed">
@@ -141,16 +198,16 @@ const ProductDetailsClient = ({
         {/* Add to Cart Section */}
         <div className="bg-card border border-border p-6 rounded-3xl mb-10 shadow-sm">
           <div className="flex items-center justify-between mb-4">
-            <span className="font-semibold">Availability</span>
+            <span className="font-semibold text-sm">Package & Availability</span>
             {product.stock > 0 ? (
-              <span className="flex items-center gap-1.5 text-green-600 bg-green-50 px-3 py-1 rounded-full text-sm font-bold"><CheckCircle2 className="w-4 h-4"/> In Stock ({product.stock} units)</span>
+              <span className="flex items-center gap-1.5 text-green-600 bg-green-50 px-3 py-1 rounded-full text-xs font-bold"><CheckCircle2 className="w-4 h-4"/> In Stock ({product.stock} units)</span>
             ) : (
-              <span className="text-red-500 font-semibold bg-red-50 px-3 py-1 rounded-full text-sm">Out of Stock</span>
+              <span className="text-red-500 font-semibold bg-red-50 px-3 py-1 rounded-full text-xs">Out of Stock</span>
             )}
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <div className="flex items-center justify-between border-2 border-border rounded-full px-4 py-2 w-full sm:w-32">
+            <div className="flex items-center justify-between border-2 border-border rounded-full px-4 py-2 w-full sm:w-32 bg-secondary/20">
               <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="text-xl font-medium px-2 text-muted-foreground hover:text-foreground transition-colors">-</button>
               <span className="font-bold text-lg">{quantity}</span>
               <button onClick={() => setQuantity(Math.min(product.stock, quantity + 1))} className="text-xl font-medium px-2 text-muted-foreground hover:text-foreground transition-colors">+</button>
@@ -159,9 +216,9 @@ const ProductDetailsClient = ({
             <button 
               onClick={handleAddToCart}
               disabled={product.stock <= 0}
-              className="flex-1 bg-primary text-primary-foreground font-bold text-lg rounded-full py-4 flex items-center justify-center gap-2 hover:bg-primary/90 hover:scale-[1.02] transition-all shadow-xl shadow-primary/20 disabled:opacity-50 disabled:hover:scale-100"
+              className="flex-1 bg-primary text-primary-foreground font-bold text-base md:text-lg rounded-full py-4 flex items-center justify-center gap-2 hover:bg-primary/90 hover:scale-[1.01] transition-all shadow-xl shadow-primary/20 disabled:opacity-50 disabled:hover:scale-100"
             >
-              <ShoppingCart className="w-5 h-5" /> Add to Cart
+              <ShoppingCart className="w-5 h-5" /> Add {quantity > 1 ? `(${quantity}) ` : ""}{selectedTier === "unit" ? "Unit" : selectedTier === "strip" ? "Strip" : "Full Box"} to Cart • ৳ {(getCurrentTierPrice() * quantity).toFixed(2)}
             </button>
           </div>
         </div>

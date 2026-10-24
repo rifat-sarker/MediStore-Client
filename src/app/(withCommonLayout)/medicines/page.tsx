@@ -16,7 +16,7 @@ export default async function MedicinesPage({
 }) {
   const params = await searchParams;
   const currentPage = Math.max(1, Number(params.page) || 1);
-  const itemsPerPage = 12;
+  const itemsPerPage = 16;
 
   const qs = new URLSearchParams();
   if (params.category) qs.set("categories", params.category);

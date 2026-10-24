@@ -22,20 +22,27 @@ export default function FavoritesPage() {
           return;
         }
 
-        // Try to fetch from real API first
-        const res = await fetch(`${API_BASE_URL}/medicines`);
-        const data = await res.json();
-        let allMedicines = data.data || [];
+        let allMedicines: IProduct[] = [];
+        try {
+          const res = await fetch(`${API_BASE_URL}/medicines?limit=100`);
+          const data = await res.json();
+          if (data?.data && Array.isArray(data.data)) {
+            allMedicines = data.data;
+          }
+        } catch {}
 
-        // If backend is empty/down, use mock data
-        if (allMedicines.length === 0) {
-          allMedicines = MOCK_DATA;
-        }
+        const combined = [...allMedicines];
+        MOCK_DATA.forEach(mp => {
+          if (!combined.some(c => c.id === mp.id || c.name === mp.name)) {
+            combined.push(mp);
+          }
+        });
 
-        const items = allMedicines.filter((m: IProduct) => storedFavIds.includes(m.id));
+        const items = combined.filter((m: IProduct) => 
+          storedFavIds.includes(m.id) || storedFavIds.some((favId: string) => favId === m.name || m.id.includes(favId) || favId.includes(m.id))
+        );
         setFavoriteItems(items);
       } catch (error) {
-        // Fallback to mock data entirely if fetch fails
         const storedFavIds = JSON.parse(localStorage.getItem("favorites") || "[]");
         const items = MOCK_DATA.filter((m) => storedFavIds.includes(m.id));
         setFavoriteItems(items);

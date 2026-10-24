@@ -3,7 +3,7 @@
 import { X, Heart, Trash2, ShoppingBag, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { IProduct } from "@/types/product";
+import { IProduct, MEDEX_BANGLADESH_PRODUCTS } from "@/types/product";
 import { useAppDispatch } from "@/redux/hooks";
 import { addProduct } from "@/redux/features/cartSlice";
 import { toast } from "sonner";
@@ -13,11 +13,6 @@ interface FavoritesDrawerProps {
   isOpen: boolean;
   onClose: () => void;
 }
-
-const FALLBACK_FAVS: any[] = [
-  { id: "m1", name: "Omega-3 Fish Oil 1000mg", manufacturer: "Nature's Bounty", price: 25.99, imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=300&auto=format&fit=crop", stock: 50 },
-  { id: "m2", name: "Paracetamol 500mg (100 pack)", manufacturer: "Square Pharma", price: 8.50, imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=300&auto=format&fit=crop", stock: 120 },
-];
 
 export default function FavoritesDrawer({ isOpen, onClose }: FavoritesDrawerProps) {
   const [favoriteItems, setFavoriteItems] = useState<IProduct[]>([]);
@@ -33,14 +28,30 @@ export default function FavoritesDrawer({ isOpen, onClose }: FavoritesDrawerProp
         return;
       }
       
-      const res = await fetch(`${API_BASE_URL}/medicines`);
-      const data = await res.json();
-      const allMedicines: IProduct[] = data?.data && data.data.length > 0 ? data.data : FALLBACK_FAVS;
-      const matched = allMedicines.filter((m) => storedFavIds.includes(m.id));
+      let allMedicines: IProduct[] = [];
+      try {
+        const res = await fetch(`${API_BASE_URL}/medicines?limit=100`);
+        const data = await res.json();
+        if (data?.data && Array.isArray(data.data)) {
+          allMedicines = data.data;
+        }
+      } catch {}
+
+      // Combine with comprehensive MEDEX dataset so no favorite item is missed
+      const combined = [...allMedicines];
+      MEDEX_BANGLADESH_PRODUCTS.forEach(mp => {
+        if (!combined.some(c => c.id === mp.id || c.name === mp.name)) {
+          combined.push(mp);
+        }
+      });
+
+      const matched = combined.filter((m) => 
+        storedFavIds.includes(m.id) || storedFavIds.some(favId => favId === m.name || m.id.includes(favId) || favId.includes(m.id))
+      );
       setFavoriteItems(matched);
     } catch {
       const storedFavIds: string[] = JSON.parse(localStorage.getItem("favorites") || "[]");
-      const matched = FALLBACK_FAVS.filter((m) => storedFavIds.includes(m.id));
+      const matched = MEDEX_BANGLADESH_PRODUCTS.filter((m) => storedFavIds.includes(m.id));
       setFavoriteItems(matched);
     } finally {
       setLoading(false);

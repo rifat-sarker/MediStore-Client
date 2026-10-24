@@ -23,8 +23,8 @@ import { useState } from "react";
 
 const DEMO_CREDENTIALS = {
   CUSTOMER: { email: "customer1@example.com", password: "password123" },
-  ADMIN: { email: "admin@medistore.com", password: "Admin@12345" },
-  RIDER: { email: "rider1@medistore.com", password: "password123" },
+  ADMIN: { email: "admin@medistore.com", password: "password123" },
+  RIDER: { email: "rider1@example.com", password: "password123" },
 };
 
 const LoginForm = () => {

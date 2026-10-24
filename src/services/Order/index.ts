@@ -1,8 +1,15 @@
 "use server";
 
+const getApiBaseUrl = () => {
+  if (typeof window === "undefined") {
+    return process.env.INTERNAL_API_URL || process.env.NEXT_PUBLIC_BASE_API || "http://server:5001/api/v1";
+  }
+  return process.env.NEXT_PUBLIC_BASE_API || "http://localhost:5001/api/v1";
+};
+
 export const createOrder = async (orderData: any) => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/orders`, {
+    const res = await fetch(`${getApiBaseUrl()}/orders`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

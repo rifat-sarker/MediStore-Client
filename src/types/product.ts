@@ -2,7 +2,7 @@ export interface IProduct {
   id: string;
   name: string;
   description?: string;
-  price: number;
+  price: number; // Unit / tablet price
   stock: number;
   manufacturer: string;
   imageUrl?: string;
@@ -17,6 +17,9 @@ export interface IProduct {
   strength?: string;
   dosageForm?: string;
   packSize?: string;
+  stripPrice?: number;
+  packagePrice?: number;
+  packInfo?: string;
 }
 
 // 60+ Authentic MedEx Bangladesh & ePharma products (10+ unique items per category with verified 200 HTTP images)

@@ -56,19 +56,19 @@ export default function MedicineCard({ medicine }: { medicine: IProduct }) {
 
   return (
     <Link href={`/medicines/${medicine.id}`} className="block h-full group relative">
-      <div className="bg-card border border-border/80 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:border-primary/40 flex flex-col h-full relative overflow-hidden group-hover:-translate-y-1">
+      <div className="bg-card border border-border/70 rounded-2xl p-5 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:border-primary/50 flex flex-col h-full relative overflow-hidden group-hover:-translate-y-1">
         
         {/* Favorite Icon */}
         <button 
           onClick={toggleFavorite}
-          className="absolute top-3.5 right-3.5 z-10 p-2.5 rounded-full bg-white/95 backdrop-blur shadow-sm hover:bg-red-50 border border-border/60 transition-all hover:scale-110"
+          className="absolute top-4 right-4 z-10 p-2.5 rounded-full bg-white/95 backdrop-blur shadow-sm hover:bg-red-50 border border-border/60 transition-all hover:scale-110"
           title="Save to favorites"
         >
           <Heart className={`w-4 h-4 transition-colors ${isFavorite ? 'fill-red-500 text-red-500' : 'text-muted-foreground hover:text-red-500'}`} />
         </button>
 
         {/* Image Container */}
-        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-white mb-4 flex items-center justify-center p-3 shadow-inner border border-secondary/60">
+        <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-white mb-4.5 flex items-center justify-center p-4 shadow-xs border border-secondary/70">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
           <img
             src={imgSrc}
@@ -78,7 +78,7 @@ export default function MedicineCard({ medicine }: { medicine: IProduct }) {
             loading="lazy"
           />
           {medicine.requiredPrescription && (
-            <div className="absolute bottom-2 left-2 bg-orange-100 text-orange-800 text-[10px] font-extrabold px-2 py-0.5 rounded-md border border-orange-200 tracking-wider shadow-sm z-10 flex items-center gap-1">
+            <div className="absolute bottom-2.5 left-2.5 bg-orange-100 text-orange-800 text-[10px] font-extrabold px-2 py-0.5 rounded-md border border-orange-200 tracking-wider shadow-sm z-10 flex items-center gap-1">
               Rx Required
             </div>
           )}
@@ -86,10 +86,10 @@ export default function MedicineCard({ medicine }: { medicine: IProduct }) {
 
         {/* Content */}
         <div className="flex flex-col flex-grow">
-          <span className="text-[11px] font-bold text-primary/80 mb-1 line-clamp-1 uppercase tracking-wider">
+          <span className="text-[11px] font-bold text-primary/80 mb-1.5 line-clamp-1 uppercase tracking-wider">
             {medicine.manufacturer}
           </span>
-          <h3 className="font-bold text-sm text-foreground line-clamp-2 leading-snug mb-2 group-hover:text-primary transition-colors">
+          <h3 className="font-bold text-sm text-foreground line-clamp-2 leading-snug mb-3 group-hover:text-primary transition-colors">
             {medicine.name}
           </h3>
           

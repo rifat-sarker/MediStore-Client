@@ -22,9 +22,9 @@ import { useUser } from "@/context/UserContext";
 import { useState } from "react";
 
 const DEMO_CREDENTIALS = {
-  CUSTOMER: { email: "customer1@example.com", password: "password123" },
-  ADMIN: { email: "admin@medistore.com", password: "password123" },
-  RIDER: { email: "rider1@example.com", password: "password123" },
+  CUSTOMER: { email: "customer1@example.com", password: "@Rifat1234" },
+  ADMIN: { email: "admin@medistore.com", password: "@Rifat1234" },
+  RIDER: { email: "rider1@example.com", password: "@Rifat1234" },
 };
 
 const LoginForm = () => {

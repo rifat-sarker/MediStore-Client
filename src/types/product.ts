@@ -19,6 +19,7 @@ export interface IProduct {
   packSize?: string;
 }
 
+// All images verified returning HTTP 200 from Unsplash
 export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
   {
     id: "medex-1",
@@ -31,7 +32,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 3.50,
     stock: 500,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5e4b7b34b?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
     description: "Rapid relief for severe headache, toothache, backache, migraine, dysmenorrhea and feverishness.",
     category: { id: "c1", name: "Medicines" }
   },
@@ -46,7 +47,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 3.50,
     stock: 650,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
     description: "Indicated for tension headache, post-vaccination fever, neuralgia and musculoskeletal pain.",
     category: { id: "c1", name: "Medicines" }
   },
@@ -61,7 +62,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 7.00,
     stock: 450,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&auto=format&fit=crop&q=80",
     description: "Treatment of gastroesophageal reflux disease (GERD), duodenal & gastric ulcers, and Zollinger-Ellison syndrome.",
     category: { id: "c1", name: "Medicines" }
   },
@@ -76,7 +77,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 8.00,
     stock: 380,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&fit=crop&q=80",
     description: "Relieves heartburn, acid indigestion and heals erosive esophagitis with sustained acid suppression.",
     category: { id: "c1", name: "Medicines" }
   },
@@ -91,7 +92,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 8.00,
     stock: 290,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1550572017-edb9894e7724?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
     description: "Proton pump inhibitor formulated for rapid recovery from acid-related dyspepsia and gastric lesions.",
     category: { id: "c1", name: "Medicines" }
   },
@@ -106,7 +107,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 15.00,
     stock: 220,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1550572017-edb9c46d3e8f?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=600&auto=format&fit=crop&q=80",
     description: "Comprehensive adult daily nutritional boost providing vital immunity, stamina, brain and bone health.",
     category: { id: "c2", name: "Vital Wellness" }
   },
@@ -121,7 +122,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 45.00,
     stock: 140,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&auto=format&fit=crop&q=80",
     description: "High potency Vitamin D3 replenishment for osteomalacia, osteoporosis prevention and severe Vitamin D deficiency.",
     category: { id: "c2", name: "Vital Wellness" }
   },
@@ -136,7 +137,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 1850.00,
     stock: 45,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop&q=80",
     description: "Effortlessly accurate diabetic blood testing within 4 seconds with painless Softclix lancets.",
     category: { id: "c3", name: "Diabetic Care" }
   },
@@ -151,7 +152,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 1150.00,
     stock: 120,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=600&auto=format&fit=crop&q=80",
     description: "Wide dosing area requiring only a small pinprick droplet of blood for lab-quality testing at home.",
     category: { id: "c3", name: "Diabetic Care" }
   },
@@ -166,7 +167,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 2650.00,
     stock: 35,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5e4b7b34b?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop&q=80",
     description: "One-touch operation with body movement detection and hypertension indicators recommended by cardiologists.",
     category: { id: "c4", name: "Health & Devices" }
   },
@@ -181,7 +182,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 1680.00,
     stock: 65,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
     description: "Locks wetness away for up to 12 hours of peaceful sleep with ultra-soft breathable waistbands.",
     category: { id: "c5", name: "Baby & Mom" }
   },
@@ -196,7 +197,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 1450.00,
     stock: 80,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format&fit=crop&q=80",
     description: "Lightweight, non-greasy 24-hour hydration formulated for normal to dry and sensitive skin.",
     category: { id: "c6", name: "Personal Care" }
   },
@@ -211,7 +212,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 18.00,
     stock: 200,
     requiredPrescription: true,
-    imageUrl: "https://images.unsplash.com/photo-1585698436531-97b76e1045a5?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
     description: "Broad-spectrum antibacterial medicine for urinary tract infections, typhoid fever and respiratory bacterial conditions.",
     category: { id: "c1", name: "Medicines" }
   },
@@ -226,7 +227,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 17.50,
     stock: 250,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
     description: "Preventative control of asthma and day/night symptom relief for allergic rhinitis and exercise-induced bronchospasm.",
     category: { id: "c1", name: "Medicines" }
   },
@@ -241,7 +242,7 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     price: 1250.00,
     stock: 50,
     requiredPrescription: false,
-    imageUrl: "https://images.unsplash.com/photo-1576602976047-174e57a47881?q=80&w=600&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1576602976047-174e57a47881?w=600&auto=format&fit=crop&q=80",
     description: "Scientifically formulated meal replacement that minimizes blood sugar spikes and sustains fullness.",
     category: { id: "c3", name: "Diabetic Care" }
   }

@@ -31,16 +31,40 @@ export default async function MedicinesPage({
     medicines = [];
   }
   
-  // Inject authentic MedEx data if DB empty
+  // If API returned empty, check MEDEX dataset
   if (medicines.length === 0) {
     medicines = MEDEX_BANGLADESH_PRODUCTS;
   }
 
-  // Active Filtering Logic for Mock Data / Post-API Processing
-  if (params.search) {
-    medicines = medicines.filter(m => m.name.toLowerCase().includes(params.search!.toLowerCase()));
+  // Active Filtering Logic
+  if (params.category) {
+    const catQuery = params.category.toLowerCase().trim();
+    const filtered = medicines.filter(m => {
+      const itemCatName = (m.category?.name || "").toLowerCase();
+      const itemName = (m.name || "").toLowerCase();
+      const itemDesc = (m.description || "").toLowerCase();
+      return (
+        itemCatName.includes(catQuery) ||
+        catQuery.includes(itemCatName) ||
+        itemName.includes(catQuery) ||
+        itemDesc.includes(catQuery)
+      );
+    });
+    // If specific filter found items, apply it; otherwise fallback gracefully
+    if (filtered.length > 0) {
+      medicines = filtered;
+    }
   }
-  // Category might not be explicitly tied to mock items, but we'll try to simulate if we had it.
+
+  if (params.search) {
+    const sQuery = params.search.toLowerCase().trim();
+    medicines = medicines.filter(m => 
+      (m.name || "").toLowerCase().includes(sQuery) ||
+      (m.genericName || "").toLowerCase().includes(sQuery) ||
+      (m.manufacturer || "").toLowerCase().includes(sQuery) ||
+      (m.description || "").toLowerCase().includes(sQuery)
+    );
+  }
   
   if (params.minPrice) {
     medicines = medicines.filter(m => m.price >= Number(params.minPrice));
@@ -55,12 +79,12 @@ export default async function MedicinesPage({
   let categories = await fetchCategories();
   if (!categories || categories.length === 0) {
     categories = [
-      { id: "c1", name: "Vitamins & Supplements" },
-      { id: "c2", name: "Pain Relief" },
-      { id: "c3", name: "First Aid" },
-      { id: "c4", name: "Personal Care" },
-      { id: "c5", name: "Cold & Flu" },
-      { id: "c6", name: "Digestive Health" },
+      { id: "c1", name: "Medicines" },
+      { id: "c2", name: "Baby & Mom" },
+      { id: "c3", name: "Diabetic Care" },
+      { id: "c4", name: "Health & Devices" },
+      { id: "c5", name: "Personal Care" },
+      { id: "c6", name: "Vital Wellness" },
     ];
   }
 

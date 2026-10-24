@@ -237,7 +237,11 @@ const CartPage = () => {
                       window.location.href = result.data.paymentUrl;
                       return;
                     }
-                    toast.success("Order placed successfully!");
+                    if (method === "SSLCOMMERZ") {
+                      toast.warning("Payment gateway initialization is processing. Redirecting to your orders.");
+                    } else {
+                      toast.success("Order placed successfully (Cash on Delivery)!");
+                    }
                     window.location.href = "/orders";
                   } else {
                     toast.error(result?.message || "Failed to place order. Please make sure you are logged in.");

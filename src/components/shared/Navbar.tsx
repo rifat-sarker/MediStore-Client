@@ -6,11 +6,12 @@ import { useState, FormEvent, useEffect, useRef } from "react";
 import {
   Search, ShoppingCart, User, HeartPulse, LogOut, LayoutDashboard,
   ChevronDown, ShoppingBag, Heart, Pill, Phone, Menu, X, Baby, Activity, 
-  Sparkles, ShieldCheck, Bike, ArrowRight
+  Sparkles, ShieldCheck, Bike, ArrowRight, Loader2
 } from "lucide-react";
 import { useUser } from "@/context/UserContext";
 import { logoutUser } from "@/services/AuthService";
 import { useAppSelector } from "@/redux/hooks";
+import { IProduct, MEDEX_BANGLADESH_PRODUCTS } from "@/types/product";
 import CartDrawer from "./CartDrawer";
 import FavoritesDrawer from "./FavoritesDrawer";
 
@@ -126,6 +127,12 @@ export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
 
+  // Live Real-Time Search Suggestions
+  const [suggestions, setSuggestions] = useState<IProduct[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [isSearching, setIsSearching] = useState(false);
+  const searchContainerRef = useRef<HTMLDivElement | null>(null);
+
   // Drawers
   const [cartDrawerOpen, setCartDrawerOpen] = useState(false);
   const [favDrawerOpen, setFavDrawerOpen] = useState(false);
@@ -149,6 +156,43 @@ export default function Navbar() {
     return () => window.removeEventListener("storage", updateFavCount);
   }, [favDrawerOpen]);
 
+  // Click outside to close search suggestions
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (searchContainerRef.current && !searchContainerRef.current.contains(event.target as Node)) {
+        setShowSuggestions(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Real-time instant search suggestion filter
+  useEffect(() => {
+    const query = searchQuery.trim().toLowerCase();
+    if (!query) {
+      setSuggestions([]);
+      setShowSuggestions(false);
+      setIsSearching(false);
+      return;
+    }
+
+    setIsSearching(true);
+    const debounceTimer = setTimeout(() => {
+      const tokens = query.split(/\s+/).filter(Boolean);
+      const matches = MEDEX_BANGLADESH_PRODUCTS.filter((prod) => {
+        const textToSearch = `${prod.name} ${prod.genericName || ""} ${prod.manufacturer || ""} ${prod.category?.name || ""}`.toLowerCase();
+        return tokens.every((token) => textToSearch.includes(token));
+      }).slice(0, 7);
+
+      setSuggestions(matches);
+      setShowSuggestions(true);
+      setIsSearching(false);
+    }, 120);
+
+    return () => clearTimeout(debounceTimer);
+  }, [searchQuery]);
+
   const handleLogout = async () => {
     await logoutUser();
     setUser(null);
@@ -161,9 +205,17 @@ export default function Navbar() {
   const handleSearch = (e: FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
+      setShowSuggestions(false);
       router.push(`/medicines?search=${encodeURIComponent(searchQuery.trim())}`);
       setMobileMenuOpen(false);
     }
+  };
+
+  const handleSuggestionClick = (productId: string) => {
+    setShowSuggestions(false);
+    setSearchQuery("");
+    setMobileMenuOpen(false);
+    router.push(`/medicines/${productId}`);
   };
 
   const handleMouseEnter = (cat: string) => {
@@ -232,25 +284,106 @@ export default function Navbar() {
               </div>
             </Link>
 
-            {/* Search (Desktop - ePharma inspired wide search) */}
-            <form onSubmit={handleSearch} className="hidden lg:flex flex-1 max-w-2xl relative">
-              <div className="relative w-full flex items-center">
-                <Search className="absolute left-4 w-5 h-5 text-muted-foreground pointer-events-none" />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search Medicine, Generics, Baby Care, Diagnostic Devices..."
-                  className="w-full h-12 pl-12 pr-28 rounded-xl border-2 border-border focus:border-primary focus:outline-none text-sm transition-colors shadow-sm"
-                />
-                <button 
-                  type="submit" 
-                  className="absolute right-1.5 h-9 px-5 bg-primary hover:bg-primary/90 text-primary-foreground text-xs font-extrabold rounded-lg transition-all shadow-sm flex items-center gap-1.5"
-                >
-                  <Search className="w-3.5 h-3.5" /> Search
-                </button>
-              </div>
-            </form>
+            {/* Search (Desktop - ePharma inspired wide search with Real-Time Instant Suggestions) */}
+            <div ref={searchContainerRef} className="hidden lg:flex flex-1 max-w-2xl relative">
+              <form onSubmit={handleSearch} className="w-full relative">
+                <div className="relative w-full flex items-center">
+                  <Search className="absolute left-4 w-5 h-5 text-muted-foreground pointer-events-none" />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onFocus={() => { if (suggestions.length > 0) setShowSuggestions(true); }}
+                    placeholder="Search Medicine, Generics, Baby Care, Diagnostic Devices..."
+                    className="w-full h-12 pl-12 pr-28 rounded-xl border-2 border-border focus:border-primary focus:outline-none text-sm transition-colors shadow-sm"
+                  />
+                  {isSearching ? (
+                    <div className="absolute right-28 mr-2 text-muted-foreground animate-spin">
+                      <Loader2 className="w-4 h-4" />
+                    </div>
+                  ) : null}
+                  <button 
+                    type="submit" 
+                    className="absolute right-1.5 h-9 px-5 bg-primary hover:bg-primary/90 text-primary-foreground text-xs font-extrabold rounded-lg transition-all shadow-sm flex items-center gap-1.5"
+                  >
+                    <Search className="w-3.5 h-3.5" /> Search
+                  </button>
+                </div>
+              </form>
+
+              {/* Real-time instant search suggestions dropdown */}
+              {showSuggestions && suggestions.length > 0 && (
+                <div className="absolute left-0 right-0 top-full mt-2 bg-card border border-border/80 rounded-2xl shadow-2xl overflow-hidden z-50 animate-in fade-in slide-in-from-top-2">
+                  <div className="p-3 bg-secondary/40 border-b border-border/60 flex items-center justify-between text-xs">
+                    <span className="font-bold text-foreground">
+                      Matching Products ({suggestions.length})
+                    </span>
+                    <span className="text-[11px] text-muted-foreground">
+                      Click to view medicine
+                    </span>
+                  </div>
+                  <div className="max-h-96 overflow-y-auto divide-y divide-border/40">
+                    {suggestions.map((item) => (
+                      <button
+                        key={item.id}
+                        type="button"
+                        onClick={() => handleSuggestionClick(item.id)}
+                        className="w-full px-4 py-3 text-left hover:bg-secondary/60 flex items-center gap-3.5 transition-colors group"
+                      >
+                        <div className="w-12 h-12 rounded-xl bg-white border border-border/60 p-1 flex items-center justify-center shrink-0 overflow-hidden shadow-xs">
+                          <img
+                            src={item.imageUrl || "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&auto=format&fit=crop&q=80"}
+                            alt={item.name}
+                            className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform"
+                          />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2">
+                            <span className="text-sm font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                              {item.name}
+                            </span>
+                            {item.strength && (
+                              <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground font-semibold shrink-0">
+                                {item.strength}
+                              </span>
+                            )}
+                          </div>
+                          {item.genericName && (
+                            <p className="text-xs text-muted-foreground truncate">
+                              {item.genericName}
+                            </p>
+                          )}
+                          <div className="flex items-center gap-2 mt-0.5">
+                            <span className="text-[10px] text-primary/80 font-semibold truncate">
+                              {item.manufacturer}
+                            </span>
+                            <span className="text-[10px] text-muted-foreground">•</span>
+                            <span className="text-[10px] bg-primary/10 text-primary font-bold px-1.5 py-0.2 rounded">
+                              {item.category?.name}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="text-right shrink-0">
+                          <span className="text-sm font-black text-primary">
+                            ৳ {item.price.toFixed(2)}
+                          </span>
+                          <span className="block text-[10px] text-muted-foreground">In Stock</span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                  <div className="p-2.5 bg-muted/20 border-t border-border/50 text-center">
+                    <button
+                      type="button"
+                      onClick={(e) => handleSearch(e as any)}
+                      className="text-xs font-bold text-primary hover:underline"
+                    >
+                      View all results for &quot;{searchQuery}&quot; &rarr;
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
 
             {/* Icons + Drawers Trigger + Auth */}
             <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
@@ -509,18 +642,44 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <div className="lg:hidden bg-white border-b border-border shadow-xl z-50 animate-in slide-in-from-top-4">
             <div className="p-4 space-y-4">
-              <form onSubmit={handleSearch} className="flex relative">
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search medicine or brand..."
-                  className="w-full h-11 pl-4 pr-12 rounded-xl border border-border focus:outline-none focus:border-primary text-xs bg-secondary/30"
-                />
-                <button type="submit" className="absolute right-0 top-0 h-11 w-11 flex items-center justify-center bg-primary text-primary-foreground rounded-r-xl">
-                  <Search className="w-4 h-4" />
-                </button>
-              </form>
+              <div className="relative">
+                <form onSubmit={handleSearch} className="flex relative">
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search medicine or brand..."
+                    className="w-full h-11 pl-4 pr-12 rounded-xl border border-border focus:outline-none focus:border-primary text-xs bg-secondary/30"
+                  />
+                  <button type="submit" className="absolute right-0 top-0 h-11 w-11 flex items-center justify-center bg-primary text-primary-foreground rounded-r-xl">
+                    <Search className="w-4 h-4" />
+                  </button>
+                </form>
+
+                {showSuggestions && suggestions.length > 0 && (
+                  <div className="mt-2 bg-card border border-border rounded-xl shadow-lg overflow-hidden divide-y divide-border/40 max-h-60 overflow-y-auto">
+                    {suggestions.map((item) => (
+                      <button
+                        key={item.id}
+                        type="button"
+                        onClick={() => handleSuggestionClick(item.id)}
+                        className="w-full px-3 py-2 text-left hover:bg-secondary flex items-center gap-2.5 transition-colors"
+                      >
+                        <img
+                          src={item.imageUrl || "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=100&auto=format&fit=crop&q=80"}
+                          alt={item.name}
+                          className="w-8 h-8 rounded object-contain shrink-0 mix-blend-multiply bg-white border border-border"
+                        />
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs font-bold text-foreground truncate">{item.name}</p>
+                          <p className="text-[10px] text-muted-foreground truncate">{item.genericName || item.manufacturer}</p>
+                        </div>
+                        <span className="text-xs font-bold text-primary shrink-0">৳ {item.price.toFixed(2)}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
               
               <div className="grid grid-cols-2 gap-2">
                 {Object.keys(EPHARMA_CATEGORIES).map((cat) => (

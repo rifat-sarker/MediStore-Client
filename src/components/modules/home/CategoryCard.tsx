@@ -16,7 +16,7 @@ export default function CategoryCard({ category }: { category: Category }) {
 
   return (
     <Link 
-      href={`/medicines?category=${category.id}`}
+      href={`/medicines?category=${encodeURIComponent(category.name)}`}
       className="group relative overflow-hidden rounded-2xl glass-card border border-border/50 hover:border-primary/30 transition-all duration-300 block hover:-translate-y-1"
     >
       <div className="aspect-square p-6 flex flex-col items-center justify-center text-center space-y-4">

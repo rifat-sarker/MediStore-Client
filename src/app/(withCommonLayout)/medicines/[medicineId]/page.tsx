@@ -51,12 +51,25 @@ export async function getMedicineProduct(medicineId: string) {
         description: "Authentic clinical healthcare product distributed by MediStore. Tested and verified for safe usage.",
         manufacturer: "Square Pharmaceuticals PLC",
         price: 19.99,
+        stripPrice: 199.90,
+        packagePrice: 1999.00,
         stock: 50,
         requiredPrescription: false,
         imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
         categoryId: "c1",
       };
     }
+  }
+
+  // Populate stripPrice, packagePrice and packInfo if not present
+  if (product && !product.stripPrice) {
+    const stripMatch = product.description?.match(/Strip Price:\s*৳\s*([\d\.]+)/i);
+    const packMatch = product.description?.match(/Pack Info:\s*([^.]+)/i);
+    const boxMatch = product.description?.match(/৳\s*([\d\.]+)/g);
+
+    product.stripPrice = stripMatch ? parseFloat(stripMatch[1]) : Number((product.price * 10).toFixed(2));
+    product.packagePrice = Number((product.price * 100).toFixed(2));
+    product.packInfo = packMatch ? packMatch[1].trim() : "10 x 10's Box";
   }
 
   return { product, categories };

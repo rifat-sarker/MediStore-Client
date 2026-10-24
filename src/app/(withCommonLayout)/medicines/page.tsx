@@ -12,35 +12,44 @@ export const metadata = {
 export default async function MedicinesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string; search?: string; minPrice?: string; maxPrice?: string; rx?: string }>;
+  searchParams: Promise<{ category?: string; search?: string; minPrice?: string; maxPrice?: string; rx?: string; page?: string }>;
 }) {
   const params = await searchParams;
+  const currentPage = Math.max(1, Number(params.page) || 1);
+  const itemsPerPage = 12;
+
   const qs = new URLSearchParams();
   if (params.category) qs.set("categories", params.category);
   if (params.search) qs.set("searchTerm", params.search);
-  qs.set("limit", "100");
+  qs.set("page", String(currentPage));
+  qs.set("limit", String(itemsPerPage));
 
   let medicines: any[] = [];
+  let totalCount = 0;
+
   try {
     const res = await fetch(`${API_BASE_URL}/medicines?${qs.toString()}`, {
       next: { revalidate: 30 },
     });
     const data = await res.json();
     medicines = data.data || [];
+    totalCount = data.meta?.total || medicines.length;
   } catch {
     medicines = [];
+    totalCount = 0;
   }
   
-  // If API returned empty, check MEDEX dataset
+  // If API returned empty or during fallback, use full MEDEX dataset
   if (medicines.length === 0) {
     medicines = MEDEX_BANGLADESH_PRODUCTS;
+    totalCount = medicines.length;
   }
 
   // Active Filtering Logic
   if (params.category) {
     const catQuery = params.category.toLowerCase().trim();
     const filtered = medicines.filter(m => {
-      const itemCatName = (m.category?.name || "").toLowerCase();
+      const itemCatName = (m.category?.name || m.categoryName || "").toLowerCase();
       const itemName = (m.name || "").toLowerCase();
       const itemDesc = (m.description || "").toLowerCase();
       return (
@@ -50,9 +59,9 @@ export default async function MedicinesPage({
         itemDesc.includes(catQuery)
       );
     });
-    // If specific filter found items, apply it; otherwise fallback gracefully
     if (filtered.length > 0) {
       medicines = filtered;
+      totalCount = filtered.length;
     }
   }
 
@@ -62,11 +71,9 @@ export default async function MedicinesPage({
     
     let matched = medicines.filter(m => {
       const fullText = `${m.name} ${m.genericName || ""} ${m.manufacturer || ""} ${m.description || ""} ${m.category?.name || ""}`.toLowerCase();
-      // Match full query or any token
       return fullText.includes(sQuery) || (queryTokens.length > 0 && queryTokens.some((t: string) => fullText.includes(t)));
     });
 
-    // If API returned 0 matches, search in full MEDEX catalog
     if (matched.length === 0) {
       matched = MEDEX_BANGLADESH_PRODUCTS.filter(m => {
         const fullText = `${m.name} ${m.genericName || ""} ${m.manufacturer || ""} ${m.description || ""} ${m.category?.name || ""}`.toLowerCase();
@@ -74,20 +81,28 @@ export default async function MedicinesPage({
       });
     }
 
-    if (matched.length > 0) {
-      medicines = matched;
-    }
+    medicines = matched;
+    totalCount = matched.length;
   }
   
   if (params.minPrice) {
     medicines = medicines.filter(m => m.price >= Number(params.minPrice));
+    totalCount = medicines.length;
   }
   if (params.maxPrice) {
     medicines = medicines.filter(m => m.price <= Number(params.maxPrice));
+    totalCount = medicines.length;
   }
   if (params.rx === "on") {
     medicines = medicines.filter(m => m.requiredPrescription === true);
+    totalCount = medicines.length;
   }
+
+  // Calculate clean pagination slices
+  const totalPages = Math.ceil(totalCount / itemsPerPage) || 1;
+  const paginatedMedicines = medicines.length > itemsPerPage 
+    ? medicines.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
+    : medicines;
 
   let categories = await fetchCategories();
   if (!categories || categories.length === 0) {
@@ -101,6 +116,18 @@ export default async function MedicinesPage({
     ];
   }
 
+  // Helper to build pagination links
+  const createPageUrl = (pageNumber: number) => {
+    const p = new URLSearchParams();
+    if (params.category) p.set("category", params.category);
+    if (params.search) p.set("search", params.search);
+    if (params.minPrice) p.set("minPrice", params.minPrice);
+    if (params.maxPrice) p.set("maxPrice", params.maxPrice);
+    if (params.rx) p.set("rx", params.rx);
+    p.set("page", String(pageNumber));
+    return `/medicines?${p.toString()}`;
+  };
+
   return (
     <div className="min-h-screen bg-background/50 pt-8 pb-24">
       <div className="container mx-auto px-4">
@@ -111,7 +138,7 @@ export default async function MedicinesPage({
               Our <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-teal-500">Catalog</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Browse <span className="font-semibold text-foreground">{medicines.length}</span> verified healthcare products.
+              Browse <span className="font-semibold text-foreground">{totalCount}</span> verified healthcare products (Page {currentPage} of {totalPages}).
             </p>
           </div>
         </div>
@@ -180,26 +207,82 @@ export default async function MedicinesPage({
             </form>
           </aside>
 
-          {/* Product Grid */}
+          {/* Product Grid & Pagination */}
           <div className="flex-1">
             {params.search && (
               <div className="mb-6 bg-primary/10 border border-primary/20 text-primary-foreground p-4 rounded-2xl flex items-center gap-3">
                 <Search className="w-5 h-5 text-primary" />
-                <p className="text-primary font-medium">Showing results for: <span className="font-bold">"{params.search}"</span></p>
+                <p className="text-primary font-medium">Showing results for: <span className="font-bold">"{params.search}"</span> ({totalCount} matches)</p>
               </div>
             )}
             
-            {medicines.length === 0 ? (
+            {paginatedMedicines.length === 0 ? (
                <div className="bg-card p-12 rounded-3xl text-center border border-border">
                  <h2 className="text-2xl font-bold mb-2">No products found</h2>
                  <p className="text-muted-foreground">Try adjusting your filters or search query.</p>
                </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                {medicines.map((medicine: any) => (
-                  <MedicineCard key={medicine.id} medicine={medicine} />
-                ))}
-              </div>
+              <>
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {paginatedMedicines.map((medicine: any) => (
+                    <MedicineCard key={medicine.id} medicine={medicine} />
+                  ))}
+                </div>
+
+                {/* Smooth Pagination Bar */}
+                {totalPages > 1 && (
+                  <div className="mt-12 flex items-center justify-center gap-2">
+                    {currentPage > 1 ? (
+                      <Link
+                        href={createPageUrl(currentPage - 1)}
+                        className="px-4 py-2 rounded-xl border border-border bg-card hover:bg-secondary font-semibold text-sm transition-all"
+                      >
+                        &larr; Prev
+                      </Link>
+                    ) : (
+                      <span className="px-4 py-2 rounded-xl border border-border bg-muted/40 text-muted-foreground text-sm font-semibold cursor-not-allowed">
+                        &larr; Prev
+                      </span>
+                    )}
+
+                    <div className="flex items-center gap-1.5">
+                      {Array.from({ length: Math.min(totalPages, 7) }, (_, i) => {
+                        let pageNum = i + 1;
+                        if (totalPages > 7 && currentPage > 4) {
+                          pageNum = currentPage - 3 + i;
+                          if (pageNum > totalPages) return null;
+                        }
+                        return (
+                          <Link
+                            key={pageNum}
+                            href={createPageUrl(pageNum)}
+                            className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm transition-all ${
+                              currentPage === pageNum
+                                ? "bg-primary text-primary-foreground shadow-md shadow-primary/25"
+                                : "bg-card border border-border text-foreground hover:bg-secondary"
+                            }`}
+                          >
+                            {pageNum}
+                          </Link>
+                        );
+                      })}
+                    </div>
+
+                    {currentPage < totalPages ? (
+                      <Link
+                        href={createPageUrl(currentPage + 1)}
+                        className="px-4 py-2 rounded-xl border border-border bg-card hover:bg-secondary font-semibold text-sm transition-all"
+                      >
+                        Next &rarr;
+                      </Link>
+                    ) : (
+                      <span className="px-4 py-2 rounded-xl border border-border bg-muted/40 text-muted-foreground text-sm font-semibold cursor-not-allowed">
+                        Next &rarr;
+                      </span>
+                    )}
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>

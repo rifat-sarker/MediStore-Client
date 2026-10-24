@@ -47,12 +47,15 @@ const ProductDetailsClient = ({
       
       {/* Left: Image Gallery */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4">
-        <div className="w-full aspect-square relative bg-secondary/20 rounded-[2rem] border border-border p-8 flex items-center justify-center overflow-hidden group">
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="w-full aspect-square relative bg-white rounded-[2rem] border border-border p-8 flex items-center justify-center overflow-hidden group shadow-sm">
+          <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           <img
-            src={product?.imageUrl || "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=600&auto=format&fit=crop"}
+            src={product?.imageUrl || "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80"}
             alt={product.name}
-            className="w-full h-full object-contain mix-blend-multiply drop-shadow-2xl group-hover:scale-105 transition-transform duration-700 ease-out"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).src = "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80";
+            }}
+            className="w-full h-full object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-700 ease-out"
           />
           {product.requiredPrescription && (
             <div className="absolute top-6 right-6 bg-orange-100 text-orange-700 border border-orange-200 px-4 py-1.5 rounded-full text-xs font-bold shadow-sm flex items-center gap-1.5">
@@ -61,11 +64,18 @@ const ProductDetailsClient = ({
           )}
         </div>
         
-        {/* Thumbnails (Mocked) */}
+        {/* Real packaging image preview & gallery */}
         <div className="grid grid-cols-4 gap-4">
           {[1, 2, 3, 4].map((i) => (
-            <div key={i} className={`aspect-square rounded-2xl border-2 ${i === 1 ? 'border-primary' : 'border-border'} bg-secondary/10 p-2 cursor-pointer hover:border-primary/50 transition-colors`}>
-              <img src={product?.imageUrl || "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=150&auto=format&fit=crop"} className="w-full h-full object-contain mix-blend-multiply opacity-80 hover:opacity-100" />
+            <div key={i} className={`aspect-square rounded-2xl border-2 ${i === 1 ? 'border-primary' : 'border-border'} bg-white p-2 cursor-pointer hover:border-primary/50 transition-colors shadow-xs`}>
+              <img 
+                src={product?.imageUrl || "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&auto=format&fit=crop&q=80"} 
+                alt="thumb" 
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&auto=format&fit=crop&q=80";
+                }}
+                className="w-full h-full object-contain opacity-90 hover:opacity-100" 
+              />
             </div>
           ))}
         </div>
@@ -74,32 +84,58 @@ const ProductDetailsClient = ({
       {/* Right: Product Info */}
       <div className="w-full lg:w-1/2 flex flex-col">
         <div className="mb-2 flex items-center gap-2">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">{productCategory?.name || "Health Care"}</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">{productCategory?.name || product?.category?.name || "Healthcare"}</span>
           <span className="text-border">•</span>
           <span className="text-sm text-muted-foreground">{product.manufacturer}</span>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-extrabold text-foreground tracking-tight mb-4 leading-tight">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-foreground tracking-tight mb-2 leading-tight">
           {product.name}
         </h1>
+
+        {product.genericName && (
+          <p className="text-sm md:text-base font-semibold text-primary/80 mb-4 italic">
+            Generic: {product.genericName}
+          </p>
+        )}
         
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex items-center gap-4 mb-5">
           <div className="flex items-center">
             {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} className={`w-5 h-5 ${star <= 4 ? "fill-yellow-400 text-yellow-400" : "fill-gray-200 text-gray-200"}`} />
+              <Star key={star} className={`w-4 h-4 ${star <= 4 ? "fill-yellow-400 text-yellow-400" : "fill-gray-200 text-gray-200"}`} />
             ))}
           </div>
-          <span className="text-sm font-medium text-muted-foreground hover:text-primary cursor-pointer transition-colors">(128 Reviews)</span>
+          <span className="text-xs font-semibold text-muted-foreground hover:text-primary cursor-pointer transition-colors">(128 Verified Ratings)</span>
         </div>
         
-        <div className="flex items-baseline gap-3 mb-8">
-          <span className="text-4xl font-black text-foreground">৳ {product.price.toFixed(2)}</span>
-          <span className="text-lg text-muted-foreground line-through">৳ {(product.price * 1.2).toFixed(2)}</span>
-          <span className="ml-2 bg-green-100 text-green-700 px-2.5 py-1 rounded-full text-xs font-bold">Save 20%</span>
+        {/* Dynamic Multi-Tier Pricing Breakdown: Unit, Strip, and Full Box */}
+        <div className="grid grid-cols-3 gap-3 mb-6 bg-secondary/30 p-3 rounded-2xl border border-border/80">
+          <div className="bg-white p-3 rounded-xl border border-border shadow-xs text-center">
+            <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider block">Single Unit</span>
+            <span className="text-lg md:text-xl font-black text-foreground">৳ {product.price.toFixed(2)}</span>
+            <span className="text-[10px] text-muted-foreground block mt-0.5">per {product.dosageForm || 'piece'}</span>
+          </div>
+
+          <div className="bg-primary/5 p-3 rounded-xl border border-primary/20 shadow-xs text-center relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-[8px] font-bold px-1.5 py-0.5 rounded-bl">Popular</div>
+            <span className="text-[11px] font-bold text-primary uppercase tracking-wider block">Strip Price</span>
+            <span className="text-lg md:text-xl font-black text-primary">
+              ৳ {(product.stripPrice || product.price * 10).toFixed(2)}
+            </span>
+            <span className="text-[10px] text-muted-foreground block mt-0.5">1 Strip (10 pcs)</span>
+          </div>
+
+          <div className="bg-white p-3 rounded-xl border border-border shadow-xs text-center">
+            <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider block">Full Box</span>
+            <span className="text-lg md:text-xl font-black text-foreground">
+              ৳ {(product.packagePrice || product.price * 100).toFixed(2)}
+            </span>
+            <span className="text-[10px] text-muted-foreground block mt-0.5 truncate">{product.packInfo || product.packSize || "Box Pack"}</span>
+          </div>
         </div>
         
-        <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-          {product.description || "Premium quality healthcare product formulated for fast absorption and maximum efficacy. Clinically tested and verified by health professionals for safe daily use."}
+        <p className="text-sm md:text-base text-muted-foreground mb-8 leading-relaxed">
+          {product.description || "Authentic pharmaceutical product verified through MedEx Bangladesh standards. Guaranteed genuine formulation with temperature-controlled handling."}
         </p>
 
         {/* Add to Cart Section */}

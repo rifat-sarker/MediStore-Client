@@ -20,10 +20,3509 @@ export interface IProduct {
   stripPrice?: number;
   packagePrice?: number;
   packInfo?: string;
+  categoryName?: string;
 }
 
 // 60+ Authentic MedEx Bangladesh & ePharma products (10+ unique items per category with verified 200 HTTP images)
 export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
+  {
+    "id": "medex-top-15053-0",
+    "name": "Leukin 50 mg Tablet",
+    "genericName": "Mercaptopurine",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "3 x 10: ৳ 600.00",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 20,
+    "stripPrice": 200,
+    "packagePrice": 600,
+    "packInfo": "3 x 10: ৳ 600.00",
+    "stock": 250,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/leukin-50-mg-tablet-29270342350-i1-Hc2KVLysPavWDO32kR6m.webp",
+    "description": "Authentic Leukin 50 mg (Mercaptopurine) manufactured by Beacon Pharmaceuticals PLC. Unit Price: ৳ 20.00, Strip Price: ৳ 200.00, Pack Info: 3 x 10: ৳ 600.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-28639-1",
+    "name": "Napa One 1000 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "1000 mg",
+    "packSize": "20 x 10: ৳ 450.00",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 2.25,
+    "stripPrice": 22.5,
+    "packagePrice": 450,
+    "packInfo": "20 x 10: ৳ 450.00",
+    "stock": 269,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/napa-one-1000-mg-tablet-33315961498-i1-iU7ZdKPUAOmoDYjAx0yb.webp",
+    "description": "Authentic Napa One 1000 mg (Paracetamol) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 2.25, Strip Price: ৳ 22.50, Pack Info: 20 x 10: ৳ 450.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10452-11",
+    "name": "Napa 500 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "51 x 10: ৳ 612.00",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 1.2,
+    "stripPrice": 12,
+    "packagePrice": 612,
+    "packInfo": "51 x 10: ৳ 612.00",
+    "stock": 459,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/napa-500-mg-tablet-95324450053-i1-jtmMTho0xPmKADM1kMTq.jpg",
+    "description": "Authentic Napa 500 mg (Paracetamol) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 1.20, Strip Price: ৳ 12.00, Pack Info: 51 x 10: ৳ 612.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-23405-3",
+    "name": "Napa Rapid 500 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "27 x 10: ৳ 351.00",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 1.3,
+    "stripPrice": 13,
+    "packagePrice": 351,
+    "packInfo": "27 x 10: ৳ 351.00",
+    "stock": 307,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/napa-rapid-actizorb-500-mg-tablet-96574303914-i1-MyuszinGSAj0EG773W41.png",
+    "description": "Authentic Napa Rapid 500 mg (Paracetamol) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 1.30, Strip Price: ৳ 13.00, Pack Info: 27 x 10: ৳ 351.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-8750-173",
+    "name": "5 ml Powder for Suspension",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Powder for Suspension",
+    "strength": "5 ml",
+    "packSize": "10 x 10",
+    "manufacturer": "Globe Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 537,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 5 ml (Azithromycin Dihydrate) manufactured by Globe Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10592-5",
+    "name": "Napa Extra 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "11 x 12: ৳ 330.00",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 2.5,
+    "stripPrice": 30,
+    "packagePrice": 330,
+    "packInfo": "11 x 12: ৳ 330.00",
+    "stock": 345,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/napa-extra-500-mg-tablet-46174620412-i1-S6ON0Cv84Db8DclIKRNt.webp",
+    "description": "Authentic Napa Extra 500 mg+65 mg (Paracetamol + Caffeine) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 2.50, Strip Price: ৳ 30.00, Pack Info: 11 x 12: ৳ 330.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-34356-122",
+    "name": "ml Oral Solution",
+    "genericName": "Cholecalciferol [Vitamin D3]",
+    "dosageForm": "Oral Solution",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 468,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic ml (Cholecalciferol [Vitamin D3]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Health & Devices",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-top-10460-7",
+    "name": "Napa 250 mg Suppository",
+    "genericName": "Paracetamol",
+    "dosageForm": "Suppository",
+    "strength": "250 mg",
+    "packSize": "4 x 5: ৳ 100.00",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 5,
+    "stripPrice": 25,
+    "packagePrice": 100,
+    "packInfo": "4 x 5: ৳ 100.00",
+    "stock": 383,
+    "requiredPrescription": false,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/napa-250-mg-suppository-7797777652-i1-UYRzdzlX3vBnVpCNLdIo.jpg",
+    "description": "Authentic Napa 250 mg (Paracetamol) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 5.00, Strip Price: ৳ 25.00, Pack Info: 4 x 5: ৳ 100.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10459-8",
+    "name": "Napa 125 mg Suppository",
+    "genericName": "Paracetamol",
+    "dosageForm": "Suppository",
+    "strength": "125 mg",
+    "packSize": "4 x 5: ৳ 80.00",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 4,
+    "stripPrice": 20,
+    "packagePrice": 80,
+    "packInfo": "4 x 5: ৳ 80.00",
+    "stock": 402,
+    "requiredPrescription": false,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/napa-125-mg-suppository-65057475805-i1-f1MjMnjzOKLstlx8FAU5.jpg",
+    "description": "Authentic Napa 125 mg (Paracetamol) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 4.00, Strip Price: ৳ 20.00, Pack Info: 4 x 5: ৳ 80.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10454-10",
+    "name": "Napa Extend 665 mg XR Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "XR Tablet",
+    "strength": "665 mg",
+    "packSize": "8 x 24: ৳ 384.00",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 2,
+    "stripPrice": 20,
+    "packagePrice": 384,
+    "packInfo": "8 x 24: ৳ 384.00",
+    "stock": 440,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/napa-extend-665-mg-xr-tablet-11628713397-9VpBTBDsf0.webp",
+    "description": "Authentic Napa Extend 665 mg (Paracetamol) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 2.00, Strip Price: ৳ 20.00, Pack Info: 8 x 24: ৳ 384.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10768-12",
+    "name": "NapaDol 325 mg+37.5 mg Tablet",
+    "genericName": "Paracetamol + Tramadol Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "325 mg",
+    "packSize": "4 x 12: ৳ 384.00",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 8,
+    "stripPrice": 96,
+    "packagePrice": 384,
+    "packInfo": "4 x 12: ৳ 384.00",
+    "stock": 478,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/napadol-325-mg-tablet-8877880919-i1-uqtavbPLysUqnqDKiTEF.png",
+    "description": "Authentic NapaDol 325 mg+37.5 mg (Paracetamol + Tramadol Hydrochloride) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 8.00, Strip Price: ৳ 96.00, Pack Info: 4 x 12: ৳ 384.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-11535-13",
+    "name": "Napasin 250 mg Tablet",
+    "genericName": "Naproxen Sodium",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "50's pack: ৳ 210.00",
+    "manufacturer": "Skylab Pharmaceuticals Ltd.",
+    "price": 4.2,
+    "stripPrice": 21,
+    "packagePrice": 210,
+    "packInfo": "50's pack: ৳ 210.00",
+    "stock": 497,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Napasin 250 mg (Naproxen Sodium) manufactured by Skylab Pharmaceuticals Ltd.. Unit Price: ৳ 4.20, Strip Price: ৳ 21.00, Pack Info: 50's pack: ৳ 210.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-37665-14",
+    "name": "Napaxin Plus 375 mg+20 mg DR Tablet",
+    "genericName": "Naproxen Sodium + Esomeprazole Magnesium",
+    "dosageForm": "DR Tablet",
+    "strength": "375 mg",
+    "packSize": "3 x 10: ৳ 390.00",
+    "manufacturer": "Pharmik Laboratories Ltd.",
+    "price": 13,
+    "stripPrice": 130,
+    "packagePrice": 390,
+    "packInfo": "3 x 10: ৳ 390.00",
+    "stock": 516,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Napaxin Plus 375 mg+20 mg (Naproxen Sodium + Esomeprazole Magnesium) manufactured by Pharmik Laboratories Ltd.. Unit Price: ৳ 13.00, Strip Price: ৳ 130.00, Pack Info: 3 x 10: ৳ 390.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-31649-17",
+    "name": "Isabgul Plus 3 gm+1 gm",
+    "genericName": "Ispaghula Husk + Sonapata",
+    "dosageForm": "3 gm+1 gm",
+    "strength": "Standard",
+    "packSize": "20's pack: ৳ 450.00",
+    "manufacturer": "The IBN SINA Natural Medicine Ltd.",
+    "price": 10,
+    "stripPrice": 45,
+    "packagePrice": 450,
+    "packInfo": "20's pack: ৳ 450.00",
+    "stock": 273,
+    "requiredPrescription": false,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/isabgul-plus-3-gm-eff-powder-36059051758-i1-WVlOWqsBpKD0ZymzgsXk.webp",
+    "description": "Authentic Isabgul Plus (Ispaghula Husk + Sonapata) manufactured by The IBN SINA Natural Medicine Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 45.00, Pack Info: 20's pack: ৳ 450.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-35123-16",
+    "name": "Bio Eazylax 3 gm+1 gm",
+    "genericName": "Ispaghula Husk + Sonapata",
+    "dosageForm": "3 gm+1 gm",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Bexter Pharmaceuticals",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 254,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bio Eazylax (Ispaghula Husk + Sonapata) manufactured by Bexter Pharmaceuticals. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-33302-18",
+    "name": "Aexidal 50 mg Tablet",
+    "genericName": "Mebhydrolin Napadisylate",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10: ৳ 200.00",
+    "manufacturer": "Albion Laboratories Limited",
+    "price": 2,
+    "stripPrice": 20,
+    "packagePrice": 200,
+    "packInfo": "10 x 10: ৳ 200.00",
+    "stock": 292,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aexidal 50 mg (Mebhydrolin Napadisylate) manufactured by Albion Laboratories Limited. Unit Price: ৳ 2.00, Strip Price: ৳ 20.00, Pack Info: 10 x 10: ৳ 200.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-33467-19",
+    "name": "Finapark 50 mg Tablet",
+    "genericName": "Safinamide Mesylate",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "3 x 10: ৳ 750.00",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 25,
+    "stripPrice": 250,
+    "packagePrice": 750,
+    "packInfo": "3 x 10: ৳ 750.00",
+    "stock": 311,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/finapark-50-mg-tablet-28346010421-i1-nBlpl9DgYJpPTvsRx8Vf.webp",
+    "description": "Authentic Finapark 50 mg (Safinamide Mesylate) manufactured by Incepta Pharmaceuticals Ltd.. Unit Price: ৳ 25.00, Strip Price: ৳ 250.00, Pack Info: 3 x 10: ৳ 750.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-33468-20",
+    "name": "Finapark 100 mg Tablet",
+    "genericName": "Safinamide Mesylate",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "3 x 10: ৳ 1,200.00",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 40,
+    "stripPrice": 400,
+    "packagePrice": 1,
+    "packInfo": "3 x 10: ৳ 1,200.00",
+    "stock": 330,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/finapark-100-mg-tablet-69635905980-i1-xcoEqCdgB3iUZ4ye9cSD.webp",
+    "description": "Authentic Finapark 100 mg (Safinamide Mesylate) manufactured by Incepta Pharmaceuticals Ltd.. Unit Price: ৳ 40.00, Strip Price: ৳ 400.00, Pack Info: 3 x 10: ৳ 1,200.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10383-21",
+    "name": "Ace 125 mg Suppository",
+    "genericName": "Paracetamol",
+    "dosageForm": "Suppository",
+    "strength": "125 mg",
+    "packSize": "6 x 5: ৳ 180.00",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 6,
+    "stripPrice": 30,
+    "packagePrice": 180,
+    "packInfo": "6 x 5: ৳ 180.00",
+    "stock": 349,
+    "requiredPrescription": false,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/ace-125-mg-suppository-35348663165-i1-FgnoU4MmHCHfCoZEwJ5y.webp",
+    "description": "Authentic Ace 125 mg (Paracetamol) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 6.00, Strip Price: ৳ 30.00, Pack Info: 6 x 5: ৳ 180.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-38985-24",
+    "name": "Ace Duo 200 mg+500 mg Tablet",
+    "genericName": "Ibuprofen + Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "200 mg",
+    "packSize": "3 x 10: ৳ 62.40",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 2.08,
+    "stripPrice": 20.8,
+    "packagePrice": 62.4,
+    "packInfo": "3 x 10: ৳ 62.40",
+    "stock": 406,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/ace-duo-200-mg-tablet-95353670618-i1-fnUZofwTZain5wEMUlnr.webp",
+    "description": "Authentic Ace Duo 200 mg+500 mg (Ibuprofen + Paracetamol) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 2.08, Strip Price: ৳ 20.80, Pack Info: 3 x 10: ৳ 62.40.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10384-25",
+    "name": "Ace 250 mg Suppository",
+    "genericName": "Paracetamol",
+    "dosageForm": "Suppository",
+    "strength": "250 mg",
+    "packSize": "6 x 5: ৳ 210.00",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 7,
+    "stripPrice": 35,
+    "packagePrice": 210,
+    "packInfo": "6 x 5: ৳ 210.00",
+    "stock": 425,
+    "requiredPrescription": false,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/ace-250-mg-suppository-12472056304-i1-oO2eJTyDVZxRvPGqvxG4.jpg",
+    "description": "Authentic Ace 250 mg (Paracetamol) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 7.00, Strip Price: ৳ 35.00, Pack Info: 6 x 5: ৳ 210.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10378-26",
+    "name": "Ace XR 665 mg XR Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "XR Tablet",
+    "strength": "665 mg",
+    "packSize": "10 x 10: ৳ 200.00",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 2,
+    "stripPrice": 20,
+    "packagePrice": 200,
+    "packInfo": "10 x 10: ৳ 200.00",
+    "stock": 444,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/ace-xr-665-mg-tablet-30649172822-i1-y9HJkYWGmyazZ5iq2xof.jpg",
+    "description": "Authentic Ace XR 665 mg (Paracetamol) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 2.00, Strip Price: ৳ 20.00, Pack Info: 10 x 10: ৳ 200.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10385-29",
+    "name": "Ace 500 mg Suppository",
+    "genericName": "Paracetamol",
+    "dosageForm": "Suppository",
+    "strength": "500 mg",
+    "packSize": "6 x 5: ৳ 300.00",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 50,
+    "packagePrice": 300,
+    "packInfo": "6 x 5: ৳ 300.00",
+    "stock": 501,
+    "requiredPrescription": false,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/ace-500-mg-suppository-67404498183-i1-TmQZ0MTK8dnXRtoUQ609.jpg",
+    "description": "Authentic Ace 500 mg (Paracetamol) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 50.00, Pack Info: 6 x 5: ৳ 300.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10557-30",
+    "name": "Ace Plus 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "20 x 10: ৳ 502.00",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 2.51,
+    "stripPrice": 25.1,
+    "packagePrice": 502,
+    "packInfo": "20 x 10: ৳ 502.00",
+    "stock": 520,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/ace-plus-500-mg-tablet-94190812997-i1-262BmBeqPiu3RGuLpLNF.jpg",
+    "description": "Authentic Ace Plus 500 mg+65 mg (Paracetamol + Caffeine) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 2.51, Strip Price: ৳ 25.10, Pack Info: 20 x 10: ৳ 502.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-28573-32",
+    "name": "Ace Power 1000 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "1000 mg",
+    "packSize": "20 x 10: ৳ 450.00",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 2.25,
+    "stripPrice": 22.5,
+    "packagePrice": 450,
+    "packInfo": "20 x 10: ৳ 450.00",
+    "stock": 258,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/ace-power-1000-mg-tablet-28168752578-i1-yaobK9nD631jiIifcNMW.jpg",
+    "description": "Authentic Ace Power 1000 mg (Paracetamol) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 2.25, Strip Price: ৳ 22.50, Pack Info: 20 x 10: ৳ 450.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-35665-33",
+    "name": "Aceclofenac 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10: ৳ 300.00",
+    "manufacturer": "Pristine Pharmaceuticals Ltd",
+    "price": 3,
+    "stripPrice": 30,
+    "packagePrice": 300,
+    "packInfo": "10 x 10: ৳ 300.00",
+    "stock": 277,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceclofenac 100 mg (Aceclofenac) manufactured by Pristine Pharmaceuticals Ltd. Unit Price: ৳ 3.00, Strip Price: ৳ 30.00, Pack Info: 10 x 10: ৳ 300.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10559-34",
+    "name": "Aceta-X 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10: ৳ 250.00",
+    "manufacturer": "Biopharma Limited",
+    "price": 2.5,
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00",
+    "stock": 296,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/aceta-x-500-mg-tablet-22352497255-9sC5mZwqjT.webp",
+    "description": "Authentic Aceta-X 500 mg+65 mg (Paracetamol + Caffeine) manufactured by Biopharma Limited. Unit Price: ৳ 2.50, Strip Price: ৳ 25.00, Pack Info: 10 x 10: ৳ 250.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-10558-35",
+    "name": "Acep Extra 500 mg+65 mg Tablet",
+    "genericName": "Paracetamol + Caffeine",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "20 x 10: ৳ 300.00",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 1.5,
+    "stripPrice": 15,
+    "packagePrice": 300,
+    "packInfo": "20 x 10: ৳ 300.00",
+    "stock": 315,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acep Extra 500 mg+65 mg (Paracetamol + Caffeine) manufactured by Zenith Pharmaceuticals Ltd.. Unit Price: ৳ 1.50, Strip Price: ৳ 15.00, Pack Info: 20 x 10: ৳ 300.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-35574-36",
+    "name": "Acedone-Z 175 mg+225 mg",
+    "genericName": "Aluminium Hydroxide + Magnesium Hydroxide",
+    "dosageForm": "175 mg+225 mg",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Zenith Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 334,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Acedone-Z (Aluminium Hydroxide + Magnesium Hydroxide) manufactured by Zenith Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-38718-37",
+    "name": "Aceron 100 mg Tablet",
+    "genericName": "Aceclofenac",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10: ৳ 400.00",
+    "manufacturer": "Nipa Pharmaceuticals Ltd.",
+    "price": 4,
+    "stripPrice": 40,
+    "packagePrice": 400,
+    "packInfo": "10 x 10: ৳ 400.00",
+    "stock": 353,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aceron 100 mg (Aceclofenac) manufactured by Nipa Pharmaceuticals Ltd.. Unit Price: ৳ 4.00, Strip Price: ৳ 40.00, Pack Info: 10 x 10: ৳ 400.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-31963-39",
+    "name": "Aceta One 1000 mg Tablet",
+    "genericName": "Paracetamol",
+    "dosageForm": "Tablet",
+    "strength": "1000 mg",
+    "packSize": "10 x 10: ৳ 225.00",
+    "manufacturer": "Biopharma Limited",
+    "price": 2.25,
+    "stripPrice": 22.5,
+    "packagePrice": 225,
+    "packInfo": "10 x 10: ৳ 225.00",
+    "stock": 391,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/aceta-one-1000-mg-tablet-1215586612-i1-bDz7FJCllzhih1X5I8ji.jpg",
+    "description": "Authentic Aceta One 1000 mg (Paracetamol) manufactured by Biopharma Limited. Unit Price: ৳ 2.25, Strip Price: ৳ 22.50, Pack Info: 10 x 10: ৳ 225.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-31935-40",
+    "name": "Aces Plus Tablet",
+    "genericName": "Super antioxidant [vitamins & minerals]",
+    "dosageForm": "Tablet",
+    "strength": "Standard",
+    "packSize": "1 x 30: ৳ 120.00",
+    "manufacturer": "Ambee Pharmaceuticals Ltd.",
+    "price": 4,
+    "stripPrice": 120,
+    "packagePrice": 120,
+    "packInfo": "1 x 30: ৳ 120.00",
+    "stock": 410,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Aces Plus (Super antioxidant [vitamins & minerals]) manufactured by Ambee Pharmaceuticals Ltd.. Unit Price: ৳ 4.00, Strip Price: ৳ 120.00, Pack Info: 1 x 30: ৳ 120.00.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-1958-41",
+    "name": "Seclo 20 mg EC Capsule",
+    "genericName": "Omeprazole",
+    "dosageForm": "EC Capsule",
+    "strength": "20 mg",
+    "packSize": "12 x 10: ৳ 720.00",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 6,
+    "stripPrice": 60,
+    "packagePrice": 720,
+    "packInfo": "12 x 10: ৳ 720.00",
+    "stock": 429,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/seclo-20-mg-capsule-86285846171-i1-lUXWj4eP5tZMT3MfhLGJ.jpg",
+    "description": "Authentic Seclo 20 mg (Omeprazole) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 6.00, Strip Price: ৳ 60.00, Pack Info: 12 x 10: ৳ 720.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-1959-42",
+    "name": "Seclo 40 mg EC Capsule",
+    "genericName": "Omeprazole",
+    "dosageForm": "EC Capsule",
+    "strength": "40 mg",
+    "packSize": "3 x 10: ৳ 270.00",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 9,
+    "stripPrice": 90,
+    "packagePrice": 270,
+    "packInfo": "3 x 10: ৳ 270.00",
+    "stock": 448,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/seclo-40-mg-capsule-47134640538-i1-RoWetT5W5h6gtA44IBee.jpg",
+    "description": "Authentic Seclo 40 mg (Omeprazole) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 9.00, Strip Price: ৳ 90.00, Pack Info: 3 x 10: ৳ 270.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-2080-133",
+    "name": "vial Injection",
+    "genericName": "Esomeprazole",
+    "dosageForm": "Injection",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Renata PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 377,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic vial (Esomeprazole) manufactured by Renata PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Health & Devices",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-top-23101-44",
+    "name": "Seclo MUPS 20 mg MUPS Table",
+    "genericName": "Omeprazole",
+    "dosageForm": "MUPS Table",
+    "strength": "20 mg",
+    "packSize": "3 x 10: ৳ 210.00",
+    "manufacturer": "Biogen Pharmaceuticals Ltd.",
+    "price": 7,
+    "stripPrice": 70,
+    "packagePrice": 210,
+    "packInfo": "3 x 10: ৳ 210.00",
+    "stock": 486,
+    "requiredPrescription": false,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/seclo-mups-20-mg-tablet-8914599742-i1-KWPCXyTtW9FctMjUFPia.jpg",
+    "description": "Authentic Seclo MUPS 20 mg (Omeprazole) manufactured by Biogen Pharmaceuticals Ltd.. Unit Price: ৳ 7.00, Strip Price: ৳ 70.00, Pack Info: 3 x 10: ৳ 210.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-35676-45",
+    "name": "Seclotil 20 mg EC Capsule",
+    "genericName": "Omeprazole",
+    "dosageForm": "EC Capsule",
+    "strength": "20 mg",
+    "packSize": "12 x 10: ৳ 480.00",
+    "manufacturer": "Pristine Pharmaceuticals Ltd",
+    "price": 4,
+    "stripPrice": 40,
+    "packagePrice": 480,
+    "packInfo": "12 x 10: ৳ 480.00",
+    "stock": 505,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Seclotil 20 mg (Omeprazole) manufactured by Pristine Pharmaceuticals Ltd. Unit Price: ৳ 4.00, Strip Price: ৳ 40.00, Pack Info: 12 x 10: ৳ 480.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-35677-46",
+    "name": "Seclotil 40 mg EC Capsule",
+    "genericName": "Omeprazole",
+    "dosageForm": "EC Capsule",
+    "strength": "40 mg",
+    "packSize": "4 x 10: ৳ 240.00",
+    "manufacturer": "Pristine Pharmaceuticals Ltd",
+    "price": 6,
+    "stripPrice": 60,
+    "packagePrice": 240,
+    "packInfo": "4 x 10: ৳ 240.00",
+    "stock": 524,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Seclotil 40 mg (Omeprazole) manufactured by Pristine Pharmaceuticals Ltd. Unit Price: ৳ 6.00, Strip Price: ৳ 60.00, Pack Info: 4 x 10: ৳ 240.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-35888-47",
+    "name": "Seclogen 40 mg EC Capsule",
+    "genericName": "Omeprazole",
+    "dosageForm": "EC Capsule",
+    "strength": "40 mg",
+    "packSize": "5 x 10: ৳ 450.00",
+    "manufacturer": "Biogen Pharmaceuticals Ltd.",
+    "price": 9,
+    "stripPrice": 90,
+    "packagePrice": 450,
+    "packInfo": "5 x 10: ৳ 450.00",
+    "stock": 543,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Seclogen 40 mg (Omeprazole) manufactured by Biogen Pharmaceuticals Ltd.. Unit Price: ৳ 9.00, Strip Price: ৳ 90.00, Pack Info: 5 x 10: ৳ 450.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-29226-53",
+    "name": "Sergel 20 mg Oral Powder",
+    "genericName": "Esomeprazole",
+    "dosageForm": "Oral Powder",
+    "strength": "20 mg",
+    "packSize": "30's pack: ৳ 210.00",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 21,
+    "packagePrice": 210,
+    "packInfo": "30's pack: ৳ 210.00",
+    "stock": 357,
+    "requiredPrescription": false,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/sergel-20-mg-powder-95285773117-i1-Se0j7AH9UmI88q5KDclZ.jpg",
+    "description": "Authentic Sergel 20 mg (Esomeprazole) manufactured by Healthcare Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 21.00, Pack Info: 30's pack: ৳ 210.00.",
+    "categoryName": "Personal Care",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-top-26857-52",
+    "name": "Sergel 40 mg EC Tablet",
+    "genericName": "Esomeprazole",
+    "dosageForm": "EC Tablet",
+    "strength": "40 mg",
+    "packSize": "3 x 10: ৳ 270.00",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 9,
+    "stripPrice": 90,
+    "packagePrice": 270,
+    "packInfo": "3 x 10: ৳ 270.00",
+    "stock": 338,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/sergel-40-mg-tablet-88942436812-i1-hhNsilUsab7ywpTqJHi3.jpg",
+    "description": "Authentic Sergel 40 mg (Esomeprazole) manufactured by Healthcare Pharmaceuticals Ltd.. Unit Price: ৳ 9.00, Strip Price: ৳ 90.00, Pack Info: 3 x 10: ৳ 270.00.",
+    "categoryName": "Personal Care",
+    "category": {
+      "id": "cat-personal-care",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "id": "medex-top-3800-54",
+    "name": "Monas 4 mg Chewable Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Chewable Tablet",
+    "strength": "4 mg",
+    "packSize": "3 x 15: ৳ 315.00",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 7,
+    "stripPrice": 105,
+    "packagePrice": 315,
+    "packInfo": "3 x 15: ৳ 315.00",
+    "stock": 376,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/monas-4-mg-chewable-tablet-96296519687-i1-2Pbof9USPJZJilYcezbk.webp",
+    "description": "Authentic Monas 4 mg (Montelukast Sodium) manufactured by ACME Laboratories Ltd.. Unit Price: ৳ 7.00, Strip Price: ৳ 105.00, Pack Info: 3 x 15: ৳ 315.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-3801-55",
+    "name": "Monas 5 mg Chewable Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Chewable Tablet",
+    "strength": "5 mg",
+    "packSize": "3 x 15: ৳ 405.00",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 9,
+    "stripPrice": 135,
+    "packagePrice": 405,
+    "packInfo": "3 x 15: ৳ 405.00",
+    "stock": 395,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/monas-5-mg-chewable-tablet-22919377998-i1-PoUpMsqUY9vXxH5QUCTX.jpeg",
+    "description": "Authentic Monas 5 mg (Montelukast Sodium) manufactured by ACME Laboratories Ltd.. Unit Price: ৳ 9.00, Strip Price: ৳ 135.00, Pack Info: 3 x 15: ৳ 405.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-3802-56",
+    "name": "Monas 10 mg Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "2 x 15: ৳ 525.00",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 17.5,
+    "stripPrice": 262.5,
+    "packagePrice": 525,
+    "packInfo": "2 x 15: ৳ 525.00",
+    "stock": 414,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/monas-10-mg-tablet-2721166687-i1-T1G46PU6J5lk2EKX65u9.webp",
+    "description": "Authentic Monas 10 mg (Montelukast Sodium) manufactured by ACME Laboratories Ltd.. Unit Price: ৳ 17.50, Strip Price: ৳ 262.50, Pack Info: 2 x 15: ৳ 525.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-26522-57",
+    "name": "Monas OFT 4 mg Flash Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Flash Tablet",
+    "strength": "4 mg",
+    "packSize": "3 x 15: ৳ 337.50",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 7.5,
+    "stripPrice": 112.5,
+    "packagePrice": 337.5,
+    "packInfo": "3 x 15: ৳ 337.50",
+    "stock": 433,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/monas-oft-4-mg-flash-tablet-28106954874-i1-aboaxuLDUgVoh3z500cj.jpeg",
+    "description": "Authentic Monas OFT 4 mg (Montelukast Sodium) manufactured by ACME Laboratories Ltd.. Unit Price: ৳ 7.50, Strip Price: ৳ 112.50, Pack Info: 3 x 15: ৳ 337.50.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-26523-58",
+    "name": "Monas OFT 5 mg Flash Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Flash Tablet",
+    "strength": "5 mg",
+    "packSize": "3 x 15: ৳ 427.50",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 9.5,
+    "stripPrice": 142.5,
+    "packagePrice": 427.5,
+    "packInfo": "3 x 15: ৳ 427.50",
+    "stock": 452,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/monas-oft-5-mg-flash-tablet-68283969402-i1-jsAtGfTqOyISSWXNc0ql.jpg",
+    "description": "Authentic Monas OFT 5 mg (Montelukast Sodium) manufactured by ACME Laboratories Ltd.. Unit Price: ৳ 9.50, Strip Price: ৳ 142.50, Pack Info: 3 x 15: ৳ 427.50.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-37805-59",
+    "name": "Monasic 10 mg Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "3 x 10: ৳ 480.00",
+    "manufacturer": "Physic pharmaceuticals ltd.",
+    "price": 16,
+    "stripPrice": 160,
+    "packagePrice": 480,
+    "packInfo": "3 x 10: ৳ 480.00",
+    "stock": 471,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Monasic 10 mg (Montelukast Sodium) manufactured by Physic pharmaceuticals ltd.. Unit Price: ৳ 16.00, Strip Price: ৳ 160.00, Pack Info: 3 x 10: ৳ 480.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-37806-60",
+    "name": "Monasic 4 mg Chewable Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Chewable Tablet",
+    "strength": "4 mg",
+    "packSize": "3 x 10: ৳ 210.00",
+    "manufacturer": "Physic pharmaceuticals ltd.",
+    "price": 7,
+    "stripPrice": 70,
+    "packagePrice": 210,
+    "packInfo": "3 x 10: ৳ 210.00",
+    "stock": 490,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Monasic 4 mg (Montelukast Sodium) manufactured by Physic pharmaceuticals ltd.. Unit Price: ৳ 7.00, Strip Price: ৳ 70.00, Pack Info: 3 x 10: ৳ 210.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-37807-61",
+    "name": "Monasic 5 mg Chewable Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Chewable Tablet",
+    "strength": "5 mg",
+    "packSize": "3 x 10: ৳ 255.00",
+    "manufacturer": "Physic pharmaceuticals ltd.",
+    "price": 8.5,
+    "stripPrice": 85,
+    "packagePrice": 255,
+    "packInfo": "3 x 10: ৳ 255.00",
+    "stock": 509,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Monasic 5 mg (Montelukast Sodium) manufactured by Physic pharmaceuticals ltd.. Unit Price: ৳ 8.50, Strip Price: ৳ 85.00, Pack Info: 3 x 10: ৳ 255.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-30323-62",
+    "name": "BioMonas 10 mg Tablet",
+    "genericName": "Montelukast Sodium",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "2 x 15: ৳ 420.00",
+    "manufacturer": "Biogen Pharmaceuticals Ltd.",
+    "price": 14,
+    "stripPrice": 210,
+    "packagePrice": 420,
+    "packInfo": "2 x 15: ৳ 420.00",
+    "stock": 528,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/biomonas-10-mg-tablet-3740686277-i1-mM4CbAbgBlC2Pacq1IVy.jpg",
+    "description": "Authentic BioMonas 10 mg (Montelukast Sodium) manufactured by Biogen Pharmaceuticals Ltd.. Unit Price: ৳ 14.00, Strip Price: ৳ 210.00, Pack Info: 2 x 15: ৳ 420.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-2199-63",
+    "name": "Pantonix 20 mg EC Tablet",
+    "genericName": "Pantoprazole Sodium",
+    "dosageForm": "EC Tablet",
+    "strength": "20 mg",
+    "packSize": "7 x 14: ৳ 686.00",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 7,
+    "stripPrice": 98,
+    "packagePrice": 686,
+    "packInfo": "7 x 14: ৳ 686.00",
+    "stock": 547,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/pantonix-20-mg-tablet-34156233910-i1-yGufaHTMYvSr01Zdjhw1.webp",
+    "description": "Authentic Pantonix 20 mg (Pantoprazole Sodium) manufactured by Incepta Pharmaceuticals Ltd.. Unit Price: ৳ 7.00, Strip Price: ৳ 98.00, Pack Info: 7 x 14: ৳ 686.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-2200-64",
+    "name": "Pantonix 40 mg EC Tablet",
+    "genericName": "Pantoprazole Sodium",
+    "dosageForm": "EC Tablet",
+    "strength": "40 mg",
+    "packSize": "7 x 14: ৳ 980.00",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 140,
+    "packagePrice": 980,
+    "packInfo": "7 x 14: ৳ 980.00",
+    "stock": 266,
+    "requiredPrescription": true,
+    "imageUrl": "https://medex.com.bd/storage/images/packaging/pantonix-40-mg-tablet-99903989596-i1-qUhfNpcSLlmKWyS470jW.webp",
+    "description": "Authentic Pantonix 40 mg (Pantoprazole Sodium) manufactured by Incepta Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 140.00, Pack Info: 7 x 14: ৳ 980.00.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-11914-66",
+    "name": "Alatrol 10 mg Tablet",
+    "genericName": "Cetirizine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 304,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Alatrol 10 mg (Cetirizine Hydrochloride) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12094-69",
+    "name": "Fexo 60 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "60 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 361,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexo 60 mg (Fexofenadine Hydrochloride) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12095-70",
+    "name": "Fexo 120 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "120 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 380,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexo 120 mg (Fexofenadine Hydrochloride) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12096-71",
+    "name": "Fexo 180 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "180 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 399,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexo 180 mg (Fexofenadine Hydrochloride) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12113-73",
+    "name": "Fexon 180 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "180 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Astra Biopharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 437,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexon 180 mg (Fexofenadine Hydrochloride) manufactured by Astra Biopharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12098-74",
+    "name": "Fexocon 120 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "120 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 456,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexocon 120 mg (Fexofenadine Hydrochloride) manufactured by Concord Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12099-75",
+    "name": "Fexocon 180 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "180 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Concord Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 475,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexocon 180 mg (Fexofenadine Hydrochloride) manufactured by Concord Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12103-78",
+    "name": "Fexofast 120 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "120 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Drug International Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 532,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexofast 120 mg (Fexofenadine Hydrochloride) manufactured by Drug International Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12104-79",
+    "name": "Fexofast 180 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "180 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Drug International Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 251,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexofast 180 mg (Fexofenadine Hydrochloride) manufactured by Drug International Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12106-81",
+    "name": "Fexofen 120 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "120 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Somatec Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 289,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexofen 120 mg (Fexofenadine Hydrochloride) manufactured by Somatec Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12107-82",
+    "name": "Fexofen 180 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "180 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Somatec Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 308,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexofen 180 mg (Fexofenadine Hydrochloride) manufactured by Somatec Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12109-84",
+    "name": "Fexomin 60 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "60 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 346,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexomin 60 mg (Fexofenadine Hydrochloride) manufactured by The IBN SINA Pharmaceutical PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12110-85",
+    "name": "Fexomin 120 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "120 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 365,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexomin 120 mg (Fexofenadine Hydrochloride) manufactured by The IBN SINA Pharmaceutical PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-12112-87",
+    "name": "Fexon 120 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "120 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Astra Biopharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 403,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexon 120 mg (Fexofenadine Hydrochloride) manufactured by Astra Biopharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-32079-88",
+    "name": "Fexorush 180 mg Tablet",
+    "genericName": "Fexofenadine Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "180 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "DBL Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 422,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Fexorush 180 mg (Fexofenadine Hydrochloride) manufactured by DBL Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-3077-89",
+    "name": "Bizoran 5 mg+20 mg Tablet",
+    "genericName": "Amlodipine Besilate + Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 441,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bizoran 5 mg+20 mg (Amlodipine Besilate + Olmesartan Medoxomil) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-17759-90",
+    "name": "Bizoran 5 mg+40 mg Tablet",
+    "genericName": "Amlodipine Besilate + Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 460,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bizoran 5 mg+40 mg (Amlodipine Besilate + Olmesartan Medoxomil) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-31027-91",
+    "name": "Bizoran 10 mg+20 mg Tablet",
+    "genericName": "Amlodipine Besilate + Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 479,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bizoran 10 mg+20 mg (Amlodipine Besilate + Olmesartan Medoxomil) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-31028-92",
+    "name": "Bizoran 10 mg+40 mg Tablet",
+    "genericName": "Amlodipine Besilate + Olmesartan Medoxomil",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 498,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bizoran 10 mg+40 mg (Amlodipine Besilate + Olmesartan Medoxomil) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-15694-174",
+    "name": " Eye Drop",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Eye Drop",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Advanced Chemical Industries PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 256,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic  (Azithromycin Dihydrate) manufactured by Advanced Chemical Industries PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-9192-94",
+    "name": "Ciprocin 500 mg Tablet",
+    "genericName": "Ciprofloxacin",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 536,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ciprocin 500 mg (Ciprofloxacin) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-9193-95",
+    "name": "Ciprocin 750 mg Tablet",
+    "genericName": "Ciprofloxacin",
+    "dosageForm": "Tablet",
+    "strength": "750 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 255,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Ciprocin 750 mg (Ciprofloxacin) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-26178-97",
+    "name": "100 ml IV Infusion",
+    "genericName": "Ciprofloxacin",
+    "dosageForm": "IV Infusion",
+    "strength": "100 ml",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 293,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 100 ml (Ciprofloxacin) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Health & Devices",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-top-14275-98",
+    "name": "Calbo Jr 250 mg Chewable Tablet",
+    "genericName": "Calcium Carbonate",
+    "dosageForm": "Chewable Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 312,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbo Jr 250 mg (Calcium Carbonate) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-14350-99",
+    "name": "Calbo 500 mg Tablet",
+    "genericName": "Calcium Carbonate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 331,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbo 500 mg (Calcium Carbonate) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-14501-100",
+    "name": "Calbo Forte 1000 mg+327 mg Conventional calcium",
+    "genericName": "Calcium Lactate Gluconate + Calcium Carbonate + Vitamin C + Vitamin D3",
+    "dosageForm": "Conventional calcium",
+    "strength": "1000 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 350,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbo Forte 1000 mg+327 mg (Calcium Lactate Gluconate + Calcium Carbonate + Vitamin C + Vitamin D3) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Baby & Mom",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-top-14351-101",
+    "name": "Calboral-D 500 mg+200 IU Tablet",
+    "genericName": "Coral Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 369,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calboral-D 500 mg+200 IU (Coral Calcium + Vitamin D3) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-14370-102",
+    "name": "Calbostar 400 mg Tablet",
+    "genericName": "Calcium Orotate",
+    "dosageForm": "Tablet",
+    "strength": "400 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 388,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbostar 400 mg (Calcium Orotate) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-14371-103",
+    "name": "Calbostar 740 mg Tablet",
+    "genericName": "Calcium Orotate",
+    "dosageForm": "Tablet",
+    "strength": "740 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 407,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbostar 740 mg (Calcium Orotate) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-14391-104",
+    "name": "Calbo-C 1000 mg+327 mg Conventional calcium",
+    "genericName": "Calcium Lactate Gluconate + Calcium Carbonate + Vitamin C",
+    "dosageForm": "Conventional calcium",
+    "strength": "1000 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 426,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbo-C 1000 mg+327 mg (Calcium Lactate Gluconate + Calcium Carbonate + Vitamin C) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Baby & Mom",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-top-14411-105",
+    "name": "Calbo-D 500 mg+200 IU Tablet",
+    "genericName": "Conventional Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 445,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbo-D 500 mg+200 IU (Conventional Calcium + Vitamin D3) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-14412-106",
+    "name": "Calbon D 500 mg+200 IU Tablet",
+    "genericName": "Conventional Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 464,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbon D 500 mg+200 IU (Conventional Calcium + Vitamin D3) manufactured by Aristopharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-14517-107",
+    "name": "Calboplex Tablet",
+    "genericName": "Calcium + Vitamin D3 + Multimineral",
+    "dosageForm": "Tablet",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 483,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calboplex (Calcium + Vitamin D3 + Multimineral) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-16345-108",
+    "name": "Calbo-D Vita 1358.196 mg+600 mg Elemental calcium",
+    "genericName": "Calcium Lactate Gluconate + Calcium Carbonate + Vitamin D3",
+    "dosageForm": "Elemental calcium",
+    "strength": "1358.196 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 502,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbo-D Vita 1358.196 mg+600 mg (Calcium Lactate Gluconate + Calcium Carbonate + Vitamin D3) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Baby & Mom",
+    "category": {
+      "id": "cat-baby---mom",
+      "name": "Baby & Mom"
+    }
+  },
+  {
+    "id": "medex-top-26172-109",
+    "name": "Calboral-DX 600 mg+400 IU Tablet",
+    "genericName": "Coral Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "600 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 521,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calboral-DX 600 mg+400 IU (Coral Calcium + Vitamin D3) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-30694-110",
+    "name": "Calbotol 1200 mg+0.25 mcg Tablet",
+    "genericName": "Calcium Citrate + Calcitriol",
+    "dosageForm": "Tablet",
+    "strength": "1200 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 540,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Calbotol 1200 mg+0.25 mcg (Calcium Citrate + Calcitriol) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-29611-111",
+    "name": "G-Calbo 500 mg+200 IU Tablet",
+    "genericName": "Algae Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 259,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic G-Calbo 500 mg+200 IU (Algae Calcium + Vitamin D3) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-34451-112",
+    "name": "G-Calbo DX 600 mg+400 IU Tablet",
+    "genericName": "Algae Calcium + Vitamin D3",
+    "dosageForm": "Tablet",
+    "strength": "600 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 278,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic G-Calbo DX 600 mg+400 IU (Algae Calcium + Vitamin D3) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-13538-113",
+    "name": "Bextram Kids Syrup",
+    "genericName": "Multivitamin + Cod Liver Oil",
+    "dosageForm": "Syrup",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 297,
+    "requiredPrescription": false,
+    "imageUrl": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bextram Kids (Multivitamin + Cod Liver Oil) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Health & Devices",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-top-14090-114",
+    "name": "Bextram Gold Tablet",
+    "genericName": "Multivitamin & Multimineral [A-Z gold preparation]",
+    "dosageForm": "Tablet",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 316,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bextram Gold (Multivitamin & Multimineral [A-Z gold preparation]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Health & Devices",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-top-14140-115",
+    "name": "Bextram Silver Tablet",
+    "genericName": "Multivitamin & Multimineral [A-Z silver preparation]",
+    "dosageForm": "Tablet",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 335,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bextram Silver (Multivitamin & Multimineral [A-Z silver preparation]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Health & Devices",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-top-14182-116",
+    "name": "Bextram Teen hm Tablet",
+    "genericName": "Multivitamin & Multimineral [A-Z teen boys preparation]",
+    "dosageForm": "Tablet",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 354,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bextram Teen hm (Multivitamin & Multimineral [A-Z teen boys preparation]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Health & Devices",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-top-14184-117",
+    "name": "Bextram Teen hr Tablet",
+    "genericName": "Multivitamin & Multimineral [A-Z teen girls preparation]",
+    "dosageForm": "Tablet",
+    "strength": "Standard",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 373,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Bextram Teen hr (Multivitamin & Multimineral [A-Z teen girls preparation]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Health & Devices",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-top-19312-118",
+    "name": "D-Rise 40000 IU Capsule",
+    "genericName": "Cholecalciferol [Vitamin D3]",
+    "dosageForm": "Capsule",
+    "strength": "40000 IU",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 392,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic D-Rise 40000 IU (Cholecalciferol [Vitamin D3]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-19313-119",
+    "name": "D-Rise 20000 IU Capsule",
+    "genericName": "Cholecalciferol [Vitamin D3]",
+    "dosageForm": "Capsule",
+    "strength": "20000 IU",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 411,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic D-Rise 20000 IU (Cholecalciferol [Vitamin D3]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-19314-120",
+    "name": "D-Rise 2000 IU Tablet",
+    "genericName": "Cholecalciferol [Vitamin D3]",
+    "dosageForm": "Tablet",
+    "strength": "2000 IU",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 430,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic D-Rise 2000 IU (Cholecalciferol [Vitamin D3]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-34362-123",
+    "name": "D-Rise 1000 IU Chewable Tablet",
+    "genericName": "Cholecalciferol [Vitamin D3]",
+    "dosageForm": "Chewable Tablet",
+    "strength": "1000 IU",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 487,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic D-Rise 1000 IU (Cholecalciferol [Vitamin D3]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-36102-124",
+    "name": "D-Rise 50000 IU Capsule",
+    "genericName": "Cholecalciferol [Vitamin D3]",
+    "dosageForm": "Capsule",
+    "strength": "50000 IU",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 506,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic D-Rise 50000 IU (Cholecalciferol [Vitamin D3]) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Vital Wellness",
+    "category": {
+      "id": "cat-vital-wellness",
+      "name": "Vital Wellness"
+    }
+  },
+  {
+    "id": "medex-top-14936-125",
+    "name": "Risedon 150 mg Tablet",
+    "genericName": "Risedronate Sodium",
+    "dosageForm": "Tablet",
+    "strength": "150 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Square Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 525,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Risedon 150 mg (Risedronate Sodium) manufactured by Square Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-14938-126",
+    "name": "Salost DR 35  mg DR Tablet",
+    "genericName": "Risedronate Sodium",
+    "dosageForm": "DR Tablet",
+    "strength": "35  mg",
+    "packSize": "10 x 10",
+    "manufacturer": "UniMed UniHealth Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 544,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Salost DR 35  mg (Risedronate Sodium) manufactured by UniMed UniHealth Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-14940-127",
+    "name": "Sedron 5 mg Tablet",
+    "genericName": "Risedronate Sodium",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "General Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 263,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Sedron 5 mg (Risedronate Sodium) manufactured by General Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-14941-128",
+    "name": "Sedron 35  mg Tablet",
+    "genericName": "Risedronate Sodium",
+    "dosageForm": "Tablet",
+    "strength": "35  mg",
+    "packSize": "10 x 10",
+    "manufacturer": "General Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 282,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Sedron 35  mg (Risedronate Sodium) manufactured by General Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-2078-131",
+    "name": "Maxpro 20 mg EC Capsule",
+    "genericName": "Esomeprazole",
+    "dosageForm": "EC Capsule",
+    "strength": "20 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Renata PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 339,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Maxpro 20 mg (Esomeprazole) manufactured by Renata PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-2079-132",
+    "name": "Maxpro 40 mg EC Capsule",
+    "genericName": "Esomeprazole",
+    "dosageForm": "EC Capsule",
+    "strength": "40 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Renata PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 358,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Maxpro 40 mg (Esomeprazole) manufactured by Renata PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-26639-134",
+    "name": "Maxpro Hp 20 mg+1000 mg+500 mg Tablet",
+    "genericName": "Esomeprazole + Amoxicillin + Clarithromycin",
+    "dosageForm": "Tablet",
+    "strength": "20 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Renata PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 396,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Maxpro Hp 20 mg+1000 mg+500 mg (Esomeprazole + Amoxicillin + Clarithromycin) manufactured by Renata PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-4727-135",
+    "name": "Emistat FT 4 mg Flash Tablet",
+    "genericName": "Ondansetron",
+    "dosageForm": "Flash Tablet",
+    "strength": "4 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 415,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Emistat FT 4 mg (Ondansetron) manufactured by Healthcare Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-4728-136",
+    "name": "Emistat 8 mg Tablet",
+    "genericName": "Ondansetron",
+    "dosageForm": "Tablet",
+    "strength": "8 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 434,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Emistat 8 mg (Ondansetron) manufactured by Healthcare Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-4729-137",
+    "name": "4 ml IM/IV Injection",
+    "genericName": "Ondansetron",
+    "dosageForm": "IM/IV Injection",
+    "strength": "4 ml",
+    "packSize": "10 x 10",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 453,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic 4 ml (Ondansetron) manufactured by Healthcare Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Health & Devices",
+    "category": {
+      "id": "cat-health---devices",
+      "name": "Health & Devices"
+    }
+  },
+  {
+    "id": "medex-top-36017-139",
+    "name": "Emistat FT 8 mg Flash Tablet",
+    "genericName": "Ondansetron",
+    "dosageForm": "Flash Tablet",
+    "strength": "8 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 491,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Emistat FT 8 mg (Ondansetron) manufactured by Healthcare Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-1955-140",
+    "name": "Roceptin 20 mg EC Capsule",
+    "genericName": "Omeprazole",
+    "dosageForm": "EC Capsule",
+    "strength": "20 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Desh Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 510,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Roceptin 20 mg (Omeprazole) manufactured by Desh Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-34785-141",
+    "name": "Roceptin 40 mg EC Capsule",
+    "genericName": "Omeprazole",
+    "dosageForm": "EC Capsule",
+    "strength": "40 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Desh Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 529,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Roceptin 40 mg (Omeprazole) manufactured by Desh Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21838-142",
+    "name": "Preslow 25 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Labaid Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 548,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Preslow 25 mg (Losartan Potassium) manufactured by Labaid Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-17223-143",
+    "name": "Losarva 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "NIPRO JMI Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 267,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Losarva 50 mg (Losartan Potassium) manufactured by NIPRO JMI Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-17225-144",
+    "name": "Losarva Plus 50 mg+12.5 mg Tablet",
+    "genericName": "Losartan Potassium + Hydrochlorothiazide",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "NIPRO JMI Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 286,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Losarva Plus 50 mg+12.5 mg (Losartan Potassium + Hydrochlorothiazide) manufactured by NIPRO JMI Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21823-145",
+    "name": "Loril 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Astra Biopharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 305,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Loril 50 mg (Losartan Potassium) manufactured by Astra Biopharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21824-146",
+    "name": "Loril 100 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "100 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Astra Biopharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 324,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Loril 100 mg (Losartan Potassium) manufactured by Astra Biopharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21826-147",
+    "name": "Losapress 25 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Benham Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 343,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Losapress 25 mg (Losartan Potassium) manufactured by Benham Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21827-148",
+    "name": "Losapress 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Benham Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 362,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Losapress 50 mg (Losartan Potassium) manufactured by Benham Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21829-149",
+    "name": "Angitan 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Chemist Laboratories  Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 381,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Angitan 50 mg (Losartan Potassium) manufactured by Chemist Laboratories  Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21833-150",
+    "name": "E-Tan 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Edruc Limited",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 400,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic E-Tan 50 mg (Losartan Potassium) manufactured by Edruc Limited. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21861-151",
+    "name": "SB-Losak 25 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Sunman-Birdem Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 419,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic SB-Losak 25 mg (Losartan Potassium) manufactured by Sunman-Birdem Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21878-152",
+    "name": "Angitan Plus 50 mg+12.5 mg Tablet",
+    "genericName": "Losartan Potassium + Hydrochlorothiazide",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Chemist Laboratories  Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 438,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Angitan Plus 50 mg+12.5 mg (Losartan Potassium + Hydrochlorothiazide) manufactured by Chemist Laboratories  Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21877-153",
+    "name": "Losarpex Plus 50 mg+12.5 mg Tablet",
+    "genericName": "Losartan Potassium + Hydrochlorothiazide",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Apex Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 457,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Losarpex Plus 50 mg+12.5 mg (Losartan Potassium + Hydrochlorothiazide) manufactured by Apex Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21870-154",
+    "name": "Losamax 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Veritas Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 476,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Losamax 50 mg (Losartan Potassium) manufactured by Veritas Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21862-155",
+    "name": "SB-Losak 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Sunman-Birdem Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 495,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic SB-Losak 50 mg (Losartan Potassium) manufactured by Sunman-Birdem Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21844-156",
+    "name": "Pertilos 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Navana Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 514,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Pertilos 50 mg (Losartan Potassium) manufactured by Navana Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21839-157",
+    "name": "Preslow 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Labaid Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 533,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Preslow 50 mg (Losartan Potassium) manufactured by Labaid Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-21840-158",
+    "name": "Renosart 50 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "50 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Leon Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 252,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Renosart 50 mg (Losartan Potassium) manufactured by Leon Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-17222-159",
+    "name": "Losarva 25 mg Tablet",
+    "genericName": "Losartan Potassium",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "NIPRO JMI Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 271,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Losarva 25 mg (Losartan Potassium) manufactured by NIPRO JMI Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-37632-161",
+    "name": "Azithromycin 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Pharmik Laboratories Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 309,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Azithromycin 500 mg (Azithromycin Dihydrate) manufactured by Pharmik Laboratories Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-37631-162",
+    "name": "Azithromycin 250 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Pharmik Laboratories Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 328,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Azithromycin 250 mg (Azithromycin Dihydrate) manufactured by Pharmik Laboratories Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-25596-163",
+    "name": "Azithrocin 250 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Beximco Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 347,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Azithrocin 250 mg (Azithromycin Dihydrate) manufactured by Beximco Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-25599-164",
+    "name": "Arizith 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Centeon Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 366,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Arizith 500 mg (Azithromycin Dihydrate) manufactured by Centeon Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-25593-165",
+    "name": "Azirex 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Belsen Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 385,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Azirex 500 mg (Azithromycin Dihydrate) manufactured by Belsen Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-25592-166",
+    "name": "Tabrex 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Aztec Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 404,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Tabrex 500 mg (Azithromycin Dihydrate) manufactured by Aztec Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-25589-167",
+    "name": "AZ 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 423,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AZ 500 mg (Azithromycin Dihydrate) manufactured by Aristopharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-25588-168",
+    "name": "AZ 250 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "250 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 442,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic AZ 250 mg (Azithromycin Dihydrate) manufactured by Aristopharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-25585-170",
+    "name": "Zylomax 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Alkad Laboratories",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 480,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Zylomax 500 mg (Azithromycin Dihydrate) manufactured by Alkad Laboratories. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-8749-172",
+    "name": "Zycin 500 mg Tablet",
+    "genericName": "Azithromycin Dihydrate",
+    "dosageForm": "Tablet",
+    "strength": "500 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Globe Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 518,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Zycin 500 mg (Azithromycin Dihydrate) manufactured by Globe Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Medicines",
+    "category": {
+      "id": "cat-medicines",
+      "name": "Medicines"
+    }
+  },
+  {
+    "id": "medex-top-5480-175",
+    "name": "Linaglip 5 mg Tablet",
+    "genericName": "Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 275,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Linaglip 5 mg (Linagliptin) manufactured by Aristopharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-17200-176",
+    "name": "Linaglip-M 2.5 mg+500 mg Tablet",
+    "genericName": "Linagliptin + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 294,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Linaglip-M 2.5 mg+500 mg (Linagliptin + Metformin Hydrochloride) manufactured by Aristopharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-17201-177",
+    "name": "Linaglip-M 2.5 mg+850 mg Tablet",
+    "genericName": "Linagliptin + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 313,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Linaglip-M 2.5 mg+850 mg (Linagliptin + Metformin Hydrochloride) manufactured by Aristopharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-26426-178",
+    "name": "Linaglip-M ER 5 mg+1000 mg XR Tablet",
+    "genericName": "Linagliptin + Metformin Hydrochloride",
+    "dosageForm": "XR Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 332,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Linaglip-M ER 5 mg+1000 mg (Linagliptin + Metformin Hydrochloride) manufactured by Aristopharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-38538-179",
+    "name": "Linaglip-M 2.5 mg+1000 mg Tablet",
+    "genericName": "Linagliptin + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Aristopharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 351,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Linaglip-M 2.5 mg+1000 mg (Linagliptin + Metformin Hydrochloride) manufactured by Aristopharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-32743-180",
+    "name": "Emazid L 25 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 370,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Emazid L 25 mg+5 mg (Empagliflozin + Linagliptin) manufactured by Eskayef Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-33943-181",
+    "name": "Evaglip 10 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Healthcare Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 389,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Evaglip 10 mg+5 mg (Empagliflozin + Linagliptin) manufactured by Healthcare Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-30964-182",
+    "name": "Linera 5 mg Tablet",
+    "genericName": "Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Ziska Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 408,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Linera 5 mg (Linagliptin) manufactured by Ziska Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-32614-183",
+    "name": "Emjenta 25 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "NIPRO JMI Pharma Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 427,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Emjenta 25 mg+5 mg (Empagliflozin + Linagliptin) manufactured by NIPRO JMI Pharma Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-32628-184",
+    "name": "Linax Plus 5 mg+1000 mg XR Tablet",
+    "genericName": "Linagliptin + Metformin Hydrochloride",
+    "dosageForm": "XR Tablet",
+    "strength": "5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "The IBN SINA Pharmaceutical PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 446,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Linax Plus 5 mg+1000 mg (Linagliptin + Metformin Hydrochloride) manufactured by The IBN SINA Pharmaceutical PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-32633-185",
+    "name": "Elipta 10 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Ziska Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 465,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Elipta 10 mg+5 mg (Empagliflozin + Linagliptin) manufactured by Ziska Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-32634-186",
+    "name": "Elipta 25 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Ziska Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 484,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Elipta 25 mg+5 mg (Empagliflozin + Linagliptin) manufactured by Ziska Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-32654-187",
+    "name": "Linatab E 10 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 503,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Linatab E 10 mg+5 mg (Empagliflozin + Linagliptin) manufactured by Incepta Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-32655-188",
+    "name": "Linatab E 25 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Incepta Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 522,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Linatab E 25 mg+5 mg (Empagliflozin + Linagliptin) manufactured by Incepta Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-32742-189",
+    "name": "Emazid L 10 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "10 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Eskayef Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 541,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Emazid L 10 mg+5 mg (Empagliflozin + Linagliptin) manufactured by Eskayef Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-33627-190",
+    "name": "Tajenta-M 2.5 mg+850 mg Tablet",
+    "genericName": "Linagliptin + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Goodman Pharmaceuticals Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 260,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Tajenta-M 2.5 mg+850 mg (Linagliptin + Metformin Hydrochloride) manufactured by Goodman Pharmaceuticals Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-32869-191",
+    "name": "Sinjard-L 25 mg+5 mg Tablet",
+    "genericName": "Empagliflozin + Linagliptin",
+    "dosageForm": "Tablet",
+    "strength": "25 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "Beacon Pharmaceuticals PLC",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 279,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Sinjard-L 25 mg+5 mg (Empagliflozin + Linagliptin) manufactured by Beacon Pharmaceuticals PLC. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
+  {
+    "id": "medex-top-33386-192",
+    "name": "Lino-M 2.5 mg+1000 mg Tablet",
+    "genericName": "Linagliptin + Metformin Hydrochloride",
+    "dosageForm": "Tablet",
+    "strength": "2.5 mg",
+    "packSize": "10 x 10",
+    "manufacturer": "ACME Laboratories Ltd.",
+    "price": 10,
+    "stripPrice": 100,
+    "packagePrice": 1000,
+    "packInfo": "10 x 10",
+    "stock": 298,
+    "requiredPrescription": true,
+    "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80",
+    "description": "Authentic Lino-M 2.5 mg+1000 mg (Linagliptin + Metformin Hydrochloride) manufactured by ACME Laboratories Ltd.. Unit Price: ৳ 10.00, Strip Price: ৳ 100.00, Pack Info: 10 x 10.",
+    "categoryName": "Diabetic Care",
+    "category": {
+      "id": "cat-diabetic-care",
+      "name": "Diabetic Care"
+    }
+  },
   {
     "id": "medex-13717-0",
     "name": "3 Bion 100 mg+200 mg+200 mcg Tablet",
@@ -40,7 +3539,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-7695-1",
@@ -58,7 +3561,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-7696-2",
@@ -76,7 +3583,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 620,
+    "packagePrice": 6200,
+    "packInfo": "10 x 10: ৳ 6200.00"
   },
   {
     "id": "medex-18731-3",
@@ -94,7 +3605,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-9538-4",
@@ -112,7 +3627,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-7697-5",
@@ -130,7 +3649,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-7698-6",
@@ -148,7 +3671,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 960,
+    "packagePrice": 9600,
+    "packInfo": "10 x 10: ৳ 9600.00"
   },
   {
     "id": "medex-31993-7",
@@ -166,7 +3693,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 170,
+    "packagePrice": 1700,
+    "packInfo": "10 x 10: ৳ 1700.00"
   },
   {
     "id": "medex-31994-8",
@@ -184,7 +3715,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-33499-9",
@@ -202,7 +3737,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-7699-10",
@@ -220,7 +3759,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-7700-11",
@@ -238,7 +3781,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-7701-12",
@@ -256,7 +3803,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 620,
+    "packagePrice": 6200,
+    "packInfo": "10 x 10: ৳ 6200.00"
   },
   {
     "id": "medex-17301-13",
@@ -274,7 +3825,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3150,
+    "packagePrice": 31500,
+    "packInfo": "10 x 10: ৳ 31500.00"
   },
   {
     "id": "medex-105-14",
@@ -292,7 +3847,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3300,
+    "packagePrice": 33000,
+    "packInfo": "10 x 10: ৳ 33000.00"
   },
   {
     "id": "medex-38307-15",
@@ -310,7 +3869,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1490,
+    "packagePrice": 14900,
+    "packInfo": "10 x 10: ৳ 14900.00"
   },
   {
     "id": "medex-25154-16",
@@ -328,7 +3891,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-37637-17",
@@ -346,7 +3913,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-13582-18",
@@ -364,7 +3935,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-14264-19",
@@ -382,7 +3957,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-14399-20",
@@ -400,7 +3979,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-14480-21",
@@ -418,7 +4001,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-15483-22",
@@ -436,7 +4023,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-3039-23",
@@ -454,7 +4045,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-14006-24",
@@ -472,7 +4067,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-6171-25",
@@ -490,7 +4089,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-4006-26",
@@ -508,7 +4111,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 960,
+    "packagePrice": 9600,
+    "packInfo": "10 x 10: ৳ 9600.00"
   },
   {
     "id": "medex-4077-27",
@@ -526,7 +4133,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-10930-28",
@@ -544,7 +4155,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-10934-29",
@@ -562,7 +4177,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-10935-30",
@@ -580,7 +4199,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-11134-31",
@@ -598,7 +4221,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-10933-32",
@@ -616,7 +4243,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1500,
+    "packagePrice": 15000,
+    "packInfo": "10 x 10: ৳ 15000.00"
   },
   {
     "id": "medex-10931-33",
@@ -634,7 +4265,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-6210-34",
@@ -652,7 +4287,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-6211-35",
@@ -670,7 +4309,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-6212-36",
@@ -688,7 +4331,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 960,
+    "packagePrice": 9600,
+    "packInfo": "10 x 10: ৳ 9600.00"
   },
   {
     "id": "medex-6214-37",
@@ -706,7 +4353,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2250,
+    "packagePrice": 22500,
+    "packInfo": "10 x 10: ৳ 22500.00"
   },
   {
     "id": "medex-13491-38",
@@ -724,7 +4375,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-28227-39",
@@ -742,7 +4397,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-16609-40",
@@ -760,7 +4419,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-28704-41",
@@ -778,7 +4441,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-28705-42",
@@ -796,7 +4463,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-10007-43",
@@ -814,7 +4485,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-529-44",
@@ -832,7 +4507,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-8427-45",
@@ -850,7 +4529,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-8429-46",
@@ -868,7 +4551,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-27175-47",
@@ -886,7 +4573,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-27176-48",
@@ -904,7 +4595,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-23388-49",
@@ -922,7 +4617,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-38193-50",
@@ -940,7 +4639,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-35356-51",
@@ -958,7 +4661,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-8883-52",
@@ -976,7 +4683,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-15795-53",
@@ -994,7 +4705,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-8787-54",
@@ -1012,7 +4727,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-8788-55",
@@ -1030,7 +4749,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-8789-56",
@@ -1048,7 +4771,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 960,
+    "packagePrice": 9600,
+    "packInfo": "10 x 10: ৳ 9600.00"
   },
   {
     "id": "medex-23257-57",
@@ -1066,7 +4793,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-32492-58",
@@ -1084,7 +4815,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-8275-59",
@@ -1102,7 +4837,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-2432-60",
@@ -1120,7 +4859,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-26635-61",
@@ -1138,7 +4881,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-25481-62",
@@ -1156,7 +4903,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-6776-63",
@@ -1174,7 +4925,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-6777-64",
@@ -1192,7 +4947,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-6778-65",
@@ -1210,7 +4969,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-7097-66",
@@ -1228,7 +4991,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-7098-67",
@@ -1246,7 +5013,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-7099-68",
@@ -1264,7 +5035,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-30731-69",
@@ -1282,7 +5057,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-32905-70",
@@ -1300,7 +5079,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-32906-71",
@@ -1318,7 +5101,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 535,
+    "packagePrice": 5350,
+    "packInfo": "10 x 10: ৳ 5350.00"
   },
   {
     "id": "medex-26940-72",
@@ -1336,7 +5123,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 3000,
+    "packagePrice": 30000,
+    "packInfo": "10 x 10: ৳ 30000.00"
   },
   {
     "id": "medex-34958-73",
@@ -1354,7 +5145,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-36219-74",
@@ -1372,7 +5167,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-36220-75",
@@ -1390,7 +5189,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-31999-76",
@@ -1408,7 +5211,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-32000-77",
@@ -1426,7 +5233,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-37626-78",
@@ -1444,7 +5255,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-1315-79",
@@ -1462,7 +5277,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-1316-80",
@@ -1480,7 +5299,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 450,
+    "packagePrice": 4500,
+    "packInfo": "10 x 10: ৳ 4500.00"
   },
   {
     "id": "medex-3075-81",
@@ -1498,7 +5321,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-3076-82",
@@ -1516,7 +5343,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-37113-83",
@@ -1534,7 +5365,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-37114-84",
@@ -1552,7 +5387,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-32452-85",
@@ -1570,7 +5409,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-33719-86",
@@ -1588,7 +5431,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-25489-87",
@@ -1606,7 +5453,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-2776-88",
@@ -1624,7 +5475,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-2777-89",
@@ -1642,7 +5497,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-2778-90",
@@ -1660,7 +5519,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-2981-91",
@@ -1678,7 +5541,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-22974-92",
@@ -1696,7 +5563,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-38944-93",
@@ -1714,7 +5585,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1650,
+    "packagePrice": 16500,
+    "packInfo": "10 x 10: ৳ 16500.00"
   },
   {
     "id": "medex-38945-94",
@@ -1732,7 +5607,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1800,
+    "packagePrice": 18000,
+    "packInfo": "10 x 10: ৳ 18000.00"
   },
   {
     "id": "medex-4132-95",
@@ -1750,7 +5629,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-35306-96",
@@ -1768,7 +5651,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 960,
+    "packagePrice": 9600,
+    "packInfo": "10 x 10: ৳ 9600.00"
   },
   {
     "id": "medex-35307-97",
@@ -1786,7 +5673,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-38906-98",
@@ -1804,7 +5695,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-38907-99",
@@ -1822,7 +5717,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-37280-100",
@@ -1840,7 +5739,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-37281-101",
@@ -1858,7 +5761,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-32587-102",
@@ -1876,7 +5783,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 620,
+    "packagePrice": 6200,
+    "packInfo": "10 x 10: ৳ 6200.00"
   },
   {
     "id": "medex-33570-103",
@@ -1894,7 +5805,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-36608-104",
@@ -1912,7 +5827,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-35489-105",
@@ -1930,7 +5849,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-38107-106",
@@ -1948,7 +5871,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-30393-107",
@@ -1966,7 +5893,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-35187-108",
@@ -1984,7 +5915,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-32192-109",
@@ -2002,7 +5937,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-28147-110",
@@ -2020,7 +5959,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-35355-111",
@@ -2038,7 +5981,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-18307-112",
@@ -2056,7 +6003,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-34002-113",
@@ -2074,7 +6025,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-8-114",
@@ -2092,7 +6047,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-35308-115",
@@ -2110,7 +6069,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-38108-116",
@@ -2128,7 +6091,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-222-117",
@@ -2146,7 +6113,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-34974-118",
@@ -2164,7 +6135,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-36119-119",
@@ -2182,7 +6157,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-36117-120",
@@ -2200,7 +6179,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-36118-121",
@@ -2218,7 +6201,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-34973-122",
@@ -2236,7 +6223,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-39265-123",
@@ -2254,7 +6245,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-32289-124",
@@ -2272,7 +6267,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-33078-125",
@@ -2290,7 +6289,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-10377-126",
@@ -2308,7 +6311,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-10380-127",
@@ -2326,7 +6333,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-10381-128",
@@ -2344,7 +6355,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-10383-129",
@@ -2362,7 +6377,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-10384-130",
@@ -2380,7 +6399,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-10385-131",
@@ -2398,7 +6421,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-29606-132",
@@ -2416,7 +6443,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 620,
+    "packagePrice": 6200,
+    "packInfo": "10 x 10: ৳ 6200.00"
   },
   {
     "id": "medex-33987-133",
@@ -2434,7 +6465,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3150,
+    "packagePrice": 31500,
+    "packInfo": "10 x 10: ৳ 31500.00"
   },
   {
     "id": "medex-38985-134",
@@ -2452,7 +6487,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-10557-135",
@@ -2470,7 +6509,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-28573-136",
@@ -2488,7 +6531,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-10378-137",
@@ -2506,7 +6553,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 170,
+    "packagePrice": 1700,
+    "packInfo": "10 x 10: ৳ 1700.00"
   },
   {
     "id": "medex-9-138",
@@ -2524,7 +6575,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-2627-139",
@@ -2542,7 +6597,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-2628-140",
@@ -2560,7 +6619,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-2629-141",
@@ -2578,7 +6641,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-17361-142",
@@ -2596,7 +6663,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-11-143",
@@ -2614,7 +6685,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-35665-144",
@@ -2632,7 +6707,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-37389-145",
@@ -2650,7 +6729,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-37627-146",
@@ -2668,7 +6751,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-37628-147",
@@ -2686,7 +6773,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-13-148",
@@ -2704,7 +6795,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-37789-149",
@@ -2722,7 +6817,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-14-150",
@@ -2740,7 +6839,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-15-151",
@@ -2758,7 +6861,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-17364-152",
@@ -2776,7 +6883,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-17552-153",
@@ -2794,7 +6905,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-35574-154",
@@ -2812,7 +6927,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-17562-155",
@@ -2830,7 +6949,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-28216-156",
@@ -2848,7 +6971,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-16-157",
@@ -2866,7 +6993,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-34889-158",
@@ -2884,7 +7015,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-6779-159",
@@ -2902,7 +7037,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-6780-160",
@@ -2920,7 +7059,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 450,
+    "packagePrice": 4500,
+    "packInfo": "10 x 10: ৳ 4500.00"
   },
   {
     "id": "medex-17-161",
@@ -2938,7 +7081,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-28235-162",
@@ -2956,7 +7103,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-28236-163",
@@ -2974,7 +7125,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-28237-164",
@@ -2992,7 +7147,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-18-165",
@@ -3010,7 +7169,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-19-166",
@@ -3028,7 +7191,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-226-167",
@@ -3046,7 +7213,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-20-168",
@@ -3064,7 +7235,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-17365-169",
@@ -3082,7 +7257,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-10386-170",
@@ -3100,7 +7279,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-10387-171",
@@ -3118,7 +7301,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 535,
+    "packagePrice": 5350,
+    "packInfo": "10 x 10: ৳ 5350.00"
   },
   {
     "id": "medex-10388-172",
@@ -3136,7 +7323,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-10558-173",
@@ -3154,7 +7345,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-2607-174",
@@ -3172,7 +7367,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-2608-175",
@@ -3190,7 +7389,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-21-176",
@@ -3208,7 +7411,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-24072-177",
@@ -3226,7 +7433,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-24073-178",
@@ -3244,7 +7455,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-38718-179",
@@ -3262,7 +7477,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-127-180",
@@ -3280,7 +7499,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1200,
+    "packagePrice": 12000,
+    "packInfo": "10 x 10: ৳ 12000.00"
   },
   {
     "id": "medex-128-181",
@@ -3298,7 +7521,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1350,
+    "packagePrice": 13500,
+    "packInfo": "10 x 10: ৳ 13500.00"
   },
   {
     "id": "medex-141-182",
@@ -3316,7 +7543,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-142-183",
@@ -3334,7 +7565,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-143-184",
@@ -3352,7 +7587,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-231-185",
@@ -3370,7 +7609,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 770,
+    "packagePrice": 7700,
+    "packInfo": "10 x 10: ৳ 7700.00"
   },
   {
     "id": "medex-31268-186",
@@ -3388,7 +7631,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 890,
+    "packagePrice": 8900,
+    "packInfo": "10 x 10: ৳ 8900.00"
   },
   {
     "id": "medex-31935-187",
@@ -3406,7 +7653,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-10389-188",
@@ -3424,7 +7675,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-10390-189",
@@ -3442,7 +7697,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1215,
+    "packagePrice": 12150,
+    "packInfo": "10 x 10: ৳ 12150.00"
   },
   {
     "id": "medex-23437-190",
@@ -3460,7 +7719,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-31963-191",
@@ -3478,7 +7741,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-10391-192",
@@ -3496,7 +7763,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-10782-193",
@@ -3514,7 +7785,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-10559-194",
@@ -3532,7 +7807,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-32856-195",
@@ -3550,7 +7829,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-33042-196",
@@ -3568,7 +7851,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-10392-197",
@@ -3586,7 +7873,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 170,
+    "packagePrice": 1700,
+    "packInfo": "10 x 10: ৳ 1700.00"
   },
   {
     "id": "medex-2594-198",
@@ -3604,7 +7895,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-5-199",
@@ -3622,7 +7917,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-22-200",
@@ -3640,7 +7939,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-34762-201",
@@ -3658,7 +7961,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-37692-202",
@@ -3676,7 +7983,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-23195-203",
@@ -3694,7 +8005,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-23204-204",
@@ -3712,7 +8027,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-27533-205",
@@ -3730,7 +8049,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-14265-206",
@@ -3748,7 +8071,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-14343-207",
@@ -3766,7 +8093,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-14388-208",
@@ -3784,7 +8115,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-14400-209",
@@ -3802,7 +8137,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-26322-210",
@@ -3820,7 +8159,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-32195-211",
@@ -3838,7 +8181,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-26323-212",
@@ -3856,7 +8203,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-232-213",
@@ -3874,7 +8225,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1250,
+    "packagePrice": 12500,
+    "packInfo": "10 x 10: ৳ 12500.00"
   },
   {
     "id": "medex-15754-214",
@@ -3892,7 +8247,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-31532-215",
@@ -3910,7 +8269,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1950,
+    "packagePrice": 19500,
+    "packInfo": "10 x 10: ৳ 19500.00"
   },
   {
     "id": "medex-16576-216",
@@ -3928,7 +8291,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-2256-217",
@@ -3946,7 +8313,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-30332-218",
@@ -3964,7 +8335,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-9659-219",
@@ -3982,7 +8357,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-39822-220",
@@ -4000,7 +8379,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-39823-221",
@@ -4018,7 +8401,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-16776-222",
@@ -4036,7 +8423,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 3000,
+    "packagePrice": 30000,
+    "packInfo": "10 x 10: ৳ 30000.00"
   },
   {
     "id": "medex-27536-223",
@@ -4054,7 +8445,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 3150,
+    "packagePrice": 31500,
+    "packInfo": "10 x 10: ৳ 31500.00"
   },
   {
     "id": "medex-4482-224",
@@ -4072,7 +8467,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-4483-225",
@@ -4090,7 +8489,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-7910-226",
@@ -4108,7 +8511,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1350,
+    "packagePrice": 13500,
+    "packInfo": "10 x 10: ৳ 13500.00"
   },
   {
     "id": "medex-7911-227",
@@ -4126,7 +8533,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1500,
+    "packagePrice": 15000,
+    "packInfo": "10 x 10: ৳ 15000.00"
   },
   {
     "id": "medex-7912-228",
@@ -4144,7 +8555,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1650,
+    "packagePrice": 16500,
+    "packInfo": "10 x 10: ৳ 16500.00"
   },
   {
     "id": "medex-7913-229",
@@ -4162,7 +8577,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1800,
+    "packagePrice": 18000,
+    "packInfo": "10 x 10: ৳ 18000.00"
   },
   {
     "id": "medex-7914-230",
@@ -4180,7 +8599,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1950,
+    "packagePrice": 19500,
+    "packInfo": "10 x 10: ৳ 19500.00"
   },
   {
     "id": "medex-7915-231",
@@ -4198,7 +8621,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2100,
+    "packagePrice": 21000,
+    "packInfo": "10 x 10: ৳ 21000.00"
   },
   {
     "id": "medex-7916-232",
@@ -4216,7 +8643,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2250,
+    "packagePrice": 22500,
+    "packInfo": "10 x 10: ৳ 22500.00"
   },
   {
     "id": "medex-33761-233",
@@ -4234,7 +8665,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-11908-234",
@@ -4252,7 +8687,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-11909-235",
@@ -4270,7 +8709,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-11910-236",
@@ -4288,7 +8731,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-12153-237",
@@ -4306,7 +8753,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-12154-238",
@@ -4324,7 +8775,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-14946-239",
@@ -4342,7 +8797,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3300,
+    "packagePrice": 33000,
+    "packInfo": "10 x 10: ৳ 33000.00"
   },
   {
     "id": "medex-168-240",
@@ -4360,7 +8819,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 650,
+    "packagePrice": 6500,
+    "packInfo": "10 x 10: ৳ 6500.00"
   },
   {
     "id": "medex-17440-241",
@@ -4378,7 +8841,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-32969-242",
@@ -4396,7 +8863,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-4606-243",
@@ -4414,7 +8885,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-4624-244",
@@ -4432,7 +8907,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-23-245",
@@ -4450,7 +8929,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-12558-246",
@@ -4468,7 +8951,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1370,
+    "packagePrice": 13700,
+    "packInfo": "10 x 10: ৳ 13700.00"
   },
   {
     "id": "medex-12612-247",
@@ -4486,7 +8973,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1490,
+    "packagePrice": 14900,
+    "packInfo": "10 x 10: ৳ 14900.00"
   },
   {
     "id": "medex-12613-248",
@@ -4504,7 +8995,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 650,
+    "packagePrice": 6500,
+    "packInfo": "10 x 10: ৳ 6500.00"
   },
   {
     "id": "medex-24-249",
@@ -4522,7 +9017,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-25-250",
@@ -4540,7 +9039,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-26-251",
@@ -4558,7 +9061,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-36271-252",
@@ -4576,7 +9083,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1130,
+    "packagePrice": 11300,
+    "packInfo": "10 x 10: ৳ 11300.00"
   },
   {
     "id": "medex-36272-253",
@@ -4594,7 +9105,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-36292-254",
@@ -4612,7 +9127,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-36273-255",
@@ -4630,7 +9149,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1490,
+    "packagePrice": 14900,
+    "packInfo": "10 x 10: ৳ 14900.00"
   },
   {
     "id": "medex-36274-256",
@@ -4648,7 +9171,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-36275-257",
@@ -4666,7 +9193,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-36276-258",
@@ -4684,7 +9215,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-36295-259",
@@ -4702,7 +9237,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1010,
+    "packagePrice": 10100,
+    "packInfo": "10 x 10: ৳ 10100.00"
   },
   {
     "id": "medex-36296-260",
@@ -4720,7 +9259,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-36297-261",
@@ -4738,7 +9281,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-36280-262",
@@ -4756,7 +9303,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-36281-263",
@@ -4774,7 +9325,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-36294-264",
@@ -4792,7 +9347,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 650,
+    "packagePrice": 6500,
+    "packInfo": "10 x 10: ৳ 6500.00"
   },
   {
     "id": "medex-36278-265",
@@ -4810,7 +9369,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-36279-266",
@@ -4828,7 +9391,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-36283-267",
@@ -4846,7 +9413,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-36286-268",
@@ -4864,7 +9435,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-36293-269",
@@ -4882,7 +9457,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-36284-270",
@@ -4900,7 +9479,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-36285-271",
@@ -4918,7 +9501,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1490,
+    "packagePrice": 14900,
+    "packInfo": "10 x 10: ৳ 14900.00"
   },
   {
     "id": "medex-36282-272",
@@ -4936,7 +9523,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 650,
+    "packagePrice": 6500,
+    "packInfo": "10 x 10: ৳ 6500.00"
   },
   {
     "id": "medex-36288-273",
@@ -4954,7 +9545,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-36289-274",
@@ -4972,7 +9567,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-36287-275",
@@ -4990,7 +9589,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-36290-276",
@@ -5008,7 +9611,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-36291-277",
@@ -5026,7 +9633,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-39551-278",
@@ -5044,7 +9655,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-14861-279",
@@ -5062,7 +9677,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2550,
+    "packagePrice": 25500,
+    "packInfo": "10 x 10: ৳ 25500.00"
   },
   {
     "id": "medex-14856-280",
@@ -5080,7 +9699,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2700,
+    "packagePrice": 27000,
+    "packInfo": "10 x 10: ৳ 27000.00"
   },
   {
     "id": "medex-24580-281",
@@ -5098,7 +9721,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2850,
+    "packagePrice": 28500,
+    "packInfo": "10 x 10: ৳ 28500.00"
   },
   {
     "id": "medex-21972-282",
@@ -5116,7 +9743,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3000,
+    "packagePrice": 30000,
+    "packInfo": "10 x 10: ৳ 30000.00"
   },
   {
     "id": "medex-14874-283",
@@ -5134,7 +9765,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3150,
+    "packagePrice": 31500,
+    "packInfo": "10 x 10: ৳ 31500.00"
   },
   {
     "id": "medex-23196-284",
@@ -5152,7 +9787,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-939-285",
@@ -5170,7 +9809,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-940-286",
@@ -5188,7 +9831,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-941-287",
@@ -5206,7 +9853,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1500,
+    "packagePrice": 15000,
+    "packInfo": "10 x 10: ৳ 15000.00"
   },
   {
     "id": "medex-942-288",
@@ -5224,7 +9875,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1650,
+    "packagePrice": 16500,
+    "packInfo": "10 x 10: ৳ 16500.00"
   },
   {
     "id": "medex-6042-289",
@@ -5242,7 +9897,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-6043-290",
@@ -5260,7 +9919,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-6044-291",
@@ -5278,7 +9941,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-6-292",
@@ -5296,7 +9963,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-176-293",
@@ -5314,7 +9985,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-30844-294",
@@ -5332,7 +10007,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-38315-295",
@@ -5350,7 +10029,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1490,
+    "packagePrice": 14900,
+    "packInfo": "10 x 10: ৳ 14900.00"
   },
   {
     "id": "medex-37616-296",
@@ -5368,7 +10051,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 650,
+    "packagePrice": 6500,
+    "packInfo": "10 x 10: ৳ 6500.00"
   },
   {
     "id": "medex-16718-297",
@@ -5386,7 +10073,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-532-298",
@@ -5404,7 +10095,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1130,
+    "packagePrice": 11300,
+    "packInfo": "10 x 10: ৳ 11300.00"
   },
   {
     "id": "medex-8540-299",
@@ -5422,7 +10117,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-8541-300",
@@ -5440,7 +10139,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 450,
+    "packagePrice": 4500,
+    "packInfo": "10 x 10: ৳ 4500.00"
   },
   {
     "id": "medex-33520-301",
@@ -5458,7 +10161,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-39457-302",
@@ -5476,7 +10183,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1500,
+    "packagePrice": 15000,
+    "packInfo": "10 x 10: ৳ 15000.00"
   },
   {
     "id": "medex-39560-303",
@@ -5494,7 +10205,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-8424-304",
@@ -5512,7 +10227,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-10393-305",
@@ -5530,7 +10249,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-28017-306",
@@ -5548,7 +10271,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 960,
+    "packagePrice": 9600,
+    "packInfo": "10 x 10: ৳ 9600.00"
   },
   {
     "id": "medex-28018-307",
@@ -5566,7 +10293,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-10394-308",
@@ -5584,7 +10315,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-11673-309",
@@ -5602,7 +10337,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2550,
+    "packagePrice": 25500,
+    "packInfo": "10 x 10: ৳ 25500.00"
   },
   {
     "id": "medex-11674-310",
@@ -5620,7 +10359,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2700,
+    "packagePrice": 27000,
+    "packInfo": "10 x 10: ৳ 27000.00"
   },
   {
     "id": "medex-26083-311",
@@ -5638,7 +10381,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2850,
+    "packagePrice": 28500,
+    "packInfo": "10 x 10: ৳ 28500.00"
   },
   {
     "id": "medex-27602-312",
@@ -5656,7 +10403,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-30871-313",
@@ -5674,7 +10425,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-37863-314",
@@ -5692,7 +10447,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-31092-315",
@@ -5710,7 +10469,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-21287-316",
@@ -5728,7 +10491,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-35832-317",
@@ -5746,7 +10513,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-35833-318",
@@ -5764,7 +10535,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-2374-319",
@@ -5782,7 +10557,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-27604-320",
@@ -5800,7 +10579,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1950,
+    "packagePrice": 19500,
+    "packInfo": "10 x 10: ৳ 19500.00"
   },
   {
     "id": "medex-32457-321",
@@ -5818,7 +10601,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-36370-322",
@@ -5836,7 +10623,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 170,
+    "packagePrice": 1700,
+    "packInfo": "10 x 10: ৳ 1700.00"
   },
   {
     "id": "medex-3542-323",
@@ -5854,7 +10645,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-3543-324",
@@ -5872,7 +10667,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-28501-325",
@@ -5890,7 +10689,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-28502-326",
@@ -5908,7 +10711,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-14084-327",
@@ -5926,7 +10733,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-14137-328",
@@ -5944,7 +10755,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-14675-329",
@@ -5962,7 +10777,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 1215,
+    "packagePrice": 12150,
+    "packInfo": "10 x 10: ৳ 12150.00"
   },
   {
     "id": "medex-13360-330",
@@ -5980,7 +10799,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 450,
+    "packagePrice": 4500,
+    "packInfo": "10 x 10: ৳ 4500.00"
   },
   {
     "id": "medex-37300-331",
@@ -5998,7 +10821,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1010,
+    "packagePrice": 10100,
+    "packInfo": "10 x 10: ৳ 10100.00"
   },
   {
     "id": "medex-11911-332",
@@ -6016,7 +10843,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-11912-333",
@@ -6034,7 +10865,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 705,
+    "packagePrice": 7050,
+    "packInfo": "10 x 10: ৳ 7050.00"
   },
   {
     "id": "medex-10398-334",
@@ -6052,7 +10887,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-3425-335",
@@ -6070,7 +10909,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-29168-336",
@@ -6088,7 +10931,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-5635-337",
@@ -6106,7 +10953,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-5636-338",
@@ -6124,7 +10975,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-5566-339",
@@ -6142,7 +10997,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-5567-340",
@@ -6160,7 +11019,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-16771-341",
@@ -6178,7 +11041,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 2850,
+    "packagePrice": 28500,
+    "packInfo": "10 x 10: ৳ 28500.00"
   },
   {
     "id": "medex-8984-342",
@@ -6196,7 +11063,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 620,
+    "packagePrice": 6200,
+    "packInfo": "10 x 10: ৳ 6200.00"
   },
   {
     "id": "medex-8983-343",
@@ -6214,7 +11085,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-2375-344",
@@ -6232,7 +11107,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-25702-345",
@@ -6250,7 +11129,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-25703-346",
@@ -6268,7 +11151,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-17644-347",
@@ -6286,7 +11173,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-16533-348",
@@ -6304,7 +11195,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-38229-349",
@@ -6322,7 +11217,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-33910-350",
@@ -6340,7 +11239,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-15928-351",
@@ -6358,7 +11261,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-15299-352",
@@ -6376,7 +11283,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-15300-353",
@@ -6394,7 +11305,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2400,
+    "packagePrice": 24000,
+    "packInfo": "10 x 10: ৳ 24000.00"
   },
   {
     "id": "medex-2812-354",
@@ -6412,7 +11327,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-2813-355",
@@ -6430,7 +11349,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-2696-356",
@@ -6448,7 +11371,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-2933-357",
@@ -6466,7 +11393,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-39322-358",
@@ -6484,7 +11415,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-130-359",
@@ -6502,7 +11437,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3300,
+    "packagePrice": 33000,
+    "packInfo": "10 x 10: ৳ 33000.00"
   },
   {
     "id": "medex-233-360",
@@ -6520,7 +11459,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 650,
+    "packagePrice": 6500,
+    "packInfo": "10 x 10: ৳ 6500.00"
   },
   {
     "id": "medex-39240-361",
@@ -6538,7 +11481,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 770,
+    "packagePrice": 7700,
+    "packInfo": "10 x 10: ৳ 7700.00"
   },
   {
     "id": "medex-13257-362",
@@ -6556,7 +11503,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-12792-363",
@@ -6574,7 +11525,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-6060-364",
@@ -6592,7 +11547,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-6061-365",
@@ -6610,7 +11569,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-30074-366",
@@ -6628,7 +11591,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-24308-367",
@@ -6646,7 +11613,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 170,
+    "packagePrice": 1700,
+    "packInfo": "10 x 10: ৳ 1700.00"
   },
   {
     "id": "medex-37048-368",
@@ -6664,7 +11635,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2400,
+    "packagePrice": 24000,
+    "packInfo": "10 x 10: ৳ 24000.00"
   },
   {
     "id": "medex-29134-369",
@@ -6682,7 +11657,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2550,
+    "packagePrice": 25500,
+    "packInfo": "10 x 10: ৳ 25500.00"
   },
   {
     "id": "medex-5792-370",
@@ -6700,7 +11679,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-5793-371",
@@ -6718,7 +11701,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-169-372",
@@ -6736,7 +11723,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1130,
+    "packagePrice": 11300,
+    "packInfo": "10 x 10: ৳ 11300.00"
   },
   {
     "id": "medex-16321-373",
@@ -6754,7 +11745,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-16324-374",
@@ -6772,7 +11767,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-14401-375",
@@ -6790,7 +11789,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-27317-376",
@@ -6808,7 +11811,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 960,
+    "packagePrice": 9600,
+    "packInfo": "10 x 10: ৳ 9600.00"
   },
   {
     "id": "medex-30540-377",
@@ -6826,7 +11833,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-240-378",
@@ -6844,7 +11855,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1650,
+    "packagePrice": 16500,
+    "packInfo": "10 x 10: ৳ 16500.00"
   },
   {
     "id": "medex-6781-379",
@@ -6862,7 +11877,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-6782-380",
@@ -6880,7 +11899,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 450,
+    "packagePrice": 4500,
+    "packInfo": "10 x 10: ৳ 4500.00"
   },
   {
     "id": "medex-6783-381",
@@ -6898,7 +11921,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 535,
+    "packagePrice": 5350,
+    "packInfo": "10 x 10: ৳ 5350.00"
   },
   {
     "id": "medex-9102-382",
@@ -6916,7 +11943,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 170,
+    "packagePrice": 1700,
+    "packInfo": "10 x 10: ৳ 1700.00"
   },
   {
     "id": "medex-5996-383",
@@ -6934,7 +11965,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-5997-384",
@@ -6952,7 +11987,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-32196-385",
@@ -6970,7 +12009,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-1500-386",
@@ -6988,7 +12031,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-1501-387",
@@ -7006,7 +12053,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-4320-388",
@@ -7024,7 +12075,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-30075-389",
@@ -7042,7 +12097,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-30076-390",
@@ -7060,7 +12119,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-35825-391",
@@ -7078,7 +12141,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-7158-392",
@@ -7096,7 +12163,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-7159-393",
@@ -7114,7 +12185,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 195,
+    "packagePrice": 1950,
+    "packInfo": "10 x 10: ৳ 1950.00"
   },
   {
     "id": "medex-7461-394",
@@ -7132,7 +12207,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-7462-395",
@@ -7150,7 +12229,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-19611-396",
@@ -7168,7 +12251,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-170-397",
@@ -7186,7 +12273,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-30525-398",
@@ -7204,7 +12295,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-5275-399",
@@ -7222,7 +12317,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-5276-400",
@@ -7240,7 +12339,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-20395-401",
@@ -7258,7 +12361,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-39463-402",
@@ -7276,7 +12383,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3000,
+    "packagePrice": 30000,
+    "packInfo": "10 x 10: ৳ 30000.00"
   },
   {
     "id": "medex-35651-403",
@@ -7294,7 +12405,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-28233-404",
@@ -7312,7 +12427,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-28234-405",
@@ -7330,7 +12449,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-30526-406",
@@ -7348,7 +12471,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-5162-407",
@@ -7366,7 +12493,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-35411-408",
@@ -7384,7 +12515,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-9724-409",
@@ -7402,7 +12537,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-8542-410",
@@ -7420,7 +12559,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-8543-411",
@@ -7438,7 +12581,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 535,
+    "packagePrice": 5350,
+    "packInfo": "10 x 10: ৳ 5350.00"
   },
   {
     "id": "medex-25615-412",
@@ -7456,7 +12603,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-5481-413",
@@ -7474,7 +12625,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-33948-414",
@@ -7492,7 +12647,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-33949-415",
@@ -7510,7 +12669,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-17213-416",
@@ -7528,7 +12691,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-17214-417",
@@ -7546,7 +12713,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-2462-418",
@@ -7564,7 +12735,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-2463-419",
@@ -7582,7 +12757,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-36779-420",
@@ -7600,7 +12779,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1200,
+    "packagePrice": 12000,
+    "packInfo": "10 x 10: ৳ 12000.00"
   },
   {
     "id": "medex-36780-421",
@@ -7618,7 +12801,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1350,
+    "packagePrice": 13500,
+    "packInfo": "10 x 10: ৳ 13500.00"
   },
   {
     "id": "medex-5214-422",
@@ -7636,7 +12823,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-5215-423",
@@ -7654,7 +12845,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-38776-424",
@@ -7672,7 +12867,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-diabetic-care",
       "name": "Diabetic Care"
-    }
+    },
+    "categoryName": "Diabetic Care",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-19612-425",
@@ -7690,7 +12889,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-27318-426",
@@ -7708,7 +12911,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-2286-427",
@@ -7726,7 +12933,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 170,
+    "packagePrice": 1700,
+    "packInfo": "10 x 10: ৳ 1700.00"
   },
   {
     "id": "medex-2287-428",
@@ -7744,7 +12955,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1130,
+    "packagePrice": 11300,
+    "packInfo": "10 x 10: ৳ 11300.00"
   },
   {
     "id": "medex-27174-429",
@@ -7762,7 +12977,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-6739-430",
@@ -7780,7 +12999,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-6740-431",
@@ -7798,7 +13021,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 535,
+    "packagePrice": 5350,
+    "packInfo": "10 x 10: ৳ 5350.00"
   },
   {
     "id": "medex-34955-432",
@@ -7816,7 +13043,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 170,
+    "packagePrice": 1700,
+    "packInfo": "10 x 10: ৳ 1700.00"
   },
   {
     "id": "medex-34959-433",
@@ -7834,7 +13065,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 705,
+    "packagePrice": 7050,
+    "packInfo": "10 x 10: ৳ 7050.00"
   },
   {
     "id": "medex-34960-434",
@@ -7852,7 +13087,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-2325-435",
@@ -7870,7 +13109,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-22883-436",
@@ -7888,7 +13131,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 960,
+    "packagePrice": 9600,
+    "packInfo": "10 x 10: ৳ 9600.00"
   },
   {
     "id": "medex-6741-437",
@@ -7906,7 +13153,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 170,
+    "packagePrice": 1700,
+    "packInfo": "10 x 10: ৳ 1700.00"
   },
   {
     "id": "medex-6742-438",
@@ -7924,7 +13175,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1130,
+    "packagePrice": 11300,
+    "packInfo": "10 x 10: ৳ 11300.00"
   },
   {
     "id": "medex-6743-439",
@@ -7942,7 +13197,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-39515-440",
@@ -7960,7 +13219,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 120,
+    "packagePrice": 1200,
+    "packInfo": "10 x 10: ৳ 1200.00"
   },
   {
     "id": "medex-35320-441",
@@ -7978,7 +13241,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-35321-442",
@@ -7996,7 +13263,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-35322-443",
@@ -8014,7 +13285,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-1502-444",
@@ -8032,7 +13307,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-1503-445",
@@ -8050,7 +13329,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-28019-446",
@@ -8068,7 +13351,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-37707-447",
@@ -8086,7 +13373,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-29597-448",
@@ -8104,7 +13395,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3150,
+    "packagePrice": 31500,
+    "packInfo": "10 x 10: ৳ 31500.00"
   },
   {
     "id": "medex-17449-449",
@@ -8122,7 +13417,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 3300,
+    "packagePrice": 33000,
+    "packInfo": "10 x 10: ৳ 33000.00"
   },
   {
     "id": "medex-39993-450",
@@ -8140,7 +13439,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1200,
+    "packagePrice": 12000,
+    "packInfo": "10 x 10: ৳ 12000.00"
   },
   {
     "id": "medex-28654-451",
@@ -8158,7 +13461,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1350,
+    "packagePrice": 13500,
+    "packInfo": "10 x 10: ৳ 13500.00"
   },
   {
     "id": "medex-243-452",
@@ -8176,7 +13483,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1500,
+    "packagePrice": 15000,
+    "packInfo": "10 x 10: ৳ 15000.00"
   },
   {
     "id": "medex-244-453",
@@ -8194,7 +13505,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1650,
+    "packagePrice": 16500,
+    "packInfo": "10 x 10: ৳ 16500.00"
   },
   {
     "id": "medex-36114-454",
@@ -8212,7 +13527,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1800,
+    "packagePrice": 18000,
+    "packInfo": "10 x 10: ৳ 18000.00"
   },
   {
     "id": "medex-38461-455",
@@ -8230,7 +13549,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-38462-456",
@@ -8248,7 +13571,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 145,
+    "packagePrice": 1450,
+    "packInfo": "10 x 10: ৳ 1450.00"
   },
   {
     "id": "medex-38463-457",
@@ -8266,7 +13593,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-11870-458",
@@ -8284,7 +13615,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1130,
+    "packagePrice": 11300,
+    "packInfo": "10 x 10: ৳ 11300.00"
   },
   {
     "id": "medex-376-459",
@@ -8302,7 +13637,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2550,
+    "packagePrice": 25500,
+    "packInfo": "10 x 10: ৳ 25500.00"
   },
   {
     "id": "medex-35906-460",
@@ -8320,7 +13659,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-19175-461",
@@ -8338,7 +13681,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-13735-462",
@@ -8356,7 +13703,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-13736-463",
@@ -8374,7 +13725,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 705,
+    "packagePrice": 7050,
+    "packInfo": "10 x 10: ৳ 7050.00"
   },
   {
     "id": "medex-37636-464",
@@ -8392,7 +13747,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-30595-465",
@@ -8410,7 +13769,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-11261-466",
@@ -8428,7 +13791,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-11262-467",
@@ -8446,7 +13813,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-11263-468",
@@ -8464,7 +13835,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1130,
+    "packagePrice": 11300,
+    "packInfo": "10 x 10: ৳ 11300.00"
   },
   {
     "id": "medex-17307-469",
@@ -8482,7 +13857,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 1800,
+    "packagePrice": 18000,
+    "packInfo": "10 x 10: ৳ 18000.00"
   },
   {
     "id": "medex-248-470",
@@ -8500,7 +13879,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-37102-471",
@@ -8518,7 +13901,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-37103-472",
@@ -8536,7 +13923,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-33301-473",
@@ -8554,7 +13945,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-3605-474",
@@ -8572,7 +13967,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-3606-475",
@@ -8590,7 +13989,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-3607-476",
@@ -8608,7 +14011,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-3709-477",
@@ -8626,7 +14033,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-3710-478",
@@ -8644,7 +14055,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1130,
+    "packagePrice": 11300,
+    "packInfo": "10 x 10: ৳ 11300.00"
   },
   {
     "id": "medex-3761-479",
@@ -8662,7 +14077,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-34617-480",
@@ -8680,7 +14099,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-3759-481",
@@ -8698,7 +14121,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-3760-482",
@@ -8716,7 +14143,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-3875-483",
@@ -8734,7 +14165,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-38547-484",
@@ -8752,7 +14187,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-38548-485",
@@ -8770,7 +14209,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 875,
+    "packagePrice": 8750,
+    "packInfo": "10 x 10: ৳ 8750.00"
   },
   {
     "id": "medex-1297-486",
@@ -8788,7 +14231,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-30123-487",
@@ -8806,7 +14253,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-28863-488",
@@ -8824,7 +14275,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1130,
+    "packagePrice": 11300,
+    "packInfo": "10 x 10: ৳ 11300.00"
   },
   {
     "id": "medex-33302-489",
@@ -8842,7 +14297,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-35449-490",
@@ -8860,7 +14319,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-35450-491",
@@ -8878,7 +14341,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-35451-492",
@@ -8896,7 +14363,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-31295-493",
@@ -8914,7 +14385,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-38838-494",
@@ -8932,7 +14407,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-29422-495",
@@ -8950,7 +14429,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-29423-496",
@@ -8968,7 +14451,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-29424-497",
@@ -8986,7 +14473,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-26673-498",
@@ -9004,7 +14495,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-7463-499",
@@ -9022,7 +14517,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-7464-500",
@@ -9040,7 +14539,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 60,
+    "packagePrice": 600,
+    "packInfo": "10 x 10: ৳ 600.00"
   },
   {
     "id": "medex-7465-501",
@@ -9058,7 +14561,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 535,
+    "packagePrice": 5350,
+    "packInfo": "10 x 10: ৳ 5350.00"
   },
   {
     "id": "medex-26403-502",
@@ -9076,7 +14583,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-26404-503",
@@ -9094,7 +14605,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 105,
+    "packagePrice": 1050,
+    "packInfo": "10 x 10: ৳ 1050.00"
   },
   {
     "id": "medex-7466-504",
@@ -9112,7 +14627,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-7467-505",
@@ -9130,7 +14649,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-7468-506",
@@ -9148,7 +14671,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-7469-507",
@@ -9166,7 +14693,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1045,
+    "packagePrice": 10450,
+    "packInfo": "10 x 10: ৳ 10450.00"
   },
   {
     "id": "medex-29363-508",
@@ -9184,7 +14715,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-baby---mom",
       "name": "Baby & Mom"
-    }
+    },
+    "categoryName": "Baby & Mom",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-28035-509",
@@ -9202,7 +14737,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 1215,
+    "packagePrice": 12150,
+    "packInfo": "10 x 10: ৳ 12150.00"
   },
   {
     "id": "medex-28038-510",
@@ -9220,7 +14759,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-28039-511",
@@ -9238,7 +14781,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-15872-512",
@@ -9256,7 +14803,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 620,
+    "packagePrice": 6200,
+    "packInfo": "10 x 10: ৳ 6200.00"
   },
   {
     "id": "medex-15886-513",
@@ -9274,7 +14825,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 770,
+    "packagePrice": 7700,
+    "packInfo": "10 x 10: ৳ 7700.00"
   },
   {
     "id": "medex-15889-514",
@@ -9292,7 +14847,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-16266-515",
@@ -9310,7 +14869,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-16267-516",
@@ -9328,7 +14891,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-12381-517",
@@ -9346,7 +14913,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 1250,
+    "packagePrice": 12500,
+    "packInfo": "10 x 10: ৳ 12500.00"
   },
   {
     "id": "medex-12408-518",
@@ -9364,7 +14935,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 90,
+    "packagePrice": 900,
+    "packInfo": "10 x 10: ৳ 900.00"
   },
   {
     "id": "medex-28011-519",
@@ -9382,7 +14957,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 220,
+    "packagePrice": 2200,
+    "packInfo": "10 x 10: ৳ 2200.00"
   },
   {
     "id": "medex-39395-520",
@@ -9400,7 +14979,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 2700,
+    "packagePrice": 27000,
+    "packInfo": "10 x 10: ৳ 27000.00"
   },
   {
     "id": "medex-14009-521",
@@ -9418,7 +15001,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-14721-522",
@@ -9436,7 +15023,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-14008-523",
@@ -9454,7 +15045,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-vital-wellness",
       "name": "Vital Wellness"
-    }
+    },
+    "categoryName": "Vital Wellness",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-5998-524",
@@ -9472,7 +15067,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-5999-525",
@@ -9490,7 +15089,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-17938-526",
@@ -9508,7 +15111,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-30988-527",
@@ -9526,7 +15133,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   },
   {
     "id": "medex-30989-528",
@@ -9544,7 +15155,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 25,
+    "packagePrice": 250,
+    "packInfo": "10 x 10: ৳ 250.00"
   },
   {
     "id": "medex-36751-529",
@@ -9562,7 +15177,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-personal-care",
       "name": "Personal Care"
-    }
+    },
+    "categoryName": "Personal Care",
+    "stripPrice": 770,
+    "packagePrice": 7700,
+    "packInfo": "10 x 10: ৳ 7700.00"
   },
   {
     "id": "medex-31997-530",
@@ -9580,7 +15199,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-413-531",
@@ -9598,7 +15221,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-2453-532",
@@ -9616,7 +15243,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-25460-533",
@@ -9634,7 +15265,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-25461-534",
@@ -9652,7 +15287,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 790,
+    "packagePrice": 7900,
+    "packInfo": "10 x 10: ৳ 7900.00"
   },
   {
     "id": "medex-27401-535",
@@ -9670,7 +15309,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 37.5,
+    "packagePrice": 375,
+    "packInfo": "10 x 10: ৳ 375.00"
   },
   {
     "id": "medex-27433-536",
@@ -9688,7 +15331,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 50,
+    "packagePrice": 500,
+    "packInfo": "10 x 10: ৳ 500.00"
   },
   {
     "id": "medex-27400-537",
@@ -9706,7 +15353,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 62.5,
+    "packagePrice": 625,
+    "packInfo": "10 x 10: ৳ 625.00"
   },
   {
     "id": "medex-37838-538",
@@ -9724,7 +15375,11 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-medicines",
       "name": "Medicines"
-    }
+    },
+    "categoryName": "Medicines",
+    "stripPrice": 75,
+    "packagePrice": 750,
+    "packInfo": "10 x 10: ৳ 750.00"
   },
   {
     "id": "medex-27758-539",
@@ -9742,6 +15397,10 @@ export const MEDEX_BANGLADESH_PRODUCTS: IProduct[] = [
     "category": {
       "id": "cat-health---devices",
       "name": "Health & Devices"
-    }
+    },
+    "categoryName": "Health & Devices",
+    "stripPrice": 87.5,
+    "packagePrice": 875,
+    "packInfo": "10 x 10: ৳ 875.00"
   }
 ];

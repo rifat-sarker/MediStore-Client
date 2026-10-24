@@ -12,7 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { registerUser, verifyOtpUser, resendOtpUser, googleAuthUser } from "@/services/AuthService";
 import { Mail, CheckCircle, ArrowLeft, RefreshCw, LockKeyholeIcon } from "lucide-react";
@@ -93,21 +93,20 @@ const RegisterForm = () => {
     }
   };
 
-  const handleGoogleSignIn = async () => {
-    setGoogleLoading(true);
-    try {
-      const clientId =
-        process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
-        "109689675909-d32kko3680egvhu49dll33me77c70iir.apps.googleusercontent.com";
+  useEffect(() => {
+    const clientId =
+      process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
+      "109689675909-d32kko3680egvhu49dll33me77c70iir.apps.googleusercontent.com";
 
+    const initGoogle = () => {
       if (typeof window !== "undefined" && (window as any).google?.accounts?.id) {
         const google = (window as any).google;
-
         google.accounts.id.initialize({
           client_id: clientId,
           callback: async (response: any) => {
-            try {
-              if (response.credential) {
+            if (response.credential) {
+              setGoogleLoading(true);
+              try {
                 const base64Url = response.credential.split(".")[1];
                 const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
                 const jsonPayload = decodeURIComponent(
@@ -125,59 +124,39 @@ const RegisterForm = () => {
                   router.push("/");
                   router.refresh();
                 } else {
-                  toast.error(res?.message || "Google sign-in failed on server.");
+                  toast.error(res?.message || "Google registration failed on server.");
                 }
+              } catch (err: any) {
+                toast.error("Failed to parse Google response: " + err.message);
+              } finally {
+                setGoogleLoading(false);
               }
-            } catch (err: any) {
-              toast.error("Failed to parse Google response: " + err.message);
-            } finally {
-              setGoogleLoading(false);
             }
           },
         });
 
-        google.accounts.id.prompt((notification: any) => {
-          if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
-            const userEmail = prompt(
-              "Google One Tap was suppressed by browser. Please enter your Google email for quick testing:",
-              "user@gmail.com"
-            );
-            if (userEmail) {
-              googleAuthUser({ name: "Google User", email: userEmail }).then((res) => {
-                if (res?.success) {
-                  toast.success("Signed in with Google successfully!");
-                  router.push("/");
-                  router.refresh();
-                } else {
-                  toast.error(res?.message || "Google sign-in failed");
-                }
-              });
-            }
-            setGoogleLoading(false);
-          }
-        });
-      } else {
-        const userEmail = prompt(
-          "Enter your Google Account email for testing:",
-          "user@gmail.com"
-        );
-        if (userEmail) {
-          const res = await googleAuthUser({ name: "Google User", email: userEmail });
-          if (res?.success) {
-            toast.success("Signed in with Google successfully!");
-            router.push("/");
-            router.refresh();
-          } else {
-            toast.error(res?.message || "Google sign-in failed");
-          }
+        const btnContainer = document.getElementById("google-register-btn-container");
+        if (btnContainer) {
+          google.accounts.id.renderButton(btnContainer, {
+            theme: "outline",
+            size: "large",
+            width: btnContainer.offsetWidth || 350,
+            text: "signup_with",
+            shape: "pill",
+          });
         }
-        setGoogleLoading(false);
       }
-    } catch {
-      toast.error("Google sign-in encountered an error");
-      setGoogleLoading(false);
-    }
-  };
+    };
+
+    const timer = setInterval(() => {
+      if ((window as any).google?.accounts?.id) {
+        initGoogle();
+        clearInterval(timer);
+      }
+    }, 300);
+
+    return () => clearInterval(timer);
+  }, [router, step]);
 
   if (step === "OTP") {
     return (
@@ -250,33 +229,16 @@ const RegisterForm = () => {
         </p>
       </div>
 
-      {/* Google Sign-in Button */}
-      <button
-        type="button"
-        onClick={handleGoogleSignIn}
-        disabled={googleLoading}
-        className="w-full h-12 border border-border bg-background hover:bg-secondary/40 font-bold text-xs sm:text-sm text-foreground rounded-2xl flex items-center justify-center gap-3 transition-colors shadow-xs mb-5"
-      >
-        <svg className="w-5 h-5" viewBox="0 0 24 24">
-          <path
-            fill="#4285F4"
-            d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
-          />
-          <path
-            fill="#34A853"
-            d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-          />
-          <path
-            fill="#FBBC05"
-            d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"
-          />
-          <path
-            fill="#EA4335"
-            d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
-          />
-        </svg>
-        {googleLoading ? "Signing in..." : "Continue with Google"}
-      </button>
+      {/* Official Google Register Container */}
+      <div className="flex flex-col items-center justify-center mb-5 w-full">
+        <div
+          id="google-register-btn-container"
+          className="w-full flex justify-center min-h-[44px]"
+        />
+        {googleLoading && (
+          <p className="text-xs text-muted-foreground mt-1">Verifying Google account...</p>
+        )}
+      </div>
 
       <div className="flex items-center gap-3 mb-5">
         <div className="h-px flex-1 bg-border/60" />

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HeartPulse, Facebook, Twitter, Instagram } from "lucide-react";
+import { HeartPulse, Facebook, Twitter, Instagram, Github } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -19,15 +19,42 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm">
               Your trusted partner in healthcare. Delivering essential medicines and health products directly to your doorstep.
             </p>
-            <div className="flex gap-4 pt-2">
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+            <div className="flex gap-3 pt-2">
+              <a
+                href="https://facebook.com/rifatswd"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Facebook /rifatswd"
+                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+              <a
+                href="https://x.com/rifatswd"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Twitter /rifatswd"
+                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+              <a
+                href="https://instagram.com/rifatswd"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram /rifatswd"
+                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
                 <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href="https://github.com/rifatswd"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub /rifatswd"
+                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <Github className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -57,15 +84,13 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="text-sm text-muted-foreground">
                 <strong className="block text-foreground">Address:</strong>
-                123 Health Ave, Medical District, NY 10001
-              </li>
-              <li className="text-sm text-muted-foreground">
-                <strong className="block text-foreground">Phone:</strong>
-                +1 (800) 123-4567
+                Dhaka, Bangladesh
               </li>
               <li className="text-sm text-muted-foreground">
                 <strong className="block text-foreground">Email:</strong>
-                support@medistore.com
+                <a href="mailto:rifatswd@gmail.com" className="text-primary hover:underline font-medium">
+                  rifatswd@gmail.com
+                </a>
               </li>
             </ul>
           </div>

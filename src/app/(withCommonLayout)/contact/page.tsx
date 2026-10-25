@@ -35,18 +35,8 @@ export default function ContactPage() {
                 <MapPin className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-bold text-foreground">HQ Address</h3>
-                <p className="text-muted-foreground text-sm mt-1">123 Health Ave, Medical District, NY 10001, United States</p>
-              </div>
-            </div>
-
-            <div className="bg-card border border-border p-6 rounded-2xl flex items-start gap-4">
-              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
-                <Phone className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground">Phone Helpline</h3>
-                <p className="text-muted-foreground text-sm mt-1">+1 (800) 555-0199 (Toll Free 24/7)</p>
+                <h3 className="font-bold text-foreground">HQ Location</h3>
+                <p className="text-muted-foreground text-sm mt-1">Dhaka, Bangladesh</p>
               </div>
             </div>
 
@@ -55,8 +45,24 @@ export default function ContactPage() {
                 <Mail className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-bold text-foreground">Email Inquiries</h3>
-                <p className="text-muted-foreground text-sm mt-1">support@medistore.health</p>
+                <h3 className="font-bold text-foreground">Direct Email Support</h3>
+                <a href="mailto:rifatswd@gmail.com" className="text-primary hover:underline text-sm mt-1 font-medium block">
+                  rifatswd@gmail.com
+                </a>
+                <p className="text-muted-foreground text-xs mt-0.5">Primary contact channel (Available 24/7)</p>
+              </div>
+            </div>
+
+            <div className="bg-card border border-border p-6 rounded-2xl flex items-start gap-4">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
+                <Send className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="font-bold text-foreground">Inquiries & Partnerships</h3>
+                <a href="mailto:rifatswd@gmail.com" className="text-primary hover:underline text-sm mt-1 font-medium block">
+                  rifatswd@gmail.com
+                </a>
+                <p className="text-muted-foreground text-xs mt-0.5">Quick responses within a few hours</p>
               </div>
             </div>
           </div>

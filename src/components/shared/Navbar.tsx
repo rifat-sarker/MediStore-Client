@@ -6,7 +6,7 @@ import { useState, FormEvent, useEffect, useRef } from "react";
 import {
   Search, ShoppingCart, User, HeartPulse, LogOut, LayoutDashboard,
   ChevronDown, ShoppingBag, Heart, Pill, Phone, Menu, X, Baby, Activity, 
-  Sparkles, ShieldCheck, Bike, ArrowRight, Loader2
+  Sparkles, ShieldCheck, Bike, ArrowRight, Loader2, Mail, MapPin
 } from "lucide-react";
 import { useUser } from "@/context/UserContext";
 import { logoutUser } from "@/services/AuthService";
@@ -237,11 +237,13 @@ export default function Navbar() {
         <div className="bg-secondary/40 border-b border-border hidden lg:block text-xs font-medium text-muted-foreground">
           <div className="container mx-auto px-4 h-9 flex items-center justify-between">
             <div className="flex items-center gap-6">
-              <span className="flex items-center gap-1.5 text-foreground/80">
-                <Phone className="w-3.5 h-3.5 text-primary"/> +880 1800-MEDISTORE (09600-000000)
-              </span>
+              <a href="mailto:rifatswd@gmail.com" className="flex items-center gap-1.5 text-foreground/80 hover:text-primary transition-colors">
+                <Mail className="w-3.5 h-3.5 text-primary"/> rifatswd@gmail.com
+              </a>
               <span className="text-muted-foreground">|</span>
-              <span className="text-foreground/80">support@medistore.com.bd</span>
+              <span className="flex items-center gap-1.5 text-foreground/80">
+                <MapPin className="w-3.5 h-3.5 text-primary"/> Dhaka, Bangladesh
+              </span>
               <span className="text-muted-foreground">|</span>
               <span className="text-primary font-semibold flex items-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5" /> 100% Genuine Medicine Guaranteed
@@ -253,7 +255,7 @@ export default function Navbar() {
               <span className="text-muted-foreground">|</span>
               <Link href="/orders" className="hover:text-primary transition-colors">Track Your Order</Link>
               <span className="text-muted-foreground">|</span>
-              <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded font-bold">24/7 Hotline</span>
+              <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded font-bold">24/7 Support</span>
             </div>
           </div>
         </div>

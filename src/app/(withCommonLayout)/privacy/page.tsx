@@ -23,7 +23,7 @@ export default function PrivacyPage() {
 
           <div>
             <h2 className="text-xl font-bold mb-2">4. Contact Information</h2>
-            <p className="text-muted-foreground">If you have any questions about this privacy statement, please contact us at privacy@medistore.health.</p>
+            <p className="text-muted-foreground">If you have any questions about this privacy statement, please contact us at <a href="mailto:rifatswd@gmail.com" className="text-primary hover:underline">rifatswd@gmail.com</a>.</p>
           </div>
         </section>
       </div>

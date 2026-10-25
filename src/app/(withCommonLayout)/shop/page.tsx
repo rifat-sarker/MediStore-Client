@@ -20,7 +20,7 @@ const ShopPage = async ({ searchParams }: { searchParams: Promise<SearchParams> 
   const { data: categoriesData } = await getAllCategories();
 
   return (
-    <div className="p-4">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
       <AllProducts categories={categoriesData} products={products || []} meta={meta} />
     </div>
   );

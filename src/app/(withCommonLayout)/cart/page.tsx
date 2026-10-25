@@ -148,8 +148,8 @@ const CartPage = () => {
           ))}
         </div>
 
-        <div className="w-full lg:w-96 h-fit bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
-          <h2 className="text-xl font-semibold mb-4">Checkout Details</h2>
+        <div className="w-full lg:w-96 h-fit bg-card p-5 sm:p-6 rounded-2xl shadow-sm border border-border">
+          <h2 className="text-xl font-bold mb-4 text-foreground">Checkout Details</h2>
           
           <div className="space-y-4 mb-6">
             <div>

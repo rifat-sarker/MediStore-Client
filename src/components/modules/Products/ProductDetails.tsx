@@ -139,55 +139,61 @@ const ProductDetailsClient = ({
           <span>Select Package Size:</span>
           <span className="text-primary font-extrabold">{getCurrentTierLabel()}</span>
         </div>
-        <div className="grid grid-cols-3 gap-3 mb-6 bg-secondary/30 p-2.5 rounded-2xl border border-border/80">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 mb-6 bg-secondary/30 p-2 sm:p-2.5 rounded-2xl border border-border/80">
           {/* Single Unit Option */}
           <button
             type="button"
             onClick={() => setSelectedTier("unit")}
-            className={`p-3 rounded-xl border text-center transition-all cursor-pointer relative ${
+            className={`p-3 rounded-xl border text-center transition-all cursor-pointer relative flex flex-row sm:flex-col items-center justify-between sm:justify-center ${
               selectedTier === "unit"
-                ? "bg-white border-primary ring-2 ring-primary/30 shadow-md scale-[1.02]"
+                ? "bg-white border-primary ring-2 ring-primary/30 shadow-md"
                 : "bg-white/80 border-border hover:border-primary/40 shadow-xs"
             }`}
           >
-            <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider block">Single Unit</span>
-            <span className="text-lg md:text-xl font-black text-foreground">৳ {product.price.toFixed(2)}</span>
-            <span className="text-[10px] text-muted-foreground block mt-0.5">per {product.dosageForm || 'piece'}</span>
+            <div className="text-left sm:text-center">
+              <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider block">Single Unit</span>
+              <span className="text-[10px] text-muted-foreground block mt-0.5">per {product.dosageForm || 'piece'}</span>
+            </div>
+            <span className="text-base sm:text-lg md:text-xl font-black text-foreground">৳ {product.price.toFixed(2)}</span>
           </button>
 
           {/* Strip Option (Default / Popular) */}
           <button
             type="button"
             onClick={() => setSelectedTier("strip")}
-            className={`p-3 rounded-xl border text-center transition-all cursor-pointer relative overflow-hidden ${
+            className={`p-3 rounded-xl border text-center transition-all cursor-pointer relative overflow-hidden flex flex-row sm:flex-col items-center justify-between sm:justify-center ${
               selectedTier === "strip"
-                ? "bg-primary/10 border-primary ring-2 ring-primary/40 shadow-md scale-[1.02]"
+                ? "bg-primary/10 border-primary ring-2 ring-primary/40 shadow-md"
                 : "bg-white/80 border-border hover:border-primary/40 shadow-xs"
             }`}
           >
             <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-[8px] font-bold px-1.5 py-0.5 rounded-bl">Popular</div>
-            <span className="text-[11px] font-bold text-primary uppercase tracking-wider block">Strip Price</span>
-            <span className="text-lg md:text-xl font-black text-primary">
+            <div className="text-left sm:text-center">
+              <span className="text-[11px] font-bold text-primary uppercase tracking-wider block">Strip Price</span>
+              <span className="text-[10px] text-muted-foreground block mt-0.5">1 Strip (10 pcs)</span>
+            </div>
+            <span className="text-base sm:text-lg md:text-xl font-black text-primary">
               ৳ {stripPrice.toFixed(2)}
             </span>
-            <span className="text-[10px] text-muted-foreground block mt-0.5">1 Strip (10 pcs)</span>
           </button>
 
           {/* Full Box Option */}
           <button
             type="button"
             onClick={() => setSelectedTier("box")}
-            className={`p-3 rounded-xl border text-center transition-all cursor-pointer relative ${
+            className={`p-3 rounded-xl border text-center transition-all cursor-pointer relative flex flex-row sm:flex-col items-center justify-between sm:justify-center ${
               selectedTier === "box"
-                ? "bg-white border-primary ring-2 ring-primary/30 shadow-md scale-[1.02]"
+                ? "bg-white border-primary ring-2 ring-primary/30 shadow-md"
                 : "bg-white/80 border-border hover:border-primary/40 shadow-xs"
             }`}
           >
-            <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider block">Full Box</span>
-            <span className="text-lg md:text-xl font-black text-foreground">
+            <div className="text-left sm:text-center">
+              <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider block">Full Box</span>
+              <span className="text-[10px] text-muted-foreground block mt-0.5 truncate max-w-[120px]">{product.packInfo || product.packSize || "Box Pack"}</span>
+            </div>
+            <span className="text-base sm:text-lg md:text-xl font-black text-foreground">
               ৳ {packagePrice.toFixed(2)}
             </span>
-            <span className="text-[10px] text-muted-foreground block mt-0.5 truncate">{product.packInfo || product.packSize || "Box Pack"}</span>
           </button>
         </div>
         
@@ -196,8 +202,8 @@ const ProductDetailsClient = ({
         </p>
 
         {/* Add to Cart Section */}
-        <div className="bg-card border border-border p-6 rounded-3xl mb-10 shadow-sm">
-          <div className="flex items-center justify-between mb-4">
+        <div className="bg-card border border-border p-4 sm:p-6 rounded-3xl mb-10 shadow-sm">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
             <span className="font-semibold text-sm">Package & Availability</span>
             {product.stock > 0 ? (
               <span className="flex items-center gap-1.5 text-green-600 bg-green-50 px-3 py-1 rounded-full text-xs font-bold"><CheckCircle2 className="w-4 h-4"/> In Stock ({product.stock} units)</span>
@@ -206,19 +212,22 @@ const ProductDetailsClient = ({
             )}
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4">
-            <div className="flex items-center justify-between border-2 border-border rounded-full px-4 py-2 w-full sm:w-32 bg-secondary/20">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="flex items-center justify-between border-2 border-border rounded-full px-4 py-2.5 w-full sm:w-32 bg-secondary/20">
               <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="text-xl font-medium px-2 text-muted-foreground hover:text-foreground transition-colors">-</button>
-              <span className="font-bold text-lg">{quantity}</span>
+              <span className="font-bold text-base sm:text-lg">{quantity}</span>
               <button onClick={() => setQuantity(Math.min(product.stock, quantity + 1))} className="text-xl font-medium px-2 text-muted-foreground hover:text-foreground transition-colors">+</button>
             </div>
             
             <button 
               onClick={handleAddToCart}
               disabled={product.stock <= 0}
-              className="flex-1 bg-primary text-primary-foreground font-bold text-base md:text-lg rounded-full py-4 flex items-center justify-center gap-2 hover:bg-primary/90 hover:scale-[1.01] transition-all shadow-xl shadow-primary/20 disabled:opacity-50 disabled:hover:scale-100"
+              className="w-full sm:flex-1 bg-primary text-primary-foreground font-bold text-sm sm:text-base md:text-lg rounded-full py-3.5 sm:py-4 px-4 flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 disabled:opacity-50 text-center"
             >
-              <ShoppingCart className="w-5 h-5" /> Add {quantity > 1 ? `(${quantity}) ` : ""}{selectedTier === "unit" ? "Unit" : selectedTier === "strip" ? "Strip" : "Full Box"} to Cart • ৳ {(getCurrentTierPrice() * quantity).toFixed(2)}
+              <ShoppingCart className="w-5 h-5 shrink-0" />
+              <span className="truncate">
+                Add {quantity > 1 ? `(${quantity}) ` : ""}{selectedTier === "unit" ? "Unit" : selectedTier === "strip" ? "Strip" : "Box"} to Cart • ৳ {(getCurrentTierPrice() * quantity).toFixed(2)}
+              </span>
             </button>
           </div>
         </div>
@@ -277,14 +286,16 @@ const ProductDetails = ({
       <ProductDetailsClient product={product} productCategory={productCategory} />
 
       {/* Extended Info Tabs (Mocked Rich Data) */}
-      <div className="mt-16 mb-24 border-t border-border pt-16">
+      <div className="mt-12 sm:mt-16 mb-20 sm:mb-24 border-t border-border pt-10 sm:pt-16">
         <Tabs defaultValue="description" className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid w-full grid-cols-4 mb-8 bg-secondary/50 p-1.5 rounded-full h-auto">
-            <TabsTrigger value="description" className="rounded-full py-2.5 font-semibold text-sm data-[state=active]:bg-background data-[state=active]:shadow-md transition-all">Description</TabsTrigger>
-            <TabsTrigger value="ingredients" className="rounded-full py-2.5 font-semibold text-sm data-[state=active]:bg-background data-[state=active]:shadow-md transition-all">Ingredients</TabsTrigger>
-            <TabsTrigger value="dosage" className="rounded-full py-2.5 font-semibold text-sm data-[state=active]:bg-background data-[state=active]:shadow-md transition-all">Usage & Dosage</TabsTrigger>
-            <TabsTrigger value="reviews" className="rounded-full py-2.5 font-semibold text-sm data-[state=active]:bg-background data-[state=active]:shadow-md transition-all">Reviews (128)</TabsTrigger>
-          </TabsList>
+          <div className="overflow-x-auto no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 mb-6 sm:mb-8">
+            <TabsList className="flex w-max sm:w-full sm:grid sm:grid-cols-4 bg-secondary/50 p-1.5 rounded-2xl sm:rounded-full h-auto gap-1">
+              <TabsTrigger value="description" className="rounded-xl sm:rounded-full px-4 py-2 sm:py-2.5 font-semibold text-xs sm:text-sm data-[state=active]:bg-background data-[state=active]:shadow-md transition-all whitespace-nowrap">Description</TabsTrigger>
+              <TabsTrigger value="ingredients" className="rounded-xl sm:rounded-full px-4 py-2 sm:py-2.5 font-semibold text-xs sm:text-sm data-[state=active]:bg-background data-[state=active]:shadow-md transition-all whitespace-nowrap">Ingredients</TabsTrigger>
+              <TabsTrigger value="dosage" className="rounded-xl sm:rounded-full px-4 py-2 sm:py-2.5 font-semibold text-xs sm:text-sm data-[state=active]:bg-background data-[state=active]:shadow-md transition-all whitespace-nowrap">Usage & Dosage</TabsTrigger>
+              <TabsTrigger value="reviews" className="rounded-xl sm:rounded-full px-4 py-2 sm:py-2.5 font-semibold text-xs sm:text-sm data-[state=active]:bg-background data-[state=active]:shadow-md transition-all whitespace-nowrap">Reviews (128)</TabsTrigger>
+            </TabsList>
+          </div>
           
           <TabsContent value="description" className="animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div className="prose prose-gray max-w-none">

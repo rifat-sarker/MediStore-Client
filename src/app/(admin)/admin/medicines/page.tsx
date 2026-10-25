@@ -138,8 +138,9 @@ export default function MedicinesManager() {
       </div>
 
       {/* Table */}
-      <div className="bg-card border border-border rounded-2xl overflow-hidden">
-        <table className="w-full text-sm">
+      <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-xs">
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm min-w-[700px]">
           <thead className="bg-muted/40 border-b border-border">
             <tr>
               <th className="text-left px-5 py-3 font-semibold text-muted-foreground">Medicine</th>
@@ -190,6 +191,7 @@ export default function MedicinesManager() {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
 
       {/* Pagination */}

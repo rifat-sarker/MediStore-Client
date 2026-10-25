@@ -81,9 +81,9 @@ export default async function AdminDashboard() {
       </div>
 
       {/* Quick Actions Bar */}
-      <div className="bg-card border border-border rounded-2xl p-6 shadow-xs">
-        <h2 className="text-sm font-extrabold uppercase tracking-wider text-muted-foreground mb-4">Quick Management Shortcuts</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="bg-card border border-border rounded-2xl p-4 sm:p-6 shadow-xs">
+        <h2 className="text-xs font-extrabold uppercase tracking-wider text-muted-foreground mb-4">Quick Management Shortcuts</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {[
             { href: "/admin/medicines", label: "Manage Medicines", desc: "Catalog & Pricing", icon: Pill, color: "text-primary" },
             { href: "/admin/categories", label: "Manage Categories", desc: "Departments", icon: Tag, color: "text-blue-500" },
@@ -93,14 +93,14 @@ export default async function AdminDashboard() {
             <a
               key={action.href}
               href={action.href}
-              className="flex items-center gap-3.5 p-4 rounded-xl border border-border bg-secondary/20 hover:border-primary/40 hover:bg-primary/5 transition-all group"
+              className="flex items-center gap-3.5 p-3.5 rounded-xl border border-border bg-secondary/20 hover:border-primary/40 hover:bg-primary/5 transition-all group"
             >
-              <div className="p-2.5 rounded-xl bg-white border border-border group-hover:scale-105 transition-transform">
+              <div className="p-2.5 rounded-xl bg-white dark:bg-card border border-border group-hover:scale-105 transition-transform shrink-0">
                 <action.icon className={`w-5 h-5 ${action.color}`} />
               </div>
-              <div className="text-left">
-                <span className="text-sm font-bold text-foreground block group-hover:text-primary transition-colors">{action.label}</span>
-                <span className="text-[11px] text-muted-foreground">{action.desc}</span>
+              <div className="text-left min-w-0">
+                <span className="text-sm font-bold text-foreground block group-hover:text-primary transition-colors truncate">{action.label}</span>
+                <span className="text-[11px] text-muted-foreground block truncate">{action.desc}</span>
               </div>
             </a>
           ))}
@@ -110,8 +110,8 @@ export default async function AdminDashboard() {
       {/* Recent Activity & Low Stock Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Recent Orders Overview */}
-        <div className="lg:col-span-2 bg-card border border-border rounded-2xl p-6 shadow-xs">
-          <div className="flex items-center justify-between mb-5">
+        <div className="lg:col-span-2 bg-card border border-border rounded-2xl p-4 sm:p-6 shadow-xs">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
             <div>
               <h3 className="font-extrabold text-base text-foreground">Recent Customer Orders</h3>
               <p className="text-xs text-muted-foreground mt-0.5">Real-time prescription and retail orders</p>
@@ -128,14 +128,14 @@ export default async function AdminDashboard() {
           ) : (
             <div className="divide-y divide-border/60">
               {stats.recentOrders.map((ord: any) => (
-                <div key={ord.id} className="py-3 flex items-center justify-between text-xs">
-                  <div>
-                    <span className="font-bold text-foreground block">Order #{ord.id.slice(0, 8)}</span>
+                <div key={ord.id} className="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                  <div className="min-w-0">
+                    <span className="font-bold text-foreground block text-sm sm:text-xs">Order #{ord.id.slice(0, 8)}</span>
                     <span className="text-muted-foreground text-[11px]">{new Date(ord.createdAt).toLocaleDateString()} • {ord.paymentMethod || "SSLCOMMERZ"}</span>
                   </div>
-                  <div className="text-right flex items-center gap-3">
-                    <span className="font-black text-foreground">৳ {Number(ord.totalAmount).toFixed(2)}</span>
-                    <span className={`px-2 py-0.5 rounded-full text-[10px] font-extrabold ${ord.status === "DELIVERED" ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"}`}>
+                  <div className="flex items-center justify-between sm:justify-end gap-3 pt-1 sm:pt-0">
+                    <span className="font-black text-foreground text-sm">৳ {Number(ord.totalAmount).toFixed(2)}</span>
+                    <span className={`px-2.5 py-1 rounded-full text-[10px] font-extrabold ${ord.status === "DELIVERED" ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"}`}>
                       {ord.status}
                     </span>
                   </div>

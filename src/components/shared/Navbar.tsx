@@ -487,6 +487,26 @@ export default function Navbar() {
               )}
             </div>
           </div>
+
+          {/* Mobile Direct Search Bar (Quick access on phones) */}
+          <div className="lg:hidden px-4 pb-3 pt-0">
+            <form onSubmit={handleSearch} className="relative w-full">
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search medicines, vitamins..."
+                className="w-full h-10 pl-10 pr-20 rounded-xl border border-border bg-secondary/30 text-xs focus:outline-none focus:border-primary focus:bg-white transition-all shadow-2xs"
+              />
+              <button
+                type="submit"
+                className="absolute right-1 top-1/2 -translate-y-1/2 h-8 px-3 bg-primary text-primary-foreground text-[11px] font-bold rounded-lg transition-colors"
+              >
+                Search
+              </button>
+            </form>
+          </div>
         </div>
 
         {/* 3. Bottom Category Bar (Mega Menu inspired by epharma.com.bd) */}

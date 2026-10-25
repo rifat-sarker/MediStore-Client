@@ -83,61 +83,66 @@ const CartPage = () => {
           {products.map((product) => (
             <div
               key={product.id}
-              className="flex items-center gap-4 border p-4 rounded-lg bg-white shadow-sm"
+              className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border p-4 rounded-2xl bg-card shadow-sm"
             >
-              <div className="w-24 h-24 relative flex-shrink-0">
-                <img
-                  src={product.imageUrl || ""}
-                  alt={product.name}
-                  className="object-cover rounded-md w-full h-full"
-                />
-              </div>
+              <div className="flex items-center gap-3.5 flex-1 min-w-0">
+                <div className="w-20 h-20 relative flex-shrink-0 bg-white rounded-xl border border-border/60 p-1 flex items-center justify-center">
+                  <img
+                    src={product.imageUrl || "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&auto=format&fit=crop&q=80"}
+                    alt={product.name}
+                    className="object-contain rounded-md w-full h-full mix-blend-multiply"
+                  />
+                </div>
 
-              <div className="flex-1">
-                <h3 className="font-semibold text-lg">{product.name}</h3>
-                <p className="text-gray-500 text-sm">{product.manufacturer}</p>
-                {product.requiredPrescription && (
-                  <span className="inline-block mt-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded">
-                    Prescription Required
-                  </span>
-                )}
-                <div className="mt-2 text-primary font-medium">
-                  ৳ {product.price}
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-base text-foreground leading-snug truncate">{product.name}</h3>
+                  <p className="text-muted-foreground text-xs truncate">{product.manufacturer}</p>
+                  {product.requiredPrescription && (
+                    <span className="inline-block mt-1 bg-orange-100 text-orange-700 text-[10px] font-semibold px-2 py-0.5 rounded-full">
+                      Rx Required
+                    </span>
+                  )}
+                  <div className="mt-1 text-primary font-bold text-sm">
+                    ৳ {product.price.toFixed(2)}
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 bg-gray-50 p-2 rounded-md">
-                <button
-                  onClick={() =>
-                    dispatch(updateQuantity({ id: product.id, type: "decrement" }))
-                  }
-                  className="p-1 hover:bg-gray-200 rounded"
-                >
-                  <Minus className="w-4 h-4" />
-                </button>
-                <span className="w-8 text-center font-medium">
-                  {product.orderQuantity}
-                </span>
-                <button
-                  onClick={() =>
-                    dispatch(updateQuantity({ id: product.id, type: "increment" }))
-                  }
-                  className="p-1 hover:bg-gray-200 rounded"
-                >
-                  <Plus className="w-4 h-4" />
-                </button>
-              </div>
+              <div className="flex items-center justify-between sm:justify-end gap-4 pt-2 sm:pt-0 border-t sm:border-t-0 border-border/50">
+                <div className="flex items-center gap-2 bg-secondary/50 p-1.5 rounded-xl border border-border/60">
+                  <button
+                    onClick={() =>
+                      dispatch(updateQuantity({ id: product.id, type: "decrement" }))
+                    }
+                    className="p-1 hover:bg-white rounded-lg transition-colors text-muted-foreground hover:text-foreground"
+                  >
+                    <Minus className="w-4 h-4" />
+                  </button>
+                  <span className="w-7 text-center font-bold text-sm">
+                    {product.orderQuantity}
+                  </span>
+                  <button
+                    onClick={() =>
+                      dispatch(updateQuantity({ id: product.id, type: "increment" }))
+                    }
+                    className="p-1 hover:bg-white rounded-lg transition-colors text-muted-foreground hover:text-foreground"
+                  >
+                    <Plus className="w-4 h-4" />
+                  </button>
+                </div>
 
-              <div className="text-right ml-4">
-                <p className="font-bold text-lg mb-2">
-                  ৳ {(product.price * product.orderQuantity).toFixed(2)}
-                </p>
-                <button
-                  onClick={() => dispatch(removeProduct(product.id))}
-                  className="text-red-500 hover:text-red-700 flex items-center justify-end w-full"
-                >
-                  <Trash2 className="w-5 h-5" />
-                </button>
+                <div className="flex items-center gap-3">
+                  <p className="font-extrabold text-base text-foreground sm:text-right min-w-[70px]">
+                    ৳ {(product.price * product.orderQuantity).toFixed(2)}
+                  </p>
+                  <button
+                    onClick={() => dispatch(removeProduct(product.id))}
+                    className="text-muted-foreground hover:text-red-500 p-2 hover:bg-red-50 rounded-xl transition-colors"
+                    title="Remove item"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
+                </div>
               </div>
             </div>
           ))}

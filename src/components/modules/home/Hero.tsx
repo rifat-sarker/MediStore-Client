@@ -73,7 +73,7 @@ export default function Hero() {
 
             {/* Floating badge */}
             <div
-              className="absolute -bottom-6 -left-6 bg-white/90 dark:bg-card backdrop-blur-md border border-border p-4 rounded-2xl flex items-center gap-3 shadow-xl"
+              className="absolute bottom-3 left-3 sm:-bottom-6 sm:-left-6 bg-white/95 dark:bg-card/95 backdrop-blur-md border border-border p-3.5 sm:p-4 rounded-2xl flex items-center gap-3 shadow-xl z-20"
               style={{ animation: "float 3s ease-in-out infinite" }}
             >
               <div className="bg-primary/10 p-3 rounded-full">

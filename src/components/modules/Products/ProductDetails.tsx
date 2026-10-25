@@ -314,28 +314,50 @@ const ProductDetails = ({
                     <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-500" /> Batch-controlled cold chain storage maintained</li>
                   </ul>
                 </div>
-                <div className="bg-secondary/30 p-6 rounded-2xl border border-border">
-                  <h4 className="font-bold mb-3">MedEx Product Specs</h4>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between border-b border-border/50 pb-2">
-                      <span className="text-muted-foreground">Generic / Strength</span>
-                      <span className="font-semibold">{product.genericName || product.strength || "Active Compound"}</span>
+                <div className="bg-card p-5 sm:p-6 rounded-2xl border border-border/80 shadow-xs">
+                  <div className="flex items-center gap-2 mb-4 pb-3 border-b border-border/60">
+                    <Info className="w-4 h-4 text-primary" />
+                    <h4 className="font-bold text-sm tracking-wide text-foreground uppercase">
+                      Product Specifications
+                    </h4>
+                  </div>
+                  <div className="divide-y divide-border/50 text-xs sm:text-sm">
+                    <div className="py-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                      <span className="text-muted-foreground font-medium">Generic / Strength</span>
+                      <span className="font-semibold text-foreground text-left sm:text-right">
+                        {product.genericName || product.strength || "Active Compound"}
+                      </span>
                     </div>
-                    <div className="flex justify-between border-b border-border/50 pb-2">
-                      <span className="text-muted-foreground">Dosage Form</span>
-                      <span className="font-semibold">{product.dosageForm || "Tablet / Capsule"}</span>
+
+                    <div className="py-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                      <span className="text-muted-foreground font-medium">Dosage Form</span>
+                      <span className="font-semibold text-foreground text-left sm:text-right">
+                        {product.dosageForm || "Tablet / Capsule"}
+                      </span>
                     </div>
-                    <div className="flex justify-between border-b border-border/50 pb-2">
-                      <span className="text-muted-foreground">Manufacturer</span>
-                      <span className="font-semibold">{product.manufacturer}</span>
+
+                    <div className="py-2.5 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                      <span className="text-muted-foreground font-medium shrink-0">Manufacturer</span>
+                      <span className="font-semibold text-foreground text-left sm:text-right leading-snug">
+                        {product.manufacturer}
+                      </span>
                     </div>
-                    <div className="flex justify-between border-b border-border/50 pb-2">
-                      <span className="text-muted-foreground">Pack Size</span>
-                      <span className="font-semibold">{product.packSize || "Unit Blister / Strip"}</span>
+
+                    <div className="py-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                      <span className="text-muted-foreground font-medium">Pack Size</span>
+                      <span className="font-semibold text-foreground text-left sm:text-right">
+                        {product.packSize || "Unit Blister / Strip"}
+                      </span>
                     </div>
-                    <div className="flex justify-between pb-2">
-                      <span className="text-muted-foreground">Prescription Status</span>
-                      <span className={`font-bold ${product.requiredPrescription ? "text-orange-600" : "text-green-600"}`}>
+
+                    <div className="pt-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5">
+                      <span className="text-muted-foreground font-medium">Prescription Status</span>
+                      <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold w-fit ${
+                        product.requiredPrescription 
+                          ? "bg-orange-50 text-orange-700 border border-orange-200" 
+                          : "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                      }`}>
+                        <span className={`w-1.5 h-1.5 rounded-full ${product.requiredPrescription ? "bg-orange-500" : "bg-emerald-500"}`} />
                         {product.requiredPrescription ? "Rx Required" : "OTC (Over The Counter)"}
                       </span>
                     </div>

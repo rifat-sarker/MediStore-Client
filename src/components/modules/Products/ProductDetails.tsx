@@ -368,27 +368,62 @@ const ProductDetails = ({
           </TabsContent>
 
           <TabsContent value="ingredients" className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <h3 className="text-xl font-bold mb-4">Pharmacological Action & Composition</h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <h3 className="text-xl font-bold mb-3 text-foreground">Pharmacological Action & Composition</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               Sourced under stringent international Good Manufacturing Practices (GMP) and verified for bioequivalence.
             </p>
-            <div className="bg-card border border-border rounded-2xl overflow-hidden">
+
+            {/* Mobile View: Clean Card Layout */}
+            <div className="block sm:hidden space-y-3">
+              <div className="bg-card border border-border p-4 rounded-2xl shadow-xs space-y-2.5">
+                <div className="flex items-start justify-between gap-2 border-b border-border/50 pb-2">
+                  <span className="text-[11px] uppercase tracking-wider font-bold text-primary">Active Ingredient</span>
+                  <span className="text-xs font-bold text-foreground text-right">{product.name}</span>
+                </div>
+                <div className="flex items-center justify-between gap-2 text-xs">
+                  <span className="text-muted-foreground">Classification</span>
+                  <span className="font-semibold text-foreground text-right">{product.genericName || "Pharmaceutical Grade"}</span>
+                </div>
+                <div className="flex items-center justify-between gap-2 text-xs">
+                  <span className="text-muted-foreground">Therapeutic Class</span>
+                  <span className="font-semibold text-foreground text-right">{productCategory?.name || "Healthcare Essential"}</span>
+                </div>
+              </div>
+
+              <div className="bg-card border border-border p-4 rounded-2xl shadow-xs space-y-2.5">
+                <div className="flex items-start justify-between gap-2 border-b border-border/50 pb-2">
+                  <span className="text-[11px] uppercase tracking-wider font-bold text-muted-foreground">Additives</span>
+                  <span className="text-xs font-bold text-foreground text-right">Excipients & Stabilizers</span>
+                </div>
+                <div className="flex items-center justify-between gap-2 text-xs">
+                  <span className="text-muted-foreground">Classification</span>
+                  <span className="font-semibold text-foreground text-right">USP/BP Standard Base</span>
+                </div>
+                <div className="flex items-center justify-between gap-2 text-xs">
+                  <span className="text-muted-foreground">Therapeutic Class</span>
+                  <span className="font-semibold text-foreground text-right">Bioavailability Enhancer</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Tablet & Desktop View: Clean Table */}
+            <div className="hidden sm:block bg-card border border-border rounded-2xl overflow-hidden shadow-xs">
               <table className="w-full text-left text-sm">
-                <thead className="bg-secondary/50 border-b border-border">
+                <thead className="bg-secondary/50 border-b border-border text-xs uppercase tracking-wider text-muted-foreground">
                   <tr>
-                    <th className="px-6 py-4 font-semibold">Active Composition</th>
-                    <th className="px-6 py-4 font-semibold">Classification</th>
-                    <th className="px-6 py-4 font-semibold">Therapeutic Class</th>
+                    <th className="px-6 py-3.5 font-bold">Active Composition</th>
+                    <th className="px-6 py-3.5 font-bold">Classification</th>
+                    <th className="px-6 py-3.5 font-bold">Therapeutic Class</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-border">
+                <tbody className="divide-y divide-border text-sm">
                   <tr>
-                    <td className="px-6 py-4 font-medium">{product.name}</td>
+                    <td className="px-6 py-4 font-semibold text-foreground">{product.name}</td>
                     <td className="px-6 py-4 text-muted-foreground">{product.genericName || "Pharmaceutical Grade Formulation"}</td>
                     <td className="px-6 py-4 text-muted-foreground">{productCategory?.name || "Healthcare Essential"}</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 font-medium">Excipients & Stabilizers</td>
+                    <td className="px-6 py-4 font-semibold text-foreground">Excipients & Stabilizers</td>
                     <td className="px-6 py-4 text-muted-foreground">USP/BP Standard Base</td>
                     <td className="px-6 py-4 text-muted-foreground">Bioavailability Enhancer</td>
                   </tr>

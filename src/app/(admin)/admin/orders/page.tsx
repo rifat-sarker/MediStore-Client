@@ -103,7 +103,7 @@ export default function OrdersManager() {
   );
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8">
       <div className="mb-6">
         <h1 className="text-2xl font-bold">Orders</h1>
         <p className="text-muted-foreground text-sm mt-1">{orders.length} total orders</p>

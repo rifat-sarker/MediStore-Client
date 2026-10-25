@@ -66,7 +66,7 @@ export default function RidersManager() {
   );
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8">
       <div className="mb-6">
         <h1 className="text-2xl font-bold">Riders</h1>
         <p className="text-muted-foreground text-sm mt-1">{riders.length} registered riders</p>

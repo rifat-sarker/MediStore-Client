@@ -128,17 +128,6 @@ const LoginForm = () => {
           },
         });
 
-        // Render official button in container if present
-        const btnContainer = document.getElementById("google-signin-btn-container");
-        if (btnContainer) {
-          google.accounts.id.renderButton(btnContainer, {
-            theme: "outline",
-            size: "large",
-            width: btnContainer.offsetWidth || 350,
-            text: "signin_with",
-            shape: "pill",
-          });
-        }
       }
     };
 

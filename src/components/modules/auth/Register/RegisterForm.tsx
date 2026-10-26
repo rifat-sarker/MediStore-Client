@@ -141,16 +141,6 @@ const RegisterForm = () => {
           },
         });
 
-        const btnContainer = document.getElementById("google-register-btn-container");
-        if (btnContainer) {
-          google.accounts.id.renderButton(btnContainer, {
-            theme: "outline",
-            size: "large",
-            width: btnContainer.offsetWidth || 350,
-            text: "signup_with",
-            shape: "pill",
-          });
-        }
       }
     };
 

@@ -132,7 +132,7 @@ const LoginForm = () => {
             theme: "outline",
             size: "large",
             width: btnContainer.offsetWidth || 350,
-            text: "continue_with",
+            text: "signin_with",
             shape: "pill",
           });
         }

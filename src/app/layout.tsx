@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" className={outfit.className}>
       <body>
         <Script
-          src="https://accounts.google.com/gsi/client"
+          src="https://accounts.google.com/gsi/client?hl=en"
           strategy="beforeInteractive"
         />
         <Providers>

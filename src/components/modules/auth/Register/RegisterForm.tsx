@@ -47,7 +47,10 @@ const RegisterForm = () => {
         setRegisteredEmail(data.email);
         setStep("OTP");
       } else {
-        toast.error(res?.message || "Registration failed");
+        const errorDetail = res?.errorSources?.length
+          ? res.errorSources.map((err: any) => `${err.path ? err.path + ': ' : ''}${err.message}`).join(", ")
+          : res?.message;
+        toast.error(errorDetail || "Registration failed");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -68,10 +71,13 @@ const RegisterForm = () => {
         toast.success("Account verified successfully! 🎉 Please sign in.");
         router.push("/login");
       } else {
-        toast.error(res?.message || "Invalid OTP");
+        const errorDetail = res?.errorSources?.length
+          ? res.errorSources.map((err: any) => err.message).join(", ")
+          : res?.message;
+        toast.error(errorDetail || "Invalid or expired OTP");
       }
     } catch {
-      toast.error("OTP verification failed.");
+      toast.error("OTP verification failed. Please try again.");
     } finally {
       setVerifying(false);
     }
@@ -311,7 +317,10 @@ const RegisterForm = () => {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-xs font-semibold">Password</FormLabel>
+                <div className="flex items-center justify-between">
+                  <FormLabel className="text-xs font-semibold">Password</FormLabel>
+                  <span className="text-[10px] text-muted-foreground">Min 8 chars, 1 uppercase, 1 lowercase & 1 digit</span>
+                </div>
                 <FormControl>
                   <Input type="password" placeholder="••••••••" className="rounded-xl h-11 bg-secondary/30" {...field} value={field.value || ""} />
                 </FormControl>

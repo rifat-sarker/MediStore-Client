@@ -10,14 +10,19 @@ export const registrationSchema = z
       .string({ required_error: "Email is required" })
       .email("Invalid email address"),
     phone: z
-      .string({ required_error: "Phone number is required" })
-      .regex(/^\+8801[3-9]\d{8}$/, "Invalid Bangladeshi phone number"),
-    address: z
-      .string({ required_error: "Address is required" })
-      .min(5, "Address must be at least 5 characters"),
+      .string()
+      .optional()
+      .refine((val) => !val || /^(?:\+?8801|01)[3-9]\d{8}$/.test(val), {
+        message: "Invalid Bangladeshi phone number (e.g. 01700000000 or +8801700000000)",
+      }),
+    address: z.string().optional(),
     password: z
       .string({ required_error: "Password is required" })
-      .min(8, "Password must be at least 8 characters"),
+      .min(8, "Password must be at least 8 characters")
+      .regex(
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+        "Password must contain uppercase, lowercase, and a number"
+      ),
     passwordConfirm: z
       .string({ required_error: "Password confirmation is required" })
       .min(1, "Password confirmation is required"),

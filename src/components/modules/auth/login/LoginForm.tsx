@@ -75,10 +75,13 @@ const LoginForm = () => {
         }
         router.refresh();
       } else {
-        toast.error(res?.message || "Invalid credentials.");
+        const errorDetail = res?.errorSources?.length
+          ? res.errorSources.map((err: any) => err.message).join(", ")
+          : res?.message;
+        toast.error(errorDetail || "Invalid credentials.");
       }
     } catch {
-      toast.error("An unexpected error occurred.");
+      toast.error("An unexpected error occurred. Please try again.");
     }
   };
 

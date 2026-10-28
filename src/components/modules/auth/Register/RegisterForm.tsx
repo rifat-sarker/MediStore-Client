@@ -45,10 +45,6 @@ const RegisterForm = () => {
       if (res?.success) {
         toast.success(res?.message || "OTP sent to your email!");
         setRegisteredEmail(data.email);
-        if (res?.data?.fallbackOtp) {
-          setOtp(res.data.fallbackOtp);
-          toast.info(`OTP Code: ${res.data.fallbackOtp} (Ready to verify)`);
-        }
         setStep("OTP");
       } else {
         const errorDetail = res?.errorSources?.length

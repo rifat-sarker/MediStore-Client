@@ -150,6 +150,7 @@ const RegisterForm = () => {
             width: btnContainer.offsetWidth || 350,
             text: "signup_with",
             shape: "pill",
+            locale: "en",
           });
         }
       }

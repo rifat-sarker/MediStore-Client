@@ -137,6 +137,7 @@ const LoginForm = () => {
             width: btnContainer.offsetWidth || 350,
             text: "signin_with",
             shape: "pill",
+            locale: "en",
           });
         }
       }

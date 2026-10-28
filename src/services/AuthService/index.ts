@@ -67,7 +67,11 @@ export const verifyOtpUser = async (data: { email: string; otp: string }) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
-    return await res.json();
+    const result = await res.json();
+    if (result?.success && result?.data?.accessToken) {
+      (await cookies()).set("accessToken", result.data.accessToken);
+    }
+    return result;
   } catch (error: any) {
     return { success: false, message: error?.message || "OTP verification failed." };
   }

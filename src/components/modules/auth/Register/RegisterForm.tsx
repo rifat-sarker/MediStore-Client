@@ -68,8 +68,9 @@ const RegisterForm = () => {
     try {
       const res = await verifyOtpUser({ email: registeredEmail, otp });
       if (res?.success) {
-        toast.success("Account verified successfully! 🎉 Please sign in.");
-        router.push("/login");
+        toast.success("Account verified successfully! Welcome to MediStore 🎉");
+        router.push("/");
+        router.refresh();
       } else {
         const errorDetail = res?.errorSources?.length
           ? res.errorSources.map((err: any) => err.message).join(", ")

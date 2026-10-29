@@ -13,11 +13,13 @@ export const metadata = {
   description: "Your trusted online pharmacy, delivering care everywhere.",
   icons: {
     icon: [
-      { url: "/icon.png" },
-      { url: "/favicon.ico" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
     ],
     shortcut: "/favicon.ico",
-    apple: "/icon.png",
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
